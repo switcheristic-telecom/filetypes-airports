@@ -1,0 +1,6469 @@
+[
+  {
+    "ident": "3IS8",
+    "type": "small_airport",
+    "name": "Rinkenberger Restricted Landing Area",
+    "elevation_ft": 808.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-IL",
+    "municipality": "Bradford",
+    "gps_code": "3IS8",
+    "iata_code": "BDF",
+    "local_code": "3IS8",
+    "latitude": 41.2308998108,
+    "longitude": -89.61569976810001,
+    "filetypes": [
+      {
+        "extension": "BDF",
+        "description": "Glyph Bitmap Distribution Format, a format used to store bitmap fonts.",
+        "used_by": "Adobe"
+      }
+    ]
+  },
+  {
+    "ident": "4K0",
+    "type": "small_airport",
+    "name": "Pedro Bay Airport",
+    "elevation_ft": 45.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Pedro Bay",
+    "gps_code": "4K0",
+    "iata_code": "PDB",
+    "local_code": "4K0",
+    "latitude": 59.7896003723,
+    "longitude": -154.12399292,
+    "filetypes": [
+      {
+        "extension": "PDB",
+        "description": "debugging data",
+        "used_by": "Microsoft Windows"
+      },
+      {
+        "extension": "PDB",
+        "description": "Molecule (protein data bank)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "51Z",
+    "type": "small_airport",
+    "name": "Minto Al Wright Airport",
+    "elevation_ft": 460.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Minto",
+    "gps_code": null,
+    "iata_code": "MNT",
+    "local_code": "51Z",
+    "latitude": 65.1437,
+    "longitude": -149.369995,
+    "filetypes": [
+      {
+        "extension": "MNT",
+        "description": "Surface metrology or image analysis document",
+        "used_by": "MountainsMap"
+      }
+    ]
+  },
+  {
+    "ident": "AGGE",
+    "type": "small_airport",
+    "name": "Ballalae Airport",
+    "elevation_ft": 5.0,
+    "continent": "OC",
+    "iso_country": "SB",
+    "iso_region": "SB-WE",
+    "municipality": "Ballalae",
+    "gps_code": "AGGE",
+    "iata_code": "BAS",
+    "local_code": null,
+    "latitude": -6.990745,
+    "longitude": 155.886656,
+    "filetypes": [
+      {
+        "extension": "BAS",
+        "description": "BASIC language source",
+        "used_by": "QuickBASIC - GW-BASIC - FreeBASIC - others"
+      }
+    ]
+  },
+  {
+    "ident": "AMF",
+    "type": "small_airport",
+    "name": "Ama Airport",
+    "elevation_ft": 145.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-ESW",
+    "municipality": null,
+    "gps_code": "AYAA",
+    "iata_code": "AMF",
+    "local_code": "AMA",
+    "latitude": -4.10111111111,
+    "longitude": 141.67,
+    "filetypes": [
+      {
+        "extension": "AMF",
+        "description": "Additive Manufacturing File Format",
+        "used_by": "Computer Aided Design Software"
+      }
+    ]
+  },
+  {
+    "ident": "AO-DRC",
+    "type": "small_airport",
+    "name": "Dirico Airport",
+    "elevation_ft": 3504.0,
+    "continent": "AF",
+    "iso_country": "AO",
+    "iso_region": "AO-CCU",
+    "municipality": "Dirico",
+    "gps_code": null,
+    "iata_code": "DRC",
+    "local_code": null,
+    "latitude": -17.981924057006836,
+    "longitude": 20.7680606842041,
+    "filetypes": [
+      {
+        "extension": "DRC",
+        "description": "Dirac format video",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "AU-COB",
+    "type": "small_airport",
+    "name": "Coolibah Airport",
+    "elevation_ft": null,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NT",
+    "municipality": "Coolibah",
+    "gps_code": null,
+    "iata_code": "COB",
+    "local_code": null,
+    "latitude": -15.548299789428713,
+    "longitude": 130.96200561523438,
+    "filetypes": [
+      {
+        "extension": "COB",
+        "description": "COBOL language source",
+        "used_by": "GnuCOBOL"
+      }
+    ]
+  },
+  {
+    "ident": "AXF",
+    "type": "medium_airport",
+    "name": "Alxa Left Banner Bayanhot Airport",
+    "elevation_ft": 4560.0,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-15",
+    "municipality": "Bayanhot",
+    "gps_code": "ZBAL",
+    "iata_code": "AXF",
+    "local_code": null,
+    "latitude": 38.74831,
+    "longitude": 105.58858,
+    "filetypes": [
+      {
+        "extension": "AXF",
+        "description": "lightweight geodatabase",
+        "used_by": "ESRI ArcPad"
+      }
+    ]
+  },
+  {
+    "ident": "AYPG",
+    "type": "small_airport",
+    "name": "Pangia Airport",
+    "elevation_ft": 5340.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-SHM",
+    "municipality": "Pangia",
+    "gps_code": "AYPG",
+    "iata_code": "PGN",
+    "local_code": "PNA",
+    "latitude": -6.386,
+    "longitude": 144.1084,
+    "filetypes": [
+      {
+        "extension": "PGN",
+        "description": "Portable Game Notation -Text specification for Chess game",
+        "used_by": "Most chess playing computer applications"
+      }
+    ]
+  },
+  {
+    "ident": "AYPY",
+    "type": "large_airport",
+    "name": "Port Moresby Jacksons International Airport",
+    "elevation_ft": 146.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-NCD",
+    "municipality": "Port Moresby",
+    "gps_code": "AYPY",
+    "iata_code": "POM",
+    "local_code": null,
+    "latitude": -9.44338035583496,
+    "longitude": 147.22000122070312,
+    "filetypes": [
+      {
+        "extension": "POM",
+        "description": "Build manager configuration file",
+        "used_by": "Apache Maven POM file"
+      }
+    ]
+  },
+  {
+    "ident": "AYSH",
+    "type": "small_airport",
+    "name": "Sabah Airport",
+    "elevation_ft": 10.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-NSB",
+    "municipality": "Sabah",
+    "gps_code": "AYSH",
+    "iata_code": "SBV",
+    "local_code": "SAB",
+    "latitude": -5.5765,
+    "longitude": 155.0489,
+    "filetypes": [
+      {
+        "extension": "SBV",
+        "description": "Superbase RDBMS form definition data",
+        "used_by": "Superbase (database)"
+      }
+    ]
+  },
+  {
+    "ident": "AYSQ",
+    "type": "small_airport",
+    "name": "Sepik Plains Airport",
+    "elevation_ft": 230.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-ESW",
+    "municipality": "Sepik Plains",
+    "gps_code": "AYSQ",
+    "iata_code": "SPV",
+    "local_code": "SPP",
+    "latitude": -3.8821,
+    "longitude": 143.6734,
+    "filetypes": [
+      {
+        "extension": "SPV",
+        "description": "SPIR-V binary file",
+        "used_by": "Vulkan, Khronos Group"
+      }
+    ]
+  },
+  {
+    "ident": "AYSV",
+    "type": "small_airport",
+    "name": "Sauren Airport",
+    "elevation_ft": 46.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-WBK",
+    "municipality": "Sauren",
+    "gps_code": "AYSV",
+    "iata_code": "SXW",
+    "local_code": "SAU",
+    "latitude": -5.9701,
+    "longitude": 148.8543,
+    "filetypes": [
+      {
+        "extension": "SXW",
+        "description": "OpenOffice.org XML text document",
+        "used_by": "OpenOffice.org Writer"
+      }
+    ]
+  },
+  {
+    "ident": "BGJN",
+    "type": "small_airport",
+    "name": "Ilulissat Airport",
+    "elevation_ft": 95.0,
+    "continent": "NA",
+    "iso_country": "GL",
+    "iso_region": "GL-AV",
+    "municipality": "Ilulissat",
+    "gps_code": "BGJN",
+    "iata_code": "JAV",
+    "local_code": null,
+    "latitude": 69.243202,
+    "longitude": -51.057098,
+    "filetypes": [
+      { "extension": "JAV", "description": "see JAVA", "used_by": null }
+    ]
+  },
+  {
+    "ident": "CJV7",
+    "type": "small_airport",
+    "name": "Summer Beaver Airport",
+    "elevation_ft": 832.0,
+    "continent": "NA",
+    "iso_country": "CA",
+    "iso_region": "CA-ON",
+    "municipality": "Summer Beaver",
+    "gps_code": "CJV7",
+    "iata_code": "SUR",
+    "local_code": "CJV7",
+    "latitude": 52.70859909057617,
+    "longitude": -88.54190063476562,
+    "filetypes": [
+      {
+        "extension": "SUR",
+        "description": "Surface topography (in native \"SURF\" format)",
+        "used_by": "MountainsMap"
+      }
+    ]
+  },
+  {
+    "ident": "CYML",
+    "type": "medium_airport",
+    "name": "Charlevoix Airport",
+    "elevation_ft": 977.0,
+    "continent": "NA",
+    "iso_country": "CA",
+    "iso_region": "CA-QC",
+    "municipality": "Charlevoix",
+    "gps_code": "CYML",
+    "iata_code": "YML",
+    "local_code": null,
+    "latitude": 47.59749984741211,
+    "longitude": -70.2238998413086,
+    "filetypes": [
+      {
+        "extension": "YML",
+        "description": "YML markup file",
+        "used_by": "domain specific language output to XML"
+      }
+    ]
+  },
+  {
+    "ident": "DAF",
+    "type": "small_airport",
+    "name": "Daup Airport",
+    "elevation_ft": 280.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-MPM",
+    "municipality": null,
+    "gps_code": null,
+    "iata_code": "DAF",
+    "local_code": "DAUP",
+    "latitude": -4.7403,
+    "longitude": 145.9515,
+    "filetypes": [
+      {
+        "extension": "DAF",
+        "description": "Data file",
+        "used_by": "Digital Anchor"
+      }
+    ]
+  },
+  {
+    "ident": "DAUU",
+    "type": "medium_airport",
+    "name": "Ain Beida Airport",
+    "elevation_ft": 492.0,
+    "continent": "AF",
+    "iso_country": "DZ",
+    "iso_region": "DZ-30",
+    "municipality": "Ouargla",
+    "gps_code": "DAUU",
+    "iata_code": "OGX",
+    "local_code": null,
+    "latitude": 31.9172,
+    "longitude": 5.41278,
+    "filetypes": [
+      {
+        "extension": "OGX",
+        "description": "Ogg Multiplex Profile",
+        "used_by": "libogg"
+      }
+    ]
+  },
+  {
+    "ident": "DBC",
+    "type": "medium_airport",
+    "name": "Baicheng Chang'an Airport",
+    "elevation_ft": 480.0,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-22",
+    "municipality": "Baicheng",
+    "gps_code": "ZYBA",
+    "iata_code": "DBC",
+    "local_code": null,
+    "latitude": 45.505278,
+    "longitude": 123.019722,
+    "filetypes": [
+      {
+        "extension": "DBC",
+        "description": "Database Connection configuration file",
+        "used_by": "AbInitio"
+      }
+    ]
+  },
+  {
+    "ident": "DFCP",
+    "type": "small_airport",
+    "name": "Po Airport",
+    "elevation_ft": 1050.0,
+    "continent": "AF",
+    "iso_country": "BF",
+    "iso_region": "BF-NAO",
+    "municipality": "Po",
+    "gps_code": "DFCP",
+    "iata_code": "PUP",
+    "local_code": null,
+    "latitude": 11.149999618530272,
+    "longitude": -1.149999976158142,
+    "filetypes": [
+      { "extension": "PUP", "description": "Pileup format", "used_by": null }
+    ]
+  },
+  {
+    "ident": "DFOY",
+    "type": "small_airport",
+    "name": "Aribinda Airport",
+    "elevation_ft": 1122.0,
+    "continent": "AF",
+    "iso_country": "BF",
+    "iso_region": "BF-SOM",
+    "municipality": "Aribinda",
+    "gps_code": "DFOY",
+    "iata_code": "XAR",
+    "local_code": null,
+    "latitude": 14.2170000076,
+    "longitude": -0.883000016212,
+    "filetypes": [
+      {
+        "extension": "XAR",
+        "description": "Xara graphics file",
+        "used_by": "Files created by Xara Photo & Graphic Designer (formerly Xara Xtreme and Xara Studio); early versions used the extension ART"
+      },
+      {
+        "extension": "XAR",
+        "description": "eXtensible ARchive",
+        "used_by": "xar, 7-Zip"
+      }
+    ]
+  },
+  {
+    "ident": "DNMK",
+    "type": "medium_airport",
+    "name": "Makurdi Airport",
+    "elevation_ft": 371.0,
+    "continent": "AF",
+    "iso_country": "NG",
+    "iso_region": "NG-BE",
+    "municipality": "Makurdi",
+    "gps_code": "DNMK",
+    "iata_code": "MDI",
+    "local_code": null,
+    "latitude": 7.70388,
+    "longitude": 8.61394,
+    "filetypes": [
+      {
+        "extension": "MDI",
+        "description": "Document save in high-resolution, created by MSOffice to scan documents (OCR) and turn them into a .DOC",
+        "used_by": "Microsoft Office"
+      }
+    ]
+  },
+  {
+    "ident": "DRRN",
+    "type": "large_airport",
+    "name": "Diori Hamani International Airport",
+    "elevation_ft": 732.0,
+    "continent": "AF",
+    "iso_country": "NE",
+    "iso_region": "NE-8",
+    "municipality": "Niamey",
+    "gps_code": "DRRN",
+    "iata_code": "NIM",
+    "local_code": null,
+    "latitude": 13.4815,
+    "longitude": 2.18361,
+    "filetypes": [
+      {
+        "extension": "NIM",
+        "description": "Nim source code file",
+        "used_by": "Nim"
+      }
+    ]
+  },
+  {
+    "ident": "EBOS",
+    "type": "medium_airport",
+    "name": "Ostend-Bruges International Airport",
+    "elevation_ft": 13.0,
+    "continent": "EU",
+    "iso_country": "BE",
+    "iso_region": "BE-VWV",
+    "municipality": "Ostend",
+    "gps_code": "EBOS",
+    "iata_code": "OST",
+    "local_code": null,
+    "latitude": 51.1998,
+    "longitude": 2.874673,
+    "filetypes": [
+      {
+        "extension": "OST",
+        "description": "Offline Storage Table",
+        "used_by": "Microsoft e-mail software: Outlook Express, Microsoft Outlook"
+      }
+    ]
+  },
+  {
+    "ident": "EDBC",
+    "type": "small_airport",
+    "name": "Cochstedt Airport",
+    "elevation_ft": 594.0,
+    "continent": "EU",
+    "iso_country": "DE",
+    "iso_region": "DE-ST",
+    "municipality": "Magdeburg",
+    "gps_code": "EDBC",
+    "iata_code": "CSO",
+    "local_code": null,
+    "latitude": 51.8563995361,
+    "longitude": 11.42029953,
+    "filetypes": [
+      {
+        "extension": "CSO",
+        "description": "Compiled Shader Object, extension of compiled HLSL",
+        "used_by": "High-Level Shading Language"
+      }
+    ]
+  },
+  {
+    "ident": "EDTL",
+    "type": "medium_airport",
+    "name": "Lahr Airport",
+    "elevation_ft": 511.0,
+    "continent": "EU",
+    "iso_country": "DE",
+    "iso_region": "DE-BW",
+    "municipality": null,
+    "gps_code": "EDTL",
+    "iata_code": "LHA",
+    "local_code": null,
+    "latitude": 48.3693008423,
+    "longitude": 7.82772016525,
+    "filetypes": [
+      {
+        "extension": "LHA",
+        "description": "LHA Archive",
+        "used_by": "LHA/LHARC, Total Commander"
+      }
+    ]
+  },
+  {
+    "ident": "EFTP",
+    "type": "medium_airport",
+    "name": "Tampere-Pirkkala Airport",
+    "elevation_ft": 390.0,
+    "continent": "EU",
+    "iso_country": "FI",
+    "iso_region": "FI-11",
+    "municipality": "Tampere / Pirkkala",
+    "gps_code": "EFTP",
+    "iata_code": "TMP",
+    "local_code": null,
+    "latitude": 61.414101,
+    "longitude": 23.604401,
+    "filetypes": [
+      { "extension": "TMP", "description": "Temporary file", "used_by": null }
+    ]
+  },
+  {
+    "ident": "EGQL",
+    "type": "medium_airport",
+    "name": "Leuchars Station Airfield",
+    "elevation_ft": 38.0,
+    "continent": "EU",
+    "iso_country": "GB",
+    "iso_region": "GB-SCT",
+    "municipality": "Leuchars, Fife",
+    "gps_code": "EGQL",
+    "iata_code": "ADX",
+    "local_code": null,
+    "latitude": 56.37398,
+    "longitude": -2.868862,
+    "filetypes": [
+      {
+        "extension": "ADX",
+        "description": "Document",
+        "used_by": "Archetype Designer"
+      }
+    ]
+  },
+  {
+    "ident": "ENML",
+    "type": "medium_airport",
+    "name": "Molde Airport, \u00c5r\u00f8",
+    "elevation_ft": 10.0,
+    "continent": "EU",
+    "iso_country": "NO",
+    "iso_region": "NO-15",
+    "municipality": "\u00c5r\u00f8",
+    "gps_code": "ENML",
+    "iata_code": "MOL",
+    "local_code": null,
+    "latitude": 62.744701,
+    "longitude": 7.2625,
+    "filetypes": [
+      { "extension": "MOL", "description": "MDL Molfile", "used_by": "RasMol" }
+    ]
+  },
+  {
+    "ident": "ENZV",
+    "type": "large_airport",
+    "name": "Stavanger Airport, Sola",
+    "elevation_ft": 29.0,
+    "continent": "EU",
+    "iso_country": "NO",
+    "iso_region": "NO-11",
+    "municipality": "Stavanger",
+    "gps_code": "ENZV",
+    "iata_code": "SVG",
+    "local_code": null,
+    "latitude": 58.876701,
+    "longitude": 5.63778,
+    "filetypes": [
+      {
+        "extension": "SVG",
+        "description": "Scalable Vector Graphics",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "ESKS",
+    "type": "medium_airport",
+    "name": "Scandinavian Mountains Airport",
+    "elevation_ft": 1608.0,
+    "continent": "EU",
+    "iso_country": "SE",
+    "iso_region": "SE-W",
+    "municipality": "Malung-S\u00e4len",
+    "gps_code": "ESKS",
+    "iata_code": "SCR",
+    "local_code": null,
+    "latitude": 61.158393,
+    "longitude": 12.842503,
+    "filetypes": [
+      {
+        "extension": "SCR",
+        "description": "Screen Protector file",
+        "used_by": "Windows Screen Protector"
+      }
+    ]
+  },
+  {
+    "ident": "ESMO",
+    "type": "small_airport",
+    "name": "Oskarshamn Airport",
+    "elevation_ft": 96.0,
+    "continent": "EU",
+    "iso_country": "SE",
+    "iso_region": "SE-H",
+    "municipality": null,
+    "gps_code": "ESMO",
+    "iata_code": "OSK",
+    "local_code": null,
+    "latitude": 57.350498,
+    "longitude": 16.497999,
+    "filetypes": [
+      { "extension": "OSK", "description": "Osu! Skin", "used_by": "Osu!" }
+    ]
+  },
+  {
+    "ident": "ESOW",
+    "type": "medium_airport",
+    "name": "Stockholm V\u00e4ster\u00e5s Airport",
+    "elevation_ft": 21.0,
+    "continent": "EU",
+    "iso_country": "SE",
+    "iso_region": "SE-U",
+    "municipality": "Stockholm / V\u00e4ster\u00e5s",
+    "gps_code": "ESOW",
+    "iata_code": "VST",
+    "local_code": null,
+    "latitude": 59.58940124511719,
+    "longitude": 16.63360023498535,
+    "filetypes": [
+      {
+        "extension": "VST",
+        "description": "Truevision Vista graphics",
+        "used_by": "many raster graphics editors"
+      }
+    ]
+  },
+  {
+    "ident": "FDMS",
+    "type": "medium_airport",
+    "name": "Matsapha Airport",
+    "elevation_ft": 2075.0,
+    "continent": "AF",
+    "iso_country": "SZ",
+    "iso_region": "SZ-MA",
+    "municipality": "Manzini",
+    "gps_code": "FDMS",
+    "iata_code": "MTS",
+    "local_code": null,
+    "latitude": -26.528999,
+    "longitude": 31.307501,
+    "filetypes": [
+      { "extension": "MTS", "description": "See M2TS", "used_by": null }
+    ]
+  },
+  {
+    "ident": "FKKS",
+    "type": "small_airport",
+    "name": "Dschang Airport",
+    "elevation_ft": 4593.0,
+    "continent": "AF",
+    "iso_country": "CM",
+    "iso_region": "CM-OU",
+    "municipality": "Dschang",
+    "gps_code": "FKKS",
+    "iata_code": "DSC",
+    "local_code": null,
+    "latitude": 5.449999809265137,
+    "longitude": 10.06700038909912,
+    "filetypes": [
+      {
+        "extension": "DSC",
+        "description": "Celestia Deep Space Catalog file",
+        "used_by": "Celestia"
+      }
+    ]
+  },
+  {
+    "ident": "FLKO",
+    "type": "small_airport",
+    "name": "Kaoma Airport",
+    "elevation_ft": 3670.0,
+    "continent": "AF",
+    "iso_country": "ZM",
+    "iso_region": "ZM-01",
+    "municipality": "Kaoma",
+    "gps_code": "FLKO",
+    "iata_code": "KMZ",
+    "local_code": null,
+    "latitude": -14.800000190734863,
+    "longitude": 24.78300094604492,
+    "filetypes": [
+      {
+        "extension": "KMZ",
+        "description": "Keyhole Markup Language (Zip compressed)",
+        "used_by": "Google Earth"
+      }
+    ]
+  },
+  {
+    "ident": "FLSN",
+    "type": "small_airport",
+    "name": "Senanga Airport",
+    "elevation_ft": 3347.0,
+    "continent": "AF",
+    "iso_country": "ZM",
+    "iso_region": "ZM-01",
+    "municipality": "Senanga",
+    "gps_code": "FLSN",
+    "iata_code": "SXG",
+    "local_code": null,
+    "latitude": -16.113,
+    "longitude": 23.2982,
+    "filetypes": [
+      {
+        "extension": "SXG",
+        "description": "OpenOffice.org XML master document",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "FMEE",
+    "type": "large_airport",
+    "name": "Roland Garros Airport",
+    "elevation_ft": 66.0,
+    "continent": "AF",
+    "iso_country": "RE",
+    "iso_region": "RE-SD",
+    "municipality": "Sainte-Marie",
+    "gps_code": "FMEE",
+    "iata_code": "RUN",
+    "local_code": null,
+    "latitude": -20.890087,
+    "longitude": 55.518894,
+    "filetypes": [
+      {
+        "extension": "RUN",
+        "description": "AMPL script file",
+        "used_by": "AMPL"
+      },
+      {
+        "extension": "RUN",
+        "description": "Makeself shell self-extracting archive",
+        "used_by": "shell"
+      }
+    ]
+  },
+  {
+    "ident": "FMNX",
+    "type": "small_airport",
+    "name": "Mandritsara Airport",
+    "elevation_ft": 1007.0,
+    "continent": "AF",
+    "iso_country": "MG",
+    "iso_region": "MG-M",
+    "municipality": "Mandritsara",
+    "gps_code": "FMNX",
+    "iata_code": "WMA",
+    "local_code": null,
+    "latitude": -15.845992,
+    "longitude": 48.834718,
+    "filetypes": [
+      {
+        "extension": "WMA",
+        "description": "Windows Media Audio file Advanced Systems Format",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "FNCA",
+    "type": "medium_airport",
+    "name": "Cabinda Airport",
+    "elevation_ft": 66.0,
+    "continent": "AF",
+    "iso_country": "AO",
+    "iso_region": "AO-CAB",
+    "municipality": "Cabinda",
+    "gps_code": "FNCA",
+    "iata_code": "CAB",
+    "local_code": null,
+    "latitude": -5.59699010848999,
+    "longitude": 12.188400268554688,
+    "filetypes": [
+      {
+        "extension": "CAB",
+        "description": "Cabinet archive",
+        "used_by": "Windows 95 and later, many file archivers"
+      }
+    ]
+  },
+  {
+    "ident": "FNCT",
+    "type": "medium_airport",
+    "name": "Catumbela Airport",
+    "elevation_ft": 23.0,
+    "continent": "AF",
+    "iso_country": "AO",
+    "iso_region": "AO-BGU",
+    "municipality": "Catumbela",
+    "gps_code": "FNCT",
+    "iata_code": "CBT",
+    "local_code": null,
+    "latitude": -12.4792,
+    "longitude": 13.4869,
+    "filetypes": [
+      {
+        "extension": "CBT",
+        "description": "COMBOOT Executable (incompatible with DOS COM files)",
+        "used_by": "SYSLINUX"
+      }
+    ]
+  },
+  {
+    "ident": "FXMM",
+    "type": "medium_airport",
+    "name": "Moshoeshoe I International Airport",
+    "elevation_ft": 5348.0,
+    "continent": "AF",
+    "iso_country": "LS",
+    "iso_region": "LS-A",
+    "municipality": "Maseru",
+    "gps_code": "FXMM",
+    "iata_code": "MSU",
+    "local_code": null,
+    "latitude": -29.462299346923828,
+    "longitude": 27.552499771118164,
+    "filetypes": [
+      {
+        "extension": "MSU",
+        "description": "Microsoft Update Package",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "FYKM",
+    "type": "small_airport",
+    "name": "Katima Mulilo Airport",
+    "elevation_ft": 3144.0,
+    "continent": "AF",
+    "iso_country": "NA",
+    "iso_region": "NA-CA",
+    "municipality": "Mpacha",
+    "gps_code": "FYKM",
+    "iata_code": "MPA",
+    "local_code": null,
+    "latitude": -17.634399,
+    "longitude": 24.176701,
+    "filetypes": [
+      {
+        "extension": "MPA",
+        "description": "MPEG audio stream, layer 1,2,3",
+        "used_by": "AWAVE"
+      }
+    ]
+  },
+  {
+    "ident": "FZFD",
+    "type": "medium_airport",
+    "name": "Gbadolite Airport",
+    "elevation_ft": 1509.0,
+    "continent": "AF",
+    "iso_country": "CD",
+    "iso_region": "CD-NU",
+    "municipality": "Gbadolite",
+    "gps_code": "FZFD",
+    "iata_code": "BDT",
+    "local_code": null,
+    "latitude": 4.252745,
+    "longitude": 20.975271,
+    "filetypes": [
+      {
+        "extension": "BDT",
+        "description": "Behandlungsdatentransfer, an xDT application",
+        "used_by": "Healthcare providers in Germany"
+      }
+    ]
+  },
+  {
+    "ident": "GB-DOC",
+    "type": "small_airport",
+    "name": "Dornoch Airfield",
+    "elevation_ft": 1.0,
+    "continent": "EU",
+    "iso_country": "GB",
+    "iso_region": "GB-SCT",
+    "municipality": "Dornoch, Sunderland",
+    "gps_code": null,
+    "iata_code": "DOC",
+    "local_code": null,
+    "latitude": 57.868999,
+    "longitude": -4.023,
+    "filetypes": [
+      {
+        "extension": "DOC",
+        "description": "A Document, or an ASCII text file with text formatting codes in with the text; used by many word processors",
+        "used_by": "Microsoft Word and others"
+      }
+    ]
+  },
+  {
+    "ident": "GFLL",
+    "type": "large_airport",
+    "name": "Lungi International Airport",
+    "elevation_ft": 84.0,
+    "continent": "AF",
+    "iso_country": "SL",
+    "iso_region": "SL-N",
+    "municipality": "Freetown (Lungi-Town)",
+    "gps_code": "GFLL",
+    "iata_code": "FNA",
+    "local_code": null,
+    "latitude": 8.61644,
+    "longitude": -13.1955,
+    "filetypes": [
+      {
+        "extension": "FNA",
+        "description": "FASTA format nucleic acid",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "GOOK",
+    "type": "medium_airport",
+    "name": "Kaolack Airport",
+    "elevation_ft": 26.0,
+    "continent": "AF",
+    "iso_country": "SN",
+    "iso_region": "SN-FK",
+    "municipality": "Kaolack",
+    "gps_code": "GOOK",
+    "iata_code": "KLC",
+    "local_code": null,
+    "latitude": 14.146900177001951,
+    "longitude": -16.051300048828125,
+    "filetypes": [
+      {
+        "extension": "KLC",
+        "description": "MSKLC Source file",
+        "used_by": "Microsoft Keyboard Layout Creator"
+      }
+    ]
+  },
+  {
+    "ident": "GOSS",
+    "type": "medium_airport",
+    "name": "Saint Louis Airport",
+    "elevation_ft": 9.0,
+    "continent": "AF",
+    "iso_country": "SN",
+    "iso_region": "SN-SL",
+    "municipality": "Saint Louis",
+    "gps_code": "GOSS",
+    "iata_code": "XLS",
+    "local_code": null,
+    "latitude": 16.049814,
+    "longitude": -16.461039,
+    "filetypes": [
+      {
+        "extension": "XLS",
+        "description": "Microsoft Excel Spreadsheet",
+        "used_by": "Microsoft Excel"
+      }
+    ]
+  },
+  {
+    "ident": "GQNB",
+    "type": "small_airport",
+    "name": "Boutilimit Airport",
+    "elevation_ft": 121.0,
+    "continent": "AF",
+    "iso_country": "MR",
+    "iso_region": "MR-06",
+    "municipality": "Boutilimit",
+    "gps_code": "GQNB",
+    "iata_code": "OTL",
+    "local_code": null,
+    "latitude": 17.52832,
+    "longitude": -14.71412,
+    "filetypes": [
+      {
+        "extension": "OTL",
+        "description": "The Vim Outliner",
+        "used_by": "A vim plugin"
+      }
+    ]
+  },
+  {
+    "ident": "GUFH",
+    "type": "small_airport",
+    "name": "Faranah Airport",
+    "elevation_ft": 1476.0,
+    "continent": "AF",
+    "iso_country": "GN",
+    "iso_region": "GN-F",
+    "municipality": "Faranah",
+    "gps_code": "GUFH",
+    "iata_code": "FAA",
+    "local_code": null,
+    "latitude": 10.0354995728,
+    "longitude": -10.7698001862,
+    "filetypes": [
+      {
+        "extension": "FAA",
+        "description": "FASTA format amino acid",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "HEAR",
+    "type": "medium_airport",
+    "name": "El Arish International Airport",
+    "elevation_ft": 118.0,
+    "continent": "AS",
+    "iso_country": "EG",
+    "iso_region": "EG-SIN",
+    "municipality": "El Arish",
+    "gps_code": "HEAR",
+    "iata_code": "AAC",
+    "local_code": null,
+    "latitude": 31.078565,
+    "longitude": 33.836791,
+    "filetypes": [
+      {
+        "extension": "AAC",
+        "description": "Advanced Audio Coding file",
+        "used_by": "iOS, Nintendo DSi, Nintendo 3DS, YouTube Music"
+      }
+    ]
+  },
+  {
+    "ident": "HEPS",
+    "type": "medium_airport",
+    "name": "Port Said International Airport",
+    "elevation_ft": 10.0,
+    "continent": "AF",
+    "iso_country": "EG",
+    "iso_region": "EG-PTS",
+    "municipality": "Port Said",
+    "gps_code": "HEPS",
+    "iata_code": "PSD",
+    "local_code": null,
+    "latitude": 31.279285,
+    "longitude": 32.240582,
+    "filetypes": [
+      {
+        "extension": "PSD",
+        "description": "Photoshop native file format",
+        "used_by": "Adobe Photoshop"
+      }
+    ]
+  },
+  {
+    "ident": "HESX",
+    "type": "medium_airport",
+    "name": "Sphinx International Airport",
+    "elevation_ft": 482.0,
+    "continent": "AF",
+    "iso_country": "EG",
+    "iso_region": "EG-GZ",
+    "municipality": "Al Jiza",
+    "gps_code": "HESX",
+    "iata_code": "SPX",
+    "local_code": null,
+    "latitude": 30.108078,
+    "longitude": 30.889252,
+    "filetypes": [
+      {
+        "extension": "SPX",
+        "description": "Ogg Speex bitstream",
+        "used_by": "Xiph.Org Foundation"
+      }
+    ]
+  },
+  {
+    "ident": "HHAS",
+    "type": "medium_airport",
+    "name": "Asmara International Airport",
+    "elevation_ft": 7661.0,
+    "continent": "AF",
+    "iso_country": "ER",
+    "iso_region": "ER-SK",
+    "municipality": "Asmara",
+    "gps_code": "HHAS",
+    "iata_code": "ASM",
+    "local_code": null,
+    "latitude": 15.291899681091309,
+    "longitude": 38.91070175170898,
+    "filetypes": [
+      {
+        "extension": "ASM",
+        "description": "Assembler language source",
+        "used_by": "TASM, MASM, NASM, FASM"
+      }
+    ]
+  },
+  {
+    "ident": "HKKR",
+    "type": "small_airport",
+    "name": "Kericho Airport",
+    "elevation_ft": 6446.0,
+    "continent": "AF",
+    "iso_country": "KE",
+    "iso_region": "KE-700",
+    "municipality": "Kericho",
+    "gps_code": "HKKR",
+    "iata_code": "KEY",
+    "local_code": null,
+    "latitude": -0.3899,
+    "longitude": 35.242093,
+    "filetypes": [
+      {
+        "extension": "KEY",
+        "description": "Keynote Presentation",
+        "used_by": "Keynote"
+      }
+    ]
+  },
+  {
+    "ident": "HKML",
+    "type": "medium_airport",
+    "name": "Malindi Airport",
+    "elevation_ft": 80.0,
+    "continent": "AF",
+    "iso_country": "KE",
+    "iso_region": "KE-300",
+    "municipality": "Malindi",
+    "gps_code": "HKML",
+    "iata_code": "MYD",
+    "local_code": null,
+    "latitude": -3.2293100357055664,
+    "longitude": 40.10169982910156,
+    "filetypes": [
+      {
+        "extension": "MYD",
+        "description": "a MyISAM data file in MySQL",
+        "used_by": "MyISAM, MySQL"
+      }
+    ]
+  },
+  {
+    "ident": "HSFS",
+    "type": "medium_airport",
+    "name": "El Fasher Airport",
+    "elevation_ft": 2393.0,
+    "continent": "AF",
+    "iso_country": "SD",
+    "iso_region": "SD-02",
+    "municipality": "El Fasher",
+    "gps_code": "HSFS",
+    "iata_code": "ELF",
+    "local_code": null,
+    "latitude": 13.61489963531494,
+    "longitude": 25.32460021972656,
+    "filetypes": [
+      {
+        "extension": "ELF",
+        "description": "Executable and Linkable File EurekaLog File (contains details of an exception)",
+        "used_by": "Unix EurekaLog (https://www.eurekalog.com/)"
+      }
+    ]
+  },
+  {
+    "ident": "HSOB",
+    "type": "medium_airport",
+    "name": "El-Obeid Airport",
+    "elevation_ft": 1927.0,
+    "continent": "AF",
+    "iso_country": "SD",
+    "iso_region": "SD-09",
+    "municipality": "El-Obeid",
+    "gps_code": "HSOB",
+    "iata_code": "EBD",
+    "local_code": null,
+    "latitude": 13.1532,
+    "longitude": 30.2327,
+    "filetypes": [
+      {
+        "extension": "EBD",
+        "description": "versions of DOS system files (AUTOEXEC.BAT, COMMAND.COM, CONFIG.SYS, WINBOOT.SYS, etc.) for an emergency boot disk",
+        "used_by": "Windows 98, ME"
+      }
+    ]
+  },
+  {
+    "ident": "HTM",
+    "type": "small_airport",
+    "name": "Khatgal Airport",
+    "elevation_ft": 5500.0,
+    "continent": "AS",
+    "iso_country": "MN",
+    "iso_region": "MN-041",
+    "municipality": "Hatgal",
+    "gps_code": "ZMHG",
+    "iata_code": "HTM",
+    "local_code": null,
+    "latitude": 50.435988,
+    "longitude": 100.139532,
+    "filetypes": [
+      { "extension": "HTM", "description": "see HTML", "used_by": null }
+    ]
+  },
+  {
+    "ident": "HTPE",
+    "type": "medium_airport",
+    "name": "Pemba Airport",
+    "elevation_ft": 80.0,
+    "continent": "AF",
+    "iso_country": "TZ",
+    "iso_region": "TZ-25",
+    "municipality": "Chake Chake",
+    "gps_code": "HTPE",
+    "iata_code": "PMA",
+    "local_code": null,
+    "latitude": -5.25726,
+    "longitude": 39.811401,
+    "filetypes": [
+      { "extension": "PMA", "description": "PMarc Archive", "used_by": null }
+    ]
+  },
+  {
+    "ident": "HTTG",
+    "type": "medium_airport",
+    "name": "Tanga Airport",
+    "elevation_ft": 129.0,
+    "continent": "AF",
+    "iso_country": "TZ",
+    "iso_region": "TZ-25",
+    "municipality": "Tanga",
+    "gps_code": "HTTG",
+    "iata_code": "TGT",
+    "local_code": null,
+    "latitude": -5.09236,
+    "longitude": 39.071201,
+    "filetypes": [
+      {
+        "extension": "TGT",
+        "description": "Target configuration file",
+        "used_by": "Target active security software"
+      }
+    ]
+  },
+  {
+    "ident": "ICO",
+    "type": "small_airport",
+    "name": "Sicogon Airstrip",
+    "elevation_ft": 25.0,
+    "continent": "AS",
+    "iso_country": "PH",
+    "iso_region": "PH-ILI",
+    "municipality": "Carles",
+    "gps_code": null,
+    "iata_code": "ICO",
+    "local_code": null,
+    "latitude": 11.4595,
+    "longitude": 123.2506,
+    "filetypes": [
+      {
+        "extension": "ICO",
+        "description": "Icon file",
+        "used_by": "ICONEDIT.EXE; Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "ID-MSI",
+    "type": "small_airport",
+    "name": "Masalembo Airport",
+    "elevation_ft": 30.0,
+    "continent": "AS",
+    "iso_country": "ID",
+    "iso_region": "ID-JI",
+    "municipality": "Masalembo Island",
+    "gps_code": null,
+    "iata_code": "MSI",
+    "local_code": null,
+    "latitude": -5.583330154418945,
+    "longitude": 114.43299865722656,
+    "filetypes": [
+      {
+        "extension": "MSI",
+        "description": "Windows Installer Package",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "IMG",
+    "type": "small_airport",
+    "name": "Inhaminga Airport",
+    "elevation_ft": 1072.0,
+    "continent": "AF",
+    "iso_country": "MZ",
+    "iso_region": "MZ-S",
+    "municipality": "Inhaminga",
+    "gps_code": null,
+    "iata_code": "IMG",
+    "local_code": null,
+    "latitude": -18.41,
+    "longitude": 35.0045,
+    "filetypes": [
+      { "extension": "IMG", "description": "Disk image", "used_by": null }
+    ]
+  },
+  {
+    "ident": "K74S",
+    "type": "small_airport",
+    "name": "Anacortes Airport",
+    "elevation_ft": 241.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-WA",
+    "municipality": "Anacortes",
+    "gps_code": null,
+    "iata_code": "OTS",
+    "local_code": "74S",
+    "latitude": 48.499,
+    "longitude": -122.662003,
+    "filetypes": [
+      {
+        "extension": "OTS",
+        "description": "Spreadsheets template",
+        "used_by": "OpenDocument, LibreOffice, Collabora Online"
+      }
+    ]
+  },
+  {
+    "ident": "K74V",
+    "type": "small_airport",
+    "name": "Roosevelt Municipal Airport",
+    "elevation_ft": 5172.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-UT",
+    "municipality": "Roosevelt",
+    "gps_code": null,
+    "iata_code": "ROL",
+    "local_code": "74V",
+    "latitude": 40.278301,
+    "longitude": -110.051003,
+    "filetypes": [
+      {
+        "extension": "ROL",
+        "description": "AdLib Piano Roll",
+        "used_by": "AdLib Visual Composer"
+      }
+    ]
+  },
+  {
+    "ident": "KADH",
+    "type": "small_airport",
+    "name": "Ada Regional Airport",
+    "elevation_ft": 1016.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-OK",
+    "municipality": "Ada",
+    "gps_code": "KADH",
+    "iata_code": "ADT",
+    "local_code": "ADH",
+    "latitude": 34.805214,
+    "longitude": -96.671988,
+    "filetypes": [
+      {
+        "extension": "ADT",
+        "description": "Abrechnungsdatentransfer, an xDT application",
+        "used_by": "Healthcare providers in Germany"
+      }
+    ]
+  },
+  {
+    "ident": "KAIO",
+    "type": "small_airport",
+    "name": "Atlantic Municipal Airport",
+    "elevation_ft": 1165.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-IA",
+    "municipality": "Atlantic",
+    "gps_code": "KAIO",
+    "iata_code": "AIO",
+    "local_code": "AIO",
+    "latitude": 41.40729904,
+    "longitude": -95.04689789,
+    "filetypes": [
+      {
+        "extension": "AIO",
+        "description": "APL programming language file transfer format file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KART",
+    "type": "medium_airport",
+    "name": "Watertown International Airport",
+    "elevation_ft": 325.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NY",
+    "municipality": "Watertown",
+    "gps_code": "KART",
+    "iata_code": "ART",
+    "local_code": "ART",
+    "latitude": 43.991901,
+    "longitude": -76.021698,
+    "filetypes": [
+      {
+        "extension": "ART",
+        "description": "Gerber format",
+        "used_by": "Cadence Allegro, EAGLE"
+      }
+    ]
+  },
+  {
+    "ident": "KASG",
+    "type": "small_airport",
+    "name": "Springdale Municipal Airport",
+    "elevation_ft": 1353.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AR",
+    "municipality": "Springdale",
+    "gps_code": "KASG",
+    "iata_code": "SPZ",
+    "local_code": "ASG",
+    "latitude": 36.176399231,
+    "longitude": -94.1193008423,
+    "filetypes": [
+      {
+        "extension": "SPZ",
+        "description": "Crestron SIMPL Windows compiled program (ZIP format)",
+        "used_by": "Crestron SIMPL Windows"
+      }
+    ]
+  },
+  {
+    "ident": "KASX",
+    "type": "small_airport",
+    "name": "John F Kennedy Memorial Airport",
+    "elevation_ft": 827.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-WI",
+    "municipality": "Ashland",
+    "gps_code": "KASX",
+    "iata_code": "ASX",
+    "local_code": "ASX",
+    "latitude": 46.54850006,
+    "longitude": -90.91899872,
+    "filetypes": [
+      {
+        "extension": "ASX",
+        "description": "Advanced Stream Redirector file, redirects to an ASF file (see ASF)",
+        "used_by": "Microsoft Corporation"
+      }
+    ]
+  },
+  {
+    "ident": "KCDR",
+    "type": "medium_airport",
+    "name": "Chadron Municipal Airport",
+    "elevation_ft": 3297.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NE",
+    "municipality": "Chadron",
+    "gps_code": "KCDR",
+    "iata_code": "CDR",
+    "local_code": "CDR",
+    "latitude": 42.837600708,
+    "longitude": -103.095001221,
+    "filetypes": [
+      {
+        "extension": "CDR",
+        "description": "Vector graphics format (drawinF",
+        "used_by": "CorelDraw"
+      }
+    ]
+  },
+  {
+    "ident": "KCHO",
+    "type": "medium_airport",
+    "name": "Charlottesville Albemarle Airport",
+    "elevation_ft": 639.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-VA",
+    "municipality": "Charlottesville",
+    "gps_code": "KCHO",
+    "iata_code": "CHO",
+    "local_code": "CHO",
+    "latitude": 38.13859939575195,
+    "longitude": -78.4529037475586,
+    "filetypes": [
+      {
+        "extension": "CHO",
+        "description": "ChordPro lead sheet (lyrics and chords)",
+        "used_by": "ChordPro and similar tools"
+      }
+    ]
+  },
+  {
+    "ident": "KCOE",
+    "type": "medium_airport",
+    "name": "Coeur D'Alene - Pappy Boyington Field",
+    "elevation_ft": 2320.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-ID",
+    "municipality": "Coeur d'Alene",
+    "gps_code": "KCOE",
+    "iata_code": "COE",
+    "local_code": "COE",
+    "latitude": 47.77429962,
+    "longitude": -116.8199997,
+    "filetypes": [
+      {
+        "extension": "COE",
+        "description": "Coefficient file",
+        "used_by": "Xilinx ISE"
+      }
+    ]
+  },
+  {
+    "ident": "KCOM",
+    "type": "small_airport",
+    "name": "Coleman Municipal Airport",
+    "elevation_ft": 1697.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-TX",
+    "municipality": "Coleman",
+    "gps_code": "KCOM",
+    "iata_code": "COM",
+    "local_code": "COM",
+    "latitude": 31.8411006927,
+    "longitude": -99.4036026001,
+    "filetypes": [
+      { "extension": "COM", "description": "DOS program", "used_by": "DOS-" }
+    ]
+  },
+  {
+    "ident": "KCRT",
+    "type": "small_airport",
+    "name": "Z M Jack Stell Field",
+    "elevation_ft": 184.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AR",
+    "municipality": "Crossett",
+    "gps_code": "KCRT",
+    "iata_code": "CRT",
+    "local_code": "CRT",
+    "latitude": 33.1782989502,
+    "longitude": -91.8802032471,
+    "filetypes": [
+      {
+        "extension": "CRT",
+        "description": "Security certificate",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "KCSV",
+    "type": "medium_airport",
+    "name": "Crossville Memorial Whitson Field",
+    "elevation_ft": 1881.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-TN",
+    "municipality": "Crossville",
+    "gps_code": "KCSV",
+    "iata_code": "CSV",
+    "local_code": "CSV",
+    "latitude": 35.9513015747,
+    "longitude": -85.08499908450001,
+    "filetypes": [
+      {
+        "extension": "CSV",
+        "description": "Comma Separated Values text file format (ASCII)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KCXY",
+    "type": "small_airport",
+    "name": "Capital City Airport",
+    "elevation_ft": 347.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-PA",
+    "municipality": "Harrisburg",
+    "gps_code": "KCXY",
+    "iata_code": "HAR",
+    "local_code": "CXY",
+    "latitude": 40.2170982361,
+    "longitude": -76.85150146480001,
+    "filetypes": [
+      {
+        "extension": "HAR",
+        "description": "HTTP Archive format (JSON-format web-browser log)",
+        "used_by": "W3C draft standard"
+      }
+    ]
+  },
+  {
+    "ident": "KDAA",
+    "type": "medium_airport",
+    "name": "Davison Army Air Field",
+    "elevation_ft": 73.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-VA",
+    "municipality": "Fort Belvoir",
+    "gps_code": "KDAA",
+    "iata_code": "DAA",
+    "local_code": "DAA",
+    "latitude": 38.715000152600005,
+    "longitude": -77.1809997559,
+    "filetypes": [
+      {
+        "extension": "DAA",
+        "description": "Direct Access Archive",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KEDE",
+    "type": "small_airport",
+    "name": "Northeastern Regional Airport",
+    "elevation_ft": 20.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NC",
+    "municipality": "Edenton",
+    "gps_code": "KEDE",
+    "iata_code": "EDE",
+    "local_code": "EDE",
+    "latitude": 36.027698516799994,
+    "longitude": -76.56710052490001,
+    "filetypes": [
+      {
+        "extension": "EDE",
+        "description": "Ensoniq EPS disk image",
+        "used_by": "AWAVE"
+      }
+    ]
+  },
+  {
+    "ident": "KFFZ",
+    "type": "small_airport",
+    "name": "Falcon Field",
+    "elevation_ft": 1394.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AZ",
+    "municipality": "Mesa",
+    "gps_code": "KFFZ",
+    "iata_code": "MSC",
+    "local_code": "FFZ",
+    "latitude": 33.4608001709,
+    "longitude": -111.727996826,
+    "filetypes": [
+      {
+        "extension": "MSC",
+        "description": "management saved console",
+        "used_by": "Microsoft; Microsoft MMC"
+      }
+    ]
+  },
+  {
+    "ident": "KFLP",
+    "type": "small_airport",
+    "name": "Marion County Regional Airport",
+    "elevation_ft": 719.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AR",
+    "municipality": "Flippin",
+    "gps_code": "KFLP",
+    "iata_code": "FLP",
+    "local_code": "FLP",
+    "latitude": 36.29090118,
+    "longitude": -92.59030151,
+    "filetypes": [
+      {
+        "extension": "FLP",
+        "description": "FL Studio project file",
+        "used_by": "FL Studio"
+      }
+    ]
+  },
+  {
+    "ident": "KFLV",
+    "type": "small_airport",
+    "name": "Sherman Army Air Field",
+    "elevation_ft": 772.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-KS",
+    "municipality": "Fort Leavenworth",
+    "gps_code": "KFLV",
+    "iata_code": "FLV",
+    "local_code": "FLV",
+    "latitude": 39.3683013916,
+    "longitude": -94.9147033691,
+    "filetypes": [
+      {
+        "extension": "FLV",
+        "description": "A container format for Flash Video (see also SWF)",
+        "used_by": "Adobe Flash"
+      }
+    ]
+  },
+  {
+    "ident": "KFRM",
+    "type": "small_airport",
+    "name": "Fairmont Municipal Airport",
+    "elevation_ft": 1162.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MN",
+    "municipality": "Fairmont",
+    "gps_code": "KFRM",
+    "iata_code": "FRM",
+    "local_code": "FRM",
+    "latitude": 43.643901825,
+    "longitude": -94.4156036377,
+    "filetypes": [
+      {
+        "extension": "FRM",
+        "description": "MySQL Database Metadata",
+        "used_by": "MySQL"
+      }
+    ]
+  },
+  {
+    "ident": "KGBR",
+    "type": "small_airport",
+    "name": "Walter J. Koladza Airport",
+    "elevation_ft": 739.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MA",
+    "municipality": "Great Barrington",
+    "gps_code": "KGBR",
+    "iata_code": "GBR",
+    "local_code": "GBR",
+    "latitude": 42.18420029,
+    "longitude": -73.40319824,
+    "filetypes": [
+      {
+        "extension": "GBR",
+        "description": "Gerber format",
+        "used_by": "PCB CAD/CAM"
+      }
+    ]
+  },
+  {
+    "ident": "KGED",
+    "type": "small_airport",
+    "name": "Delaware Coastal Airport",
+    "elevation_ft": 53.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-DE",
+    "municipality": "Georgetown",
+    "gps_code": "KGED",
+    "iata_code": "GED",
+    "local_code": "GED",
+    "latitude": 38.689201,
+    "longitude": -75.358902,
+    "filetypes": [
+      {
+        "extension": "GED",
+        "description": "GEDCOM",
+        "used_by": "Genealogy data exchange"
+      }
+    ]
+  },
+  {
+    "ident": "KGIF",
+    "type": "small_airport",
+    "name": "Winter Haven Regional Airport - Gilbert Field",
+    "elevation_ft": 145.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "Winter Haven",
+    "gps_code": "KGIF",
+    "iata_code": "GIF",
+    "local_code": "GIF",
+    "latitude": 28.062901,
+    "longitude": -81.753304,
+    "filetypes": [
+      {
+        "extension": "GIF",
+        "description": "Compuserves' Graphics Interchange Format (bitmapped graphics)",
+        "used_by": "QPeg - Display - CompuShow"
+      }
+    ]
+  },
+  {
+    "ident": "KGTF",
+    "type": "medium_airport",
+    "name": "Great Falls International Airport",
+    "elevation_ft": 3680.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MT",
+    "municipality": "Great Falls",
+    "gps_code": "KGTF",
+    "iata_code": "GTF",
+    "local_code": "GTF",
+    "latitude": 47.48199844,
+    "longitude": -111.3710022,
+    "filetypes": [
+      {
+        "extension": "GTF",
+        "description": "Gene transfer format",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KHUM",
+    "type": "small_airport",
+    "name": "Houma Terrebonne Airport",
+    "elevation_ft": 10.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-LA",
+    "municipality": "Houma",
+    "gps_code": "KHUM",
+    "iata_code": "HUM",
+    "local_code": "HUM",
+    "latitude": 29.5664997101,
+    "longitude": -90.6604003906,
+    "filetypes": [
+      {
+        "extension": "HUM",
+        "description": "3D Model database",
+        "used_by": "OMSI The Bus Simulator"
+      }
+    ]
+  },
+  {
+    "ident": "KICL",
+    "type": "small_airport",
+    "name": "Schenck Field",
+    "elevation_ft": 996.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-IA",
+    "municipality": "Clarinda",
+    "gps_code": "KICL",
+    "iata_code": "ICL",
+    "local_code": "ICL",
+    "latitude": 40.72180176,
+    "longitude": -95.02639771,
+    "filetypes": [
+      {
+        "extension": "ICL",
+        "description": "Icon library",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "KIPT",
+    "type": "medium_airport",
+    "name": "Williamsport Regional Airport",
+    "elevation_ft": 529.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-PA",
+    "municipality": "Williamsport",
+    "gps_code": "KIPT",
+    "iata_code": "IPT",
+    "local_code": "IPT",
+    "latitude": 41.241798400878906,
+    "longitude": -76.92109680175781,
+    "filetypes": [
+      {
+        "extension": "IPT",
+        "description": "XnView IPTC template",
+        "used_by": "XnView, XnViewMP"
+      }
+    ]
+  },
+  {
+    "ident": "KISO",
+    "type": "medium_airport",
+    "name": "Kinston Regional Jetport At Stallings Field",
+    "elevation_ft": 93.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NC",
+    "municipality": "Kinston",
+    "gps_code": "KISO",
+    "iata_code": "ISO",
+    "local_code": "ISO",
+    "latitude": 35.331401825,
+    "longitude": -77.60880279540001,
+    "filetypes": [
+      {
+        "extension": "ISO",
+        "description": "ISO-9660 table",
+        "used_by": "see: List of ISO image software"
+      }
+    ]
+  },
+  {
+    "ident": "KLNK",
+    "type": "medium_airport",
+    "name": "Lincoln Airport",
+    "elevation_ft": 1219.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NE",
+    "municipality": "Lincoln",
+    "gps_code": "KLNK",
+    "iata_code": "LNK",
+    "local_code": "LNK",
+    "latitude": 40.85100173950195,
+    "longitude": -96.75920104980467,
+    "filetypes": [
+      {
+        "extension": "LNK",
+        "description": "Local file shortcut",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "KMCF",
+    "type": "medium_airport",
+    "name": "MacDill Air Force Base",
+    "elevation_ft": 14.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "Tampa",
+    "gps_code": "KMCF",
+    "iata_code": "MCF",
+    "local_code": "MCF",
+    "latitude": 27.8493,
+    "longitude": -82.521202,
+    "filetypes": [
+      {
+        "extension": "MCF",
+        "description": "Multimedia Container Format (predecessor of Matroska)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KMDZ",
+    "type": "small_airport",
+    "name": "Taylor County Airport",
+    "elevation_ft": 1478.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-WI",
+    "municipality": "Medford",
+    "gps_code": "KMDZ",
+    "iata_code": "MDF",
+    "local_code": "MDZ",
+    "latitude": 45.10100174,
+    "longitude": -90.30329895,
+    "filetypes": [
+      {
+        "extension": "MDF",
+        "description": "Master Data File, a Microsoft SQL Server file type",
+        "used_by": "Microsoft SQL Server"
+      },
+      {
+        "extension": "MDF",
+        "description": "Measurement Data Format, a binary file format for vector measurement data",
+        "used_by": "automotive industry, developed by Robert Bosch GmbH"
+      }
+    ]
+  },
+  {
+    "ident": "KMHT",
+    "type": "medium_airport",
+    "name": "Manchester-Boston Regional Airport",
+    "elevation_ft": 266.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NH",
+    "municipality": "Manchester",
+    "gps_code": "KMHT",
+    "iata_code": "MHT",
+    "local_code": "MHT",
+    "latitude": 42.932598,
+    "longitude": -71.435699,
+    "filetypes": [
+      {
+        "extension": "MHT",
+        "description": "MIME encapsulation of aggregate HTML documents",
+        "used_by": "Web Browsers"
+      }
+    ]
+  },
+  {
+    "ident": "KMOD",
+    "type": "medium_airport",
+    "name": "Modesto City Co-Harry Sham Field",
+    "elevation_ft": 97.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-CA",
+    "municipality": "Modesto",
+    "gps_code": "KMOD",
+    "iata_code": "MOD",
+    "local_code": "MOD",
+    "latitude": 37.625801,
+    "longitude": -120.954002,
+    "filetypes": [
+      {
+        "extension": "MOD",
+        "description": "AMPL model file",
+        "used_by": "AMPL"
+      },
+      {
+        "extension": "MOD",
+        "description": "Modula language source",
+        "used_by": null
+      },
+      {
+        "extension": "MOD",
+        "description": "Modula-2 source code file",
+        "used_by": "Clarion Modula-2"
+      }
+    ]
+  },
+  {
+    "ident": "KMSO",
+    "type": "medium_airport",
+    "name": "Missoula International Airport",
+    "elevation_ft": 3206.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MT",
+    "municipality": "Missoula",
+    "gps_code": "KMSO",
+    "iata_code": "MSO",
+    "local_code": "MSO",
+    "latitude": 46.91630173,
+    "longitude": -114.0910034,
+    "filetypes": [
+      {
+        "extension": "MSO",
+        "description": "Microsoft Outlook metadata for a Microsoft Word 2000 email attachment",
+        "used_by": "Microsoft Outlook"
+      }
+    ]
+  },
+  {
+    "ident": "KMXF",
+    "type": "medium_airport",
+    "name": "Maxwell Air Force Base",
+    "elevation_ft": 171.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AL",
+    "municipality": "Montgomery",
+    "gps_code": "KMXF",
+    "iata_code": "MXF",
+    "local_code": "MXF",
+    "latitude": 32.3829,
+    "longitude": -86.365799,
+    "filetypes": [
+      {
+        "extension": "MXF",
+        "description": "Material exchange format (RFC 4539, SMPTE 377M)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KOGA",
+    "type": "small_airport",
+    "name": "Searle Field",
+    "elevation_ft": 3279.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NE",
+    "municipality": "Ogallala",
+    "gps_code": "KOGA",
+    "iata_code": "OGA",
+    "local_code": "OGA",
+    "latitude": 41.11949921,
+    "longitude": -101.7699966,
+    "filetypes": [
+      {
+        "extension": "OGA",
+        "description": "Audio file in the Ogg container format",
+        "used_by": "libogg"
+      }
+    ]
+  },
+  {
+    "ident": "KORS",
+    "type": "small_airport",
+    "name": "Orcas Island Airport",
+    "elevation_ft": 31.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-WA",
+    "municipality": "Eastsound",
+    "gps_code": "KORS",
+    "iata_code": "ESD",
+    "local_code": "ORS",
+    "latitude": 48.7081985474,
+    "longitude": -122.910003662,
+    "filetypes": [
+      {
+        "extension": "ESD",
+        "description": "Windows Imaging Format",
+        "used_by": "ImageX, DISM, 7-Zip, wimlib"
+      }
+    ]
+  },
+  {
+    "ident": "KOSC",
+    "type": "small_airport",
+    "name": "Oscoda Wurtsmith Airport",
+    "elevation_ft": 633.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MI",
+    "municipality": "Oscoda",
+    "gps_code": "KOSC",
+    "iata_code": "OSC",
+    "local_code": "OSC",
+    "latitude": 44.451599,
+    "longitude": -83.394096,
+    "filetypes": [
+      {
+        "extension": "OSC",
+        "description": "OpenStreetMap Changeset",
+        "used_by": "OpenStreetMap"
+      }
+    ]
+  },
+  {
+    "ident": "KPAM",
+    "type": "medium_airport",
+    "name": "Tyndall Air Force Base",
+    "elevation_ft": 17.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "Panama City",
+    "gps_code": "KPAM",
+    "iata_code": "PAM",
+    "local_code": "PAM",
+    "latitude": 30.069599,
+    "longitude": -85.575401,
+    "filetypes": [
+      {
+        "extension": "PAM",
+        "description": "PAM Portable Arbitrary Map graphics format",
+        "used_by": "Netpbm"
+      }
+    ]
+  },
+  {
+    "ident": "KPHF",
+    "type": "medium_airport",
+    "name": "Newport News Williamsburg International Airport",
+    "elevation_ft": 42.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-VA",
+    "municipality": "Newport News",
+    "gps_code": "KPHF",
+    "iata_code": "PHF",
+    "local_code": "PHF",
+    "latitude": 37.131901,
+    "longitude": -76.492996,
+    "filetypes": [
+      {
+        "extension": "PHF",
+        "description": "Database File",
+        "used_by": "Nuverb Systems Inc: Donarius"
+      }
+    ]
+  },
+  {
+    "ident": "KPHN",
+    "type": "small_airport",
+    "name": "St Clair County International Airport",
+    "elevation_ft": 650.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MI",
+    "municipality": "Port Huron",
+    "gps_code": "KPHN",
+    "iata_code": "PHN",
+    "local_code": "PHN",
+    "latitude": 42.9109993,
+    "longitude": -82.52890015,
+    "filetypes": [
+      {
+        "extension": "PHN",
+        "description": "Phun scene",
+        "used_by": "Algodoo (previously Phun)"
+      }
+    ]
+  },
+  {
+    "ident": "KPHP",
+    "type": "small_airport",
+    "name": "Philip Airport",
+    "elevation_ft": 2207.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-SD",
+    "municipality": "Philip",
+    "gps_code": "KPHP",
+    "iata_code": "PHP",
+    "local_code": "PHP",
+    "latitude": 44.048599243164,
+    "longitude": -101.59899902344,
+    "filetypes": [
+      { "extension": "PHP", "description": "PHP file", "used_by": null }
+    ]
+  },
+  {
+    "ident": "KPIE",
+    "type": "medium_airport",
+    "name": "St. Petersburg Clearwater International Airport",
+    "elevation_ft": 11.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "Pinellas Park",
+    "gps_code": "KPIE",
+    "iata_code": "PIE",
+    "local_code": "PIE",
+    "latitude": 27.9102,
+    "longitude": -82.687401,
+    "filetypes": [
+      {
+        "extension": "PIE",
+        "description": "GlovePIE script file",
+        "used_by": "GlovePIE"
+      }
+    ]
+  },
+  {
+    "ident": "KPIR",
+    "type": "medium_airport",
+    "name": "Pierre Regional Airport",
+    "elevation_ft": 1744.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-SD",
+    "municipality": "Pierre",
+    "gps_code": "KPIR",
+    "iata_code": "PIR",
+    "local_code": "PIR",
+    "latitude": 44.38270187,
+    "longitude": -100.2860031,
+    "filetypes": [
+      { "extension": "PIR", "description": "PIR format", "used_by": null }
+    ]
+  },
+  {
+    "ident": "KPIT",
+    "type": "large_airport",
+    "name": "Pittsburgh International Airport",
+    "elevation_ft": 1203.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-PA",
+    "municipality": "Pittsburgh",
+    "gps_code": "KPIT",
+    "iata_code": "PIT",
+    "local_code": "PIT",
+    "latitude": 40.49150085,
+    "longitude": -80.23290253,
+    "filetypes": [
+      {
+        "extension": "PIT",
+        "description": "Compressed Mac file archive created by PACKIT",
+        "used_by": "unpackit.zoo"
+      },
+      {
+        "extension": "PIT",
+        "description": "Partition Information Table for Samsung's smartphone with Android",
+        "used_by": "Odin3"
+      }
+    ]
+  },
+  {
+    "ident": "KPLR",
+    "type": "small_airport",
+    "name": "St Clair County Airport",
+    "elevation_ft": 485.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AL",
+    "municipality": "Pell City",
+    "gps_code": "KPLR",
+    "iata_code": "PLR",
+    "local_code": "PLR",
+    "latitude": 33.558799743652,
+    "longitude": -86.249099731445,
+    "filetypes": [
+      {
+        "extension": "PLR",
+        "description": "Terraria player/character file",
+        "used_by": "Terraria"
+      }
+    ]
+  },
+  {
+    "ident": "KPUB",
+    "type": "medium_airport",
+    "name": "Pueblo Memorial Airport",
+    "elevation_ft": 4726.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-CO",
+    "municipality": "Pueblo",
+    "gps_code": "KPUB",
+    "iata_code": "PUB",
+    "local_code": "PUB",
+    "latitude": 38.289101,
+    "longitude": -104.497002,
+    "filetypes": [
+      {
+        "extension": "PUB",
+        "description": "Public key ring file",
+        "used_by": "Pretty Good Privacy RSA System"
+      }
+    ]
+  },
+  {
+    "ident": "KRAL",
+    "type": "medium_airport",
+    "name": "Riverside Municipal Airport",
+    "elevation_ft": 819.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-CA",
+    "municipality": "Riverside",
+    "gps_code": "KRAL",
+    "iata_code": "RAL",
+    "local_code": "RAL",
+    "latitude": 33.9519,
+    "longitude": -117.445,
+    "filetypes": [
+      {
+        "extension": "RAL",
+        "description": "Remote Access Language file",
+        "used_by": "Remote Access"
+      }
+    ]
+  },
+  {
+    "ident": "KRAP",
+    "type": "medium_airport",
+    "name": "Rapid City Regional Airport",
+    "elevation_ft": 3204.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-SD",
+    "municipality": "Rapid City",
+    "gps_code": "KRAP",
+    "iata_code": "RAP",
+    "local_code": "RAP",
+    "latitude": 44.0452995300293,
+    "longitude": -103.05699920654295,
+    "filetypes": [
+      { "extension": "RAP", "description": "Flowchart", "used_by": "RAPTOR" }
+    ]
+  },
+  {
+    "ident": "KRST",
+    "type": "medium_airport",
+    "name": "Rochester International Airport",
+    "elevation_ft": 1317.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MN",
+    "municipality": "Rochester",
+    "gps_code": "KRST",
+    "iata_code": "RST",
+    "local_code": "RST",
+    "latitude": 43.908298,
+    "longitude": -92.5,
+    "filetypes": [
+      {
+        "extension": "RST",
+        "description": "reStructuredText",
+        "used_by": "Docutils"
+      }
+    ]
+  },
+  {
+    "ident": "KSAT",
+    "type": "large_airport",
+    "name": "San Antonio International Airport",
+    "elevation_ft": 809.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-TX",
+    "municipality": "San Antonio",
+    "gps_code": "KSAT",
+    "iata_code": "SAT",
+    "local_code": "SAT",
+    "latitude": 29.533701,
+    "longitude": -98.469803,
+    "filetypes": [
+      { "extension": "SAT", "description": "ACIS ACIS .sat", "used_by": null }
+    ]
+  },
+  {
+    "ident": "KSAV",
+    "type": "large_airport",
+    "name": "Savannah Hilton Head International Airport",
+    "elevation_ft": 50.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-GA",
+    "municipality": "Savannah",
+    "gps_code": "KSAV",
+    "iata_code": "SAV",
+    "local_code": "SAV",
+    "latitude": 32.12760162,
+    "longitude": -81.20210266,
+    "filetypes": [
+      {
+        "extension": "SAV",
+        "description": "SPSS tabular data (binary)",
+        "used_by": "PSPP, SPSS"
+      }
+    ]
+  },
+  {
+    "ident": "KSBX",
+    "type": "small_airport",
+    "name": "Shelby Airport",
+    "elevation_ft": 3443.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MT",
+    "municipality": "Shelby",
+    "gps_code": "KSBX",
+    "iata_code": "SBX",
+    "local_code": "SBX",
+    "latitude": 48.5406990051,
+    "longitude": -111.871002197,
+    "filetypes": [
+      {
+        "extension": "SBX",
+        "description": "For experimental extensions to Scratch",
+        "used_by": "Used by scratchX (scratchx.org)"
+      }
+    ]
+  },
+  {
+    "ident": "KSDF",
+    "type": "large_airport",
+    "name": "Louisville Muhammad Ali International Airport",
+    "elevation_ft": 501.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-KY",
+    "municipality": "Louisville",
+    "gps_code": "KSDF",
+    "iata_code": "SDF",
+    "local_code": "SDF",
+    "latitude": 38.1744,
+    "longitude": -85.736,
+    "filetypes": [
+      {
+        "extension": "SDF",
+        "description": "SQL Server Compact database file",
+        "used_by": "Microsoft SQL Server Compact"
+      }
+    ]
+  },
+  {
+    "ident": "KSFB",
+    "type": "large_airport",
+    "name": "Orlando Sanford International Airport",
+    "elevation_ft": 55.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "Orlando",
+    "gps_code": "KSFB",
+    "iata_code": "SFB",
+    "local_code": "SFB",
+    "latitude": 28.7775993347168,
+    "longitude": -81.23750305175781,
+    "filetypes": [
+      {
+        "extension": "SFB",
+        "description": "Configuration file",
+        "used_by": "emacs"
+      }
+    ]
+  },
+  {
+    "ident": "KSGJ",
+    "type": "medium_airport",
+    "name": "Northeast Florida Regional Airport",
+    "elevation_ft": 10.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "St Augustine",
+    "gps_code": "KSGJ",
+    "iata_code": "UST",
+    "local_code": "SGJ",
+    "latitude": 29.9592,
+    "longitude": -81.339798,
+    "filetypes": [
+      {
+        "extension": "UST",
+        "description": "Vocal synthesis track data",
+        "used_by": "UTAU"
+      }
+    ]
+  },
+  {
+    "ident": "KSPF",
+    "type": "small_airport",
+    "name": "Black Hills Airport-Clyde Ice Field",
+    "elevation_ft": 3931.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-SD",
+    "municipality": "Spearfish",
+    "gps_code": "KSPF",
+    "iata_code": "SPF",
+    "local_code": "SPF",
+    "latitude": 44.48030090332,
+    "longitude": -103.78299713135,
+    "filetypes": [
+      {
+        "extension": "SPF",
+        "description": "data",
+        "used_by": "SQR Portable Format"
+      }
+    ]
+  },
+  {
+    "ident": "KSPS",
+    "type": "medium_airport",
+    "name": "Sheppard Air Force Base / Wichita Falls Municipal Airport",
+    "elevation_ft": 1019.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-TX",
+    "municipality": "Wichita Falls",
+    "gps_code": "KSPS",
+    "iata_code": "SPS",
+    "local_code": "SPS",
+    "latitude": 33.9888,
+    "longitude": -98.491898,
+    "filetypes": [
+      {
+        "extension": "SPS",
+        "description": "SPSS program file (text)",
+        "used_by": "PSPP, SPSS"
+      }
+    ]
+  },
+  {
+    "ident": "KSQL",
+    "type": "small_airport",
+    "name": "San Carlos Airport",
+    "elevation_ft": 5.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-CA",
+    "municipality": "San Carlos",
+    "gps_code": "KSQL",
+    "iata_code": "SQL",
+    "local_code": "SQL",
+    "latitude": 37.511901855469,
+    "longitude": -122.25,
+    "filetypes": [
+      {
+        "extension": "SQL",
+        "description": "Structured Query Language",
+        "used_by": "Any SQL database"
+      }
+    ]
+  },
+  {
+    "ident": "KSSC",
+    "type": "medium_airport",
+    "name": "Shaw Air Force Base",
+    "elevation_ft": 241.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-SC",
+    "municipality": "Sumter",
+    "gps_code": "KSSC",
+    "iata_code": "SSC",
+    "local_code": "SSC",
+    "latitude": 33.972698,
+    "longitude": -80.470596,
+    "filetypes": [
+      {
+        "extension": "SSC",
+        "description": "Celestia Solar System Catalog file",
+        "used_by": "Celestia"
+      },
+      {
+        "extension": "SSC",
+        "description": "Stellarium Script",
+        "used_by": "Stellarium"
+      }
+    ]
+  },
+  {
+    "ident": "KSTC",
+    "type": "medium_airport",
+    "name": "Saint Cloud Regional Airport",
+    "elevation_ft": 1031.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MN",
+    "municipality": "Saint Cloud",
+    "gps_code": "KSTC",
+    "iata_code": "STC",
+    "local_code": "STC",
+    "latitude": 45.5466,
+    "longitude": -94.059898,
+    "filetypes": [
+      {
+        "extension": "STC",
+        "description": "Celestia Star Catalog file",
+        "used_by": "Celestia"
+      },
+      {
+        "extension": "STC",
+        "description": "OpenOffice.org XML spreadsheet template",
+        "used_by": "OpenOffice.org Calc"
+      }
+    ]
+  },
+  {
+    "ident": "KSTK",
+    "type": "small_airport",
+    "name": "Sterling Municipal Airport",
+    "elevation_ft": 4040.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-CO",
+    "municipality": "Sterling",
+    "gps_code": "KSTK",
+    "iata_code": "STK",
+    "local_code": "STK",
+    "latitude": 40.613497,
+    "longitude": -103.263833,
+    "filetypes": [
+      {
+        "extension": "STK",
+        "description": "Stockholm multiple sequence alignment",
+        "used_by": "Bioinformatics tools eg HMMER, Xrate, Jalview"
+      }
+    ]
+  },
+  {
+    "ident": "KSTL",
+    "type": "large_airport",
+    "name": "St Louis Lambert International Airport",
+    "elevation_ft": 618.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MO",
+    "municipality": "St Louis",
+    "gps_code": "KSTL",
+    "iata_code": "STL",
+    "local_code": "STL",
+    "latitude": 38.748697,
+    "longitude": -90.370003,
+    "filetypes": [
+      {
+        "extension": "STL",
+        "description": "surface geometry of a three-dimensional object",
+        "used_by": "software by 3D Systems"
+      }
+    ]
+  },
+  {
+    "ident": "KSTP",
+    "type": "medium_airport",
+    "name": "St Paul Downtown Holman Field",
+    "elevation_ft": 705.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MN",
+    "municipality": "St Paul",
+    "gps_code": "KSTP",
+    "iata_code": "STP",
+    "local_code": "STP",
+    "latitude": 44.93450164794922,
+    "longitude": -93.05999755859376,
+    "filetypes": [
+      {
+        "extension": "STP",
+        "description": "Standard for the Exchange of Product Data",
+        "used_by": "universal format for CAD exchange per ISO 10303"
+      }
+    ]
+  },
+  {
+    "ident": "KSVC",
+    "type": "small_airport",
+    "name": "Grant County Airport",
+    "elevation_ft": 5446.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NM",
+    "municipality": "Silver City",
+    "gps_code": "KSVC",
+    "iata_code": "SVC",
+    "local_code": "SVC",
+    "latitude": 32.632293,
+    "longitude": -108.154263,
+    "filetypes": [
+      {
+        "extension": "SVC",
+        "description": "Represents the ServiceHost instance hosted by Internet Information Services",
+        "used_by": "Windows Communication Foundation"
+      }
+    ]
+  },
+  {
+    "ident": "KSWF",
+    "type": "medium_airport",
+    "name": "New York Stewart International Airport",
+    "elevation_ft": 491.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NY",
+    "municipality": "Newburgh",
+    "gps_code": "KSWF",
+    "iata_code": "SWF",
+    "local_code": "SWF",
+    "latitude": 41.504101,
+    "longitude": -74.104797,
+    "filetypes": [
+      {
+        "extension": "SWF",
+        "description": "Shockwave Flash",
+        "used_by": "Macromedia, Adobe Flash Player"
+      }
+    ]
+  },
+  {
+    "ident": "KTHM",
+    "type": "small_airport",
+    "name": "Thompson Falls Airport",
+    "elevation_ft": 2467.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-MT",
+    "municipality": "Thompson Falls",
+    "gps_code": "KTHM",
+    "iata_code": "THM",
+    "local_code": "THM",
+    "latitude": 47.573501586914,
+    "longitude": -115.28099822998,
+    "filetypes": [
+      {
+        "extension": "THM",
+        "description": "Thumbnail File",
+        "used_by": "GoPro, Android, some versions of iOS (Accessible via computer or Jailbreak, on User/Media/PhotoData/Metadata/DCIM)"
+      }
+    ]
+  },
+  {
+    "ident": "KTNX",
+    "type": "small_airport",
+    "name": "Tonopah Test Range Airport",
+    "elevation_ft": 5549.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-NV",
+    "municipality": "Tonopah",
+    "gps_code": "KTNX",
+    "iata_code": "XSD",
+    "local_code": "TNX",
+    "latitude": 37.7988014221,
+    "longitude": -116.78099823,
+    "filetypes": [
+      {
+        "extension": "XSD",
+        "description": "XML schema description",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KUOS",
+    "type": "small_airport",
+    "name": "Franklin County Airport",
+    "elevation_ft": 1953.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-TN",
+    "municipality": "Sewanee",
+    "gps_code": "KUOS",
+    "iata_code": "UOS",
+    "local_code": "UOS",
+    "latitude": 35.205101013184,
+    "longitude": -85.898101806641,
+    "filetypes": [
+      {
+        "extension": "UOS",
+        "description": "Uniform Office Format spreadsheet",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "KVDI",
+    "type": "small_airport",
+    "name": "Vidalia Regional Airport",
+    "elevation_ft": 275.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-GA",
+    "municipality": "Vidalia",
+    "gps_code": "KVDI",
+    "iata_code": "VDI",
+    "local_code": "VDI",
+    "latitude": 32.192699432373,
+    "longitude": -82.371200561523,
+    "filetypes": [
+      {
+        "extension": "VDI",
+        "description": "Virtual Disk Image",
+        "used_by": "VirtualBox"
+      }
+    ]
+  },
+  {
+    "ident": "KVRB",
+    "type": "medium_airport",
+    "name": "Vero Beach Regional Airport",
+    "elevation_ft": 24.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-FL",
+    "municipality": "Vero Beach",
+    "gps_code": "KVRB",
+    "iata_code": "VRB",
+    "local_code": "VRB",
+    "latitude": 27.6556,
+    "longitude": -80.417901,
+    "filetypes": [
+      {
+        "extension": "VRB",
+        "description": "LateX Beamer file containing verbatim commands",
+        "used_by": "LaTeX Beamer"
+      },
+      {
+        "extension": "VRB",
+        "description": "Veeam reversed incremental backup archive",
+        "used_by": "Veeam software"
+      }
+    ]
+  },
+  {
+    "ident": "LEBA",
+    "type": "medium_airport",
+    "name": "C\u00f3rdoba Airport",
+    "elevation_ft": 297.0,
+    "continent": "EU",
+    "iso_country": "ES",
+    "iso_region": "ES-AN",
+    "municipality": "C\u00f3rdoba",
+    "gps_code": "LEBA",
+    "iata_code": "ODB",
+    "local_code": null,
+    "latitude": 37.841999,
+    "longitude": -4.84888,
+    "filetypes": [
+      {
+        "extension": "ODB",
+        "description": "Database front end document",
+        "used_by": "OpenDocument, LibreOffice"
+      }
+    ]
+  },
+  {
+    "ident": "LFHO",
+    "type": "medium_airport",
+    "name": "Aubenas-Ard\u00e8che M\u00e9ridional Airport",
+    "elevation_ft": 923.0,
+    "continent": "EU",
+    "iso_country": "FR",
+    "iso_region": "FR-ARA",
+    "municipality": "Aubenas/Ard\u00e8che M\u00e9ridional",
+    "gps_code": "LFHO",
+    "iata_code": "OBS",
+    "local_code": null,
+    "latitude": 44.544203,
+    "longitude": 4.372192,
+    "filetypes": [
+      { "extension": "OBS", "description": "Script", "used_by": "ObjectScript" }
+    ]
+  },
+  {
+    "ident": "LFKO",
+    "type": "small_airport",
+    "name": "Propriano Airport",
+    "elevation_ft": 13.0,
+    "continent": "EU",
+    "iso_country": "FR",
+    "iso_region": "FR-COR",
+    "municipality": "Propriano",
+    "gps_code": "LFKO",
+    "iata_code": "PRP",
+    "local_code": null,
+    "latitude": 41.66059875488281,
+    "longitude": 8.889749526977539,
+    "filetypes": [
+      {
+        "extension": "PRP",
+        "description": "Plasma Registry Page",
+        "used_by": "Plasma (engine)"
+      }
+    ]
+  },
+  {
+    "ident": "LFRC",
+    "type": "medium_airport",
+    "name": "Cherbourg-Maupertus Airport",
+    "elevation_ft": 459.0,
+    "continent": "EU",
+    "iso_country": "FR",
+    "iso_region": "FR-NOR",
+    "municipality": "Cherbourg/Maupertus",
+    "gps_code": "LFRC",
+    "iata_code": "CER",
+    "local_code": null,
+    "latitude": 49.65010070800781,
+    "longitude": -1.4702800512313845,
+    "filetypes": [
+      {
+        "extension": "CER",
+        "description": "Security certificate",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "LFTW",
+    "type": "medium_airport",
+    "name": "N\u00eemes-Arles-Camargue Airport",
+    "elevation_ft": 309.0,
+    "continent": "EU",
+    "iso_country": "FR",
+    "iso_region": "FR-OCC",
+    "municipality": "N\u00eemes/Garons",
+    "gps_code": "LFTW",
+    "iata_code": "FNI",
+    "local_code": null,
+    "latitude": 43.75740051269531,
+    "longitude": 4.4163498878479,
+    "filetypes": [
+      {
+        "extension": "FNI",
+        "description": "FileNet Native Document",
+        "used_by": "FileNet"
+      }
+    ]
+  },
+  {
+    "ident": "LGPA",
+    "type": "small_airport",
+    "name": "Paros National Airport",
+    "elevation_ft": 131.0,
+    "continent": "EU",
+    "iso_country": "GR",
+    "iso_region": "GR-L",
+    "municipality": "Paros",
+    "gps_code": "LGPA",
+    "iata_code": "PAS",
+    "local_code": null,
+    "latitude": 37.020495,
+    "longitude": 25.113195,
+    "filetypes": [
+      {
+        "extension": "PAS",
+        "description": "Pascal language source",
+        "used_by": "Borland Pascal"
+      }
+    ]
+  },
+  {
+    "ident": "LHDC",
+    "type": "medium_airport",
+    "name": "Debrecen International Airport",
+    "elevation_ft": 359.0,
+    "continent": "EU",
+    "iso_country": "HU",
+    "iso_region": "HU-HB",
+    "municipality": "Debrecen",
+    "gps_code": "LHDC",
+    "iata_code": "DEB",
+    "local_code": null,
+    "latitude": 47.488899,
+    "longitude": 21.615299,
+    "filetypes": [
+      {
+        "extension": "DEB",
+        "description": "deb software package",
+        "used_by": "Debian Linux and derivatives"
+      }
+    ]
+  },
+  {
+    "ident": "LIBG",
+    "type": "medium_airport",
+    "name": "Taranto-Grottaglie \"Marcello Arlotta\" Airport",
+    "elevation_ft": 215.0,
+    "continent": "EU",
+    "iso_country": "IT",
+    "iso_region": "IT-75",
+    "municipality": "Grottaglie",
+    "gps_code": "LIBG",
+    "iata_code": "TAR",
+    "local_code": "TA02",
+    "latitude": 40.517502,
+    "longitude": 17.4032,
+    "filetypes": [
+      {
+        "extension": "TAR",
+        "description": "tar archive",
+        "used_by": "tar and other file archivers with support"
+      }
+    ]
+  },
+  {
+    "ident": "LIPO",
+    "type": "medium_airport",
+    "name": "Brescia Airport",
+    "elevation_ft": 355.0,
+    "continent": "EU",
+    "iso_country": "IT",
+    "iso_region": "IT-25",
+    "municipality": "Montichiari (BS)",
+    "gps_code": "LIPO",
+    "iata_code": "VBS",
+    "local_code": "BS04",
+    "latitude": 45.428902,
+    "longitude": 10.3306,
+    "filetypes": [
+      {
+        "extension": "VBS",
+        "description": "VBScript script file",
+        "used_by": "VBScript"
+      }
+    ]
+  },
+  {
+    "ident": "LIRA",
+    "type": "medium_airport",
+    "name": "Ciampino\u2013G. B. Pastine International Airport",
+    "elevation_ft": 427.0,
+    "continent": "EU",
+    "iso_country": "IT",
+    "iso_region": "IT-62",
+    "municipality": "Rome",
+    "gps_code": "LIRA",
+    "iata_code": "CIA",
+    "local_code": "RM12",
+    "latitude": 41.7994,
+    "longitude": 12.5949,
+    "filetypes": [
+      {
+        "extension": "CIA",
+        "description": "Decrypted Nintendo 3DS ROM cartridge",
+        "used_by": "Nintendo 3DS"
+      }
+    ]
+  },
+  {
+    "ident": "LLOV",
+    "type": "small_airport",
+    "name": "Ovda Airport",
+    "elevation_ft": 1492.0,
+    "continent": "AS",
+    "iso_country": "IL",
+    "iso_region": "IL-D",
+    "municipality": "Eilat",
+    "gps_code": "LLOV",
+    "iata_code": "VDA",
+    "local_code": null,
+    "latitude": 29.9403,
+    "longitude": 34.935799,
+    "filetypes": [
+      {
+        "extension": "VDA",
+        "description": "Targa bitmap graphics",
+        "used_by": "many raster graphics editors"
+      }
+    ]
+  },
+  {
+    "ident": "LPLA",
+    "type": "medium_airport",
+    "name": "Lajes Airport",
+    "elevation_ft": 180.0,
+    "continent": "EU",
+    "iso_country": "PT",
+    "iso_region": "PT-20",
+    "municipality": "Praia da Vit\u00f3ria",
+    "gps_code": "LPLA",
+    "iata_code": "TER",
+    "local_code": null,
+    "latitude": 38.761799,
+    "longitude": -27.090799,
+    "filetypes": [
+      {
+        "extension": "TER",
+        "description": "Terragen heightmap file",
+        "used_by": "Terragen scenery generator"
+      }
+    ]
+  },
+  {
+    "ident": "LROP",
+    "type": "large_airport",
+    "name": "Henri Coand\u0103 International Airport",
+    "elevation_ft": 314.0,
+    "continent": "EU",
+    "iso_country": "RO",
+    "iso_region": "RO-IF",
+    "municipality": "Bucharest",
+    "gps_code": "LROP",
+    "iata_code": "OTP",
+    "local_code": null,
+    "latitude": 44.571111,
+    "longitude": 26.085,
+    "filetypes": [
+      {
+        "extension": "OTP",
+        "description": "Presentations template",
+        "used_by": "OpenDocument, LibreOffice, Collabora Online"
+      }
+    ]
+  },
+  {
+    "ident": "LSME",
+    "type": "medium_airport",
+    "name": "Emmen Air Base",
+    "elevation_ft": 1400.0,
+    "continent": "EU",
+    "iso_country": "CH",
+    "iso_region": "CH-LU",
+    "municipality": null,
+    "gps_code": "LSME",
+    "iata_code": "EML",
+    "local_code": null,
+    "latitude": 47.092444,
+    "longitude": 8.305184,
+    "filetypes": [
+      {
+        "extension": "EML",
+        "description": "Email conforming to RFC 5322; Stationery Template",
+        "used_by": "Email clients;Outlook Express"
+      }
+    ]
+  },
+  {
+    "ident": "LYNI",
+    "type": "medium_airport",
+    "name": "Nis Airport",
+    "elevation_ft": 648.0,
+    "continent": "EU",
+    "iso_country": "RS",
+    "iso_region": "RS-20",
+    "municipality": "Nis",
+    "gps_code": "LYNI",
+    "iata_code": "INI",
+    "local_code": null,
+    "latitude": 43.337299,
+    "longitude": 21.853701,
+    "filetypes": [
+      {
+        "extension": "INI",
+        "description": "Configuration file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "MBGT",
+    "type": "medium_airport",
+    "name": "JAGS McCartney International Airport",
+    "elevation_ft": 13.0,
+    "continent": "NA",
+    "iso_country": "TC",
+    "iso_region": "TC-GT",
+    "municipality": "Cockburn Town",
+    "gps_code": "MBGT",
+    "iata_code": "GDT",
+    "local_code": null,
+    "latitude": 21.4445,
+    "longitude": -71.142303,
+    "filetypes": [
+      {
+        "extension": "GDT",
+        "description": "Ger\u00e4tedatentransfer, an xDT application",
+        "used_by": "Healthcare providers in Germany"
+      }
+    ]
+  },
+  {
+    "ident": "MBMC",
+    "type": "small_airport",
+    "name": "Middle Caicos Airport",
+    "elevation_ft": 9.0,
+    "continent": "NA",
+    "iso_country": "TC",
+    "iso_region": "TC-MC",
+    "municipality": "Middle Caicos",
+    "gps_code": "MBMC",
+    "iata_code": "MDS",
+    "local_code": null,
+    "latitude": 21.82602,
+    "longitude": -71.8025,
+    "filetypes": [
+      {
+        "extension": "MDS",
+        "description": "Midi Session",
+        "used_by": "Sound Imp."
+      }
+    ]
+  },
+  {
+    "ident": "MBPV",
+    "type": "large_airport",
+    "name": "Providenciales International Airport",
+    "elevation_ft": 15.0,
+    "continent": "NA",
+    "iso_country": "TC",
+    "iso_region": "TC-PR",
+    "municipality": "Providenciales",
+    "gps_code": "MBPV",
+    "iata_code": "PLS",
+    "local_code": null,
+    "latitude": 21.773697,
+    "longitude": -72.268321,
+    "filetypes": [
+      {
+        "extension": "PLS",
+        "description": "Multimedia Playlist, primarily for streaming",
+        "used_by": "Shoutcast, IceCast, others"
+      }
+    ]
+  },
+  {
+    "ident": "MDST",
+    "type": "medium_airport",
+    "name": "Cibao International Airport",
+    "elevation_ft": 565.0,
+    "continent": "NA",
+    "iso_country": "DO",
+    "iso_region": "DO-25",
+    "municipality": "Santiago",
+    "gps_code": "MDST",
+    "iata_code": "STI",
+    "local_code": null,
+    "latitude": 19.406099319458008,
+    "longitude": -70.60469818115234,
+    "filetypes": [
+      {
+        "extension": "STI",
+        "description": "OpenOffice.org XML presentation template",
+        "used_by": "OpenOffice.org Impress"
+      }
+    ]
+  },
+  {
+    "ident": "MHSC",
+    "type": "medium_airport",
+    "name": "Palmerola International Airport / Jos\u00e9 Enrique Soto Cano Air Base",
+    "elevation_ft": 2061.0,
+    "continent": "NA",
+    "iso_country": "HN",
+    "iso_region": "HN-CM",
+    "municipality": "Palmerola",
+    "gps_code": "MHPR",
+    "iata_code": "XPL",
+    "local_code": null,
+    "latitude": 14.3824,
+    "longitude": -87.621201,
+    "filetypes": [
+      {
+        "extension": "XPL",
+        "description": "X-Plane system file",
+        "used_by": "Laminar Research"
+      }
+    ]
+  },
+  {
+    "ident": "MMMD",
+    "type": "large_airport",
+    "name": "Aeropuerto Internacional Manuel Crescencio Rej\u00f3n",
+    "elevation_ft": 38.0,
+    "continent": "NA",
+    "iso_country": "MX",
+    "iso_region": "MX-YUC",
+    "municipality": "Ciudad de M\u00e9rida",
+    "gps_code": "MMMD",
+    "iata_code": "MID",
+    "local_code": null,
+    "latitude": 20.933384,
+    "longitude": -89.662621,
+    "filetypes": [
+      {
+        "extension": "MID",
+        "description": "Standard MIDI file",
+        "used_by": "music synthetizers, Winamp"
+      }
+    ]
+  },
+  {
+    "ident": "MMMX",
+    "type": "large_airport",
+    "name": "Aeropuerto Internacional Lic. Benito Ju\u00e1rez",
+    "elevation_ft": 7316.0,
+    "continent": "NA",
+    "iso_country": "MX",
+    "iso_region": "MX-DIF",
+    "municipality": "Ciudad de M\u00e9xico",
+    "gps_code": "MMMX",
+    "iata_code": "MEX",
+    "local_code": "ME1",
+    "latitude": 19.435433,
+    "longitude": -99.082432,
+    "filetypes": [
+      {
+        "extension": "MEX",
+        "description": "MEX file (executable command)",
+        "used_by": "Matlab"
+      }
+    ]
+  },
+  {
+    "ident": "MMPG",
+    "type": "medium_airport",
+    "name": "Piedras Negras International Airport",
+    "elevation_ft": 901.0,
+    "continent": "NA",
+    "iso_country": "MX",
+    "iso_region": "MX-COA",
+    "municipality": "Piedras Negras",
+    "gps_code": "MMPG",
+    "iata_code": "PDS",
+    "local_code": "PNG",
+    "latitude": 28.627873,
+    "longitude": -100.53524,
+    "filetypes": [
+      {
+        "extension": "PDS",
+        "description": "PALASM Design Description",
+        "used_by": null
+      },
+      {
+        "extension": "PDS",
+        "description": "Planetary Data System Format",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "MMTG",
+    "type": "medium_airport",
+    "name": "Angel Albino Corzo International Airport",
+    "elevation_ft": 1499.0,
+    "continent": "NA",
+    "iso_country": "MX",
+    "iso_region": "MX-CHP",
+    "municipality": "Tuxtla Guti\u00e9rrez",
+    "gps_code": "MMTG",
+    "iata_code": "TGZ",
+    "local_code": "TGZ",
+    "latitude": 16.5636005402,
+    "longitude": -93.0224990845,
+    "filetypes": [
+      {
+        "extension": "TGZ",
+        "description": "tar archive compressed with gzip",
+        "used_by": "tar and other file archivers with support"
+      }
+    ]
+  },
+  {
+    "ident": "MPG",
+    "type": "small_airport",
+    "name": "Makini Airport",
+    "elevation_ft": 2530.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-MPL",
+    "municipality": "Makini",
+    "gps_code": "AYMJ",
+    "iata_code": "MPG",
+    "local_code": "MAK",
+    "latitude": -6.532222222220001,
+    "longitude": 147.651166667,
+    "filetypes": [
+      { "extension": "MPG", "description": "see MPEG", "used_by": null }
+    ]
+  },
+  {
+    "ident": "MPPD",
+    "type": "small_airport",
+    "name": "Capt. J. Montenegro Airport",
+    "elevation_ft": 148.0,
+    "continent": "NA",
+    "iso_country": "PA",
+    "iso_region": "PA-7",
+    "municipality": "Pedas\u00ed",
+    "gps_code": "MPPD",
+    "iata_code": "PDM",
+    "local_code": null,
+    "latitude": 7.534801,
+    "longitude": -80.043347,
+    "filetypes": [
+      { "extension": "PDM", "description": "Program", "used_by": "Deskmate" },
+      {
+        "extension": "PDM",
+        "description": "PowerDesigner's physical data model (relational model) file format",
+        "used_by": "PowerDesigner"
+      },
+      {
+        "extension": "PDM",
+        "description": "Visual Basic (VB) Project Information File",
+        "used_by": "Visual Basic"
+      }
+    ]
+  },
+  {
+    "ident": "MTPX",
+    "type": "medium_airport",
+    "name": "Port-de-Paix Airport",
+    "elevation_ft": 9.0,
+    "continent": "NA",
+    "iso_country": "HT",
+    "iso_region": "HT-NO",
+    "municipality": "Port-de-Paix",
+    "gps_code": "MTPX",
+    "iata_code": "PAX",
+    "local_code": null,
+    "latitude": 19.934045,
+    "longitude": -72.84801,
+    "filetypes": [
+      {
+        "extension": "PAX",
+        "description": "pax archive file",
+        "used_by": "pax, GNU Tar"
+      }
+    ]
+  },
+  {
+    "ident": "MUCA",
+    "type": "medium_airport",
+    "name": "Maximo Gomez Airport",
+    "elevation_ft": 335.0,
+    "continent": "NA",
+    "iso_country": "CU",
+    "iso_region": "CU-08",
+    "municipality": "Ciego de Avila",
+    "gps_code": "MUCA",
+    "iata_code": "AVI",
+    "local_code": null,
+    "latitude": 22.027099609375,
+    "longitude": -78.78959655761719,
+    "filetypes": [
+      {
+        "extension": "AVI",
+        "description": "Audio Video Interleave",
+        "used_by": "Video for Windows"
+      }
+    ]
+  },
+  {
+    "ident": "MY-SPT",
+    "type": "small_airport",
+    "name": "Sipitang Airport",
+    "elevation_ft": 44.0,
+    "continent": "AS",
+    "iso_country": "MY",
+    "iso_region": "MY-12",
+    "municipality": "Sipitang",
+    "gps_code": null,
+    "iata_code": "SPT",
+    "local_code": null,
+    "latitude": 5.083333015441895,
+    "longitude": 115.5500030517578,
+    "filetypes": [
+      {
+        "extension": "SPT",
+        "description": "SPITBOL source code file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "NCRG",
+    "type": "medium_airport",
+    "name": "Rarotonga International Airport",
+    "elevation_ft": 19.0,
+    "continent": "OC",
+    "iso_country": "CK",
+    "iso_region": "CK-U-A",
+    "municipality": "Avarua",
+    "gps_code": "NCRG",
+    "iata_code": "RAR",
+    "local_code": null,
+    "latitude": -21.2027,
+    "longitude": -159.806,
+    "filetypes": [
+      { "extension": "RAR", "description": "Archive", "used_by": "RAR" }
+    ]
+  },
+  {
+    "ident": "NFFO",
+    "type": "small_airport",
+    "name": "Malolo Lailai Island Airport",
+    "elevation_ft": 10.0,
+    "continent": "OC",
+    "iso_country": "FJ",
+    "iso_region": "FJ-W",
+    "municipality": "Malolo Lailai Island",
+    "gps_code": "NFFO",
+    "iata_code": "PTF",
+    "local_code": null,
+    "latitude": -17.778448,
+    "longitude": 177.196996,
+    "filetypes": [
+      {
+        "extension": "PTF",
+        "description": "PlayStation Portable Theme file",
+        "used_by": "PSP Theme settings menu"
+      },
+      {
+        "extension": "PTF",
+        "description": "Pro Tools Session File",
+        "used_by": "Digidesign/Avid Pro Tools version 7 up to version 9"
+      }
+    ]
+  },
+  {
+    "ident": "NFTO",
+    "type": "small_airport",
+    "name": "Mata'aho Airport",
+    "elevation_ft": 160.0,
+    "continent": "OC",
+    "iso_country": "TO",
+    "iso_region": "TO-03",
+    "municipality": "Angaha, Niuafo'ou Island",
+    "gps_code": "NFTO",
+    "iata_code": "NFO",
+    "local_code": null,
+    "latitude": -15.5708,
+    "longitude": -175.632996,
+    "filetypes": [
+      {
+        "extension": "NFO",
+        "description": "iNFO for accompanying media files",
+        "used_by": "Kodi, Plex"
+      }
+    ]
+  },
+  {
+    "ident": "NFVL",
+    "type": "small_airport",
+    "name": "Vatulele Airport",
+    "elevation_ft": 36.0,
+    "continent": "OC",
+    "iso_country": "FJ",
+    "iso_region": "FJ-W",
+    "municipality": "Vatulele",
+    "gps_code": "NFVL",
+    "iata_code": "VTF",
+    "local_code": null,
+    "latitude": -18.512500762939453,
+    "longitude": 177.63900756835938,
+    "filetypes": [
+      {
+        "extension": "VTF",
+        "description": "Valve Texture Format file",
+        "used_by": "Valve Corporation"
+      }
+    ]
+  },
+  {
+    "ident": "NTGD",
+    "type": "small_airport",
+    "name": "Apataki Airport",
+    "elevation_ft": 8.0,
+    "continent": "OC",
+    "iso_country": "PF",
+    "iso_region": "PF-U-A",
+    "municipality": "Apataki",
+    "gps_code": "NTGD",
+    "iata_code": "APK",
+    "local_code": null,
+    "latitude": -15.5736,
+    "longitude": -146.414993,
+    "filetypes": [
+      {
+        "extension": "APK",
+        "description": "Android application package",
+        "used_by": "Android"
+      },
+      {
+        "extension": "APK",
+        "description": "Alpine Linux Package",
+        "used_by": "Alpine Linux and derivatives"
+      }
+    ]
+  },
+  {
+    "ident": "OABN",
+    "type": "small_airport",
+    "name": "Bamyan Airport",
+    "elevation_ft": 8367.0,
+    "continent": "AS",
+    "iso_country": "AF",
+    "iso_region": "AF-BAM",
+    "municipality": "Bamyan",
+    "gps_code": "OABN",
+    "iata_code": "BIN",
+    "local_code": null,
+    "latitude": 34.808916,
+    "longitude": 67.816629,
+    "filetypes": [
+      {
+        "extension": "BIN",
+        "description": "binary file",
+        "used_by": "Every OS"
+      }
+    ]
+  },
+  {
+    "ident": "OEAH",
+    "type": "medium_airport",
+    "name": "Al-Ahsa International Airport",
+    "elevation_ft": 588.0,
+    "continent": "AS",
+    "iso_country": "SA",
+    "iso_region": "SA-04",
+    "municipality": "Hofuf",
+    "gps_code": "OEAH",
+    "iata_code": "HOF",
+    "local_code": null,
+    "latitude": 25.285299,
+    "longitude": 49.485199,
+    "filetypes": [
+      {
+        "extension": "HOF",
+        "description": "Basic Configuration file",
+        "used_by": "OMSI The Bus Simulator"
+      }
+    ]
+  },
+  {
+    "ident": "OETF",
+    "type": "medium_airport",
+    "name": "Ta\u2019if Regional Airport",
+    "elevation_ft": 4848.0,
+    "continent": "AS",
+    "iso_country": "SA",
+    "iso_region": "SA-02",
+    "municipality": "Ta\u2019if",
+    "gps_code": "OETF",
+    "iata_code": "TIF",
+    "local_code": null,
+    "latitude": 21.483001,
+    "longitude": 40.543442,
+    "filetypes": [
+      { "extension": "TIF", "description": "See TIFF", "used_by": null }
+    ]
+  },
+  {
+    "ident": "OIBS",
+    "type": "medium_airport",
+    "name": "Siri Airport",
+    "elevation_ft": 43.0,
+    "continent": "AS",
+    "iso_country": "IR",
+    "iso_region": "IR-22",
+    "municipality": "Siri",
+    "gps_code": "OIBS",
+    "iata_code": "SXI",
+    "local_code": null,
+    "latitude": 25.908899,
+    "longitude": 54.539398,
+    "filetypes": [
+      {
+        "extension": "SXI",
+        "description": "OpenOffice.org XML presentation",
+        "used_by": "OpenOffice.org Impress"
+      }
+    ]
+  },
+  {
+    "ident": "OICC",
+    "type": "medium_airport",
+    "name": "Shahid Ashrafi Esfahani Airport",
+    "elevation_ft": 4307.0,
+    "continent": "AS",
+    "iso_country": "IR",
+    "iso_region": "IR-05",
+    "municipality": "Kermanshah",
+    "gps_code": "OICC",
+    "iata_code": "KSH",
+    "local_code": null,
+    "latitude": 34.3459014893,
+    "longitude": 47.1581001282,
+    "filetypes": [
+      {
+        "extension": "KSH",
+        "description": "Kornshell source file",
+        "used_by": "Kornshell"
+      }
+    ]
+  },
+  {
+    "ident": "OIGG",
+    "type": "medium_airport",
+    "name": "Sardar-e-Jangal Airport",
+    "elevation_ft": -40.0,
+    "continent": "AS",
+    "iso_country": "IR",
+    "iso_region": "IR-01",
+    "municipality": "Rasht",
+    "gps_code": "OIGG",
+    "iata_code": "RAS",
+    "local_code": null,
+    "latitude": 37.323333,
+    "longitude": 49.617778,
+    "filetypes": [
+      {
+        "extension": "RAS",
+        "description": "Graphics format",
+        "used_by": "SUN Raster"
+      }
+    ]
+  },
+  {
+    "ident": "OISJ",
+    "type": "small_airport",
+    "name": "Jahrom Airport",
+    "elevation_ft": 3358.0,
+    "continent": "AS",
+    "iso_country": "IR",
+    "iso_region": "IR-07",
+    "municipality": "Jahrom",
+    "gps_code": "OISJ",
+    "iata_code": "JAR",
+    "local_code": null,
+    "latitude": 28.5867004395,
+    "longitude": 53.5791015625,
+    "filetypes": [
+      {
+        "extension": "JAR",
+        "description": "Java archive",
+        "used_by": "JAR, Java Games and Applications"
+      }
+    ]
+  },
+  {
+    "ident": "OITT",
+    "type": "medium_airport",
+    "name": "Tabriz International Airport",
+    "elevation_ft": 4459.0,
+    "continent": "AS",
+    "iso_country": "IR",
+    "iso_region": "IR-03",
+    "municipality": "Tabriz",
+    "gps_code": "OITT",
+    "iata_code": "TBZ",
+    "local_code": null,
+    "latitude": 38.1339,
+    "longitude": 46.235001,
+    "filetypes": [{ "extension": "TBZ", "description": null, "used_by": null }]
+  },
+  {
+    "ident": "OMRK",
+    "type": "medium_airport",
+    "name": "Ras Al Khaimah International Airport",
+    "elevation_ft": 102.0,
+    "continent": "AS",
+    "iso_country": "AE",
+    "iso_region": "AE-RK",
+    "municipality": "Ras Al Khaimah",
+    "gps_code": "OMRK",
+    "iata_code": "RKT",
+    "local_code": null,
+    "latitude": 25.613500595092773,
+    "longitude": 55.93880081176758,
+    "filetypes": [
+      {
+        "extension": "RKT",
+        "description": "Racket language source file",
+        "used_by": "DrRacket integrated development environment (IDE) for the Racket (programming language)"
+      }
+    ]
+  },
+  {
+    "ident": "OPDB",
+    "type": "small_airport",
+    "name": "Dalbandin Airport",
+    "elevation_ft": 2800.0,
+    "continent": "AS",
+    "iso_country": "PK",
+    "iso_region": "PK-BA",
+    "municipality": "Dalbandin",
+    "gps_code": "OPDB",
+    "iata_code": "DBA",
+    "local_code": null,
+    "latitude": 28.8782997131,
+    "longitude": 64.3998031616,
+    "filetypes": [
+      {
+        "extension": "DBA",
+        "description": "DarkBasic source code",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "OPMP",
+    "type": "small_airport",
+    "name": "Sindhri Tharparkar Airport",
+    "elevation_ft": 51.0,
+    "continent": "AS",
+    "iso_country": "PK",
+    "iso_region": "PK-SD",
+    "municipality": "Sindhri",
+    "gps_code": "OPMP",
+    "iata_code": "MPD",
+    "local_code": null,
+    "latitude": 25.68280029296875,
+    "longitude": 69.07279968261719,
+    "filetypes": [
+      {
+        "extension": "MPD",
+        "description": "LDraw file (multi-part DAT file)",
+        "used_by": "LDraw"
+      }
+    ]
+  },
+  {
+    "ident": "OPMS",
+    "type": "medium_airport",
+    "name": "Minhas Air Base",
+    "elevation_ft": 1023.0,
+    "continent": "AS",
+    "iso_country": "PK",
+    "iso_region": "PK-PB",
+    "municipality": "Kamra",
+    "gps_code": "OPMS",
+    "iata_code": "ATG",
+    "local_code": null,
+    "latitude": 33.8690986633,
+    "longitude": 72.4009017944,
+    "filetypes": [
+      {
+        "extension": "ATG",
+        "description": "Coco/R LL(1) formal grammar",
+        "used_by": "Coco/R"
+      }
+    ]
+  },
+  {
+    "ident": "OPTA",
+    "type": "small_airport",
+    "name": "Tarbela Dam Airport",
+    "elevation_ft": 1114.0,
+    "continent": "AS",
+    "iso_country": "PK",
+    "iso_region": "PK-KP",
+    "municipality": "Tarbela",
+    "gps_code": "OPTA",
+    "iata_code": "TLB",
+    "local_code": null,
+    "latitude": 33.9860992432,
+    "longitude": 72.61139678960001,
+    "filetypes": [
+      {
+        "extension": "TLB",
+        "description": "Type library",
+        "used_by": "A binary file with information about a COM or DCOM object so other applications can use it at runtime. Created by Visual C++ or Visual Studio. Used by many Windows applications."
+      }
+    ]
+  },
+  {
+    "ident": "ORBM",
+    "type": "medium_airport",
+    "name": "Mosul International Airport",
+    "elevation_ft": 719.0,
+    "continent": "AS",
+    "iso_country": "IQ",
+    "iso_region": "IQ-NI",
+    "municipality": "Mosul",
+    "gps_code": "ORBM",
+    "iata_code": "OSM",
+    "local_code": null,
+    "latitude": 36.305801,
+    "longitude": 43.1474,
+    "filetypes": [
+      {
+        "extension": "OSM",
+        "description": "OpenStreetMap data",
+        "used_by": "OpenStreetMap"
+      },
+      {
+        "extension": "OSM",
+        "description": "OpenStreetMap note",
+        "used_by": "OpenStreetMap"
+      }
+    ]
+  },
+  {
+    "ident": "OTT",
+    "type": "small_airport",
+    "name": "Andre Maggi Airport",
+    "elevation_ft": 900.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-MT",
+    "municipality": "Cotrigua\u00e7u",
+    "gps_code": null,
+    "iata_code": "OTT",
+    "local_code": null,
+    "latitude": -9.898611,
+    "longitude": -58.581944,
+    "filetypes": [
+      {
+        "extension": "OTT",
+        "description": "Text (Word processing) documents template",
+        "used_by": "OpenDocument, LibreOffice, Collabora Online"
+      }
+    ]
+  },
+  {
+    "ident": "PA-AML",
+    "type": "small_airport",
+    "name": "Puerto Armuelles Airport",
+    "elevation_ft": 42.0,
+    "continent": "NA",
+    "iso_country": "PA",
+    "iso_region": "PA-4",
+    "municipality": "Puerto Armuelles",
+    "gps_code": null,
+    "iata_code": "AML",
+    "local_code": null,
+    "latitude": 8.267667,
+    "longitude": -82.864537,
+    "filetypes": [
+      {
+        "extension": "AML",
+        "description": "AutomationML",
+        "used_by": "AutomationML Group"
+      }
+    ]
+  },
+  {
+    "ident": "PACM",
+    "type": "medium_airport",
+    "name": "Scammon Bay Airport",
+    "elevation_ft": 14.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Scammon Bay",
+    "gps_code": "PACM",
+    "iata_code": "SCM",
+    "local_code": "SCM",
+    "latitude": 61.845298767100005,
+    "longitude": -165.570999146,
+    "filetypes": [
+      {
+        "extension": "SCM",
+        "description": "Scheme source code file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "PAED",
+    "type": "medium_airport",
+    "name": "Elmendorf Air Force Base",
+    "elevation_ft": 212.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Anchorage",
+    "gps_code": "PAED",
+    "iata_code": "EDF",
+    "local_code": "EDF",
+    "latitude": 61.251709,
+    "longitude": -149.807097,
+    "filetypes": [
+      {
+        "extension": "EDF",
+        "description": "European data format",
+        "used_by": "Medical timeseries storage files"
+      }
+    ]
+  },
+  {
+    "ident": "PAHX",
+    "type": "small_airport",
+    "name": "Shageluk Airport",
+    "elevation_ft": 79.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Shageluk",
+    "gps_code": "PAHX",
+    "iata_code": "SHX",
+    "local_code": "SHX",
+    "latitude": 62.6922988892,
+    "longitude": -159.569000244,
+    "filetypes": [
+      {
+        "extension": "SHX",
+        "description": "Shape entities ESRI shapefile",
+        "used_by": "AutoCAD ArcGIS"
+      }
+    ]
+  },
+  {
+    "ident": "PAMK",
+    "type": "small_airport",
+    "name": "St Michael Airport",
+    "elevation_ft": 98.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "St Michael",
+    "gps_code": "PAMK",
+    "iata_code": "SMK",
+    "local_code": "SMK",
+    "latitude": 63.49010086,
+    "longitude": -162.1100006,
+    "filetypes": [
+      {
+        "extension": "SMK",
+        "description": "Smacker video Format (RAD Video)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "PANI",
+    "type": "medium_airport",
+    "name": "Aniak Airport",
+    "elevation_ft": 88.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Aniak",
+    "gps_code": "PANI",
+    "iata_code": "ANI",
+    "local_code": "ANI",
+    "latitude": 61.58160018920898,
+    "longitude": -159.54299926757812,
+    "filetypes": [
+      {
+        "extension": "ANI",
+        "description": "Animation cursors for Win",
+        "used_by": "Win95 - WinNT"
+      }
+    ]
+  },
+  {
+    "ident": "PANT",
+    "type": "medium_airport",
+    "name": "Annette Island Airport",
+    "elevation_ft": 119.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Metlakatla",
+    "gps_code": "PANT",
+    "iata_code": "ANN",
+    "local_code": "ANN",
+    "latitude": 55.037026,
+    "longitude": -131.572695,
+    "filetypes": [
+      {
+        "extension": "ANN",
+        "description": "Annotations of old Windows Help file",
+        "used_by": "Windows 3.0 - XP"
+      }
+    ]
+  },
+  {
+    "ident": "PAPK",
+    "type": "small_airport",
+    "name": "Napaskiak Airport",
+    "elevation_ft": 24.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Napaskiak",
+    "gps_code": "PAPK",
+    "iata_code": "PKA",
+    "local_code": "PKA",
+    "latitude": 60.70289993,
+    "longitude": -161.7779999,
+    "filetypes": [
+      { "extension": "PKA", "description": "Archive", "used_by": "PKARC" }
+    ]
+  },
+  {
+    "ident": "PARC",
+    "type": "medium_airport",
+    "name": "Arctic Village Airport",
+    "elevation_ft": 2092.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Arctic Village",
+    "gps_code": "PARC",
+    "iata_code": "ARC",
+    "local_code": "ARC",
+    "latitude": 68.1147,
+    "longitude": -145.578995,
+    "filetypes": [
+      {
+        "extension": "ARC",
+        "description": "ARC (file format)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "PDI",
+    "type": "small_airport",
+    "name": "Pindiu Airport",
+    "elevation_ft": 2995.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-MPL",
+    "municipality": "Pindiu",
+    "gps_code": "AYPD",
+    "iata_code": "PDI",
+    "local_code": "PDU",
+    "latitude": -6.445138888890001,
+    "longitude": 147.515833333,
+    "filetypes": [
+      {
+        "extension": "PDI",
+        "description": "Portable Database Image",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "PFC",
+    "type": "small_airport",
+    "name": "Pacific City State Airport",
+    "elevation_ft": 5.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-OR",
+    "municipality": "Pacific City",
+    "gps_code": "KPFC",
+    "iata_code": "PFC",
+    "local_code": "PFC",
+    "latitude": 45.199798584,
+    "longitude": -123.961997986,
+    "filetypes": [
+      {
+        "extension": "PFC",
+        "description": "(Personal Filing Cabinet) contains e-mail, preferences and other personal information",
+        "used_by": "AOL"
+      }
+    ]
+  },
+  {
+    "ident": "PG-GMI",
+    "type": "small_airport",
+    "name": "Gasmata Island Airport",
+    "elevation_ft": 23.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-WBK",
+    "municipality": "Gasmata Island",
+    "gps_code": "AYGT",
+    "iata_code": "GMI",
+    "local_code": "GMA",
+    "latitude": -6.27111005783,
+    "longitude": 150.330993652,
+    "filetypes": [
+      {
+        "extension": "GMI",
+        "description": "Gemtext markup language",
+        "used_by": "Gemini (Protocol)"
+      }
+    ]
+  },
+  {
+    "ident": "PHOG",
+    "type": "medium_airport",
+    "name": "Kahului International Airport",
+    "elevation_ft": 54.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-HI",
+    "municipality": "Kahului",
+    "gps_code": "PHOG",
+    "iata_code": "OGG",
+    "local_code": "OGG",
+    "latitude": 20.898543,
+    "longitude": -156.431212,
+    "filetypes": [
+      {
+        "extension": "OGG",
+        "description": "Vorbis audio in the Ogg container format",
+        "used_by": "libogg"
+      }
+    ]
+  },
+  {
+    "ident": "PHPA",
+    "type": "small_airport",
+    "name": "Port Allen Airport",
+    "elevation_ft": 24.0,
+    "continent": "OC",
+    "iso_country": "US",
+    "iso_region": "US-HI",
+    "municipality": "Hanapepe",
+    "gps_code": "PHPA",
+    "iata_code": "PAK",
+    "local_code": "PAK",
+    "latitude": 21.8969,
+    "longitude": -159.602997,
+    "filetypes": [
+      { "extension": "PAK", "description": "Archive", "used_by": "Pak" }
+    ]
+  },
+  {
+    "ident": "PWAK",
+    "type": "medium_airport",
+    "name": "Wake Island Airfield",
+    "elevation_ft": 14.0,
+    "continent": "OC",
+    "iso_country": "UM",
+    "iso_region": "UM-79",
+    "municipality": "Wake Island",
+    "gps_code": "PWAK",
+    "iata_code": "AWK",
+    "local_code": "AWK",
+    "latitude": 19.282437,
+    "longitude": 166.636637,
+    "filetypes": [
+      {
+        "extension": "AWK",
+        "description": "AWK script/program",
+        "used_by": "awk, GNU Awk, mawk, nawk, MKS AWK, Awka (compiler)"
+      }
+    ]
+  },
+  {
+    "ident": "qfx",
+    "type": "heliport",
+    "name": "Igaliku Heliport",
+    "elevation_ft": null,
+    "continent": "NA",
+    "iso_country": "GL",
+    "iso_region": "GL-KU",
+    "municipality": "Igaliku",
+    "gps_code": "BGIO",
+    "iata_code": "QFX",
+    "local_code": null,
+    "latitude": 60.99229,
+    "longitude": -45.431428,
+    "filetypes": [
+      {
+        "extension": "QFX",
+        "description": "Quicken-specific implementation of the OFX specification",
+        "used_by": "Intuit Quicken"
+      }
+    ]
+  },
+  {
+    "ident": "RJOT",
+    "type": "medium_airport",
+    "name": "Takamatsu Airport",
+    "elevation_ft": 607.0,
+    "continent": "AS",
+    "iso_country": "JP",
+    "iso_region": "JP-37",
+    "municipality": "Takamatsu",
+    "gps_code": "RJOT",
+    "iata_code": "TAK",
+    "local_code": null,
+    "latitude": 34.2141990662,
+    "longitude": 134.01600647,
+    "filetypes": [
+      {
+        "extension": "TAK",
+        "description": "Audio codec, Lossless audio file format",
+        "used_by": "Winamp (+Plugin), foobar2000 (+Plugin), Media Player Classic \u2013 BE"
+      }
+    ]
+  },
+  {
+    "ident": "RJSD",
+    "type": "medium_airport",
+    "name": "Sado Airport",
+    "elevation_ft": 88.0,
+    "continent": "AS",
+    "iso_country": "JP",
+    "iso_region": "JP-15",
+    "municipality": "Sado",
+    "gps_code": "RJSD",
+    "iata_code": "SDS",
+    "local_code": null,
+    "latitude": 38.0601997375,
+    "longitude": 138.414001465,
+    "filetypes": [
+      {
+        "extension": "SDS",
+        "description": "Self Defining Structure provides for N-dimensional very large datasets using HHCode",
+        "used_by": "geographic information systems and relational database management systems"
+      }
+    ]
+  },
+  {
+    "ident": "RPMH",
+    "type": "medium_airport",
+    "name": "Camiguin Airport",
+    "elevation_ft": 53.0,
+    "continent": "AS",
+    "iso_country": "PH",
+    "iso_region": "PH-CAM",
+    "municipality": "Mambajao",
+    "gps_code": "RPMH",
+    "iata_code": "CGM",
+    "local_code": null,
+    "latitude": 9.253894,
+    "longitude": 124.709115,
+    "filetypes": [
+      {
+        "extension": "CGM",
+        "description": "Computer Graphics Metafile vector graphics",
+        "used_by": "A&L - HG - many"
+      }
+    ]
+  },
+  {
+    "ident": "SADP",
+    "type": "medium_airport",
+    "name": "El Palomar Airport",
+    "elevation_ft": 59.0,
+    "continent": "SA",
+    "iso_country": "AR",
+    "iso_region": "AR-B",
+    "municipality": "El Palomar",
+    "gps_code": "SADP",
+    "iata_code": "EPA",
+    "local_code": "PAL",
+    "latitude": -34.6099,
+    "longitude": -58.6126,
+    "filetypes": [
+      {
+        "extension": "EPA",
+        "description": "Award BIOS splash screen",
+        "used_by": "Award BIOS, XnView"
+      }
+    ]
+  },
+  {
+    "ident": "SAHS",
+    "type": "medium_airport",
+    "name": "Rincon De Los Sauces Airport",
+    "elevation_ft": 1968.0,
+    "continent": "SA",
+    "iso_country": "AR",
+    "iso_region": "AR-Q",
+    "municipality": "Rincon de los Sauces",
+    "gps_code": "SAHS",
+    "iata_code": "RDS",
+    "local_code": "RIN",
+    "latitude": -37.3905982971,
+    "longitude": -68.9041976929,
+    "filetypes": [
+      { "extension": "RDS", "description": "Data file", "used_by": "R" }
+    ]
+  },
+  {
+    "ident": "SARE",
+    "type": "medium_airport",
+    "name": "Resistencia International Airport",
+    "elevation_ft": 173.0,
+    "continent": "SA",
+    "iso_country": "AR",
+    "iso_region": "AR-H",
+    "municipality": "Resistencia",
+    "gps_code": "SARE",
+    "iata_code": "RES",
+    "local_code": "SIS",
+    "latitude": -27.45,
+    "longitude": -59.0561,
+    "filetypes": [
+      {
+        "extension": "RES",
+        "description": "Compiled resource",
+        "used_by": "Microsoft C/C++, Borland C++"
+      }
+    ]
+  },
+  {
+    "ident": "SAZY",
+    "type": "medium_airport",
+    "name": "Aviador C. Campos Airport",
+    "elevation_ft": 2569.0,
+    "continent": "SA",
+    "iso_country": "AR",
+    "iso_region": "AR-Q",
+    "municipality": "Chapelco/San Martin de los Andes",
+    "gps_code": "SAZY",
+    "iata_code": "CPC",
+    "local_code": "CHP",
+    "latitude": -40.075401,
+    "longitude": -71.137299,
+    "filetypes": [
+      {
+        "extension": "CPC",
+        "description": "Compressed image",
+        "used_by": "Cartesian Perceptual Compression"
+      }
+    ]
+  },
+  {
+    "ident": "SBBT",
+    "type": "medium_airport",
+    "name": "Chafei Amsei Airport",
+    "elevation_ft": 1898.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-SP",
+    "municipality": "Barretos",
+    "gps_code": "SNBA",
+    "iata_code": "BAT",
+    "local_code": "SNBA",
+    "latitude": -20.584499359131,
+    "longitude": -48.594100952148,
+    "filetypes": [
+      {
+        "extension": "BAT",
+        "description": "Batch file",
+        "used_by": "MS-DOS, RT-11, DOS-based command processors"
+      }
+    ]
+  },
+  {
+    "ident": "SBFN",
+    "type": "medium_airport",
+    "name": "Fernando de Noronha Airport",
+    "elevation_ft": 193.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PE",
+    "municipality": "Fernando de Noronha",
+    "gps_code": "SBFN",
+    "iata_code": "FEN",
+    "local_code": "PE0003",
+    "latitude": -3.854471,
+    "longitude": -32.423302,
+    "filetypes": [
+      {
+        "extension": "FEN",
+        "description": "Forsyth\u2013Edwards Notation",
+        "used_by": "Chess applications -text data describes a specific position."
+      }
+    ]
+  },
+  {
+    "ident": "SBFZ",
+    "type": "medium_airport",
+    "name": "Pinto Martins International Airport",
+    "elevation_ft": 82.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-CE",
+    "municipality": "Fortaleza",
+    "gps_code": "SBFZ",
+    "iata_code": "FOR",
+    "local_code": "CE0001",
+    "latitude": -3.77628,
+    "longitude": -38.5326,
+    "filetypes": [
+      {
+        "extension": "FOR",
+        "description": "Fortran language source file",
+        "used_by": "many"
+      }
+    ]
+  },
+  {
+    "ident": "SBLO",
+    "type": "medium_airport",
+    "name": "Governador Jos\u00e9 Richa Airport",
+    "elevation_ft": 1867.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PR",
+    "municipality": "Londrina",
+    "gps_code": "SBLO",
+    "iata_code": "LDB",
+    "local_code": "PR0003",
+    "latitude": -23.333599,
+    "longitude": -51.1301,
+    "filetypes": [
+      {
+        "extension": "LDB",
+        "description": ".LDB Leveldb data file",
+        "used_by": "Google key-value storage library"
+      },
+      {
+        "extension": "LDB",
+        "description": ".LDB MDB Database lock file",
+        "used_by": "Microsoft Access Database"
+      }
+    ]
+  },
+  {
+    "ident": "SBMG",
+    "type": "medium_airport",
+    "name": "Regional de Maring\u00e1 - S\u00edlvio Name J\u00fanior Airport",
+    "elevation_ft": 1801.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PR",
+    "municipality": "Maring\u00e1",
+    "gps_code": "SBMG",
+    "iata_code": "MGF",
+    "local_code": "PR0004",
+    "latitude": -23.47606,
+    "longitude": -52.016187,
+    "filetypes": [
+      {
+        "extension": "MGF",
+        "description": "Materials and Geometry Format",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "SBPF",
+    "type": "medium_airport",
+    "name": "Lauro Kurtz Airport",
+    "elevation_ft": 2380.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-RS",
+    "municipality": "Passo Fundo",
+    "gps_code": "SBPF",
+    "iata_code": "PFB",
+    "local_code": "RS0006",
+    "latitude": -28.243976,
+    "longitude": -52.32777,
+    "filetypes": [
+      {
+        "extension": "PFB",
+        "description": "PostScript font",
+        "used_by": "Adobe Type Manager (ATM)"
+      }
+    ]
+  },
+  {
+    "ident": "SBPS",
+    "type": "medium_airport",
+    "name": "Porto Seguro Airport",
+    "elevation_ft": 169.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-BA",
+    "municipality": "Porto Seguro",
+    "gps_code": "SBPS",
+    "iata_code": "BPS",
+    "local_code": "BA0002",
+    "latitude": -16.438426,
+    "longitude": -39.080584,
+    "filetypes": [
+      {
+        "extension": "BPS",
+        "description": "WPS backup file",
+        "used_by": "Microsoft Word, Microsoft Works"
+      }
+    ]
+  },
+  {
+    "ident": "SBSN",
+    "type": "medium_airport",
+    "name": "Santar\u00e9m - Maestro Wilson Fonseca International Airport",
+    "elevation_ft": 198.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PA",
+    "municipality": "Santar\u00e9m",
+    "gps_code": "SBSN",
+    "iata_code": "STM",
+    "local_code": "PA0002",
+    "latitude": -2.422423,
+    "longitude": -54.79306,
+    "filetypes": [
+      {
+        "extension": "STM",
+        "description": "SSI-enabled HTML file",
+        "used_by": "Server Side Includes"
+      }
+    ]
+  },
+  {
+    "ident": "SCKP",
+    "type": "small_airport",
+    "name": "Coposa Airport",
+    "elevation_ft": 12468.0,
+    "continent": "SA",
+    "iso_country": "CL",
+    "iso_region": "CL-TA",
+    "municipality": "Pica",
+    "gps_code": "SCKP",
+    "iata_code": "CPP",
+    "local_code": null,
+    "latitude": -20.7505,
+    "longitude": -68.683502,
+    "filetypes": [
+      {
+        "extension": "CPP",
+        "description": "C++ language source",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "SCTT",
+    "type": "medium_airport",
+    "name": "Las Breas Airport",
+    "elevation_ft": 2580.0,
+    "continent": "SA",
+    "iso_country": "CL",
+    "iso_region": "CL-AN",
+    "municipality": "Taltal",
+    "gps_code": "SCTT",
+    "iata_code": "TTC",
+    "local_code": null,
+    "latitude": -25.56430053710937,
+    "longitude": -70.37590026855469,
+    "filetypes": [
+      {
+        "extension": "TTC",
+        "description": "TrueType Font collection",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "SJNP",
+    "type": "small_airport",
+    "name": "Novo Progresso Airport",
+    "elevation_ft": 794.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PA",
+    "municipality": "Novo Progresso",
+    "gps_code": "SJNP",
+    "iata_code": "NPR",
+    "local_code": "PA0026",
+    "latitude": -7.125833,
+    "longitude": -55.400833,
+    "filetypes": [
+      {
+        "extension": "NPR",
+        "description": "Nuendo Project File",
+        "used_by": "Steinberg Nuendo"
+      }
+    ]
+  },
+  {
+    "ident": "SKHA",
+    "type": "small_airport",
+    "name": "General Navas Pardo Airport",
+    "elevation_ft": 2730.0,
+    "continent": "NA",
+    "iso_country": "CO",
+    "iso_region": "CO-TOL",
+    "municipality": "Chaparral",
+    "gps_code": "SKHA",
+    "iata_code": "CPL",
+    "local_code": "CPL",
+    "latitude": 3.724293,
+    "longitude": -75.465785,
+    "filetypes": [
+      {
+        "extension": "CPL",
+        "description": "Control panel file",
+        "used_by": "Windows 3.x"
+      }
+    ]
+  },
+  {
+    "ident": "SKPI",
+    "type": "medium_airport",
+    "name": "Pitalito Airport",
+    "elevation_ft": 4212.0,
+    "continent": "SA",
+    "iso_country": "CO",
+    "iso_region": "CO-HUI",
+    "municipality": "Pitalito",
+    "gps_code": "SKPI",
+    "iata_code": "PTX",
+    "local_code": null,
+    "latitude": 1.85777,
+    "longitude": -76.0857,
+    "filetypes": [
+      {
+        "extension": "PTX",
+        "description": "Pro Tools Session File",
+        "used_by": "Avid Pro Tools version 10 or later"
+      }
+    ]
+  },
+  {
+    "ident": "SKPQ",
+    "type": "medium_airport",
+    "name": "German Olano Air Base",
+    "elevation_ft": 566.0,
+    "continent": "SA",
+    "iso_country": "CO",
+    "iso_region": "CO-CUN",
+    "municipality": "La Dorada",
+    "gps_code": "SKPQ",
+    "iata_code": "PAL",
+    "local_code": "PQE",
+    "latitude": 5.48361,
+    "longitude": -74.6574,
+    "filetypes": [
+      {
+        "extension": "PAL",
+        "description": "Paint Shop Pro color palette (JASC format)",
+        "used_by": "PaintShop Pro, XnView"
+      }
+    ]
+  },
+  {
+    "ident": "SKSP",
+    "type": "medium_airport",
+    "name": "Gustavo Rojas Pinilla International Airport",
+    "elevation_ft": 19.0,
+    "continent": "SA",
+    "iso_country": "CO",
+    "iso_region": "CO-SAP",
+    "municipality": "San Andr\u00e9s",
+    "gps_code": "SKSP",
+    "iata_code": "ADZ",
+    "local_code": "ADZ",
+    "latitude": 12.5836,
+    "longitude": -81.7112,
+    "filetypes": [
+      {
+        "extension": "ADZ",
+        "description": "Amiga Disk Zipped (See Amiga Disk File)",
+        "used_by": "GZip"
+      }
+    ]
+  },
+  {
+    "ident": "SMZO",
+    "type": "small_airport",
+    "name": "Zorg en Hoop Airport",
+    "elevation_ft": 10.0,
+    "continent": "SA",
+    "iso_country": "SR",
+    "iso_region": "SR-PM",
+    "municipality": "Paramaribo",
+    "gps_code": "SMZO",
+    "iata_code": "ORG",
+    "local_code": null,
+    "latitude": 5.811131,
+    "longitude": -55.1913,
+    "filetypes": [
+      {
+        "extension": "ORG",
+        "description": "Emacs Org mode",
+        "used_by": "Emacs Org mode major mode"
+      },
+      {
+        "extension": "ORG",
+        "description": "Older Origin Project",
+        "used_by": "Origin versions 4 or earlier"
+      }
+    ]
+  },
+  {
+    "ident": "SNEB",
+    "type": "small_airport",
+    "name": "Nagib Demachki Airport",
+    "elevation_ft": 443.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PA",
+    "municipality": "Paragominas",
+    "gps_code": "SNEB",
+    "iata_code": "JPE",
+    "local_code": "PA0018",
+    "latitude": -3.019798,
+    "longitude": -47.316474,
+    "filetypes": [
+      {
+        "extension": "JPE",
+        "description": "Joint Photographic Experts Group graphics file format",
+        "used_by": "Minolta/Konica Minolta cameras use this for JPEGs in Adobe RGB color space"
+      }
+    ]
+  },
+  {
+    "ident": "SNPC",
+    "type": "small_airport",
+    "name": "Picos Airport",
+    "elevation_ft": 1050.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PI",
+    "municipality": "Picos",
+    "gps_code": "SNPC",
+    "iata_code": "PCS",
+    "local_code": "SNPC",
+    "latitude": -7.0620598793029785,
+    "longitude": -41.52370071411133,
+    "filetypes": [
+      {
+        "extension": "PCS",
+        "description": "PCSurvey file",
+        "used_by": "PCSurvey by Softart - Land Surveying Software"
+      }
+    ]
+  },
+  {
+    "ident": "SNRD",
+    "type": "small_airport",
+    "name": "Prado Airport",
+    "elevation_ft": 89.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-BA",
+    "municipality": "Prado",
+    "gps_code": "SNRD",
+    "iata_code": "PDF",
+    "local_code": "BA0048",
+    "latitude": -17.296976,
+    "longitude": -39.271131,
+    "filetypes": [
+      {
+        "extension": "PDF",
+        "description": "Adobe's Portable Document Format",
+        "used_by": "Adobe Acrobat Reader"
+      }
+    ]
+  },
+  {
+    "ident": "SPCL",
+    "type": "medium_airport",
+    "name": "Cap FAP David Abenzur Rengifo International Airport",
+    "elevation_ft": 513.0,
+    "continent": "SA",
+    "iso_country": "PE",
+    "iso_region": "PE-UCA",
+    "municipality": "Pucallpa",
+    "gps_code": "SPCL",
+    "iata_code": "PCL",
+    "local_code": null,
+    "latitude": -8.37794017791748,
+    "longitude": -74.57430267333984,
+    "filetypes": [
+      {
+        "extension": "PCL",
+        "description": "HP-PCL graphics data file",
+        "used_by": "HP Printer Command Language"
+      }
+    ]
+  },
+  {
+    "ident": "SPEO",
+    "type": "medium_airport",
+    "name": "FAP Lieutenant Jaime Andres de Montreuil Morales Airport",
+    "elevation_ft": 69.0,
+    "continent": "SA",
+    "iso_country": "PE",
+    "iso_region": "PE-ANC",
+    "municipality": "Chimbote",
+    "gps_code": "SPEO",
+    "iata_code": "CHM",
+    "local_code": null,
+    "latitude": -9.14961,
+    "longitude": -78.523804,
+    "filetypes": [
+      {
+        "extension": "CHM",
+        "description": "Compiled Help File",
+        "used_by": "Microsoft Windows, Help Explorer Viewer"
+      }
+    ]
+  },
+  {
+    "ident": "SPTU",
+    "type": "medium_airport",
+    "name": "Padre Aldamiz International Airport",
+    "elevation_ft": 659.0,
+    "continent": "SA",
+    "iso_country": "PE",
+    "iso_region": "PE-MDD",
+    "municipality": "Puerto Maldonado",
+    "gps_code": "SPTU",
+    "iata_code": "PEM",
+    "local_code": null,
+    "latitude": -12.6135997772,
+    "longitude": -69.2285995483,
+    "filetypes": [
+      {
+        "extension": "PEM",
+        "description": "A text-based certificate file defined in RFC 1421 through RFC 1424",
+        "used_by": "Applications that need to use cryptographic certificates, including web-servers"
+      }
+    ]
+  },
+  {
+    "ident": "SSCL",
+    "type": "small_airport",
+    "name": "Cassil\u00e2ndia Airport",
+    "elevation_ft": 1568.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-MS",
+    "municipality": "Cassil\u00e2ndia",
+    "gps_code": "SSCL",
+    "iata_code": "CSS",
+    "local_code": "MS0018",
+    "latitude": -19.146861,
+    "longitude": -51.676941,
+    "filetypes": [
+      {
+        "extension": "CSS",
+        "description": "Cascading style sheet",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "SSPG",
+    "type": "small_airport",
+    "name": "Paranagu\u00e1 Airport",
+    "elevation_ft": 16.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-PR",
+    "municipality": "Paranagu\u00e1",
+    "gps_code": "SSPG",
+    "iata_code": "PNG",
+    "local_code": "SSPG",
+    "latitude": -25.54010009765625,
+    "longitude": -48.53120040893555,
+    "filetypes": [
+      {
+        "extension": "PNG",
+        "description": "Portable Network Graphics file",
+        "used_by": "Web browsers, image viewing and editing applications"
+      }
+    ]
+  },
+  {
+    "ident": "SVCB",
+    "type": "medium_airport",
+    "name": "Aeropuerto \"General Tomas de Heres\". Ciudad Bolivar",
+    "elevation_ft": 197.0,
+    "continent": "SA",
+    "iso_country": "VE",
+    "iso_region": "VE-F",
+    "municipality": null,
+    "gps_code": "SVCB",
+    "iata_code": "CBL",
+    "local_code": null,
+    "latitude": 8.12216091156,
+    "longitude": -63.5369567871,
+    "filetypes": [
+      {
+        "extension": "CBL",
+        "description": "COBOL language source",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "SVIE",
+    "type": "small_airport",
+    "name": "Andr\u00e9s Miguel Salazar Marcano Airport",
+    "elevation_ft": 10.0,
+    "continent": "SA",
+    "iso_country": "VE",
+    "iso_region": "VE-O",
+    "municipality": "Isla de Coche",
+    "gps_code": "SVIE",
+    "iata_code": "ICC",
+    "local_code": null,
+    "latitude": 10.794432,
+    "longitude": -63.98159,
+    "filetypes": [
+      {
+        "extension": "ICC",
+        "description": "ICC profile",
+        "used_by": "Color Configuration for color input or output devices"
+      }
+    ]
+  },
+  {
+    "ident": "SVSO",
+    "type": "medium_airport",
+    "name": "Mayor Buenaventura Vivas International Airport",
+    "elevation_ft": 1083.0,
+    "continent": "SA",
+    "iso_country": "VE",
+    "iso_region": "VE-S",
+    "municipality": "Santo Domingo",
+    "gps_code": "SVSO",
+    "iata_code": "STD",
+    "local_code": null,
+    "latitude": 7.56538,
+    "longitude": -72.035103,
+    "filetypes": [
+      {
+        "extension": "STD",
+        "description": "OpenOffice.org XML drawing template",
+        "used_by": "OpenOffice.org Draw"
+      }
+    ]
+  },
+  {
+    "ident": "SWG",
+    "type": "small_airport",
+    "name": "Satwag Airport",
+    "elevation_ft": 4185.0,
+    "continent": "OC",
+    "iso_country": "PG",
+    "iso_region": "PG-MPL",
+    "municipality": "Satwag",
+    "gps_code": "AYSW",
+    "iata_code": "SWG",
+    "local_code": "SWG",
+    "latitude": -6.13955555556,
+    "longitude": 147.279166667,
+    "filetypes": [
+      {
+        "extension": "SWG",
+        "description": "SWIG source code",
+        "used_by": "SWIG"
+      }
+    ]
+  },
+  {
+    "ident": "SWGI",
+    "type": "small_airport",
+    "name": "Gurupi Airport",
+    "elevation_ft": 1148.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-TO",
+    "municipality": "Gurupi",
+    "gps_code": "SWGI",
+    "iata_code": "GRP",
+    "local_code": "SWGI",
+    "latitude": -11.73960018157959,
+    "longitude": -49.13219833374024,
+    "filetypes": [
+      {
+        "extension": "GRP",
+        "description": "Data pack files for the Build Engine",
+        "used_by": "Duke Nukem 3D"
+      }
+    ]
+  },
+  {
+    "ident": "SWHP",
+    "type": "small_airport",
+    "name": "Frederico Carlos M\u00fcller Airport",
+    "elevation_ft": 1476.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-MT",
+    "municipality": "\u00c1gua Boa",
+    "gps_code": "SWHP",
+    "iata_code": "GGB",
+    "local_code": "MT0006",
+    "latitude": -14.019959,
+    "longitude": -52.152003,
+    "filetypes": [
+      {
+        "extension": "GGB",
+        "description": "GeoGebra File",
+        "used_by": "GeoGebra"
+      }
+    ]
+  },
+  {
+    "ident": "SWKT",
+    "type": "small_airport",
+    "name": "Catal\u00e3o Airport",
+    "elevation_ft": 2612.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-GO",
+    "municipality": "Catal\u00e3o",
+    "gps_code": "SWKT",
+    "iata_code": "TLZ",
+    "local_code": "SWKT",
+    "latitude": -18.216800689697266,
+    "longitude": -47.89970016479492,
+    "filetypes": [
+      {
+        "extension": "TLZ",
+        "description": "tar archive compressed with LZMA",
+        "used_by": "tar and other file archivers with support"
+      }
+    ]
+  },
+  {
+    "ident": "SWLB",
+    "type": "small_airport",
+    "name": "L\u00e1brea Airport",
+    "elevation_ft": 243.0,
+    "continent": "SA",
+    "iso_country": "BR",
+    "iso_region": "BR-AM",
+    "municipality": "L\u00e1brea",
+    "gps_code": "SWLB",
+    "iata_code": "LBR",
+    "local_code": "AM0024",
+    "latitude": -7.27897,
+    "longitude": -64.769501,
+    "filetypes": [
+      {
+        "extension": "LBR",
+        "description": ".LBR Archive",
+        "used_by": "for CP/M and MS-DOS using the LU program"
+      }
+    ]
+  },
+  {
+    "ident": "SXP",
+    "type": "small_airport",
+    "name": "Nunam Iqua Airport",
+    "elevation_ft": 12.0,
+    "continent": "NA",
+    "iso_country": "US",
+    "iso_region": "US-AK",
+    "municipality": "Nunam Iqua",
+    "gps_code": null,
+    "iata_code": "SXP",
+    "local_code": "SXP",
+    "latitude": 62.520599,
+    "longitude": -164.848006,
+    "filetypes": [
+      {
+        "extension": "SXP",
+        "description": "3DS Process file",
+        "used_by": "3D Studio"
+      }
+    ]
+  },
+  {
+    "ident": "TFFJ",
+    "type": "medium_airport",
+    "name": "Saint Barth\u00e9lemy - R\u00e9my de Haenen Airport",
+    "elevation_ft": 49.0,
+    "continent": "NA",
+    "iso_country": "BL",
+    "iso_region": "BL-U-A",
+    "municipality": "Gustavia / Saint-Jean",
+    "gps_code": "TFFJ",
+    "iata_code": "SBH",
+    "local_code": null,
+    "latitude": 17.9044,
+    "longitude": -62.843601,
+    "filetypes": [
+      { "extension": "SBH", "description": "Header", "used_by": "ScriptBasic" }
+    ]
+  },
+  {
+    "ident": "TJIG",
+    "type": "medium_airport",
+    "name": "Fernando Luis Ribas Dominicci Airport",
+    "elevation_ft": 10.0,
+    "continent": "NA",
+    "iso_country": "PR",
+    "iso_region": "PR-U-A",
+    "municipality": "San Juan",
+    "gps_code": "TJIG",
+    "iata_code": "SIG",
+    "local_code": "SIG",
+    "latitude": 18.45680046081543,
+    "longitude": -66.09809875488281,
+    "filetypes": [
+      {
+        "extension": "SIG",
+        "description": "Signature file",
+        "used_by": "gpg, PopMail, ThunderByte AntiVirus"
+      }
+    ]
+  },
+  {
+    "ident": "TNCC",
+    "type": "large_airport",
+    "name": "Hato International Airport",
+    "elevation_ft": 29.0,
+    "continent": "NA",
+    "iso_country": "CW",
+    "iso_region": "CW-U-A",
+    "municipality": "Willemstad",
+    "gps_code": "TNCC",
+    "iata_code": "CUR",
+    "local_code": null,
+    "latitude": 12.1889,
+    "longitude": -68.959801,
+    "filetypes": [
+      {
+        "extension": "CUR",
+        "description": "Non-animated cursor (extended from ICO)",
+        "used_by": "Windows"
+      }
+    ]
+  },
+  {
+    "ident": "TNCM",
+    "type": "large_airport",
+    "name": "Princess Juliana International Airport",
+    "elevation_ft": 13.0,
+    "continent": "NA",
+    "iso_country": "SX",
+    "iso_region": "SX-U-A",
+    "municipality": "Saint Martin",
+    "gps_code": "TNCM",
+    "iata_code": "SXM",
+    "local_code": null,
+    "latitude": 18.041,
+    "longitude": -63.108898,
+    "filetypes": [
+      {
+        "extension": "SXM",
+        "description": "OpenOffice.org XML formula",
+        "used_by": "OpenOffice.org Calc"
+      }
+    ]
+  },
+  {
+    "ident": "TUPJ",
+    "type": "medium_airport",
+    "name": "Terrance B. Lettsome International Airport",
+    "elevation_ft": 15.0,
+    "continent": "NA",
+    "iso_country": "VG",
+    "iso_region": "VG-U-A",
+    "municipality": "Road Town",
+    "gps_code": "TUPJ",
+    "iata_code": "EIS",
+    "local_code": null,
+    "latitude": 18.445492,
+    "longitude": -64.541707,
+    "filetypes": [
+      {
+        "extension": "EIS",
+        "description": "EIS Spectrum Analyser Project",
+        "used_by": "EIS Spectrum Analyser Archived 2010-03-29 at the Wayback Machine"
+      }
+    ]
+  },
+  {
+    "ident": "UHTQ",
+    "type": "small_airport",
+    "name": "Svetlaya Airport",
+    "elevation_ft": 131.0,
+    "continent": "EU",
+    "iso_country": "RU",
+    "iso_region": "RU-PRI",
+    "municipality": "Svetlaya",
+    "gps_code": "UHTQ",
+    "iata_code": "ETL",
+    "local_code": null,
+    "latitude": 46.541704,
+    "longitude": 138.321703,
+    "filetypes": [
+      {
+        "extension": "ETL",
+        "description": "event trace log file",
+        "used_by": "Microsoft"
+      }
+    ]
+  },
+  {
+    "ident": "UIAA",
+    "type": "medium_airport",
+    "name": "Chita-Kadala International Airport",
+    "elevation_ft": 2272.0,
+    "continent": "EU",
+    "iso_country": "RU",
+    "iso_region": "RU-CHI",
+    "municipality": "Chita",
+    "gps_code": "UIAA",
+    "iata_code": "HTA",
+    "local_code": null,
+    "latitude": 52.026299,
+    "longitude": 113.306,
+    "filetypes": [
+      {
+        "extension": "HTA",
+        "description": "HTML Application",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "UKOO",
+    "type": "medium_airport",
+    "name": "Odessa International Airport",
+    "elevation_ft": 172.0,
+    "continent": "EU",
+    "iso_country": "UA",
+    "iso_region": "UA-51",
+    "municipality": "Odessa",
+    "gps_code": "UKOO",
+    "iata_code": "ODS",
+    "local_code": null,
+    "latitude": 46.4268,
+    "longitude": 30.6765,
+    "filetypes": [
+      {
+        "extension": "ODS",
+        "description": "Spreadsheets",
+        "used_by": "OpenDocument, LibreOffice, Collabora Online"
+      }
+    ]
+  },
+  {
+    "ident": "ULDD",
+    "type": "medium_airport",
+    "name": "Amderma Airport",
+    "elevation_ft": 13.0,
+    "continent": "AS",
+    "iso_country": "RU",
+    "iso_region": "RU-NEN",
+    "municipality": "Amderma",
+    "gps_code": "ULDD",
+    "iata_code": "AMV",
+    "local_code": null,
+    "latitude": 69.76329803466797,
+    "longitude": 61.556400299072266,
+    "filetypes": [
+      {
+        "extension": "AMV",
+        "description": "Actions Media Video",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "URMT",
+    "type": "medium_airport",
+    "name": "Stavropol Shpakovskoye Airport",
+    "elevation_ft": 1486.0,
+    "continent": "EU",
+    "iso_country": "RU",
+    "iso_region": "RU-STA",
+    "municipality": "Stavropol",
+    "gps_code": "URMT",
+    "iata_code": "STW",
+    "local_code": null,
+    "latitude": 45.10919952392578,
+    "longitude": 42.11280059814453,
+    "filetypes": [
+      {
+        "extension": "STW",
+        "description": "OpenOffice.org XML text document template",
+        "used_by": "OpenOffice.org Writer"
+      }
+    ]
+  },
+  {
+    "ident": "URWA",
+    "type": "medium_airport",
+    "name": "Astrakhan Narimanovo Boris M. Kustodiev International Airport",
+    "elevation_ft": -65.0,
+    "continent": "AS",
+    "iso_country": "RU",
+    "iso_region": "RU-AST",
+    "municipality": "Astrakhan",
+    "gps_code": "URWA",
+    "iata_code": "ASF",
+    "local_code": null,
+    "latitude": 46.282843,
+    "longitude": 48.010511,
+    "filetypes": [
+      {
+        "extension": "ASF",
+        "description": "Advanced Streaming Format (Compressed Windows audio/video)",
+        "used_by": "Microsoft Corporation"
+      }
+    ]
+  },
+  {
+    "ident": "UTAT",
+    "type": "medium_airport",
+    "name": "Da\u015foguz Airport",
+    "elevation_ft": 272.0,
+    "continent": "AS",
+    "iso_country": "TM",
+    "iso_region": "TM-D",
+    "municipality": "Da\u015foguz",
+    "gps_code": "UTAT",
+    "iata_code": "TAZ",
+    "local_code": null,
+    "latitude": 41.759853,
+    "longitude": 59.836149,
+    "filetypes": [
+      {
+        "extension": "TAZ",
+        "description": "tar archive compressed with compress",
+        "used_by": "tar and other file archivers with support"
+      }
+    ]
+  },
+  {
+    "ident": "VE-0207",
+    "type": "small_airport",
+    "name": "Macagua Airport",
+    "elevation_ft": 231.0,
+    "continent": "SA",
+    "iso_country": "VE",
+    "iso_region": "VE-F",
+    "municipality": "Ciudad Guayana",
+    "gps_code": "SVMU",
+    "iata_code": "SFX",
+    "local_code": null,
+    "latitude": 8.2788,
+    "longitude": -62.6652,
+    "filetypes": [
+      {
+        "extension": "SFX",
+        "description": "SFX (self-extracting archives) script",
+        "used_by": "RAR"
+      }
+    ]
+  },
+  {
+    "ident": "VEDG",
+    "type": "medium_airport",
+    "name": "Kazi Nazrul Islam Airport",
+    "elevation_ft": 300.0,
+    "continent": "AS",
+    "iso_country": "IN",
+    "iso_region": "IN-WB",
+    "municipality": "Durgapur",
+    "gps_code": "VEDG",
+    "iata_code": "RDP",
+    "local_code": null,
+    "latitude": 23.6225,
+    "longitude": 87.243,
+    "filetypes": [
+      {
+        "extension": "RDP",
+        "description": "RDP connection",
+        "used_by": "Remote Desktop connection"
+      }
+    ]
+  },
+  {
+    "ident": "VIAG",
+    "type": "medium_airport",
+    "name": "Agra Airport / Agra Air Force Station",
+    "elevation_ft": 551.0,
+    "continent": "AS",
+    "iso_country": "IN",
+    "iso_region": "IN-UP",
+    "municipality": "Agra",
+    "gps_code": "VIAG",
+    "iata_code": "AGR",
+    "local_code": null,
+    "latitude": 27.157683,
+    "longitude": 77.960942,
+    "filetypes": [
+      {
+        "extension": "AGR",
+        "description": "ArcView ASCII grid",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "VLSN",
+    "type": "medium_airport",
+    "name": "Sam Neua Airport",
+    "elevation_ft": 3281.0,
+    "continent": "AS",
+    "iso_country": "LA",
+    "iso_region": "LA-HO",
+    "municipality": null,
+    "gps_code": "VLSN",
+    "iata_code": "NEU",
+    "local_code": null,
+    "latitude": 20.418399810791016,
+    "longitude": 104.06700134277344,
+    "filetypes": [
+      {
+        "extension": "NEU",
+        "description": "Pro/Engineer neutral file format",
+        "used_by": "PTC Pro/Engineer"
+      }
+    ]
+  },
+  {
+    "ident": "VNLK",
+    "type": "small_airport",
+    "name": "Lukla Airport",
+    "elevation_ft": 9380.0,
+    "continent": "AS",
+    "iso_country": "NP",
+    "iso_region": "NP-P1",
+    "municipality": "Lukla",
+    "gps_code": "VNLK",
+    "iata_code": "LUA",
+    "local_code": null,
+    "latitude": 27.686899185180664,
+    "longitude": 86.72969818115234,
+    "filetypes": [
+      {
+        "extension": "LUA",
+        "description": "Lua script file",
+        "used_by": "Lua (programming language)"
+      }
+    ]
+  },
+  {
+    "ident": "VOCP",
+    "type": "medium_airport",
+    "name": "Kadapa Airport",
+    "elevation_ft": 430.0,
+    "continent": "AS",
+    "iso_country": "IN",
+    "iso_region": "IN-AP",
+    "municipality": "Kadapa",
+    "gps_code": "VOCP",
+    "iata_code": "CDP",
+    "local_code": null,
+    "latitude": 14.513154,
+    "longitude": 78.769183,
+    "filetypes": [
+      {
+        "extension": "CDP",
+        "description": "Trainz Railroad Simulator Content Dispatcher Pack",
+        "used_by": "Trainz Railroad Simulator"
+      }
+    ]
+  },
+  {
+    "ident": "VRDA",
+    "type": "medium_airport",
+    "name": "Maafaru International Airport",
+    "elevation_ft": 6.0,
+    "continent": "AS",
+    "iso_country": "MV",
+    "iso_region": "MV-25",
+    "municipality": "Noonu Atoll",
+    "gps_code": "VRDA",
+    "iata_code": "NMF",
+    "local_code": null,
+    "latitude": 5.818394,
+    "longitude": 73.469181,
+    "filetypes": [
+      {
+        "extension": "NMF",
+        "description": "Node Map File",
+        "used_by": "Used by SpicyNodes"
+      }
+    ]
+  },
+  {
+    "ident": "VTPB",
+    "type": "medium_airport",
+    "name": "Phetchabun Airport",
+    "elevation_ft": 450.0,
+    "continent": "AS",
+    "iso_country": "TH",
+    "iso_region": "TH-67",
+    "municipality": null,
+    "gps_code": "VTPB",
+    "iata_code": "PHY",
+    "local_code": null,
+    "latitude": 16.6760005951,
+    "longitude": 101.194999695,
+    "filetypes": [
+      { "extension": "PHY", "description": "Phylip format", "used_by": null }
+    ]
+  },
+  {
+    "ident": "VTUI",
+    "type": "medium_airport",
+    "name": "Sakon Nakhon Airport",
+    "elevation_ft": 529.0,
+    "continent": "AS",
+    "iso_country": "TH",
+    "iso_region": "TH-47",
+    "municipality": null,
+    "gps_code": "VTUI",
+    "iata_code": "SNO",
+    "local_code": null,
+    "latitude": 17.195100784301758,
+    "longitude": 104.11900329589844,
+    "filetypes": [
+      {
+        "extension": "SNO",
+        "description": "SNOBOL4 source code file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "VYMD",
+    "type": "large_airport",
+    "name": "Mandalay International Airport",
+    "elevation_ft": 300.0,
+    "continent": "AS",
+    "iso_country": "MM",
+    "iso_region": "MM-04",
+    "municipality": "Mandalay",
+    "gps_code": "VYMD",
+    "iata_code": "MDL",
+    "local_code": null,
+    "latitude": 21.70219993591309,
+    "longitude": 95.97789764404295,
+    "filetypes": [
+      {
+        "extension": "MDL",
+        "description": "Model",
+        "used_by": "3D Design Plus or Simulink"
+      }
+    ]
+  },
+  {
+    "ident": "WAD",
+    "type": "small_airport",
+    "name": "Andriamena Airport",
+    "elevation_ft": 2475.0,
+    "continent": "AF",
+    "iso_country": "MG",
+    "iso_region": "MG-M",
+    "municipality": "Andriamena",
+    "gps_code": null,
+    "iata_code": "WAD",
+    "local_code": null,
+    "latitude": -17.631,
+    "longitude": 47.7233,
+    "filetypes": [
+      {
+        "extension": "WAD",
+        "description": "Default package format for Doom that contains sprites, levels, and game data",
+        "used_by": "Doom and Doom II"
+      }
+    ]
+  },
+  {
+    "ident": "WALJ",
+    "type": "small_airport",
+    "name": "Datadawai Airport",
+    "elevation_ft": 508.0,
+    "continent": "AS",
+    "iso_country": "ID",
+    "iso_region": "ID-KI",
+    "municipality": "Datadawai-Borneo Island",
+    "gps_code": "WALJ",
+    "iata_code": "DTD",
+    "local_code": null,
+    "latitude": 0.8106,
+    "longitude": 114.5306,
+    "filetypes": [
+      {
+        "extension": "DTD",
+        "description": "Document Type Definition",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "WIBS",
+    "type": "small_airport",
+    "name": "Sungai Pakning Bengkalis Airport",
+    "elevation_ft": 3.0,
+    "continent": "AS",
+    "iso_country": "ID",
+    "iso_region": "ID-RI",
+    "municipality": "Bengkalis-Sumatra Island",
+    "gps_code": "WIBS",
+    "iata_code": "SEQ",
+    "local_code": null,
+    "latitude": 1.3700000047683716,
+    "longitude": 102.13999938964844,
+    "filetypes": [
+      {
+        "extension": "SEQ",
+        "description": "Video",
+        "used_by": "Tiertex video sequence"
+      }
+    ]
+  },
+  {
+    "ident": "WIGM",
+    "type": "small_airport",
+    "name": "Muko Muko Airport",
+    "elevation_ft": 24.0,
+    "continent": "AS",
+    "iso_country": "ID",
+    "iso_region": "ID-JA",
+    "municipality": "Muko Muko",
+    "gps_code": "WIGM",
+    "iata_code": "MPC",
+    "local_code": null,
+    "latitude": -2.54186,
+    "longitude": 101.087997,
+    "filetypes": [
+      { "extension": "MPC", "description": "Musepack audio", "used_by": null }
+    ]
+  },
+  {
+    "ident": "WSAT",
+    "type": "medium_airport",
+    "name": "Tengah Air Base",
+    "elevation_ft": 50.0,
+    "continent": "AS",
+    "iso_country": "SG",
+    "iso_region": "SG-03",
+    "municipality": "Western Water Catchment",
+    "gps_code": "WSAT",
+    "iata_code": "TGA",
+    "local_code": null,
+    "latitude": 1.387561,
+    "longitude": 103.708291,
+    "filetypes": [
+      {
+        "extension": "TGA",
+        "description": "Truevision Advanced Raster Graphics Adapter image",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "YBPI",
+    "type": "small_airport",
+    "name": "Brampton Island Airport",
+    "elevation_ft": 11.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-QLD",
+    "municipality": null,
+    "gps_code": "YBPI",
+    "iata_code": "BMP",
+    "local_code": null,
+    "latitude": -20.804633,
+    "longitude": 149.279931,
+    "filetypes": [
+      {
+        "extension": "BMP",
+        "description": "OS/2 or Win graphics format (BitMap Picture)",
+        "used_by": "QPeg - CorelDraw - PC Paintbrush - many"
+      }
+    ]
+  },
+  {
+    "ident": "YBTL",
+    "type": "medium_airport",
+    "name": "Townsville Airport / RAAF Base Townsville",
+    "elevation_ft": 18.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-QLD",
+    "municipality": "Townsville",
+    "gps_code": "YBTL",
+    "iata_code": "TSV",
+    "local_code": null,
+    "latitude": -19.252904,
+    "longitude": 146.766512,
+    "filetypes": [
+      {
+        "extension": "TSV",
+        "description": "Tab-separated values",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "YCTM",
+    "type": "medium_airport",
+    "name": "Cootamundra Airport",
+    "elevation_ft": 1110.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NSW",
+    "municipality": null,
+    "gps_code": "YCTM",
+    "iata_code": "CMD",
+    "local_code": null,
+    "latitude": -34.624283,
+    "longitude": 148.036641,
+    "filetypes": [
+      {
+        "extension": "CMD",
+        "description": "Command Prompt batch file",
+        "used_by": "Microsoft Windows NT based operating systems"
+      },
+      {
+        "extension": "CMD",
+        "description": "executable programs",
+        "used_by": "CP/M-86 operating system"
+      }
+    ]
+  },
+  {
+    "ident": "YDGN",
+    "type": "small_airport",
+    "name": "Doongan Airport",
+    "elevation_ft": null,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-WA",
+    "municipality": "Drysdale River",
+    "gps_code": "YDGN",
+    "iata_code": "DNG",
+    "local_code": null,
+    "latitude": -15.386429,
+    "longitude": 126.302235,
+    "filetypes": [
+      {
+        "extension": "DNG",
+        "description": "Digital Negative, a-publicly available archival format for the raw files generated by digital cameras",
+        "used_by": "At least 30 camera models from at least 10 manufacturers, and at least 200 software products"
+      }
+    ]
+  },
+  {
+    "ident": "YELD",
+    "type": "medium_airport",
+    "name": "Elcho Island Airport",
+    "elevation_ft": 101.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NT",
+    "municipality": "Elcho Island",
+    "gps_code": "YELD",
+    "iata_code": "ELC",
+    "local_code": null,
+    "latitude": -12.019399642899998,
+    "longitude": 135.570999146,
+    "filetypes": [
+      {
+        "extension": "ELC",
+        "description": "Byte-compiled Emacs Lisp code",
+        "used_by": "Emacs"
+      }
+    ]
+  },
+  {
+    "ident": "YHAY",
+    "type": "medium_airport",
+    "name": "Hay Airport",
+    "elevation_ft": 305.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NSW",
+    "municipality": null,
+    "gps_code": "YHAY",
+    "iata_code": "HXX",
+    "local_code": null,
+    "latitude": -34.531399,
+    "longitude": 144.830002,
+    "filetypes": [
+      { "extension": "HXX", "description": "C++ header file", "used_by": null }
+    ]
+  },
+  {
+    "ident": "YKER",
+    "type": "medium_airport",
+    "name": "Kerang Airport",
+    "elevation_ft": 254.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-VIC",
+    "municipality": null,
+    "gps_code": "YKER",
+    "iata_code": "KRA",
+    "local_code": null,
+    "latitude": -35.751399993896484,
+    "longitude": 143.93899536132812,
+    "filetypes": [
+      {
+        "extension": "KRA",
+        "description": "Krita image file",
+        "used_by": "Krita"
+      }
+    ]
+  },
+  {
+    "ident": "YKML",
+    "type": "small_airport",
+    "name": "Kamileroi Airport",
+    "elevation_ft": 91.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-QLD",
+    "municipality": null,
+    "gps_code": "YKML",
+    "iata_code": "KML",
+    "local_code": null,
+    "latitude": -19.375,
+    "longitude": 140.0570068359375,
+    "filetypes": [
+      {
+        "extension": "KML",
+        "description": "Keyhole Markup Language",
+        "used_by": "Google Earth"
+      }
+    ]
+  },
+  {
+    "ident": "YMAE",
+    "type": "small_airport",
+    "name": "Murray Island Airport",
+    "elevation_ft": 300.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-QLD",
+    "municipality": "Murray Island",
+    "gps_code": "YMAE",
+    "iata_code": "MYI",
+    "local_code": null,
+    "latitude": -9.915105,
+    "longitude": 144.054644,
+    "filetypes": [
+      {
+        "extension": "MYI",
+        "description": "a MyISAM index file in MySQL",
+        "used_by": "MyISAM, MySQL"
+      }
+    ]
+  },
+  {
+    "ident": "YMIN",
+    "type": "small_airport",
+    "name": "Minlaton Airport",
+    "elevation_ft": null,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-SA",
+    "municipality": null,
+    "gps_code": "YMIN",
+    "iata_code": "XML",
+    "local_code": null,
+    "latitude": -34.743801,
+    "longitude": 137.529087,
+    "filetypes": [
+      {
+        "extension": "XML",
+        "description": "eXtensible Markup Language file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "YMNS",
+    "type": "small_airport",
+    "name": "Mount Swan Airport",
+    "elevation_ft": 1641.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NT",
+    "municipality": null,
+    "gps_code": "YMNS",
+    "iata_code": "MSF",
+    "local_code": null,
+    "latitude": -22.624696,
+    "longitude": 135.034512,
+    "filetypes": [
+      {
+        "extension": "MSF",
+        "description": "Multiple sequence file (Pileup format)",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "YMRB",
+    "type": "medium_airport",
+    "name": "Moranbah Airport",
+    "elevation_ft": 770.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-QLD",
+    "municipality": "Moranbah",
+    "gps_code": "YMRB",
+    "iata_code": "MOV",
+    "local_code": null,
+    "latitude": -22.057800293,
+    "longitude": 148.07699585,
+    "filetypes": [
+      {
+        "extension": "MOV",
+        "description": "Animation format (Mac)",
+        "used_by": "QuickTime, AutoCAD AutoFlix"
+      }
+    ]
+  },
+  {
+    "ident": "YNGU",
+    "type": "medium_airport",
+    "name": "Ngukurr Airport",
+    "elevation_ft": 45.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NT",
+    "municipality": null,
+    "gps_code": "YNGU",
+    "iata_code": "RPM",
+    "local_code": null,
+    "latitude": -14.722800254821776,
+    "longitude": 134.7469940185547,
+    "filetypes": [
+      {
+        "extension": "RPM",
+        "description": "RPM software package",
+        "used_by": "Red Hat Linux, the Linux Standard Base and several other operating systems"
+      }
+    ]
+  },
+  {
+    "ident": "YNSH",
+    "type": "small_airport",
+    "name": "Noosa Airport",
+    "elevation_ft": 1.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-QLD",
+    "municipality": null,
+    "gps_code": "YNSH",
+    "iata_code": "NSV",
+    "local_code": null,
+    "latitude": -26.423177,
+    "longitude": 153.064935,
+    "filetypes": [
+      {
+        "extension": "NSV",
+        "description": "media",
+        "used_by": "Nullsoft Streaming Video"
+      }
+    ]
+  },
+  {
+    "ident": "YPBO",
+    "type": "medium_airport",
+    "name": "Paraburdoo Airport",
+    "elevation_ft": 1406.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-WA",
+    "municipality": "Paraburdoo",
+    "gps_code": "YPBO",
+    "iata_code": "PBO",
+    "local_code": null,
+    "latitude": -23.1711006165,
+    "longitude": 117.745002747,
+    "filetypes": [
+      {
+        "extension": "PBO",
+        "description": "A file type used by Bohemia Interactive",
+        "used_by": "Arma 3, PBO Manager"
+      }
+    ]
+  },
+  {
+    "ident": "YPDA",
+    "type": "small_airport",
+    "name": "Parndana Airport",
+    "elevation_ft": 545.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-SA",
+    "municipality": "Kangaroo Island",
+    "gps_code": "YPDA",
+    "iata_code": "PDN",
+    "local_code": "YPDA",
+    "latitude": -35.807,
+    "longitude": 137.264,
+    "filetypes": [
+      {
+        "extension": "PDN",
+        "description": "Image file",
+        "used_by": "Paint.NET"
+      }
+    ]
+  },
+  {
+    "ident": "YPDI",
+    "type": "small_airport",
+    "name": "Pandie Pandie Airport",
+    "elevation_ft": null,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-SA",
+    "municipality": null,
+    "gps_code": "YPDI",
+    "iata_code": "PDE",
+    "local_code": null,
+    "latitude": -26.122248,
+    "longitude": 139.403501,
+    "filetypes": [
+      {
+        "extension": "PDE",
+        "description": "Processing source code file",
+        "used_by": "Processing programming language"
+      }
+    ]
+  },
+  {
+    "ident": "YRNG",
+    "type": "small_airport",
+    "name": "Ramingining Airport",
+    "elevation_ft": 206.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NT",
+    "municipality": null,
+    "gps_code": "YRNG",
+    "iata_code": "RAM",
+    "local_code": null,
+    "latitude": -12.356399536132812,
+    "longitude": 134.8979949951172,
+    "filetypes": [
+      { "extension": "RAM", "description": "Ramfile", "used_by": "RealAudio" }
+    ]
+  },
+  {
+    "ident": "YSAN",
+    "type": "small_airport",
+    "name": "Sandstone Airport",
+    "elevation_ft": null,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-WA",
+    "municipality": "Sandstone",
+    "gps_code": "YSAN",
+    "iata_code": "NDS",
+    "local_code": null,
+    "latitude": -27.979999542236328,
+    "longitude": 119.2969970703125,
+    "filetypes": [
+      {
+        "extension": "NDS",
+        "description": "Nintendo DS file. Used for Homebrew and official games.",
+        "used_by": "Nintendo DS Consoles and Emulators"
+      }
+    ]
+  },
+  {
+    "ident": "YWAV",
+    "type": "small_airport",
+    "name": "Wave Hill Airport",
+    "elevation_ft": 201.0,
+    "continent": "OC",
+    "iso_country": "AU",
+    "iso_region": "AU-NT",
+    "municipality": null,
+    "gps_code": "YWAV",
+    "iata_code": "WAV",
+    "local_code": null,
+    "latitude": -17.393299102783203,
+    "longitude": 131.1179962158203,
+    "filetypes": [
+      {
+        "extension": "WAV",
+        "description": "Sound format (Microsoft Windows RIFF WAVE)",
+        "used_by": "Media Player"
+      }
+    ]
+  },
+  {
+    "ident": "ZBCF",
+    "type": "medium_airport",
+    "name": "Chifeng Yulong Airport",
+    "elevation_ft": null,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-15",
+    "municipality": "Chifeng",
+    "gps_code": "ZBCF",
+    "iata_code": "CIF",
+    "local_code": null,
+    "latitude": 42.157708,
+    "longitude": 118.839455,
+    "filetypes": [
+      {
+        "extension": "CIF",
+        "description": "Crystallographic Information File",
+        "used_by": "RasMol, Jmol"
+      }
+    ]
+  },
+  {
+    "ident": "ZBDT",
+    "type": "small_airport",
+    "name": "Datong Yungang Airport",
+    "elevation_ft": 3442.0,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-14",
+    "municipality": "Datong",
+    "gps_code": "ZBDT",
+    "iata_code": "DAT",
+    "local_code": null,
+    "latitude": 40.061614,
+    "longitude": 113.480032,
+    "filetypes": [
+      {
+        "extension": "DAT",
+        "description": "AMPL data file",
+        "used_by": "AMPL"
+      },
+      {
+        "extension": "DAT",
+        "description": "LDraw (Sub)Part File, 3D Model",
+        "used_by": "LDraw"
+      },
+      {
+        "extension": "DAT",
+        "description": "Data",
+        "used_by": "RSNetWorx Project"
+      },
+      {
+        "extension": "DAT",
+        "description": "Data file in special format or ASCII",
+        "used_by": null
+      },
+      {
+        "extension": "DAT",
+        "description": "Database file",
+        "used_by": "Clarion (programming language)"
+      },
+      {
+        "extension": "DAT",
+        "description": "Norton Utilities disc image data. It saves Boot sector, part of FAT and root directory in image.DAT on same drive.",
+        "used_by": "Norton Utilities"
+      },
+      {
+        "extension": "DAT",
+        "description": "Optical disc image (can be ISO9660, but not restricted to)",
+        "used_by": "cdrdao, burnatonce"
+      },
+      {
+        "extension": "DAT",
+        "description": "Video CD MPEG stream",
+        "used_by": null
+      },
+      {
+        "extension": "DAT",
+        "description": "Windows registry hive (REG.DAT Windows 3.11; USER.DAT and SYSTEM.DAT Windows 95, 98, and ME; NTUSER.DAT Windows NT/2000/XP/7)",
+        "used_by": "Microsoft Windows"
+      }
+    ]
+  },
+  {
+    "ident": "ZBER",
+    "type": "medium_airport",
+    "name": "Erenhot Saiwusu International Airport",
+    "elevation_ft": 3301.0,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-15",
+    "municipality": "Erenhot",
+    "gps_code": "ZBER",
+    "iata_code": "ERL",
+    "local_code": null,
+    "latitude": 43.4225,
+    "longitude": 112.096667,
+    "filetypes": [
+      {
+        "extension": "ERL",
+        "description": "Erlang source code file",
+        "used_by": null
+      }
+    ]
+  },
+  {
+    "ident": "ZJQH",
+    "type": "medium_airport",
+    "name": "Qionghai Bo'ao Airport",
+    "elevation_ft": 30.0,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-46",
+    "municipality": "Qionghai (Basuo)",
+    "gps_code": "ZJQH",
+    "iata_code": "BAR",
+    "local_code": null,
+    "latitude": 19.140951,
+    "longitude": 110.452766,
+    "filetypes": [
+      {
+        "extension": "BAR",
+        "description": "Broker Archive. Compressed file containing number of other files for deployment.",
+        "used_by": "IBM App Connect"
+      }
+    ]
+  },
+  {
+    "ident": "ZKWS",
+    "type": "medium_airport",
+    "name": "Wonsan Kalma International Airport",
+    "elevation_ft": 7.0,
+    "continent": "AS",
+    "iso_country": "KP",
+    "iso_region": "KP-07",
+    "municipality": "Wonsan",
+    "gps_code": "ZKWS",
+    "iata_code": "WOS",
+    "local_code": null,
+    "latitude": 39.166801,
+    "longitude": 127.486,
+    "filetypes": [
+      {
+        "extension": "WOS",
+        "description": "WoS bibliographic reference file",
+        "used_by": "ISI/Clarivate Analytics"
+      }
+    ]
+  },
+  {
+    "ident": "ZYMD",
+    "type": "medium_airport",
+    "name": "Mudanjiang Hailang International Airport",
+    "elevation_ft": 883.0,
+    "continent": "AS",
+    "iso_country": "CN",
+    "iso_region": "CN-23",
+    "municipality": "Mudanjiang",
+    "gps_code": "ZYMD",
+    "iata_code": "MDG",
+    "local_code": null,
+    "latitude": 44.5241012573,
+    "longitude": 129.569000244,
+    "filetypes": [
+      {
+        "extension": "MDG",
+        "description": "Digital Geometry (Programmable CAD) file format, developed by DInsight",
+        "used_by": "Digital Geometric Kernel"
+      }
+    ]
+  }
+]
