@@ -2,7 +2,7 @@ export interface Airport {
   ident: string;
   type: string;
   name: string;
-  elevation_ft: number;
+  elevation_ft: number | null;
   continent: string;
   iso_country: string;
   iso_region: string;
@@ -17,7 +17,7 @@ export interface Airport {
 
 export interface FileType {
   extension: string;
-  description: string;
+  description: string | null;
   used_by: string | null;
 }
 
