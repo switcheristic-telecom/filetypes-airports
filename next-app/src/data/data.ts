@@ -6,7 +6,7 @@ export interface Airport {
   continent: string;
   iso_country: string;
   iso_region: string;
-  municipality: string;
+  municipality: string | null;
   gps_code: string | null;
   iata_code: string | null;
   local_code: string | null;
