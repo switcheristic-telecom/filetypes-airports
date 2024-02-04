@@ -30,11 +30,20 @@ export const material = {
   specularColor: [51, 51, 51],
 };
 
+// export const INITIAL_VIEW_STATE = {
+//   latitude: 39.1,
+//   longitude: -94.57,
+//   zoom: 3.8,
+//   minZoom: 3,
+//   maxZoom: 16,
+//   pitch: 0,
+//   bearing: 0,
+// };
+
 export const INITIAL_VIEW_STATE = {
-  latitude: 39.1,
-  longitude: -94.57,
-  zoom: 3.8,
-  maxZoom: 16,
+  longitude: -122.41669,
+  latitude: 37.7853,
+  zoom: 13,
   pitch: 0,
   bearing: 0,
 };

@@ -1,7 +1,7 @@
 'use client';
 // components/Map.jsx
 
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 
 import Map from 'react-map-gl';
 import { HexagonLayer } from '@deck.gl/aggregation-layers/typed';
@@ -10,7 +10,11 @@ import DeckGL from '@deck.gl/react/typed';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { scaleLinear } from 'd3-scale';
 
-import { MapView, OrthographicView } from '@deck.gl/core/typed';
+import {
+  MapView,
+  OrthographicView,
+  _GlobeView as GlobeView,
+} from '@deck.gl/core/typed';
 
 import type { Airport } from '@/data/data';
 
@@ -23,7 +27,8 @@ import {
 } from '../lib/mapconfig.js';
 
 interface LocationAggregatorMapProps {
-  data: Airport[];
+  allAirportsData: Airport[];
+  airportOfTheDayData: Airport | null;
   noOverlap?: boolean;
 }
 
@@ -46,12 +51,19 @@ function getTooltip({ object }: { object: Airport }) {
 }
 
 const LocationAggregatorMap = ({
-  data,
+  allAirportsData,
+  airportOfTheDayData,
   noOverlap = true,
 }: LocationAggregatorMapProps) => {
+  const updataedInitialState = {
+    ...INITIAL_VIEW_STATE,
+    longitude: airportOfTheDayData?.longitude,
+    latitude: airportOfTheDayData?.latitude,
+  };
+
   const textLayer = new TextLayer({
     id: 'world-cities',
-    data,
+    data: allAirportsData,
     characterSet: 'auto',
     fontSettings: {
       buffer: 8,
@@ -82,20 +94,21 @@ const LocationAggregatorMap = ({
 
   return (
     <div>
-      <DeckGL
-        effects={[lightingEffect]}
-        initialViewState={INITIAL_VIEW_STATE}
-        controller={true}
-        layers={layers}
-        views={new MapView({ repeat: true })}
-        // getTooltip={getTooltip}
-      >
-        <Map
-          // controller={true}
-          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-          mapStyle='mapbox://styles/mapbox/light-v11'
-        ></Map>
-      </DeckGL>
+      <Suspense>
+        <DeckGL
+          // effects={[lightingEffect]}
+          initialViewState={updataedInitialState}
+          controller={true}
+          layers={layers}
+          // getTooltip={getTooltip}
+        >
+          <Map
+            // controller={true}
+            mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+            mapStyle='mapbox://styles/mapbox/light-v11'
+          ></Map>
+        </DeckGL>
+      </Suspense>
     </div>
   );
 };

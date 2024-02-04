@@ -3,22 +3,30 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import LocationAggregatorMap from '../components/Map';
+import MapTest from '@/components/MapTest';
 
 import type { Airport } from '@/data/data';
 export default function Home() {
-  let [data, setData] = useState<Airport[]>([]);
+  let [allAirportsData, setAllAirportsData] = useState<Airport[]>([]);
+  let [airportOfTheDayData, setAirportOfTheDayData] = useState<Airport | null>(
+    null
+  );
 
   useEffect(() => {
     (async () => {
       const res = await fetch('/api/airports');
-      const { data } = await res.json();
-      setData(data);
+      const { allAirports, airportOfTheDay } = await res.json();
+      setAllAirportsData(allAirports);
+      setAirportOfTheDayData(airportOfTheDay);
     })();
   }, []);
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <LocationAggregatorMap data={data} />
+      <LocationAggregatorMap
+        allAirportsData={allAirportsData}
+        airportOfTheDayData={airportOfTheDayData}
+      />
     </main>
   );
 }

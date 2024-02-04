@@ -1,3 +1,5 @@
+const seedrandom = require('seedrandom');
+
 export interface Airport {
   ident: string;
   type: string;
@@ -20,6 +22,15 @@ export interface FileType {
   description: string | null;
   used_by: string | null;
 }
+
+const getAirportOfTheDay = (airports: Airport[]): Airport => {
+  // today's date as a number
+  const today = new Date().toISOString().slice(0, 10).split('-').join('');
+  const myrng = new seedrandom(today);
+
+  const airport = airports[Math.floor(myrng() * airports.length)];
+  return airport;
+};
 
 const AIRPORT_CODES_WITH_FILETYPES: Airport[] = [
   {
@@ -6394,5 +6405,7 @@ const AIRPORT_CODES_WITH_FILETYPES: Airport[] = [
     ],
   },
 ];
+
+export const airportOfTheDay = getAirportOfTheDay(AIRPORT_CODES_WITH_FILETYPES);
 
 export { AIRPORT_CODES_WITH_FILETYPES };
