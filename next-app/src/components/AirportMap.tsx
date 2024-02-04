@@ -26,7 +26,7 @@ import {
   colorRange,
 } from '../lib/mapconfig.js';
 
-interface LocationAggregatorMapProps {
+interface AirportMapProps {
   allAirportsData: Airport[];
   airportOfTheDayData: Airport | null;
   noOverlap?: boolean;
@@ -50,11 +50,11 @@ function getTooltip({ object }: { object: Airport }) {
         ${count} file extensions here`;
 }
 
-const LocationAggregatorMap = ({
+const AirportMap = ({
   allAirportsData,
   airportOfTheDayData,
   noOverlap = true,
-}: LocationAggregatorMapProps) => {
+}: AirportMapProps) => {
   const updataedInitialState = {
     ...INITIAL_VIEW_STATE,
     longitude: airportOfTheDayData?.longitude,
@@ -113,4 +113,4 @@ const LocationAggregatorMap = ({
   );
 };
 
-export default LocationAggregatorMap;
+export default AirportMap;

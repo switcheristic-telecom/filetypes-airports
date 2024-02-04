@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import LocationAggregatorMap from '../components/Map';
+import AirportMap from '@/components/AirportMap';
 
 import type { Airport } from '@/data/data';
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <LocationAggregatorMap
+      <AirportMap
         allAirportsData={allAirportsData}
         airportOfTheDayData={airportOfTheDayData}
       />
