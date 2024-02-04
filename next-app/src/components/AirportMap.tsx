@@ -30,22 +30,40 @@ interface AirportMapProps {
   noOverlap?: boolean;
 }
 
-const fontSize = 1;
-const sizeMaxPixels = 100;
-const sizeMinPixels = 10;
-
-function getTooltip({ object }: { object: Airport }) {
-  if (!object) {
+function getTooltip(object: any) {
+  if (!object.object) {
     return null;
   }
-  const lat = object.latitude;
-  const lng = object.longitude;
-  const count = object.filetypes.length;
 
-  return `\
-        latitude: ${Number.isFinite(lat) ? lat.toFixed(6) : ''}
-        longitude: ${Number.isFinite(lng) ? lng.toFixed(6) : ''}
-        ${count} file extensions here`;
+  const iata_code = object.object.iata_code;
+
+  const extension = `<b>Extension</b>: ${iata_code}`;
+  const composeFileTypeLines = (
+    description: string | null,
+    usedBy: string | null
+  ) => {
+    const descriptionLine = `<b>Description</b>: ${description}`;
+    const usedByLine = usedBy ? `<b>Used by</b>: ${usedBy}` : '';
+
+    return `${descriptionLine}<br>${usedByLine}`;
+  };
+
+  const fileTypeLines = object.object.filetypes.map((filetype: any) => {
+    return composeFileTypeLines(filetype.description, filetype.used_by);
+  });
+
+  return {
+    html: `\
+    ${extension}<br> 
+    ${fileTypeLines.join('<br>')}
+    `,
+    style: {
+      fontSize: '0.8em',
+      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+      color: 'white',
+      width: '24em',
+    },
+  };
 }
 
 const AirportMap = ({
@@ -69,14 +87,13 @@ const AirportMap = ({
     <div>
       {initialAirport && (
         <DeckGL
-          // effects={[lightingEffect]}
+          effects={[lightingEffect]}
           initialViewState={updataedInitialState}
           controller={true}
           layers={layers}
-          // getTooltip={getTooltip}
+          getTooltip={getTooltip}
         >
           <Map
-            // controller={true}
             mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
             mapStyle={mapboxStyles.latest}
           ></Map>
