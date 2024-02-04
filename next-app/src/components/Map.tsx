@@ -94,7 +94,7 @@ const LocationAggregatorMap = ({
 
   return (
     <div>
-      <Suspense>
+      {airportOfTheDayData && (
         <DeckGL
           // effects={[lightingEffect]}
           initialViewState={updataedInitialState}
@@ -108,7 +108,7 @@ const LocationAggregatorMap = ({
             mapStyle='mapbox://styles/mapbox/light-v11'
           ></Map>
         </DeckGL>
-      </Suspense>
+      )}
     </div>
   );
 };
