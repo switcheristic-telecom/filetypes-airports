@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import LocationAggregatorMap from '../components/Map';
-import MapTest from '@/components/MapTest';
 
 import type { Airport } from '@/data/data';
 export default function Home() {
