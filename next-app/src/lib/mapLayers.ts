@@ -12,7 +12,7 @@ interface TextLayerFromAirportsArgs {
 
 export const textLayerFromAirports = ({
   airports,
-  fontSize = 14,
+  fontSize = 24,
   sizeMaxPixels = 48,
   sizeMinPixels = 10,
   noOverlap = true,
@@ -28,17 +28,21 @@ export const textLayerFromAirports = ({
     fontSettings: {
       buffer: 8,
     },
-    fontFamily: 'Futura, Helvetica, Arial, sans-serif',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
 
     // TextLayer options
     getText: (d) => d.iata_code,
     getPosition: (d) => [d.longitude, d.latitude],
-    getColor: (d) => [0, 0, 0],
+    getColor: (d) => [255, 255, 0],
     getSize: (d) => 1,
     sizeScale: fontSize,
     sizeMaxPixels,
     sizeMinPixels,
     maxWidth: 64 * 12,
+
+    background: true,
+    backgroundColor: [0, 0, 0, 255],
 
     // CollideExtension options
     collisionEnabled: noOverlap,
