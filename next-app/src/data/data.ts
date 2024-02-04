@@ -1,38 +1,11 @@
-const seedrandom = require('seedrandom');
+import {
+  Airport,
+  FileType,
+  getAirportOfTheDay,
+  getRandomAirport,
+} from '@/utils/airport';
 
-export interface Airport {
-  ident: string;
-  type: string;
-  name: string;
-  elevation_ft: number | null;
-  continent: string;
-  iso_country: string;
-  iso_region: string;
-  municipality: string | null;
-  gps_code: string | null;
-  iata_code: string | null;
-  local_code: string | null;
-  latitude: number;
-  longitude: number;
-  filetypes: FileType[];
-}
-
-export interface FileType {
-  extension: string;
-  description: string | null;
-  used_by: string | null;
-}
-
-const getAirportOfTheDay = (airports: Airport[]): Airport => {
-  // today's date as a number
-  const today = new Date().toISOString().slice(0, 10).split('-').join('');
-  const myrng = new seedrandom(today);
-
-  const airport = airports[Math.floor(myrng() * airports.length)];
-  return airport;
-};
-
-const AIRPORT_CODES_WITH_FILETYPES: Airport[] = [
+export const AIRPORT_CODES_WITH_FILETYPES: Airport[] = [
   {
     ident: '3IS8',
     type: 'small_airport',
@@ -6408,4 +6381,4 @@ const AIRPORT_CODES_WITH_FILETYPES: Airport[] = [
 
 export const airportOfTheDay = getAirportOfTheDay(AIRPORT_CODES_WITH_FILETYPES);
 
-export { AIRPORT_CODES_WITH_FILETYPES };
+export const randomAirport = getRandomAirport(AIRPORT_CODES_WITH_FILETYPES);

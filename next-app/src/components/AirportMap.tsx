@@ -10,13 +10,11 @@ import DeckGL from '@deck.gl/react/typed';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { scaleLinear } from 'd3-scale';
 
-import {
-  MapView,
-  OrthographicView,
-  _GlobeView as GlobeView,
-} from '@deck.gl/core/typed';
+import { textLayerFromAirports } from '@/lib/mapLayers';
 
-import type { Airport } from '@/data/data';
+import type { Airport } from '@/utils/airport';
+
+import { mapboxStyles } from '@/utils/mapbox';
 
 // import map config
 import {
@@ -28,7 +26,7 @@ import {
 
 interface AirportMapProps {
   allAirportsData: Airport[];
-  airportOfTheDayData: Airport | null;
+  initialAirport: Airport | null;
   noOverlap?: boolean;
 }
 
@@ -52,49 +50,24 @@ function getTooltip({ object }: { object: Airport }) {
 
 const AirportMap = ({
   allAirportsData,
-  airportOfTheDayData,
+  initialAirport,
   noOverlap = true,
 }: AirportMapProps) => {
   const updataedInitialState = {
     ...INITIAL_VIEW_STATE,
-    longitude: airportOfTheDayData?.longitude,
-    latitude: airportOfTheDayData?.latitude,
+    longitude: initialAirport?.longitude,
+    latitude: initialAirport?.latitude,
   };
 
-  const textLayer = new TextLayer({
-    id: 'world-cities',
-    data: allAirportsData,
-    characterSet: 'auto',
-    fontSettings: {
-      buffer: 8,
-    },
-
-    // TextLayer options
-    getText: (d) => d.iata_code,
-    getPosition: (d) => [d.longitude, d.latitude],
-    getColor: (d) => [0, 0, 0],
-    getSize: (d) => 15,
-    sizeScale: fontSize,
-    sizeMaxPixels,
-    sizeMinPixels,
-    maxWidth: 64 * 12,
-
-    // CollideExtension options
-    collisionEnabled: noOverlap,
-    // getCollisionPriority: (d) => Math.log10(d.population),
-    collisionTestProps: {
-      sizeScale: fontSize * 2,
-      sizeMaxPixels: sizeMaxPixels * 2,
-      sizeMinPixels: sizeMinPixels * 2,
-    },
-    // extensions: [new CollisionFilterExtension()],
+  const textLayer = textLayerFromAirports({
+    airports: allAirportsData,
   });
 
   const layers = [textLayer];
 
   return (
     <div>
-      {airportOfTheDayData && (
+      {initialAirport && (
         <DeckGL
           // effects={[lightingEffect]}
           initialViewState={updataedInitialState}
@@ -105,7 +78,7 @@ const AirportMap = ({
           <Map
             // controller={true}
             mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-            mapStyle='mapbox://styles/mapbox/light-v11'
+            mapStyle={mapboxStyles.latest}
           ></Map>
         </DeckGL>
       )}
