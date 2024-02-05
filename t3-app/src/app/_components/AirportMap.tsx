@@ -1,7 +1,7 @@
 "use client";
 
 import { env } from "@/env";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Mapbox
 import Map from "react-map-gl";
@@ -15,12 +15,19 @@ import DeckGL from "@deck.gl/react/typed";
 
 // Config
 import { lightingEffect, material, colorRange } from "@/lib/map-config";
-import { textLayerFromAirports } from "@/lib/map-layers";
+import {
+  textLayerFromAirports,
+  meshLayerFromAirports,
+  iconLayerFromAirports,
+} from "@/lib/map-layers";
 
 // Airport TRPC
 import type { Airport, AirportConcise } from "@/utils/airport";
 import { api } from "@/trpc/react";
 import type { ViewState } from "@/lib/map-config";
+
+// 60 fps
+const ANIMATION_INTERVAL = 1000 / 60;
 
 interface AirportMapProps {
   allAirports: Airport[];
@@ -34,6 +41,14 @@ const AirportMap = ({
   flyToAirport,
 }: AirportMapProps) => {
   const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
+  const [animationTime, setAnimationTime] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationTime((prev) => prev + ANIMATION_INTERVAL);
+    }, ANIMATION_INTERVAL);
+    return () => clearInterval(interval);
+  }, []);
 
   const textLayer = textLayerFromAirports({
     airports: allAirports,
@@ -44,7 +59,26 @@ const AirportMap = ({
     },
   });
 
-  const layers = [textLayer];
+  const meshLayer = meshLayerFromAirports({
+    airports: allAirports,
+    onClick: ({ object }) => {
+      if (object) {
+        flyToAirport(object as Airport);
+      }
+    },
+    timeInMs: animationTime,
+  });
+
+  const iconLayer = iconLayerFromAirports({
+    airports: allAirports,
+    onClick: ({ object }) => {
+      if (object) {
+        flyToAirport(object as Airport);
+      }
+    },
+  });
+
+  const layers = [meshLayer, textLayer];
 
   return (
     <div>

@@ -18,12 +18,12 @@ export interface ViewState {
 
 export const ambientLight = new AmbientLight({
   color: [255, 255, 255],
-  intensity: 1.0,
+  intensity: 3.0,
 });
 
 export const pointLight1 = new PointLight({
   color: [255, 255, 255],
-  intensity: 0.8,
+  intensity: 1,
   position: [-0.144528, 49.739968, 80000],
 });
 
