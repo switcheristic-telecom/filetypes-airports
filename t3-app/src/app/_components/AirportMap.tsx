@@ -1,5 +1,6 @@
 "use client";
 
+import { env } from "@/env";
 import React from "react";
 
 // Mapbox
@@ -95,7 +96,7 @@ const AirportMap = ({ allAirports, noOverlap = true }: AirportMapProps) => {
           getTooltip={getTooltip}
         >
           <Map
-            mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+            mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
             mapStyle={mapboxStyles.latest}
           ></Map>
         </DeckGL>
