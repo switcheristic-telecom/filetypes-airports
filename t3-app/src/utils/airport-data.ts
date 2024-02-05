@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-loss-of-precision */
 import type { AirportVerbose } from "@/utils/airport";
 import { getAirportOfTheDay, getRandomAirport } from "@/utils/airport";
 

@@ -1,26 +1,29 @@
 "use client";
 
-import React, { Suspense, useState } from "react";
+import React from "react";
 
+// Mapbox
 import Map from "react-map-gl";
-import { HexagonLayer } from "@deck.gl/aggregation-layers/typed";
-import DeckGL from "@deck.gl/react/typed";
 import "mapbox-gl/dist/mapbox-gl.css";
-
-import { textLayerFromAirports } from "@/lib/mapLayers";
-import type { Airport, AirportConcise } from "@/utils/airport";
 import { mapboxStyles } from "@/utils/mapbox";
 
-import { PickingInfo } from "@deck.gl/core/typed";
+// DeckGL
+import type { PickingInfo } from "@deck.gl/core/typed";
+import { HexagonLayer } from "@deck.gl/aggregation-layers/typed";
+import DeckGL from "@deck.gl/react/typed";
 
-import { api } from "@/trpc/react";
-
+// Config
 import {
   lightingEffect,
   material,
   INITIAL_VIEW_STATE,
   colorRange,
-} from "@/lib/mapconfig.js";
+} from "@/lib/mapconfig";
+import { textLayerFromAirports } from "@/lib/mapLayers";
+
+// Airport TRPC
+import type { Airport, AirportConcise } from "@/utils/airport";
+import { api } from "@/trpc/react";
 
 interface AirportMapProps {
   allAirports: Airport[];
@@ -31,12 +34,8 @@ function getTooltip(info: PickingInfo) {
   if (!info.object) {
     return null;
   }
-
   const airport = info.object as AirportConcise;
 
-  const iata_code = airport.iata_code;
-
-  const extension = `<b>Extension</b>: ${iata_code}`;
   const composeFileTypeLines = (
     description: string | null,
     usedBy: string | null,
