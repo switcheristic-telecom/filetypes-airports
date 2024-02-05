@@ -14,22 +14,59 @@ import { HexagonLayer } from "@deck.gl/aggregation-layers/typed";
 import DeckGL from "@deck.gl/react/typed";
 
 // Config
-import {
-  lightingEffect,
-  material,
-  INITIAL_VIEW_STATE,
-  colorRange,
-} from "@/lib/mapconfig";
-import { textLayerFromAirports } from "@/lib/mapLayers";
+import { lightingEffect, material, colorRange } from "@/lib/map-config";
+import { textLayerFromAirports } from "@/lib/map-layers";
 
 // Airport TRPC
 import type { Airport, AirportConcise } from "@/utils/airport";
 import { api } from "@/trpc/react";
+import type { ViewState } from "@/lib/map-config";
 
 interface AirportMapProps {
   allAirports: Airport[];
-  noOverlap?: boolean;
+  initialViewState: ViewState;
+  flyToAirport: (airport: Airport) => void;
 }
+
+const AirportMap = ({
+  allAirports,
+  initialViewState,
+  flyToAirport,
+}: AirportMapProps) => {
+  const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
+
+  const textLayer = textLayerFromAirports({
+    airports: allAirports,
+    onClick: ({ object }) => {
+      if (object) {
+        flyToAirport(object as Airport);
+      }
+    },
+  });
+
+  const layers = [textLayer];
+
+  return (
+    <div>
+      {initialAirport && (
+        <DeckGL
+          effects={[lightingEffect]}
+          initialViewState={initialViewState}
+          controller={true}
+          layers={layers}
+          getTooltip={getTooltip}
+        >
+          <Map
+            mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+            mapStyle={mapboxStyles.latest}
+          ></Map>
+        </DeckGL>
+      )}
+    </div>
+  );
+};
+
+export default AirportMap;
 
 function getTooltip(info: PickingInfo) {
   if (!info.object) {
@@ -69,40 +106,3 @@ function getTooltip(info: PickingInfo) {
     },
   };
 }
-
-const AirportMap = ({ allAirports, noOverlap = true }: AirportMapProps) => {
-  const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
-
-  const updataedInitialState = {
-    ...INITIAL_VIEW_STATE,
-    longitude: initialAirport?.longitude,
-    latitude: initialAirport?.latitude,
-  };
-
-  const textLayer = textLayerFromAirports({
-    airports: allAirports,
-  });
-
-  const layers = [textLayer];
-
-  return (
-    <div>
-      {initialAirport && (
-        <DeckGL
-          effects={[lightingEffect]}
-          initialViewState={updataedInitialState}
-          controller={true}
-          layers={layers}
-          getTooltip={getTooltip}
-        >
-          <Map
-            mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-            mapStyle={mapboxStyles.latest}
-          ></Map>
-        </DeckGL>
-      )}
-    </div>
-  );
-};
-
-export default AirportMap;

@@ -1,41 +1,39 @@
-"use client";
+import React, { useCallback } from "react";
+import type { Airport } from "@/utils/airport";
+import type { ViewState } from "@/lib/map-config";
 
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+interface AirportMarqueeProps {
+  featuredAirport: Airport;
+  flyToAirport: (airport: Airport) => void;
+}
 
-import { api } from "@/trpc/react";
-
-import type { AirportVerbose, AirportConcise } from "@/utils/airport";
-
-const AirportMarquee = () => {
-  const { data } = api.airport.getAirportOfTheDay.useQuery();
-
+const AirportMarquee = ({
+  featuredAirport,
+  flyToAirport,
+}: AirportMarqueeProps) => {
   return (
-    <div className="absolute top-0 z-10 w-screen">
-      {data && (
-        <>
-          <div className="relative flex overflow-x-hidden ">
-            <div className="animate-marquee whitespace-nowrap bg-black text-white">
-              <ContentSpans featuredAirport={data} />
-              <ContentSpans featuredAirport={data} />
-            </div>
-
-            <div className="animate-marquee2 absolute top-0 z-10 whitespace-nowrap bg-black text-white">
-              <ContentSpans featuredAirport={data} />
-              <ContentSpans featuredAirport={data} />
-            </div>
+    <div
+      className="absolute top-0 z-10 w-screen cursor-pointer"
+      onClick={() => flyToAirport(featuredAirport)}
+    >
+      <>
+        <div className="relative flex overflow-x-hidden ">
+          <div className="animate-marquee whitespace-nowrap bg-black text-white">
+            <ContentSpans featuredAirport={featuredAirport} />
+            <ContentSpans featuredAirport={featuredAirport} />
           </div>
-        </>
-      )}
+
+          <div className="animate-marquee2 absolute top-0 z-10 whitespace-nowrap bg-black text-white">
+            <ContentSpans featuredAirport={featuredAirport} />
+            <ContentSpans featuredAirport={featuredAirport} />
+          </div>
+        </div>
+      </>
     </div>
   );
 };
 
-function ContentSpans({
-  featuredAirport,
-}: {
-  featuredAirport: AirportVerbose | AirportConcise;
-}) {
+function ContentSpans({ featuredAirport }: { featuredAirport: Airport }) {
   const fileTypes = featuredAirport.filetypes;
   const fileTypeSpans = fileTypes.map((fileType, i) => (
     <span

@@ -2,12 +2,14 @@ import { TextLayer } from "@deck.gl/layers/typed";
 import type { Airport } from "@/utils/airport";
 import { CollisionFilterExtension } from "@deck.gl/extensions/typed";
 
+import type { PickingInfo } from "deck.gl/typed";
 interface TextLayerFromAirportsArgs {
   airports: Airport[];
   fontSize?: number;
   sizeMaxPixels?: number;
   sizeMinPixels?: number;
   noOverlap?: boolean;
+  onClick?: (info: PickingInfo) => void;
 }
 
 export const textLayerFromAirports = ({
@@ -16,6 +18,7 @@ export const textLayerFromAirports = ({
   sizeMaxPixels = 48,
   sizeMinPixels = 10,
   noOverlap = true,
+  onClick,
 }: TextLayerFromAirportsArgs) => {
   if (!airports) {
     return null;
@@ -52,6 +55,7 @@ export const textLayerFromAirports = ({
       sizeMaxPixels: sizeMaxPixels * 2,
       sizeMinPixels: sizeMinPixels * 2,
     },
+    onClick: onClick,
     extensions: [new CollisionFilterExtension()],
   });
   return textLayer;

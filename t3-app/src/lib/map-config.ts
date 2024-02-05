@@ -1,5 +1,21 @@
 import { AmbientLight, PointLight, LightingEffect } from "@deck.gl/core/typed";
 
+import type { TransitionInterpolator } from "deck.gl/typed";
+import easingsFunctions from "@/utils/easing";
+export interface ViewState {
+  longitude: number;
+  latitude: number;
+  zoom: number;
+  minZoom: number;
+  maxZoom: number;
+  pitch?: number;
+  bearing?: number;
+  transitionEasing?: (t: number) => number;
+  transitionDuration?: number;
+  transitionInterpolator?: TransitionInterpolator;
+  numberOfMutations: number;
+}
+
 export const ambientLight = new AmbientLight({
   color: [255, 255, 255],
   intensity: 1.0,
@@ -30,7 +46,7 @@ export const material = {
   specularColor: [51, 51, 51],
 };
 
-export const INITIAL_VIEW_STATE = {
+export const INITIAL_VIEW_STATE: ViewState = {
   longitude: -122.41669,
   latitude: 37.7853,
   zoom: 13,
@@ -38,6 +54,8 @@ export const INITIAL_VIEW_STATE = {
   maxZoom: 20,
   pitch: 0,
   bearing: 0,
+  transitionEasing: easingsFunctions.easeInOutQuad,
+  numberOfMutations: 0,
 };
 
 export const colorRange = [
