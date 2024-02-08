@@ -2,17 +2,9 @@ import { AmbientLight, PointLight, LightingEffect } from "@deck.gl/core/typed";
 
 import type { TransitionInterpolator } from "deck.gl/typed";
 import easingsFunctions from "@/utils/easing";
-export interface ViewState {
-  longitude: number;
-  latitude: number;
-  zoom: number;
-  minZoom: number;
-  maxZoom: number;
-  pitch?: number;
-  bearing?: number;
-  transitionEasing?: (t: number) => number;
-  transitionDuration?: number;
-  transitionInterpolator?: TransitionInterpolator;
+import type { MapViewState as _MapViewState } from "deck.gl/typed";
+
+export interface MapViewState extends _MapViewState {
   numberOfMutations: number;
 }
 
@@ -46,7 +38,7 @@ export const material = {
   specularColor: [51, 51, 51],
 };
 
-export const INITIAL_VIEW_STATE: ViewState = {
+export const INITIAL_VIEW_STATE: MapViewState = {
   longitude: -122.41669,
   latitude: 37.7853,
   zoom: 13,

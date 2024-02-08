@@ -7,10 +7,11 @@ import React, { useState, useEffect } from "react";
 import Map from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxStyles } from "@/utils/mapbox";
+import { NavigationControl } from "react-map-gl";
 
 // DeckGL
 import type { PickingInfo } from "@deck.gl/core/typed";
-import { HexagonLayer } from "@deck.gl/aggregation-layers/typed";
+
 import DeckGL from "@deck.gl/react/typed";
 
 // Config
@@ -24,14 +25,14 @@ import {
 // Airport TRPC
 import type { Airport, AirportConcise } from "@/utils/airport";
 import { api } from "@/trpc/react";
-import type { ViewState } from "@/lib/map-config";
+import type { MapViewState } from "@/lib/map-config";
 
-// 60 fps
-const ANIMATION_INTERVAL = 1000 / 60;
+// 24 fps
+const ANIMATION_INTERVAL = 1000 / 24;
 
 interface AirportMapProps {
   allAirports: Airport[];
-  initialViewState: ViewState;
+  initialViewState: MapViewState;
   flyToAirport: (airport: Airport) => void;
 }
 
@@ -43,6 +44,12 @@ const AirportMap = ({
   const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
   const [animationTime, setAnimationTime] = useState(0);
 
+  const [latestViewState, setLatestViewState] = useState(initialViewState);
+
+  useEffect(() => {
+    // console.log("latestViewState", latestViewState);
+  }, [latestViewState]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationTime((prev) => prev + ANIMATION_INTERVAL);
@@ -50,35 +57,30 @@ const AirportMap = ({
     return () => clearInterval(interval);
   }, []);
 
+  const layerOnCLick = ({ object }: PickingInfo) => {
+    if (object) {
+      flyToAirport(object as Airport);
+    }
+  };
+
   const textLayer = textLayerFromAirports({
     airports: allAirports,
-    onClick: ({ object }) => {
-      if (object) {
-        flyToAirport(object as Airport);
-      }
-    },
+    onClick: layerOnCLick,
   });
 
   const meshLayer = meshLayerFromAirports({
     airports: allAirports,
-    onClick: ({ object }) => {
-      if (object) {
-        flyToAirport(object as Airport);
-      }
-    },
+    onClick: layerOnCLick,
     timeInMs: animationTime,
+    viewState: latestViewState,
   });
 
   const iconLayer = iconLayerFromAirports({
     airports: allAirports,
-    onClick: ({ object }) => {
-      if (object) {
-        flyToAirport(object as Airport);
-      }
-    },
+    onClick: layerOnCLick,
   });
 
-  const layers = [meshLayer, textLayer];
+  const layers = [textLayer, meshLayer];
 
   return (
     <div>
@@ -89,6 +91,9 @@ const AirportMap = ({
           controller={true}
           layers={layers}
           getTooltip={getTooltip}
+          onViewStateChange={({ viewState }) => {
+            setLatestViewState(viewState as MapViewState);
+          }}
         >
           <Map
             mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
