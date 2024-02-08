@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import type { Airport } from "@/utils/airport";
-import type { ViewState } from "@/lib/map-config";
+import type { MapViewState } from "@/lib/map-config";
 
 interface AirportMarqueeProps {
   featuredAirport: Airport;
@@ -23,7 +23,7 @@ const AirportMarquee = ({
             <ContentSpans featuredAirport={featuredAirport} />
           </div>
 
-          <div className="animate-marquee2 absolute top-0 z-10 whitespace-nowrap bg-black text-white">
+          <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white">
             <ContentSpans featuredAirport={featuredAirport} />
             <ContentSpans featuredAirport={featuredAirport} />
           </div>
@@ -38,7 +38,7 @@ function ContentSpans({ featuredAirport }: { featuredAirport: Airport }) {
   const fileTypeSpans = fileTypes.map((fileType, i) => (
     <span
       key={"filetype-" + i}
-      className="bg-retro-blue border-r-4 border-r-black px-4 text-2xl font-extralight text-white"
+      className="border-r-4 border-r-black bg-retro-blue px-4 text-2xl font-extralight text-white"
     >
       {fileType.description?.toLowerCase()}
     </span>
@@ -53,7 +53,7 @@ function ContentSpans({ featuredAirport }: { featuredAirport: Airport }) {
         {featuredAirport?.iata_code}
       </span>
 
-      <span className="bg-retro-cyan  border-r-black px-4 text-2xl font-light text-black">
+      <span className="border-r-black  bg-retro-cyan px-4 text-2xl font-light text-black">
         {featuredAirport?.name}
       </span>
       <span className="border-r-black  bg-black px-4 text-2xl font-light text-white">
