@@ -48,7 +48,7 @@ export const textLayerFromAirports = ({
     pickable: true,
     characterSet: "auto",
     fontSettings: {
-      buffer: 8,
+      buffer: 32,
     },
     fontFamily: "Inter, Helvetica, Arial, sans-serif",
     fontWeight: "bold",
