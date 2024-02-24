@@ -30,8 +30,9 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         ...prev,
         latitude: airport.latitude,
         longitude: airport.longitude,
-        zoom: 14,
-        transitionDuration: 2000,
+        // zoom: 14,
+        zoom: 7,
+        transitionDuration: 1000,
         transitionInterpolator: new FlyToInterpolator(),
         numberOfMutations: prev.numberOfMutations + 1,
       }));
