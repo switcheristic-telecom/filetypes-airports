@@ -33,7 +33,7 @@ interface TextLayerFromAirportsArgs extends LayerFromAirportsArgs {
 
 export const textLayerFromAirports = ({
   airports,
-  fontSize = 24,
+  fontSize = 22,
   sizeMaxPixels = 48,
   sizeMinPixels = 10,
   noOverlap = true,
@@ -50,11 +50,11 @@ export const textLayerFromAirports = ({
     fontSettings: {
       buffer: 8,
     },
-    fontFamily: "Helvetica, Arial, sans-serif",
+    fontFamily: "Inter, Helvetica, Arial, sans-serif",
     fontWeight: "bold",
 
     // TextLayer options
-    getText: (d: Airport) => d.iata_code,
+    getText: (d: Airport) => " " + d.iata_code + " ",
     getPixelOffset: (d) => [0, fontSize / 2],
     getPosition: (d: Airport) => [d.longitude, d.latitude],
 
@@ -66,7 +66,7 @@ export const textLayerFromAirports = ({
     maxWidth: 64 * 12,
 
     background: true,
-    backgroundColor: [0, 0, 0, 255],
+    backgroundColor: [50, 50, 50, 255],
 
     // CollideExtension options
     collisionEnabled: noOverlap,
