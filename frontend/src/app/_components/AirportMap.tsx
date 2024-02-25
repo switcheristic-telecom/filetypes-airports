@@ -67,7 +67,6 @@ const AirportMap = ({
     airports: allAirports,
     onClick: layerOnCLick,
   });
-
   const meshLayer = meshLayerFromAirports({
     airports: allAirports,
     onClick: layerOnCLick,

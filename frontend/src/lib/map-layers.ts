@@ -42,6 +42,9 @@ export const textLayerFromAirports = ({
   if (!airports) {
     return null;
   }
+
+  // The background position attribute supplies one position for each text block
+
   const textLayer = new TextLayer({
     id: "airport-iata-codes-layer",
     data: airports,
@@ -54,7 +57,7 @@ export const textLayerFromAirports = ({
     fontWeight: "bold",
 
     // TextLayer options
-    getText: (d: Airport) => " " + d.iata_code + " ",
+    getText: (d: Airport) => d.iata_code || "",
     getPixelOffset: (d) => [0, fontSize / 2],
     getPosition: (d: Airport) => [d.longitude, d.latitude],
 
@@ -66,6 +69,7 @@ export const textLayerFromAirports = ({
     maxWidth: 64 * 12,
 
     background: true,
+    backgroundPadding: [2, 0, 2, -2],
     backgroundColor: [50, 50, 50, 255],
 
     // CollideExtension options
