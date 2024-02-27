@@ -31,7 +31,13 @@ const junicode = localFont({
 export const metadata: Metadata = {
   title: "Airport Codes and Filetypes",
   description: "A list of airport codes and filetypes",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [
+    {
+      rel: "icon",
+      type: "image/apng",
+      url: "/assets/thumbnails-animated-ulq/_fallback_classic.png",
+    },
+  ],
 };
 
 export default function RootLayout({
