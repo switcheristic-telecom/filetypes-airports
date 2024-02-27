@@ -24,6 +24,8 @@
   "dependencies": {
     "canvas": "^2.6.0",
     "gl": "^6.0.0",
-    "pngjs": "^7.0.0"
+    "pngjs": "^7.0.0",
+    "sharp": "^0.33.2",
+    "sharp-apng": "^0.1.5"
   }
 }
