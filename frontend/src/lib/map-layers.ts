@@ -187,38 +187,54 @@ export const iconLayerFromAirports = ({
   if (!airports) {
     return null;
   }
+
+  function getIcon(d: Airport) {
+    const iconPrefix = d.iata_code.toLowerCase();
+
+    let iconName: string | null = null;
+
+    for (const style of thumbnailStyles) {
+      const icon = iconPrefix + "-" + style;
+      if (icon in THUMBNAILS_MAPPING) {
+        iconName = icon;
+        break;
+      }
+    }
+
+    if (!iconName) {
+      iconName = "fallback" + "-" + thumbnailStyles[0];
+    }
+
+    return iconName;
+  }
+
   const iconLayer = new IconLayer({
     id: "airport-icons-layer",
     data: airports,
     pickable: true,
     iconAtlas: "assets/thumbnails-spritesheet/spritesheet.png",
     iconMapping: THUMBNAILS_MAPPING,
-    getIcon: (d: Airport) => {
-      const iconPrefix = d.iata_code.toLowerCase();
-
-      let iconName: string | null = null;
-
-      for (const style of thumbnailStyles) {
-        const icon = iconPrefix + "-" + style;
-        if (icon in THUMBNAILS_MAPPING) {
-          iconName = icon;
-          break;
-        }
-      }
-
-      if (!iconName) {
-        iconName = "fallback" + "-" + thumbnailStyles[0];
-      }
-
-      return iconName;
-    },
+    getIcon: getIcon,
     getPosition: (d: Airport) => [d.longitude, d.latitude],
     getPixelOffset: [0, -30],
     getSize: 48,
     sizeScale: 1,
     // CollideExtension options
     collisionEnabled: true,
-    // getCollisionPriority: (d) => Math.log10(d.population),
+    collisionTestProps: {
+      sizeScale: 48,
+      sizeMaxPixels: 24,
+      sizeMinPixels: 24,
+    },
+    getCollisionPriority: (d: Airport) => {
+      const icon = getIcon(d);
+      if (icon.includes("fallback")) {
+        return -1000;
+      }
+      return 1000;
+    },
+
+    extensions: [new CollisionFilterExtension()],
 
     onClick: onClick,
   });
