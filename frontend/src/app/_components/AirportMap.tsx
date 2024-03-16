@@ -151,7 +151,9 @@ const AirportMap = ({
                               <div className="font-semibold">
                                 {filetype.description}
                               </div>
-                              <div>{filetype.used_by}</div>
+                              {filetype.used_by && (
+                                <div>Used by {filetype.used_by}</div>
+                              )}
                               {i < lastClickedAirport.filetypes.length - 1 ? (
                                 <hr className="-mx-2 my-1 border-t-2 border-retro-gray" />
                               ) : (
