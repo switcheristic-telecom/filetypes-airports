@@ -1,0 +1,1304 @@
+{
+  "fallback-thumbnails": {
+    "x": 0,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "fallback-classic": {
+    "x": 48,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "aac-classic": {
+    "x": 96,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "asf-classic": {
+    "x": 144,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "asx-classic": {
+    "x": 192,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "avi-classic": {
+    "x": 240,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "bat-classic": {
+    "x": 288,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "bmp-classic": {
+    "x": 336,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "cdr-classic": {
+    "x": 384,
+    "y": 0,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "cer-classic": {
+    "x": 416,
+    "y": 0,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "chm-classic": {
+    "x": 448,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "cmd-classic": {
+    "x": 496,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "com-classic": {
+    "x": 544,
+    "y": 0,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "cpl-classic": {
+    "x": 0,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "cpp-classic": {
+    "x": 48,
+    "y": 48,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "crt-classic": {
+    "x": 80,
+    "y": 48,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "csv-classic": {
+    "x": 112,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "deb-classic": {
+    "x": 160,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "doc-classic": {
+    "x": 208,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "hta-classic": {
+    "x": 256,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "htm-classic": {
+    "x": 304,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "ini-classic": {
+    "x": 352,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "iso-classic": {
+    "x": 400,
+    "y": 48,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "jar-classic": {
+    "x": 432,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "mht-classic": {
+    "x": 480,
+    "y": 48,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "mid-classic": {
+    "x": 512,
+    "y": 48,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "mov-classic": {
+    "x": 0,
+    "y": 96,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "mpg-classic": {
+    "x": 32,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "msi-classic": {
+    "x": 80,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "msu-classic": {
+    "x": 128,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "odb-classic": {
+    "x": 176,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "ods-classic": {
+    "x": 224,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "otp-classic": {
+    "x": 272,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "ots-classic": {
+    "x": 320,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "ott-classic": {
+    "x": 368,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "pal-classic": {
+    "x": 416,
+    "y": 96,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "pdf-classic": {
+    "x": 448,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "pfb-classic": {
+    "x": 496,
+    "y": 96,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "png-classic": {
+    "x": 528,
+    "y": 96,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "psd-classic": {
+    "x": 0,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "ram-classic": {
+    "x": 48,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "rar-classic": {
+    "x": 96,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "rpm-classic": {
+    "x": 144,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "sql-classic": {
+    "x": 192,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "stc-classic": {
+    "x": 240,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "std-classic": {
+    "x": 288,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "sti-classic": {
+    "x": 336,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "stw-classic": {
+    "x": 384,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "swf-classic": {
+    "x": 432,
+    "y": 144,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "sxg-classic": {
+    "x": 464,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "sxi-classic": {
+    "x": 512,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "sxm-classic": {
+    "x": 560,
+    "y": 144,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "sxw-classic": {
+    "x": 0,
+    "y": 192,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "tga-classic": {
+    "x": 48,
+    "y": 192,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "tif-classic": {
+    "x": 96,
+    "y": 192,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "ttc-classic": {
+    "x": 144,
+    "y": 192,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "vbs-classic": {
+    "x": 176,
+    "y": 192,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "wav-classic": {
+    "x": 208,
+    "y": 192,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "wma-classic": {
+    "x": 256,
+    "y": 192,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "xml-classic": {
+    "x": 304,
+    "y": 192,
+    "width": 32,
+    "height": 32,
+    "mask": true
+  },
+  "aac-linux": {
+    "x": 336,
+    "y": 192,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "apk-linux": {
+    "x": 384,
+    "y": 192,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "arc-linux": {
+    "x": 431,
+    "y": 192,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "asf-linux": {
+    "x": 478,
+    "y": 192,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "avi-linux": {
+    "x": 526,
+    "y": 192,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "bat-linux": {
+    "x": 0,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "bdf-linux": {
+    "x": 48,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "bmp-linux": {
+    "x": 96,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "cab-linux": {
+    "x": 144,
+    "y": 244,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "cer-linux": {
+    "x": 191,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "chm-linux": {
+    "x": 239,
+    "y": 244,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "cmd-linux": {
+    "x": 287,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "com-linux": {
+    "x": 335,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "cpl-linux": {
+    "x": 383,
+    "y": 244,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "cpp-linux": {
+    "x": 431,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "crt-linux": {
+    "x": 479,
+    "y": 244,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "css-linux": {
+    "x": 527,
+    "y": 244,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "deb-linux": {
+    "x": 575,
+    "y": 244,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "dng-linux": {
+    "x": 0,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "doc-linux": {
+    "x": 48,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "elf-linux": {
+    "x": 96,
+    "y": 296,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "eml-linux": {
+    "x": 144,
+    "y": 296,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "fallback-linux": {
+    "x": 192,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "flv-linux": {
+    "x": 240,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "gif-linux": {
+    "x": 288,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "htm-linux": {
+    "x": 336,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "img-linux": {
+    "x": 384,
+    "y": 296,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "ini-linux": {
+    "x": 431,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "iso-linux": {
+    "x": 479,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "jar-linux": {
+    "x": 527,
+    "y": 296,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "jav-linux": {
+    "x": 575,
+    "y": 296,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "jpe-linux": {
+    "x": 0,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "key-linux": {
+    "x": 48,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "kra-linux": {
+    "x": 96,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "lha-linux": {
+    "x": 144,
+    "y": 348,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "lnk-linux": {
+    "x": 191,
+    "y": 348,
+    "width": 24,
+    "height": 24,
+    "mask": true
+  },
+  "mht-linux": {
+    "x": 215,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "mid-linux": {
+    "x": 263,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "mod-linux": {
+    "x": 311,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "mov-linux": {
+    "x": 359,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "mpg-linux": {
+    "x": 407,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "msc-linux": {
+    "x": 455,
+    "y": 348,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "msi-linux": {
+    "x": 503,
+    "y": 348,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "nfo-linux": {
+    "x": 550,
+    "y": 348,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "nsv-linux": {
+    "x": 0,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "odb-linux": {
+    "x": 48,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ods-linux": {
+    "x": 96,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "oga-linux": {
+    "x": 144,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ogg-linux": {
+    "x": 192,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ogx-linux": {
+    "x": 240,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "otp-linux": {
+    "x": 288,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ots-linux": {
+    "x": 336,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ott-linux": {
+    "x": 384,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "pak-linux": {
+    "x": 432,
+    "y": 400,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "pal-linux": {
+    "x": 479,
+    "y": 400,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "pam-linux": {
+    "x": 527,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "pas-linux": {
+    "x": 575,
+    "y": 400,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "pax-linux": {
+    "x": 0,
+    "y": 452,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "pdf-linux": {
+    "x": 47,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "pfb-linux": {
+    "x": 95,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "php-linux": {
+    "x": 143,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "pka-linux": {
+    "x": 191,
+    "y": 452,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "pls-linux": {
+    "x": 238,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "png-linux": {
+    "x": 286,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "psd-linux": {
+    "x": 334,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "pub-linux": {
+    "x": 382,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ram-linux": {
+    "x": 430,
+    "y": 452,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "rar-linux": {
+    "x": 478,
+    "y": 452,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "rdp-linux": {
+    "x": 526,
+    "y": 452,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "rpm-linux": {
+    "x": 574,
+    "y": 452,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "rst-linux": {
+    "x": 0,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "run-linux": {
+    "x": 48,
+    "y": 504,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "scm-linux": {
+    "x": 96,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "scr-linux": {
+    "x": 144,
+    "y": 504,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "seq-linux": {
+    "x": 192,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sfx-linux": {
+    "x": 240,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sig-linux": {
+    "x": 288,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sql-linux": {
+    "x": 336,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "stc-linux": {
+    "x": 384,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "std-linux": {
+    "x": 432,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sti-linux": {
+    "x": 480,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "stl-linux": {
+    "x": 528,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "stw-linux": {
+    "x": 576,
+    "y": 504,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "svg-linux": {
+    "x": 0,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "swf-linux": {
+    "x": 48,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sxg-linux": {
+    "x": 96,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sxi-linux": {
+    "x": 144,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "sxw-linux": {
+    "x": 192,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "tar-linux": {
+    "x": 240,
+    "y": 556,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "taz-linux": {
+    "x": 287,
+    "y": 556,
+    "width": 47,
+    "height": 48,
+    "mask": true
+  },
+  "tbz-linux": {
+    "x": 334,
+    "y": 556,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "tga-linux": {
+    "x": 382,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "tgz-linux": {
+    "x": 430,
+    "y": 556,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "tsv-linux": {
+    "x": 478,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "ttf-linux": {
+    "x": 526,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "uos-linux": {
+    "x": 574,
+    "y": 556,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "vbs-linux": {
+    "x": 0,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "vda-linux": {
+    "x": 48,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "vdi-linux": {
+    "x": 96,
+    "y": 608,
+    "width": 48,
+    "height": 47,
+    "mask": true
+  },
+  "vst-linux": {
+    "x": 144,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "wav-linux": {
+    "x": 192,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "wma-linux": {
+    "x": 240,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "xar-linux": {
+    "x": 288,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "xls-linux": {
+    "x": 336,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "xml-linux": {
+    "x": 384,
+    "y": 608,
+    "width": 48,
+    "height": 52,
+    "mask": true
+  },
+  "fallback-modern": {
+    "x": 432,
+    "y": 608,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "asf-modern": {
+    "x": 480,
+    "y": 608,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "asx-modern": {
+    "x": 528,
+    "y": 608,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "avi-modern": {
+    "x": 576,
+    "y": 608,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "csv-modern": {
+    "x": 0,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "dng-modern": {
+    "x": 48,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "doc-modern": {
+    "x": 96,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "flv-modern": {
+    "x": 144,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "htm-modern": {
+    "x": 192,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "img-modern": {
+    "x": 240,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "iso-modern": {
+    "x": 288,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "mid-modern": {
+    "x": 336,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "mpg-modern": {
+    "x": 384,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "pde-modern": {
+    "x": 432,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "pdf-modern": {
+    "x": 480,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "png-modern": {
+    "x": 528,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "psd-modern": {
+    "x": 576,
+    "y": 660,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "rar-modern": {
+    "x": 0,
+    "y": 708,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "swf-modern": {
+    "x": 48,
+    "y": 708,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "wav-modern": {
+    "x": 96,
+    "y": 708,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  },
+  "wma-modern": {
+    "x": 144,
+    "y": 708,
+    "width": 48,
+    "height": 48,
+    "mask": true
+  }
+}

@@ -552,7 +552,7 @@
         {
             "rel_path": "linux/aac.png",
             "style": "linux",
-            "extension": "aac.png",
+            "extension": "aac",
             "x": 336,
             "y": 192,
             "width": 48,
@@ -561,7 +561,7 @@
         {
             "rel_path": "linux/apk.png",
             "style": "linux",
-            "extension": "apk.png",
+            "extension": "apk",
             "x": 384,
             "y": 192,
             "width": 47,
@@ -570,7 +570,7 @@
         {
             "rel_path": "linux/arc.png",
             "style": "linux",
-            "extension": "arc.png",
+            "extension": "arc",
             "x": 431,
             "y": 192,
             "width": 47,
@@ -579,7 +579,7 @@
         {
             "rel_path": "linux/asf.png",
             "style": "linux",
-            "extension": "asf.png",
+            "extension": "asf",
             "x": 478,
             "y": 192,
             "width": 48,
@@ -588,7 +588,7 @@
         {
             "rel_path": "linux/avi.png",
             "style": "linux",
-            "extension": "avi.png",
+            "extension": "avi",
             "x": 526,
             "y": 192,
             "width": 48,
@@ -597,7 +597,7 @@
         {
             "rel_path": "linux/bat.png",
             "style": "linux",
-            "extension": "bat.png",
+            "extension": "bat",
             "x": 0,
             "y": 244,
             "width": 48,
@@ -606,7 +606,7 @@
         {
             "rel_path": "linux/bdf.png",
             "style": "linux",
-            "extension": "bdf.png",
+            "extension": "bdf",
             "x": 48,
             "y": 244,
             "width": 48,
@@ -615,7 +615,7 @@
         {
             "rel_path": "linux/bmp.png",
             "style": "linux",
-            "extension": "bmp.png",
+            "extension": "bmp",
             "x": 96,
             "y": 244,
             "width": 48,
@@ -624,7 +624,7 @@
         {
             "rel_path": "linux/cab.png",
             "style": "linux",
-            "extension": "cab.png",
+            "extension": "cab",
             "x": 144,
             "y": 244,
             "width": 47,
@@ -633,7 +633,7 @@
         {
             "rel_path": "linux/cer.png",
             "style": "linux",
-            "extension": "cer.png",
+            "extension": "cer",
             "x": 191,
             "y": 244,
             "width": 48,
@@ -642,7 +642,7 @@
         {
             "rel_path": "linux/chm.png",
             "style": "linux",
-            "extension": "chm.png",
+            "extension": "chm",
             "x": 239,
             "y": 244,
             "width": 48,
@@ -651,7 +651,7 @@
         {
             "rel_path": "linux/cmd.png",
             "style": "linux",
-            "extension": "cmd.png",
+            "extension": "cmd",
             "x": 287,
             "y": 244,
             "width": 48,
@@ -660,7 +660,7 @@
         {
             "rel_path": "linux/com.png",
             "style": "linux",
-            "extension": "com.png",
+            "extension": "com",
             "x": 335,
             "y": 244,
             "width": 48,
@@ -669,7 +669,7 @@
         {
             "rel_path": "linux/cpl.png",
             "style": "linux",
-            "extension": "cpl.png",
+            "extension": "cpl",
             "x": 383,
             "y": 244,
             "width": 48,
@@ -678,7 +678,7 @@
         {
             "rel_path": "linux/cpp.png",
             "style": "linux",
-            "extension": "cpp.png",
+            "extension": "cpp",
             "x": 431,
             "y": 244,
             "width": 48,
@@ -687,7 +687,7 @@
         {
             "rel_path": "linux/crt.png",
             "style": "linux",
-            "extension": "crt.png",
+            "extension": "crt",
             "x": 479,
             "y": 244,
             "width": 48,
@@ -696,7 +696,7 @@
         {
             "rel_path": "linux/css.png",
             "style": "linux",
-            "extension": "css.png",
+            "extension": "css",
             "x": 527,
             "y": 244,
             "width": 48,
@@ -705,7 +705,7 @@
         {
             "rel_path": "linux/deb.png",
             "style": "linux",
-            "extension": "deb.png",
+            "extension": "deb",
             "x": 575,
             "y": 244,
             "width": 48,
@@ -714,7 +714,7 @@
         {
             "rel_path": "linux/dng.png",
             "style": "linux",
-            "extension": "dng.png",
+            "extension": "dng",
             "x": 0,
             "y": 296,
             "width": 48,
@@ -723,7 +723,7 @@
         {
             "rel_path": "linux/doc.png",
             "style": "linux",
-            "extension": "doc.png",
+            "extension": "doc",
             "x": 48,
             "y": 296,
             "width": 48,
@@ -732,7 +732,7 @@
         {
             "rel_path": "linux/elf.png",
             "style": "linux",
-            "extension": "elf.png",
+            "extension": "elf",
             "x": 96,
             "y": 296,
             "width": 48,
@@ -741,7 +741,7 @@
         {
             "rel_path": "linux/eml.png",
             "style": "linux",
-            "extension": "eml.png",
+            "extension": "eml",
             "x": 144,
             "y": 296,
             "width": 48,
@@ -750,7 +750,7 @@
         {
             "rel_path": "linux/fallback.png",
             "style": "linux",
-            "extension": "fallback.png",
+            "extension": "fallback",
             "x": 192,
             "y": 296,
             "width": 48,
@@ -759,7 +759,7 @@
         {
             "rel_path": "linux/flv.png",
             "style": "linux",
-            "extension": "flv.png",
+            "extension": "flv",
             "x": 240,
             "y": 296,
             "width": 48,
@@ -768,7 +768,7 @@
         {
             "rel_path": "linux/gif.png",
             "style": "linux",
-            "extension": "gif.png",
+            "extension": "gif",
             "x": 288,
             "y": 296,
             "width": 48,
@@ -777,7 +777,7 @@
         {
             "rel_path": "linux/htm.png",
             "style": "linux",
-            "extension": "htm.png",
+            "extension": "htm",
             "x": 336,
             "y": 296,
             "width": 48,
@@ -786,7 +786,7 @@
         {
             "rel_path": "linux/img.png",
             "style": "linux",
-            "extension": "img.png",
+            "extension": "img",
             "x": 384,
             "y": 296,
             "width": 47,
@@ -795,7 +795,7 @@
         {
             "rel_path": "linux/ini.png",
             "style": "linux",
-            "extension": "ini.png",
+            "extension": "ini",
             "x": 431,
             "y": 296,
             "width": 48,
@@ -804,7 +804,7 @@
         {
             "rel_path": "linux/iso.png",
             "style": "linux",
-            "extension": "iso.png",
+            "extension": "iso",
             "x": 479,
             "y": 296,
             "width": 48,
@@ -813,7 +813,7 @@
         {
             "rel_path": "linux/jar.png",
             "style": "linux",
-            "extension": "jar.png",
+            "extension": "jar",
             "x": 527,
             "y": 296,
             "width": 48,
@@ -822,7 +822,7 @@
         {
             "rel_path": "linux/jav.png",
             "style": "linux",
-            "extension": "jav.png",
+            "extension": "jav",
             "x": 575,
             "y": 296,
             "width": 48,
@@ -831,7 +831,7 @@
         {
             "rel_path": "linux/jpe.png",
             "style": "linux",
-            "extension": "jpe.png",
+            "extension": "jpe",
             "x": 0,
             "y": 348,
             "width": 48,
@@ -840,7 +840,7 @@
         {
             "rel_path": "linux/key.png",
             "style": "linux",
-            "extension": "key.png",
+            "extension": "key",
             "x": 48,
             "y": 348,
             "width": 48,
@@ -849,7 +849,7 @@
         {
             "rel_path": "linux/kra.png",
             "style": "linux",
-            "extension": "kra.png",
+            "extension": "kra",
             "x": 96,
             "y": 348,
             "width": 48,
@@ -858,7 +858,7 @@
         {
             "rel_path": "linux/lha.png",
             "style": "linux",
-            "extension": "lha.png",
+            "extension": "lha",
             "x": 144,
             "y": 348,
             "width": 47,
@@ -867,7 +867,7 @@
         {
             "rel_path": "linux/lnk.png",
             "style": "linux",
-            "extension": "lnk.png",
+            "extension": "lnk",
             "x": 191,
             "y": 348,
             "width": 24,
@@ -876,7 +876,7 @@
         {
             "rel_path": "linux/mht.png",
             "style": "linux",
-            "extension": "mht.png",
+            "extension": "mht",
             "x": 215,
             "y": 348,
             "width": 48,
@@ -885,7 +885,7 @@
         {
             "rel_path": "linux/mid.png",
             "style": "linux",
-            "extension": "mid.png",
+            "extension": "mid",
             "x": 263,
             "y": 348,
             "width": 48,
@@ -894,7 +894,7 @@
         {
             "rel_path": "linux/mod.png",
             "style": "linux",
-            "extension": "mod.png",
+            "extension": "mod",
             "x": 311,
             "y": 348,
             "width": 48,
@@ -903,7 +903,7 @@
         {
             "rel_path": "linux/mov.png",
             "style": "linux",
-            "extension": "mov.png",
+            "extension": "mov",
             "x": 359,
             "y": 348,
             "width": 48,
@@ -912,7 +912,7 @@
         {
             "rel_path": "linux/mpg.png",
             "style": "linux",
-            "extension": "mpg.png",
+            "extension": "mpg",
             "x": 407,
             "y": 348,
             "width": 48,
@@ -921,7 +921,7 @@
         {
             "rel_path": "linux/msc.png",
             "style": "linux",
-            "extension": "msc.png",
+            "extension": "msc",
             "x": 455,
             "y": 348,
             "width": 48,
@@ -930,7 +930,7 @@
         {
             "rel_path": "linux/msi.png",
             "style": "linux",
-            "extension": "msi.png",
+            "extension": "msi",
             "x": 503,
             "y": 348,
             "width": 47,
@@ -939,7 +939,7 @@
         {
             "rel_path": "linux/nfo.png",
             "style": "linux",
-            "extension": "nfo.png",
+            "extension": "nfo",
             "x": 550,
             "y": 348,
             "width": 48,
@@ -948,7 +948,7 @@
         {
             "rel_path": "linux/nsv.png",
             "style": "linux",
-            "extension": "nsv.png",
+            "extension": "nsv",
             "x": 0,
             "y": 400,
             "width": 48,
@@ -957,7 +957,7 @@
         {
             "rel_path": "linux/odb.png",
             "style": "linux",
-            "extension": "odb.png",
+            "extension": "odb",
             "x": 48,
             "y": 400,
             "width": 48,
@@ -966,7 +966,7 @@
         {
             "rel_path": "linux/ods.png",
             "style": "linux",
-            "extension": "ods.png",
+            "extension": "ods",
             "x": 96,
             "y": 400,
             "width": 48,
@@ -975,7 +975,7 @@
         {
             "rel_path": "linux/oga.png",
             "style": "linux",
-            "extension": "oga.png",
+            "extension": "oga",
             "x": 144,
             "y": 400,
             "width": 48,
@@ -984,7 +984,7 @@
         {
             "rel_path": "linux/ogg.png",
             "style": "linux",
-            "extension": "ogg.png",
+            "extension": "ogg",
             "x": 192,
             "y": 400,
             "width": 48,
@@ -993,7 +993,7 @@
         {
             "rel_path": "linux/ogx.png",
             "style": "linux",
-            "extension": "ogx.png",
+            "extension": "ogx",
             "x": 240,
             "y": 400,
             "width": 48,
@@ -1002,7 +1002,7 @@
         {
             "rel_path": "linux/otp.png",
             "style": "linux",
-            "extension": "otp.png",
+            "extension": "otp",
             "x": 288,
             "y": 400,
             "width": 48,
@@ -1011,7 +1011,7 @@
         {
             "rel_path": "linux/ots.png",
             "style": "linux",
-            "extension": "ots.png",
+            "extension": "ots",
             "x": 336,
             "y": 400,
             "width": 48,
@@ -1020,7 +1020,7 @@
         {
             "rel_path": "linux/ott.png",
             "style": "linux",
-            "extension": "ott.png",
+            "extension": "ott",
             "x": 384,
             "y": 400,
             "width": 48,
@@ -1029,7 +1029,7 @@
         {
             "rel_path": "linux/pak.png",
             "style": "linux",
-            "extension": "pak.png",
+            "extension": "pak",
             "x": 432,
             "y": 400,
             "width": 47,
@@ -1038,7 +1038,7 @@
         {
             "rel_path": "linux/pal.png",
             "style": "linux",
-            "extension": "pal.png",
+            "extension": "pal",
             "x": 479,
             "y": 400,
             "width": 48,
@@ -1047,7 +1047,7 @@
         {
             "rel_path": "linux/pam.png",
             "style": "linux",
-            "extension": "pam.png",
+            "extension": "pam",
             "x": 527,
             "y": 400,
             "width": 48,
@@ -1056,7 +1056,7 @@
         {
             "rel_path": "linux/pas.png",
             "style": "linux",
-            "extension": "pas.png",
+            "extension": "pas",
             "x": 575,
             "y": 400,
             "width": 48,
@@ -1065,7 +1065,7 @@
         {
             "rel_path": "linux/pax.png",
             "style": "linux",
-            "extension": "pax.png",
+            "extension": "pax",
             "x": 0,
             "y": 452,
             "width": 47,
@@ -1074,7 +1074,7 @@
         {
             "rel_path": "linux/pdf.png",
             "style": "linux",
-            "extension": "pdf.png",
+            "extension": "pdf",
             "x": 47,
             "y": 452,
             "width": 48,
@@ -1083,7 +1083,7 @@
         {
             "rel_path": "linux/pfb.png",
             "style": "linux",
-            "extension": "pfb.png",
+            "extension": "pfb",
             "x": 95,
             "y": 452,
             "width": 48,
@@ -1092,7 +1092,7 @@
         {
             "rel_path": "linux/php.png",
             "style": "linux",
-            "extension": "php.png",
+            "extension": "php",
             "x": 143,
             "y": 452,
             "width": 48,
@@ -1101,7 +1101,7 @@
         {
             "rel_path": "linux/pka.png",
             "style": "linux",
-            "extension": "pka.png",
+            "extension": "pka",
             "x": 191,
             "y": 452,
             "width": 47,
@@ -1110,7 +1110,7 @@
         {
             "rel_path": "linux/pls.png",
             "style": "linux",
-            "extension": "pls.png",
+            "extension": "pls",
             "x": 238,
             "y": 452,
             "width": 48,
@@ -1119,7 +1119,7 @@
         {
             "rel_path": "linux/png.png",
             "style": "linux",
-            "extension": "png.png",
+            "extension": "png",
             "x": 286,
             "y": 452,
             "width": 48,
@@ -1128,7 +1128,7 @@
         {
             "rel_path": "linux/psd.png",
             "style": "linux",
-            "extension": "psd.png",
+            "extension": "psd",
             "x": 334,
             "y": 452,
             "width": 48,
@@ -1137,7 +1137,7 @@
         {
             "rel_path": "linux/pub.png",
             "style": "linux",
-            "extension": "pub.png",
+            "extension": "pub",
             "x": 382,
             "y": 452,
             "width": 48,
@@ -1146,7 +1146,7 @@
         {
             "rel_path": "linux/ram.png",
             "style": "linux",
-            "extension": "ram.png",
+            "extension": "ram",
             "x": 430,
             "y": 452,
             "width": 48,
@@ -1155,7 +1155,7 @@
         {
             "rel_path": "linux/rar.png",
             "style": "linux",
-            "extension": "rar.png",
+            "extension": "rar",
             "x": 478,
             "y": 452,
             "width": 48,
@@ -1164,7 +1164,7 @@
         {
             "rel_path": "linux/rdp.png",
             "style": "linux",
-            "extension": "rdp.png",
+            "extension": "rdp",
             "x": 526,
             "y": 452,
             "width": 48,
@@ -1173,7 +1173,7 @@
         {
             "rel_path": "linux/rpm.png",
             "style": "linux",
-            "extension": "rpm.png",
+            "extension": "rpm",
             "x": 574,
             "y": 452,
             "width": 48,
@@ -1182,7 +1182,7 @@
         {
             "rel_path": "linux/rst.png",
             "style": "linux",
-            "extension": "rst.png",
+            "extension": "rst",
             "x": 0,
             "y": 504,
             "width": 48,
@@ -1191,7 +1191,7 @@
         {
             "rel_path": "linux/run.png",
             "style": "linux",
-            "extension": "run.png",
+            "extension": "run",
             "x": 48,
             "y": 504,
             "width": 48,
@@ -1200,7 +1200,7 @@
         {
             "rel_path": "linux/scm.png",
             "style": "linux",
-            "extension": "scm.png",
+            "extension": "scm",
             "x": 96,
             "y": 504,
             "width": 48,
@@ -1209,7 +1209,7 @@
         {
             "rel_path": "linux/scr.png",
             "style": "linux",
-            "extension": "scr.png",
+            "extension": "scr",
             "x": 144,
             "y": 504,
             "width": 48,
@@ -1218,7 +1218,7 @@
         {
             "rel_path": "linux/seq.png",
             "style": "linux",
-            "extension": "seq.png",
+            "extension": "seq",
             "x": 192,
             "y": 504,
             "width": 48,
@@ -1227,7 +1227,7 @@
         {
             "rel_path": "linux/sfx.png",
             "style": "linux",
-            "extension": "sfx.png",
+            "extension": "sfx",
             "x": 240,
             "y": 504,
             "width": 48,
@@ -1236,7 +1236,7 @@
         {
             "rel_path": "linux/sig.png",
             "style": "linux",
-            "extension": "sig.png",
+            "extension": "sig",
             "x": 288,
             "y": 504,
             "width": 48,
@@ -1245,7 +1245,7 @@
         {
             "rel_path": "linux/sql.png",
             "style": "linux",
-            "extension": "sql.png",
+            "extension": "sql",
             "x": 336,
             "y": 504,
             "width": 48,
@@ -1254,7 +1254,7 @@
         {
             "rel_path": "linux/stc.png",
             "style": "linux",
-            "extension": "stc.png",
+            "extension": "stc",
             "x": 384,
             "y": 504,
             "width": 48,
@@ -1263,7 +1263,7 @@
         {
             "rel_path": "linux/std.png",
             "style": "linux",
-            "extension": "std.png",
+            "extension": "std",
             "x": 432,
             "y": 504,
             "width": 48,
@@ -1272,7 +1272,7 @@
         {
             "rel_path": "linux/sti.png",
             "style": "linux",
-            "extension": "sti.png",
+            "extension": "sti",
             "x": 480,
             "y": 504,
             "width": 48,
@@ -1281,7 +1281,7 @@
         {
             "rel_path": "linux/stl.png",
             "style": "linux",
-            "extension": "stl.png",
+            "extension": "stl",
             "x": 528,
             "y": 504,
             "width": 48,
@@ -1290,7 +1290,7 @@
         {
             "rel_path": "linux/stw.png",
             "style": "linux",
-            "extension": "stw.png",
+            "extension": "stw",
             "x": 576,
             "y": 504,
             "width": 48,
@@ -1299,7 +1299,7 @@
         {
             "rel_path": "linux/svg.png",
             "style": "linux",
-            "extension": "svg.png",
+            "extension": "svg",
             "x": 0,
             "y": 556,
             "width": 48,
@@ -1308,7 +1308,7 @@
         {
             "rel_path": "linux/swf.png",
             "style": "linux",
-            "extension": "swf.png",
+            "extension": "swf",
             "x": 48,
             "y": 556,
             "width": 48,
@@ -1317,7 +1317,7 @@
         {
             "rel_path": "linux/sxg.png",
             "style": "linux",
-            "extension": "sxg.png",
+            "extension": "sxg",
             "x": 96,
             "y": 556,
             "width": 48,
@@ -1326,7 +1326,7 @@
         {
             "rel_path": "linux/sxi.png",
             "style": "linux",
-            "extension": "sxi.png",
+            "extension": "sxi",
             "x": 144,
             "y": 556,
             "width": 48,
@@ -1335,7 +1335,7 @@
         {
             "rel_path": "linux/sxw.png",
             "style": "linux",
-            "extension": "sxw.png",
+            "extension": "sxw",
             "x": 192,
             "y": 556,
             "width": 48,
@@ -1344,7 +1344,7 @@
         {
             "rel_path": "linux/tar.png",
             "style": "linux",
-            "extension": "tar.png",
+            "extension": "tar",
             "x": 240,
             "y": 556,
             "width": 47,
@@ -1353,7 +1353,7 @@
         {
             "rel_path": "linux/taz.png",
             "style": "linux",
-            "extension": "taz.png",
+            "extension": "taz",
             "x": 287,
             "y": 556,
             "width": 47,
@@ -1362,7 +1362,7 @@
         {
             "rel_path": "linux/tbz.png",
             "style": "linux",
-            "extension": "tbz.png",
+            "extension": "tbz",
             "x": 334,
             "y": 556,
             "width": 48,
@@ -1371,7 +1371,7 @@
         {
             "rel_path": "linux/tga.png",
             "style": "linux",
-            "extension": "tga.png",
+            "extension": "tga",
             "x": 382,
             "y": 556,
             "width": 48,
@@ -1380,7 +1380,7 @@
         {
             "rel_path": "linux/tgz.png",
             "style": "linux",
-            "extension": "tgz.png",
+            "extension": "tgz",
             "x": 430,
             "y": 556,
             "width": 48,
@@ -1389,7 +1389,7 @@
         {
             "rel_path": "linux/tsv.png",
             "style": "linux",
-            "extension": "tsv.png",
+            "extension": "tsv",
             "x": 478,
             "y": 556,
             "width": 48,
@@ -1398,7 +1398,7 @@
         {
             "rel_path": "linux/ttf.png",
             "style": "linux",
-            "extension": "ttf.png",
+            "extension": "ttf",
             "x": 526,
             "y": 556,
             "width": 48,
@@ -1407,7 +1407,7 @@
         {
             "rel_path": "linux/uos.png",
             "style": "linux",
-            "extension": "uos.png",
+            "extension": "uos",
             "x": 574,
             "y": 556,
             "width": 48,
@@ -1416,7 +1416,7 @@
         {
             "rel_path": "linux/vbs.png",
             "style": "linux",
-            "extension": "vbs.png",
+            "extension": "vbs",
             "x": 0,
             "y": 608,
             "width": 48,
@@ -1425,7 +1425,7 @@
         {
             "rel_path": "linux/vda.png",
             "style": "linux",
-            "extension": "vda.png",
+            "extension": "vda",
             "x": 48,
             "y": 608,
             "width": 48,
@@ -1434,7 +1434,7 @@
         {
             "rel_path": "linux/vdi.png",
             "style": "linux",
-            "extension": "vdi.png",
+            "extension": "vdi",
             "x": 96,
             "y": 608,
             "width": 48,
@@ -1443,7 +1443,7 @@
         {
             "rel_path": "linux/vst.png",
             "style": "linux",
-            "extension": "vst.png",
+            "extension": "vst",
             "x": 144,
             "y": 608,
             "width": 48,
@@ -1452,7 +1452,7 @@
         {
             "rel_path": "linux/wav.png",
             "style": "linux",
-            "extension": "wav.png",
+            "extension": "wav",
             "x": 192,
             "y": 608,
             "width": 48,
@@ -1461,7 +1461,7 @@
         {
             "rel_path": "linux/wma.png",
             "style": "linux",
-            "extension": "wma.png",
+            "extension": "wma",
             "x": 240,
             "y": 608,
             "width": 48,
@@ -1470,7 +1470,7 @@
         {
             "rel_path": "linux/xar.png",
             "style": "linux",
-            "extension": "xar.png",
+            "extension": "xar",
             "x": 288,
             "y": 608,
             "width": 48,
@@ -1479,7 +1479,7 @@
         {
             "rel_path": "linux/xls.png",
             "style": "linux",
-            "extension": "xls.png",
+            "extension": "xls",
             "x": 336,
             "y": 608,
             "width": 48,
@@ -1488,7 +1488,7 @@
         {
             "rel_path": "linux/xml.png",
             "style": "linux",
-            "extension": "xml.png",
+            "extension": "xml",
             "x": 384,
             "y": 608,
             "width": 48,

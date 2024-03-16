@@ -18,8 +18,8 @@ for root, dirs, files in os.walk(THUMBNAILS_DIR):
 
             # filenames are in the format of "ext_style.png"
             # in case of the fallback, the filename is "_fallback_style.png"
-
-            splited = file.split("_")
+            filename, file_extension = os.path.splitext(file)
+            splited = filename.split("_")
 
             # find first non-empty string
             extension = None
@@ -131,3 +131,23 @@ output_json = {
 JSON_PATH = os.path.join(SPRITESHEET_DIR, "spritesheet.json")
 with open(JSON_PATH, "w") as f:
     json.dump(output_json, f, indent=4)
+
+
+# Another JSON for Deck.gl IconLayer mapping
+# {
+#     "extension1-style1": { "x": 0, "y": 0, "width": 100, "height": 100 , mask: true},
+# }
+deckgl_json = {}
+for thumbnail in flat_thumbnails:
+    key = thumbnail["extension"] + "-" + thumbnail["style"]
+    deckgl_json[key] = {
+        "x": thumbnail["x"],
+        "y": thumbnail["y"],
+        "width": thumbnail["width"],
+        "height": thumbnail["height"],
+        "mask": False,
+    }
+
+DECKGL_JSON_PATH = os.path.join(SPRITESHEET_DIR, "deckgl-spritesheet.json")
+with open(DECKGL_JSON_PATH, "w") as f:
+    json.dump(deckgl_json, f, indent=4)

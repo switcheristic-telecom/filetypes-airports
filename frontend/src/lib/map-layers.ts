@@ -18,6 +18,7 @@ import { MapViewState } from "./map-config";
 // Animation helper
 import { mix, unmix, remap } from "@/utils/math";
 import easingsFunctions from "@/utils/easing";
+import { THUMBNAILS_MAPPING, THUMBNAIL_TYPES } from "@/utils/thumbnail-mapping";
 
 interface LayerFromAirportsArgs {
   airports: Airport[];
@@ -171,6 +172,14 @@ export const meshLayerFromAirports = ({
   return meshLayer;
 };
 
+enum ThumbnailStyle {
+  Classic = "classic",
+  Linux = "linux",
+  Modern = "modern",
+}
+
+const thumbnailStyles = Object.values(ThumbnailStyle);
+
 export const iconLayerFromAirports = ({
   airports,
   onClick,
@@ -182,19 +191,35 @@ export const iconLayerFromAirports = ({
     id: "airport-icons-layer",
     data: airports,
     pickable: true,
-    iconAtlas: "assets/thumbnails/classic/_fallback_classic.png",
-    iconMapping: {
-      marker: {
-        x: 0,
-        y: 0,
-        width: 48,
-        height: 48,
-        mask: false,
-      },
+    iconAtlas: "assets/thumbnails-spritesheet/spritesheet.png",
+    iconMapping: THUMBNAILS_MAPPING,
+    getIcon: (d: Airport) => {
+      const iconPrefix = d.iata_code.toLowerCase();
+
+      let iconName: string | null = null;
+
+      for (const style of thumbnailStyles) {
+        const icon = iconPrefix + "-" + style;
+        if (icon in THUMBNAILS_MAPPING) {
+          iconName = icon;
+          break;
+        }
+      }
+
+      if (!iconName) {
+        iconName = "fallback" + "-" + thumbnailStyles[0];
+      }
+
+      return iconName;
     },
     getPosition: (d: Airport) => [d.longitude, d.latitude],
-    getSize: 32,
-    sizeScale: 1000,
+    getPixelOffset: [0, -30],
+    getSize: 48,
+    sizeScale: 1,
+    // CollideExtension options
+    collisionEnabled: true,
+    // getCollisionPriority: (d) => Math.log10(d.population),
+
     onClick: onClick,
   });
   return iconLayer;

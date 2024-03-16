@@ -79,7 +79,7 @@ const AirportMap = ({
     onClick: layerOnCLick,
   });
 
-  const layers = [textLayer, meshLayer];
+  const layers = [textLayer, meshLayer, iconLayer];
 
   return (
     <div>
