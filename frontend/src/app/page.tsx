@@ -8,7 +8,7 @@ export default async function Home() {
   const airportConcise = await api.airport.getAllConcise.query();
 
   return (
-    <main className="bg-retro-blue flex min-h-screen flex-col items-center  justify-center">
+    <main className="flex h-screen w-screen flex-col items-center justify-center overflow-clip  bg-retro-blue">
       <MapManager allAirports={airportConcise}></MapManager>
     </main>
   );

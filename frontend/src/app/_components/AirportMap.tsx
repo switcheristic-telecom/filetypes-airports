@@ -119,12 +119,16 @@ const AirportMap = ({
             dismissible={true}
           >
             {lastClickedAirport && (
-              <DrawerContent className=" mx-auto max-w-2xl ">
+              <DrawerContent className=" mx-auto max-w-2xl">
                 <DrawerHeader>
                   <DrawerTitle className="text-center text-3xl">
                     {lastClickedAirport.iata_code}
                   </DrawerTitle>
-                  <DrawerDescription className="text-md scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200 max-h-[10rem] overflow-y-scroll bg-white px-2 py-2 text-black md:max-h-none">
+                  <DrawerDescription
+                    className="text-md scrollbar-thin scrollbar-thumb-retro-blue
+                   scrollbar-track-gray-200 bor max-h-[10rem] overflow-y-scroll 
+                   border-2 border-retro-cyan bg-white px-2 py-2 text-black shadow-inner md:max-h-none"
+                  >
                     <div className="grid grid-cols-8 gap-2 text-left">
                       <div className="col-span-3">Airport</div>
                       <div className="col-span-5 ">
