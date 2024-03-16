@@ -46,7 +46,7 @@ const DrawerContent = React.forwardRef<
         "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col border-8 border-l-gray-100 border-t-gray-300 bg-retro-gray",
         "-mb-4  pb-4 md:mb-0 md:pb-0",
         "border-r-8 border-r-retro-cyan md:border-r-0",
-        "border-b-0 md:border-b-8 md:border-b-retro-cyan",
+        "border-b-0 md:border-b-8 md:border-b-gray-500",
         className,
       )}
       {...props}
