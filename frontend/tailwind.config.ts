@@ -19,9 +19,12 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1920px",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        bitmap: ["var(--font-fixedsys)", "monospace"],
+        bitmap: ["var(--font-fixedsys)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

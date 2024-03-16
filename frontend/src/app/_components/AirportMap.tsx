@@ -7,29 +7,12 @@ import React, { useState, useEffect } from "react";
 import Map from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxStyles } from "@/utils/mapbox";
-import { NavigationControl } from "react-map-gl";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-
-import { useBreakpoint } from "@/hooks/useBreakpoint";
-
-import { Button } from "@/components/ui/button";
 
 // DeckGL
 import type { PickingInfo } from "@deck.gl/core/typed";
-
 import DeckGL from "@deck.gl/react/typed";
 
 // Config
-import { lightingEffect, material, colorRange } from "@/lib/map-config";
 import { textLayerFromAirports, iconLayerFromAirports } from "@/lib/map-layers";
 
 // Airport TRPC
@@ -60,8 +43,6 @@ const AirportMap = ({
     null,
   );
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const { isMd } = useBreakpoint("md");
 
   useEffect(() => {
     // console.log("latestViewState", latestViewState);
@@ -130,72 +111,6 @@ const AirportMap = ({
               mapStyle={mapboxStyles.latest}
             ></Map>
           </DeckGL>
-          <Drawer
-            open={isDrawerOpen}
-            onClose={() => setIsDrawerOpen(false)}
-            onOpenChange={setIsDrawerOpen}
-            modal={false}
-            preventScrollRestoration={true}
-            dismissible={true}
-            direction={isMd ? "right" : "bottom"}
-          >
-            {lastClickedAirport && (
-              <DrawerContent className=" font-bitmap mx-auto max-w-2xl md:ml-auto md:mr-0">
-                <DrawerHeader>
-                  <DrawerTitle className="text-center text-3xl md:text-5xl">
-                    {lastClickedAirport.iata_code}
-                  </DrawerTitle>
-                  <DrawerDescription
-                    className="scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200
-                   bor text-md max-h-[10rem]  min-h-0 overflow-y-scroll overscroll-none
-                   border-2 border-retro-cyan bg-white px-2 py-2 leading-tight text-black shadow-inner md:max-h-[35vh] md:min-h-[14rem] md:text-xl"
-                  >
-                    <div className="grid grid-cols-8 gap-2 text-left">
-                      <div className="col-span-3">Airport</div>
-                      <div className="col-span-5 ">
-                        <div className="font-semibold">
-                          {lastClickedAirport?.name} (
-                          {lastClickedAirport?.iso_country})
-                        </div>
-                        <div>{lastClickedAirport.type}</div>
-                      </div>
-
-                      {/* divider here */}
-                      <div className="col-span-8">
-                        <hr className="-mx-2 border-t-2 border-retro-gray" />
-                      </div>
-                      <div className="col-span-3">Filetype</div>
-                      <div className="col-span-5">
-                        {lastClickedAirport?.filetypes.map((filetype, i) => {
-                          return (
-                            <div key={i}>
-                              <div className="font-semibold">
-                                {filetype.description}
-                              </div>
-                              {filetype.used_by && (
-                                <div>Used by {filetype.used_by}</div>
-                              )}
-                              {i < lastClickedAirport.filetypes.length - 1 ? (
-                                <hr className="-mx-2 my-1 border-t-2 border-retro-gray" />
-                              ) : (
-                                ""
-                              )}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </DrawerDescription>
-                </DrawerHeader>
-                {/* <DrawerFooter>
-                <Button>Submit</Button>
-                <DrawerClose>
-                  <Button variant="outline">Cancel</Button>
-                </DrawerClose>
-              </DrawerFooter> */}
-              </DrawerContent>
-            )}
-          </Drawer>
         </div>
       )}
     </div>
