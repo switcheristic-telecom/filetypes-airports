@@ -116,23 +116,25 @@ const AirportMap = ({
             onClose={() => setIsDrawerOpen(false)}
             onOpenChange={setIsDrawerOpen}
             modal={false}
+            preventScrollRestoration={true}
+            dismissible={true}
           >
             <DrawerContent className=" mx-auto max-w-2xl ">
               <DrawerHeader>
                 <DrawerTitle className="text-center text-3xl">
                   {lastClickedAirport?.iata_code}
                 </DrawerTitle>
-                <DrawerDescription className="px-8 py-2 text-lg text-black">
+                <DrawerDescription className="text-md scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200 max-h-[10rem] overflow-y-scroll bg-white px-2 py-2 text-black md:max-h-none">
                   <div className="grid grid-cols-8 gap-2 text-left">
                     <div className="col-span-3">Airport</div>
                     <div className="col-span-5 font-semibold">
-                      {lastClickedAirport?.name} -{" "}
-                      {lastClickedAirport?.iso_country}
+                      {lastClickedAirport?.name} (
+                      {lastClickedAirport?.iso_country})
                     </div>
 
                     {/* divider here */}
                     <div className="col-span-8">
-                      <hr className="border-t-2 border-gray-400" />
+                      <hr className="-mx-2 border-t-2 border-retro-gray" />
                     </div>
                     <div className="col-span-3">Filetype</div>
                     <div className="col-span-5">
@@ -143,6 +145,11 @@ const AirportMap = ({
                               {filetype.description}
                             </div>
                             <div>{filetype.used_by}</div>
+                            {i < lastClickedAirport.filetypes.length - 1 ? (
+                              <hr className="-mx-2 my-1 border-t-2 border-retro-gray" />
+                            ) : (
+                              ""
+                            )}
                           </div>
                         );
                       })}
