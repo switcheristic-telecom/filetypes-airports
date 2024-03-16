@@ -17,7 +17,7 @@ const AirportMarquee = ({
       onClick={() => flyToAirport(featuredAirport)}
     >
       <>
-        <div className="relative flex overflow-x-hidden ">
+        <div className="relative flex overflow-x-hidden">
           <div className="animate-marquee whitespace-nowrap bg-black text-white">
             <ContentSpans featuredAirport={featuredAirport} />
             <ContentSpans featuredAirport={featuredAirport} />

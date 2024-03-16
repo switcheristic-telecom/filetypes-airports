@@ -76,10 +76,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${inter.variable} ${fixedsys.variable}`}>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
-      </body>
-    </html>
+    <TRPCReactProvider>
+      <html lang="en">
+        <head>
+          <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+          <meta name="theme-color" content="#000000" />
+        </head>
+        <body className={`font-sans ${inter.variable} ${fixedsys.variable}`}>
+          {children}
+        </body>
+      </html>
+    </TRPCReactProvider>
   );
 }
