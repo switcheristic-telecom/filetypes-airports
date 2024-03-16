@@ -6,10 +6,19 @@ import MapManager from "./_components/MapManager";
 export default async function Home() {
   noStore();
   const airportConcise = await api.airport.getAllConcise.query();
+  const sortedAirports = airportConcise.sort((a, b) => {
+    if (a.iata_code < b.iata_code) {
+      return -1;
+    }
+    if (a.iata_code > b.iata_code) {
+      return 1;
+    }
+    return 0;
+  });
 
   return (
     <main className="flex h-dvh w-screen flex-col  items-center justify-center overflow-hidden bg-retro-blue">
-      <MapManager allAirports={airportConcise}></MapManager>
+      <MapManager allAirports={sortedAirports}></MapManager>
     </main>
   );
 }
