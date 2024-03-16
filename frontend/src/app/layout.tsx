@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         url: `opengraph-image.jpeg`,
         type: "image/jpeg",
         width: 1200,
-        height: 627,
+        height: 900,
         alt: "Filetypes / Airports",
       },
     ],
