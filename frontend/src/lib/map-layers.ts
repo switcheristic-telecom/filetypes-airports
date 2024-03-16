@@ -21,6 +21,8 @@ import { mix, unmix, remap } from "@/utils/math";
 import easingsFunctions from "@/utils/easing";
 import { THUMBNAILS_MAPPING, THUMBNAIL_TYPES } from "@/utils/thumbnail-mapping";
 
+import { md5 } from "js-md5";
+
 interface LayerFromAirportsArgs {
   airports: Airport[];
   onClick?: (info: PickingInfo) => void;
@@ -196,7 +198,7 @@ export const iconLayerFromAirports = ({
     return null;
   }
 
-  const LOOP_LENGTH = 1800;
+  const LOOP_LENGTH = 3600;
 
   const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
 
@@ -232,6 +234,10 @@ export const iconLayerFromAirports = ({
     getSize: 48,
     sizeScale: 1,
     getAngle: 0,
+    getYAngleOffset: (d: Airport) => {
+      const offset = md5.array(d.iata_code).reduce((a, b) => a + b, 0);
+      return offset % 360;
+    },
     getYAngle: (time * 360) % 360,
     billboard: true,
     // CollideExtension options

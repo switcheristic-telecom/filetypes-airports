@@ -9,6 +9,7 @@ import { _mergeShaders } from "@deck.gl/core/typed";
 
 type SpinningIconLayerProps<DataT = unknown> = IconLayerProps<DataT> & {
   getYAngle?: Accessor<DataT, number>;
+  getYAngleOffset?: Accessor<DataT, number>;
   collisionEnabled?: boolean;
   collisionTestProps: unknown;
   getCollisionPriority: unknown;
@@ -35,6 +36,11 @@ export class SpinningIconLayer<DataT = unknown> extends IconLayer<
     const attributeManager = this.getAttributeManager();
     attributeManager!.addInstanced({
       instanceYAngles: { size: 1, accessor: "getYAngle", transition: true },
+      instanceYAngleOffsets: {
+        size: 1,
+        accessor: "getYAngleOffset",
+        transition: true,
+      },
     });
   }
 }
@@ -68,6 +74,7 @@ varying vec2 vTextureCoords;
 varying vec2 uv;
 
 attribute float instanceYAngles;
+attribute float instanceYAngleOffsets;
 
 
 vec2 rotate_by_angle(vec2 vertex, float angle) {
@@ -94,7 +101,7 @@ void main(void) {
   uv = positions;
 
   vec3 position3D = vec3(positions, 0.0);
-  vec3 rotatedPosition = rotateY(position3D, instanceYAngles);
+  vec3 rotatedPosition = rotateY(position3D, instanceYAngles+instanceYAngleOffsets);
   
   vec2 iconSize = instanceIconFrames.zw;
   // convert size in meters to pixels, then scaled and clamp
