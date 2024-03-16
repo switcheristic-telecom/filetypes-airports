@@ -10,22 +10,28 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const cotham = localFont({
-  src: "./fonts/Cotham-Sans-Regular.woff2",
-  display: "swap",
-  variable: "--font-cotham-sans",
-});
+// const cotham = localFont({
+//   src: "./fonts/Cotham-Sans-Regular.woff2",
+//   display: "swap",
+//   variable: "--font-cotham-sans",
+// });
 
-const junicode = localFont({
-  src: "./fonts/JunicodeTwoBetaVF-Roman.woff2",
+// const junicode = localFont({
+//   src: "./fonts/JunicodeTwoBetaVF-Roman.woff2",
+//   display: "swap",
+//   variable: "--font-junicode",
+//   declarations: [
+//     {
+//       prop: "font-stretch",
+//       value: "75% 125%",
+//     },
+//   ],
+// });
+
+const fixedsys = localFont({
+  src: "./fonts/FSEX302.ttf",
   display: "swap",
-  variable: "--font-junicode",
-  declarations: [
-    {
-      prop: "font-stretch",
-      value: "75% 125%",
-    },
-  ],
+  variable: "--font-fixedsys",
 });
 
 export const metadata: Metadata = {
@@ -47,9 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`font-sans ${inter.variable} ${cotham.variable} ${junicode.variable}`}
-      >
+      <body className={`font-sans ${inter.variable} ${fixedsys.variable}`}>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>

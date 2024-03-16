@@ -13,7 +13,7 @@ const AirportMarquee = ({
 }: AirportMarqueeProps) => {
   return (
     <div
-      className="absolute top-0 z-10 w-screen cursor-pointer"
+      className="font-bitmap absolute top-0 z-10 w-screen cursor-pointer"
       onClick={() => flyToAirport(featuredAirport)}
     >
       <>

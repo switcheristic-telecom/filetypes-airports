@@ -100,7 +100,7 @@ const AirportMap = ({
             initialViewState={initialViewState}
             controller={true}
             layers={layers}
-            getTooltip={getTooltip}
+            // getTooltip={getTooltip}
             onViewStateChange={({ viewState }) => {
               setLatestViewState(viewState as MapViewState);
             }}
@@ -119,15 +119,15 @@ const AirportMap = ({
             dismissible={true}
           >
             {lastClickedAirport && (
-              <DrawerContent className=" mx-auto max-w-2xl">
+              <DrawerContent className=" font-bitmap mx-auto max-w-2xl">
                 <DrawerHeader>
-                  <DrawerTitle className="text-center text-3xl">
+                  <DrawerTitle className="text-center text-3xl md:text-5xl">
                     {lastClickedAirport.iata_code}
                   </DrawerTitle>
                   <DrawerDescription
-                    className="text-md scrollbar-thin scrollbar-thumb-retro-blue
-                   scrollbar-track-gray-200 bor max-h-[10rem] overflow-y-scroll 
-                   border-2 border-retro-cyan bg-white px-2 py-2 text-black shadow-inner md:max-h-none"
+                    className="scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200
+                   bor text-md max-h-[10rem] overflow-y-scroll 
+                   border-2 border-retro-cyan bg-white px-2 py-2 leading-tight text-black shadow-inner md:max-h-none md:text-xl"
                   >
                     <div className="grid grid-cols-8 gap-2 text-left">
                       <div className="col-span-3">Airport</div>
