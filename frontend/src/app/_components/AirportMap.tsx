@@ -19,6 +19,8 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
+import { useBreakpoint } from "@/hooks/useBreakpoint";
+
 import { Button } from "@/components/ui/button";
 
 // DeckGL
@@ -58,6 +60,8 @@ const AirportMap = ({
     null,
   );
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const { isMd } = useBreakpoint("md");
 
   useEffect(() => {
     // console.log("latestViewState", latestViewState);
@@ -133,9 +137,10 @@ const AirportMap = ({
             modal={false}
             preventScrollRestoration={true}
             dismissible={true}
+            direction={isMd ? "right" : "bottom"}
           >
             {lastClickedAirport && (
-              <DrawerContent className=" font-bitmap mx-auto max-w-2xl">
+              <DrawerContent className=" font-bitmap mx-auto max-w-2xl md:ml-auto md:mr-0">
                 <DrawerHeader>
                   <DrawerTitle className="text-center text-3xl md:text-5xl">
                     {lastClickedAirport.iata_code}
