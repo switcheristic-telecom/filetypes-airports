@@ -142,8 +142,8 @@ const AirportMap = ({
                   </DrawerTitle>
                   <DrawerDescription
                     className="scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200
-                   bor text-md max-h-[10rem] overflow-y-scroll 
-                   border-2 border-retro-cyan bg-white px-2 py-2 leading-tight text-black shadow-inner md:max-h-[35vh] md:text-xl"
+                   bor text-md max-h-[10rem]  min-h-0 overflow-y-scroll
+                   border-2 border-retro-cyan bg-white px-2 py-2 leading-tight text-black shadow-inner md:max-h-[35vh] md:min-h-[14rem] md:text-xl"
                   >
                     <div className="grid grid-cols-8 gap-2 text-left">
                       <div className="col-span-3">Airport</div>
