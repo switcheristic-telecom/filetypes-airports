@@ -85,7 +85,13 @@ vec3 rotateY(vec3 v, float angle) {
   return vec3(v.x * cosA - v.z * sinA, v.y, v.x * sinA + v.z * cosA);
 }
 
+vec3 perspective_projection(vec3 position) {
+  // assume camera is looking towards the -z direction
+  // assume the position.z is the distance from origin and very small
+  // so we can approximate the perspective projection as
+  return position / (1.0 + position.z * 0.3);
 
+}
 
 void main(void) {
   geometry.worldPosition = instancePositions;
@@ -95,6 +101,7 @@ void main(void) {
 
   vec3 position3D = vec3(positions, 0.0);
   vec3 rotatedPosition = rotateY(position3D, instanceYAngles);
+  vec3 projectedPosition = perspective_projection(rotatedPosition);
   
   vec2 iconSize = instanceIconFrames.zw;
   // convert size in meters to pixels, then scaled and clamp
@@ -109,7 +116,7 @@ void main(void) {
   float instanceScale = iconSize.y == 0.0 ? 0.0 : sizePixels / iconSize.y;
 
   // scale and rotate vertex in "pixel" value and convert back to fraction in clipspace
-  vec2 pixelOffset = rotatedPosition.xy / 2.0 * iconSize + instanceOffsets;
+  vec2 pixelOffset = projectedPosition.xy / 2.0 * iconSize + instanceOffsets;
   pixelOffset = rotate_by_angle(pixelOffset, instanceAngles) * instanceScale;
   pixelOffset += instancePixelOffset;
   pixelOffset.y *= -1.0;
