@@ -117,9 +117,9 @@ const AirportMap = ({
             onOpenChange={setIsDrawerOpen}
             modal={false}
           >
-            <DrawerContent className="mx-auto block sm:hidden">
+            <DrawerContent className=" mx-auto max-w-2xl ">
               <DrawerHeader>
-                <DrawerTitle className="text-3xl">
+                <DrawerTitle className="text-center text-3xl">
                   {lastClickedAirport?.iata_code}
                 </DrawerTitle>
                 <DrawerDescription className="px-8 py-2 text-lg text-black">
