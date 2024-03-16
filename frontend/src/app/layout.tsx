@@ -35,8 +35,8 @@ const fixedsys = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Airport Codes and Filetypes",
-  description: "A list of airport codes and filetypes",
+  title: "Filetypes / Airports",
+  description: "A collection of filetypes and airports with shared names",
   icons: [
     {
       rel: "icon",
@@ -44,6 +44,22 @@ export const metadata: Metadata = {
       url: "/assets/thumbnails-animated-ulq/_fallback_classic.png",
     },
   ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://filetypes-airports.switcheristic.tel/",
+    title: "Filetypes / Airports",
+    description: "A collection of filetypes and airports with shared names",
+    images: [
+      {
+        url: `opengraph-image.jpeg`,
+        width: 1200,
+        height: 627,
+        alt: "Filetypes / Airports",
+      },
+    ],
+    siteName: "Filetypes / Airports",
+  },
 };
 
 export default function RootLayout({
