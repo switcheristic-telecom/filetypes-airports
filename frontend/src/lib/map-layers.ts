@@ -57,7 +57,7 @@ export const textLayerFromAirports = ({
     fontSettings: {
       buffer: 32,
     },
-    fontFamily: "Inter, Helvetica, Arial, sans-serif",
+    fontFamily: "monospace",
     fontWeight: "bold",
 
     // TextLayer options
@@ -74,7 +74,7 @@ export const textLayerFromAirports = ({
 
     background: true,
     backgroundPadding: [2, 0, 2, -2],
-    backgroundColor: [50, 50, 50, 255],
+    getBackgroundColor: [50, 50, 50, 255],
 
     // CollideExtension options
     collisionEnabled: noOverlap,
