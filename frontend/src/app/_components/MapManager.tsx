@@ -13,7 +13,17 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/router";
 
 import { useBreakpoint } from "@/hooks/useBreakpoint";
 
@@ -28,6 +38,7 @@ import { api } from "@/trpc/react";
 // Child Components
 import AirportMarquee from "@/app/_components/AirportMarquee";
 import AirportMap from "@/app/_components/AirportMap";
+import Link from "next/link";
 
 interface MapManagerProps {
   allAirports: Airport[];
@@ -43,6 +54,10 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
   );
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const { isMd } = useBreakpoint("md");
+
+  const [convertedTo, setConvertedTo] = useState<string | undefined>(
+    allAirports[0]?.iata_code,
+  );
 
   const flyToAirport = useCallback(
     (airport: Airport) => {
@@ -147,12 +162,52 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
                 </div>
               </DrawerDescription>
             </DrawerHeader>
-            {/* <DrawerFooter>
-                <Button>Submit</Button>
-                <DrawerClose>
-                  <Button variant="outline">Cancel</Button>
-                </DrawerClose>
-              </DrawerFooter> */}
+            <DrawerFooter>
+              {/* <div className="text-xl">Free File Converter</div> */}
+              <div className="flex flex-row gap-2 text-xl">
+                <div className="my-auto whitespace-nowrap">Convert to</div>
+                <Select onValueChange={setConvertedTo}>
+                  <SelectTrigger className="w-full bg-white text-xl">
+                    <SelectValue placeholder={convertedTo} />
+                  </SelectTrigger>
+                  <SelectContent className=" ">
+                    {allAirports.map((airport) => {
+                      return (
+                        <SelectItem
+                          key={airport.iata_code}
+                          value={airport.iata_code}
+                        >
+                          {airport.iata_code}
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectContent>
+                </Select>
+                <Link
+                  className=""
+                  target="_blank"
+                  href={composeGoogleFlightUrl(
+                    lastClickedAirport.iata_code,
+                    convertedTo ?? "",
+                  )}
+                >
+                  <Button className="text-xl">Convert</Button>
+                </Link>
+              </div>
+              {/* <DrawerClose>
+                <Button variant="outline">
+                  <Link
+                    target="_blank"
+                    href={composeGoogleFlightUrl(
+                      "SFO",
+                      lastClickedAirport.iata_code,
+                    )}
+                  >
+                    buy
+                  </Link>
+                </Button>
+              </DrawerClose> */}
+            </DrawerFooter>
           </DrawerContent>
         )}
       </Drawer>
@@ -161,3 +216,12 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
 };
 
 export default MapManager;
+
+function composeGoogleFlightUrl(from: string, to: string) {
+  // https://www.google.com/travel/flights?q=Flights%20to%20SFO%20from%20FRA%20on%202023-09-13%20through%202023-09-17%20with%20one%20adult%20business%20class&curr=USD
+  const params = new URLSearchParams({
+    q: `Flights to ${to} from ${from}`,
+    // curr: "USD",
+  });
+  return `https://www.google.com/travel/flights?${params.toString()}`;
+}
