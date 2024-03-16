@@ -104,6 +104,22 @@ const AirportMap = ({
             onViewStateChange={({ viewState }) => {
               setLatestViewState(viewState as MapViewState);
             }}
+            getCursor={({ isDragging, isHovering }) => {
+              // http://www.rw-designer.com/cursor-set/win-95-98#google_vignette
+              // const grabbingCursor = "url(cursors/Cursor_10.png), auto";
+              // const pointerCursor = "url(cursors/Cursor_15.png), auto";
+              // const defaultCursor = "url(cursors/arrow.png), auto";
+              // return isDragging
+              //   ? grabbingCursor
+              //   : isHovering
+              //     ? pointerCursor
+              //     : defaultCursor;
+              return isDragging
+                ? "grabbing"
+                : isHovering
+                  ? "pointer"
+                  : "default";
+            }}
           >
             <Map
               mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
