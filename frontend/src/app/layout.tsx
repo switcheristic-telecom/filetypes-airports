@@ -44,6 +44,12 @@ export const metadata: Metadata = {
       url: "/assets/thumbnails-animated-ulq/_fallback_classic.png",
     },
   ],
+  twitter: {
+    card: "summary_large_image",
+    site: "@switcheristic",
+    creator: "@switcheristic",
+    images: `/opengraph-image.jpeg`,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -53,6 +59,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: `opengraph-image.jpeg`,
+        type: "image/jpeg",
         width: 1200,
         height: 627,
         alt: "Filetypes / Airports",
