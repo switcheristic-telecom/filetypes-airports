@@ -17,15 +17,24 @@ const AirportMarquee = ({
       onClick={() => flyToAirport(featuredAirport)}
     >
       <>
-        <div className="relative flex overflow-x-hidden">
+        <div className="relative flex flex-row overflow-x-hidden">
           <div className="animate-marquee whitespace-nowrap bg-black text-white">
             <ContentSpans featuredAirport={featuredAirport} />
             <ContentSpans featuredAirport={featuredAirport} />
+
+            <span className="3xl:inline hidden">
+              <ContentSpans featuredAirport={featuredAirport} />
+              <ContentSpans featuredAirport={featuredAirport} />
+            </span>
           </div>
 
           <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white">
             <ContentSpans featuredAirport={featuredAirport} />
             <ContentSpans featuredAirport={featuredAirport} />
+            <span className="3xl:inline hidden">
+              <ContentSpans featuredAirport={featuredAirport} />
+              <ContentSpans featuredAirport={featuredAirport} />
+            </span>
           </div>
         </div>
       </>
