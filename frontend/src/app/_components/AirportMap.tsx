@@ -8,7 +8,6 @@ import Map from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxStyles } from "@/utils/mapbox";
 import { NavigationControl } from "react-map-gl";
-
 import {
   Drawer,
   DrawerClose,
@@ -119,51 +118,56 @@ const AirportMap = ({
             preventScrollRestoration={true}
             dismissible={true}
           >
-            <DrawerContent className=" mx-auto max-w-2xl ">
-              <DrawerHeader>
-                <DrawerTitle className="text-center text-3xl">
-                  {lastClickedAirport?.iata_code}
-                </DrawerTitle>
-                <DrawerDescription className="text-md scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200 max-h-[10rem] overflow-y-scroll bg-white px-2 py-2 text-black md:max-h-none">
-                  <div className="grid grid-cols-8 gap-2 text-left">
-                    <div className="col-span-3">Airport</div>
-                    <div className="col-span-5 font-semibold">
-                      {lastClickedAirport?.name} (
-                      {lastClickedAirport?.iso_country})
-                    </div>
+            {lastClickedAirport && (
+              <DrawerContent className=" mx-auto max-w-2xl ">
+                <DrawerHeader>
+                  <DrawerTitle className="text-center text-3xl">
+                    {lastClickedAirport.iata_code}
+                  </DrawerTitle>
+                  <DrawerDescription className="text-md scrollbar-thin scrollbar-thumb-retro-blue scrollbar-track-gray-200 max-h-[10rem] overflow-y-scroll bg-white px-2 py-2 text-black md:max-h-none">
+                    <div className="grid grid-cols-8 gap-2 text-left">
+                      <div className="col-span-3">Airport</div>
+                      <div className="col-span-5 ">
+                        <div className="font-semibold">
+                          {lastClickedAirport?.name} (
+                          {lastClickedAirport?.iso_country})
+                        </div>
+                        <div>{lastClickedAirport.type}</div>
+                      </div>
 
-                    {/* divider here */}
-                    <div className="col-span-8">
-                      <hr className="-mx-2 border-t-2 border-retro-gray" />
-                    </div>
-                    <div className="col-span-3">Filetype</div>
-                    <div className="col-span-5">
-                      {lastClickedAirport?.filetypes.map((filetype, i) => {
-                        return (
-                          <div key={i}>
-                            <div className="font-semibold">
-                              {filetype.description}
+                      {/* divider here */}
+                      <div className="col-span-8">
+                        <hr className="-mx-2 border-t-2 border-retro-gray" />
+                      </div>
+                      <div className="col-span-3">Filetype</div>
+                      <div className="col-span-5">
+                        {lastClickedAirport?.filetypes.map((filetype, i) => {
+                          return (
+                            <div key={i}>
+                              <div className="font-semibold">
+                                {filetype.description}
+                              </div>
+                              <div>{filetype.used_by}</div>
+                              {i < lastClickedAirport.filetypes.length - 1 ? (
+                                <hr className="-mx-2 my-1 border-t-2 border-retro-gray" />
+                              ) : (
+                                ""
+                              )}
                             </div>
-                            <div>{filetype.used_by}</div>
-                            {i < lastClickedAirport.filetypes.length - 1 ? (
-                              <hr className="-mx-2 my-1 border-t-2 border-retro-gray" />
-                            ) : (
-                              ""
-                            )}
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
-                </DrawerDescription>
-              </DrawerHeader>
-              {/* <DrawerFooter>
+                  </DrawerDescription>
+                </DrawerHeader>
+                {/* <DrawerFooter>
                 <Button>Submit</Button>
                 <DrawerClose>
                   <Button variant="outline">Cancel</Button>
                 </DrawerClose>
               </DrawerFooter> */}
-            </DrawerContent>
+              </DrawerContent>
+            )}
           </Drawer>
         </div>
       )}
