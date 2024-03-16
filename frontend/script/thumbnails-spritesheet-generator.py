@@ -56,6 +56,8 @@ print("Sorted thumbnails")
 # 2. Make a grid of thumbnails
 thumbnail_length = len(thumbnails)
 cols = 13  # number of columns in the grid
+horizontal_gap = 10
+vertical_gap = 10
 thumbnails_grid = []
 
 for i in range(0, thumbnail_length, cols):
@@ -75,8 +77,12 @@ for row in thumbnails_grid:
     for thumbnail in row:
         img = Image.open(thumbnail["abs_path"])
         row_width += img.width
+        row_width += horizontal_gap
         if img.height > row_height:
             row_height = img.height
+    row_width -= horizontal_gap
+    row_height += vertical_gap
+
     widths.append(row_width)
     heights.append(row_height)
 
@@ -107,7 +113,7 @@ for row, row_height in zip(thumbnails_grid, heights):
         thumbnail["width"] = img.width
         thumbnail["height"] = img.height
         del thumbnail["abs_path"]
-        x_offset += img.width
+        x_offset += img.width + horizontal_gap
     y_offset += row_height
 
 # Save the spritesheet
