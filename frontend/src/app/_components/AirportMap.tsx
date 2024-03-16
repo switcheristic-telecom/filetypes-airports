@@ -9,6 +9,19 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxStyles } from "@/utils/mapbox";
 import { NavigationControl } from "react-map-gl";
 
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+
+import { Button } from "@/components/ui/button";
+
 // DeckGL
 import type { PickingInfo } from "@deck.gl/core/typed";
 
@@ -16,11 +29,7 @@ import DeckGL from "@deck.gl/react/typed";
 
 // Config
 import { lightingEffect, material, colorRange } from "@/lib/map-config";
-import {
-  textLayerFromAirports,
-  meshLayerFromAirports,
-  iconLayerFromAirports,
-} from "@/lib/map-layers";
+import { textLayerFromAirports, iconLayerFromAirports } from "@/lib/map-layers";
 
 // Airport TRPC
 import type { Airport, AirportConcise } from "@/utils/airport";
@@ -46,6 +55,11 @@ const AirportMap = ({
 
   const [latestViewState, setLatestViewState] = useState(initialViewState);
 
+  const [lastClickedAirport, setLastClickedAirport] = useState<Airport | null>(
+    null,
+  );
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   useEffect(() => {
     // console.log("latestViewState", latestViewState);
   }, [latestViewState]);
@@ -60,6 +74,8 @@ const AirportMap = ({
   const layerOnCLick = ({ object }: PickingInfo) => {
     if (object) {
       flyToAirport(object as Airport);
+      setIsDrawerOpen(true);
+      setLastClickedAirport(object as Airport);
     }
   };
 
@@ -67,12 +83,6 @@ const AirportMap = ({
     airports: allAirports,
     onClick: layerOnCLick,
   });
-  // const meshLayer = meshLayerFromAirports({
-  //   airports: allAirports,
-  //   onClick: layerOnCLick,
-  //   timeInMs: animationTime,
-  //   viewState: latestViewState,
-  // });
 
   const iconLayer = iconLayerFromAirports({
     airports: allAirports,
@@ -85,21 +95,70 @@ const AirportMap = ({
   return (
     <div>
       {initialAirport && (
-        <DeckGL
-          effects={[lightingEffect]}
-          initialViewState={initialViewState}
-          controller={true}
-          layers={layers}
-          getTooltip={getTooltip}
-          onViewStateChange={({ viewState }) => {
-            setLatestViewState(viewState as MapViewState);
-          }}
-        >
-          <Map
-            mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-            mapStyle={mapboxStyles.latest}
-          ></Map>
-        </DeckGL>
+        <div>
+          <DeckGL
+            effects={[]}
+            initialViewState={initialViewState}
+            controller={true}
+            layers={layers}
+            getTooltip={getTooltip}
+            onViewStateChange={({ viewState }) => {
+              setLatestViewState(viewState as MapViewState);
+            }}
+          >
+            <Map
+              mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+              mapStyle={mapboxStyles.latest}
+            ></Map>
+          </DeckGL>
+          <Drawer
+            open={isDrawerOpen}
+            onClose={() => setIsDrawerOpen(false)}
+            onOpenChange={setIsDrawerOpen}
+            modal={false}
+          >
+            <DrawerContent className="mx-auto block sm:hidden">
+              <DrawerHeader>
+                <DrawerTitle className="text-3xl">
+                  {lastClickedAirport?.iata_code}
+                </DrawerTitle>
+                <DrawerDescription className="px-8 py-2 text-lg text-black">
+                  <div className="grid grid-cols-8 gap-2 text-left">
+                    <div className="col-span-3">Airport</div>
+                    <div className="col-span-5 font-semibold">
+                      {lastClickedAirport?.name} -{" "}
+                      {lastClickedAirport?.iso_country}
+                    </div>
+
+                    {/* divider here */}
+                    <div className="col-span-8">
+                      <hr className="border-t-2 border-gray-400" />
+                    </div>
+                    <div className="col-span-3">Filetype</div>
+                    <div className="col-span-5">
+                      {lastClickedAirport?.filetypes.map((filetype, i) => {
+                        return (
+                          <div key={i}>
+                            <div className="font-semibold">
+                              {filetype.description}
+                            </div>
+                            <div>{filetype.used_by}</div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </DrawerDescription>
+              </DrawerHeader>
+              {/* <DrawerFooter>
+                <Button>Submit</Button>
+                <DrawerClose>
+                  <Button variant="outline">Cancel</Button>
+                </DrawerClose>
+              </DrawerFooter> */}
+            </DrawerContent>
+          </Drawer>
+        </div>
       )}
     </div>
   );
