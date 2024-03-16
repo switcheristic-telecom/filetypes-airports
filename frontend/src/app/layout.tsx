@@ -35,6 +35,7 @@ const fixedsys = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://filetypes-airports.switcheristic.tel/"),
   title: "Filetypes / Airports",
   description: "A collection of filetypes and airports with shared names",
   icons: [
