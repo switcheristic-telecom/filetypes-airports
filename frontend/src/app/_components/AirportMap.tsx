@@ -67,19 +67,20 @@ const AirportMap = ({
     airports: allAirports,
     onClick: layerOnCLick,
   });
-  const meshLayer = meshLayerFromAirports({
-    airports: allAirports,
-    onClick: layerOnCLick,
-    timeInMs: animationTime,
-    viewState: latestViewState,
-  });
+  // const meshLayer = meshLayerFromAirports({
+  //   airports: allAirports,
+  //   onClick: layerOnCLick,
+  //   timeInMs: animationTime,
+  //   viewState: latestViewState,
+  // });
 
   const iconLayer = iconLayerFromAirports({
     airports: allAirports,
+    timeInMs: animationTime,
     onClick: layerOnCLick,
   });
 
-  const layers = [textLayer, meshLayer, iconLayer];
+  const layers = [textLayer, iconLayer];
 
   return (
     <div>

@@ -8,6 +8,7 @@ import { CollisionFilterExtension } from "@deck.gl/extensions/typed";
 import { SimpleMeshLayer } from "@deck.gl/mesh-layers/typed";
 import { CubeGeometry, CylinderGeometry, PlaneGeometry } from "@luma.gl/core";
 // import { Geom } from "@luma.gl/webgl";
+import { SpinningIconLayer } from "./spinning-icon-layer";
 
 // Icon Layer
 import { IconLayer } from "@deck.gl/layers/typed";
@@ -119,12 +120,13 @@ export const meshLayerFromAirports = ({
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
     mesh: new PlaneGeometry(),
 
-    sizeScale: 100,
-    visible: zoom > 10,
-    material: false,
+    sizeScale: 100000,
+    // visible: zoom > 10,
+    visible: true,
+    material: true,
     getPosition: (d: Airport) => [d.longitude, d.latitude],
-    getColor: [255, 255, 255],
-    getPolygonOffset: () => [0, -1],
+    // getColor: [255, 255, 255],
+    // getPolygonOffset: () => [0, -1],
     getOrientation: [time * 360, 0, 180],
 
     getScale: (d: Airport) => {
@@ -144,7 +146,7 @@ export const meshLayerFromAirports = ({
 
       const scale = baseScale * factor;
 
-      return [scale, scale, scale];
+      return [1, 1, 1];
     },
 
     getTranslation: (d: Airport) => {
@@ -164,8 +166,9 @@ export const meshLayerFromAirports = ({
       } else {
         yOffset = -400;
       }
-
-      return [baseX, baseY + yOffset, baseZ];
+      return [0, 0, 0];
+      // return [d.longitude, d.latitude, 1000];
+      // return [baseX, baseY + yOffset, baseZ];
     },
     onClick: onClick,
   });
@@ -180,13 +183,22 @@ enum ThumbnailStyle {
 
 const thumbnailStyles = Object.values(ThumbnailStyle);
 
+interface IconLayerFromAirportsArgs extends LayerFromAirportsArgs {
+  timeInMs?: number;
+}
+
 export const iconLayerFromAirports = ({
   airports,
+  timeInMs = 0,
   onClick,
-}: LayerFromAirportsArgs) => {
+}: IconLayerFromAirportsArgs) => {
   if (!airports) {
     return null;
   }
+
+  const LOOP_LENGTH = 1800;
+
+  const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
 
   function getIcon(d: Airport) {
     const iconPrefix = d.iata_code.toLowerCase();
@@ -208,7 +220,7 @@ export const iconLayerFromAirports = ({
     return iconName;
   }
 
-  const iconLayer = new IconLayer({
+  const iconLayer = new SpinningIconLayer({
     id: "airport-icons-layer",
     data: airports,
     pickable: true,
@@ -219,8 +231,11 @@ export const iconLayerFromAirports = ({
     getPixelOffset: [0, -30],
     getSize: 48,
     sizeScale: 1,
+    getAngle: 0,
+    getYAngle: (time * 360) % 360,
+    billboard: true,
     // CollideExtension options
-    collisionEnabled: true,
+    collisionEnabled: false,
     collisionTestProps: {
       sizeScale: 48,
       sizeMaxPixels: 24,
