@@ -26,6 +26,7 @@ import type { MapViewState } from "@/lib/map-config";
 
 import { _GlobeView as GlobeView } from "@deck.gl/core/typed";
 import { BitmapLayer } from "@deck.gl/layers/typed";
+import { TileLayer, COORDINATE_SYSTEM } from "deck.gl/typed";
 
 // 24 fps
 const ANIMATION_INTERVAL = 1000 / 24;
@@ -98,10 +99,37 @@ const AirportMap = ({
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Blue_Marble_Next_Generation_%2B_topography_%2B_bathymetry.jpg/800px-Blue_Marble_Next_Generation_%2B_topography_%2B_bathymetry.jpg?20191118154255",
     // "https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg",
   });
+  const tileLayer = new TileLayer({
+    data: "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    minZoom: 0,
+    maxZoom: 19,
+    tileSize: 256,
 
-  const layers = [bitmap, textLayer, iconLayer, conversionArcLayer].filter(
-    (layer) => layer,
-  );
+    renderSubLayers: (props) => {
+      const {
+        bbox: { west, south, east, north },
+      } = props.tile;
+
+      return new BitmapLayer(props, {
+        data: undefined,
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        image: props.data,
+        desaturate: 1,
+        tintColor: [200, 200, 10],
+
+        _imageCoordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
+        bounds: [west, south, east, north],
+      });
+    },
+  });
+
+  const layers = [
+    // bitmap,
+    textLayer,
+    iconLayer,
+    conversionArcLayer,
+    tileLayer,
+  ].filter((layer) => layer);
 
   const view = new GlobeView({ id: "globe" });
 
@@ -136,11 +164,11 @@ const AirportMap = ({
                   : "default";
             }}
           >
-            <Map
+            {/* <Map
               mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
               mapStyle={mapboxStyles.latest}
               projection={"globe"}
-            ></Map>
+            ></Map> */}
           </DeckGL>
         </div>
       )}
