@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState, useCallback } from "react";
-import Link from "next/link";
 
 import {
   Drawer,
@@ -122,9 +121,9 @@ const AirportDrawer = ({
               <div className="my-auto whitespace-nowrap">Convert to</div>
               <Select onValueChange={setConvertedTo}>
                 <SelectTrigger className="w-full rounded-none border-2 border-retro-cyan bg-white text-sm md:text-xl">
-                  <SelectValue placeholder={convertedTo} />
+                  <SelectValue placeholder={convertedTo ?? "Select..."} />
                 </SelectTrigger>
-                <SelectContent className="">
+                <SelectContent className="border-2 border-retro-cyan bg-neutral-200 shadow-sm">
                   {allAirports.map((airport) => {
                     return (
                       <SelectItem
@@ -146,28 +145,27 @@ const AirportDrawer = ({
                 value={convertedTo}
                 setValue={setConvertedTo}
               ></AirportCombobox> */}
-              <Link
-                className=""
-                target="_blank"
-                href={composeGoogleFlightUrl(
-                  lastClickedAirport.iata_code,
-                  convertedTo ?? "",
-                )}
+
+              <Button
+                className="text-sm md:text-xl"
+                disabled={convertedTo === undefined}
+                onClick={() => {
+                  //  open a new tab with the google flight search
+                  window.open(
+                    composeGoogleFlightUrl(
+                      lastClickedAirport.iata_code,
+                      convertedTo ?? "",
+                    ),
+                    "_blank",
+                  );
+                }}
               >
-                <Button className="text-sm md:text-xl">Convert</Button>
-              </Link>
+                Convert
+              </Button>
             </div>
             {/* <DrawerClose>
               <Button variant="outline">
-                <Link
-                  target="_blank"
-                  href={composeGoogleFlightUrl(
-                    "SFO",
-                    lastClickedAirport.iata_code,
-                  )}
-                >
-                  buy
-                </Link>
+                Close
               </Button>
             </DrawerClose> */}
           </DrawerFooter>
