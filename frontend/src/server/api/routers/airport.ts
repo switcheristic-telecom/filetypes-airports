@@ -8,7 +8,7 @@ import {
   allAirports,
   randomAirport,
   airportOfTheDay,
-} from "@/utils/airport-data";
+} from "@/data/airport-data";
 
 export const airportRouter = createTRPCRouter({
   getAll: publicProcedure.query(() => {

@@ -19,7 +19,7 @@ import { MapViewState } from "./map-config";
 // Animation helper
 import { mix, unmix, remap } from "@/utils/math";
 import easingsFunctions from "@/utils/easing";
-import { THUMBNAILS_MAPPING, THUMBNAIL_TYPES } from "@/utils/thumbnail-mapping";
+import { THUMBNAILS_MAPPING, THUMBNAIL_TYPES } from "@/data/thumbnail-mapping";
 
 import { md5 } from "js-md5";
 
