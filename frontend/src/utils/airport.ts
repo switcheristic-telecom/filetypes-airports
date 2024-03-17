@@ -17,6 +17,7 @@ export interface AirportVerbose {
   latitude: number;
   longitude: number;
   filetypes: FileType[];
+  onGoogleFlights?: boolean;
 }
 
 export interface AirportConcise {
@@ -28,6 +29,7 @@ export interface AirportConcise {
   longitude: number;
   iso_country: string;
   filetypes: FileType[];
+  onGoogleFlights?: boolean;
 }
 
 export interface FileType {

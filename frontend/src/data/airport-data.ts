@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-loss-of-precision */
 import type { AirportVerbose } from "@/utils/airport";
 import { getAirportOfTheDay, getRandomAirport } from "@/utils/airport";
+import { iataGoogleFlights } from "./iata-google-flights";
 
-export const allAirports: AirportVerbose[] = [
+const allAirportsOriginal: AirportVerbose[] = [
   {
     ident: "3IS8",
     type: "small_airport",
@@ -6375,6 +6376,15 @@ export const allAirports: AirportVerbose[] = [
     ],
   },
 ];
+
+export const allAirports: AirportVerbose[] = allAirportsOriginal.map(
+  (airport) => {
+    const onGoogleFlights = iataGoogleFlights.find(
+      ({ iata }) => iata === airport.iata_code,
+    )?.on_gf;
+    return { ...airport, onGoogleFlights };
+  },
+);
 
 export const airportOfTheDay = getAirportOfTheDay(allAirports);
 

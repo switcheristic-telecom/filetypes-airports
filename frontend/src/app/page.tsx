@@ -5,8 +5,9 @@ import MapManager from "./_components/MapManager";
 
 export default async function Home() {
   noStore();
-  const airportConcise = await api.airport.getAllConcise.query();
-  const sortedAirports = airportConcise.sort((a, b) => {
+  const airportVerbose = await api.airport.getAll.query();
+
+  const sortedAirports = airportVerbose.sort((a, b) => {
     if (a.iata_code < b.iata_code) {
       return -1;
     }
