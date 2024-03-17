@@ -66,14 +66,21 @@ const AirportMap = ({
     }
   };
 
-  const textLayer = textLayerFromAirports({
-    airports: allAirports,
+  const displayedAirports =
+    conversionAirports?.from && conversionAirports?.to
+      ? [conversionAirports?.from, conversionAirports?.to].filter(
+          (airport) => airport !== undefined,
+        )
+      : allAirports;
+
+  const iconLayer = iconLayerFromAirports({
+    airports: displayedAirports,
+    timeInMs: animationTime,
     onClick: layerOnCLick,
   });
 
-  const iconLayer = iconLayerFromAirports({
-    airports: allAirports,
-    timeInMs: animationTime,
+  const textLayer = textLayerFromAirports({
+    airports: displayedAirports,
     onClick: layerOnCLick,
   });
 

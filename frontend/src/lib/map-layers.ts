@@ -77,7 +77,6 @@ export const textLayerFromAirports = ({
     sizeMaxPixels,
     sizeMinPixels,
     maxWidth: 64 * 12,
-
     background: true,
     backgroundPadding: [2, 0, 2, -2],
     getBackgroundColor: [50, 50, 50, 255],
@@ -295,12 +294,17 @@ export const arcLayerFromAirports = ({
     return undefined;
   }
 
-  const sourceColorHSL: number[] = [0, 70, 55];
-  const targetColorHSL: number[] = [180, 70, 55];
+  const SOURCE_HUE = 0;
+  const TARGET_HUE = 180;
+  const SATURATION = 80;
+  const LIGHTNESS = 60;
+  const sourceColorHSL: number[] = [SOURCE_HUE, SATURATION, LIGHTNESS - 20];
+  const targetColorHSL: number[] = [TARGET_HUE, SATURATION, LIGHTNESS + 90];
 
-  const LOOP_LENGTH = 3600;
+  const LOOP_LENGTH = 2000;
 
-  const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
+  let time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
+  // time = easingsFunctions.easeOutSine!(time);
 
   sourceColorHSL[0] = (sourceColorHSL[0]! + time * 360) % 360;
   targetColorHSL[0] = (targetColorHSL[0]! + time * 360) % 360;
