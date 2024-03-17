@@ -17,9 +17,16 @@ export default async function Home() {
     return 0;
   });
 
+  const filteredAirports = sortedAirports.filter((airport) => {
+    if (airport.filetypeUncommon === true) {
+      return false;
+    }
+    return true;
+  });
+
   return (
     <main className="flex h-dvh w-screen flex-col  items-center justify-center overflow-hidden bg-retro-blue">
-      <MapManager allAirports={sortedAirports}></MapManager>
+      <MapManager allAirports={filteredAirports}></MapManager>
     </main>
   );
 }
