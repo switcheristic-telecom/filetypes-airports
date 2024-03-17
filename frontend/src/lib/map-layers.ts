@@ -303,7 +303,7 @@ export const arcLayerFromAirports = ({
 
   const LOOP_LENGTH = 2000;
 
-  let time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
+  const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
   // time = easingsFunctions.easeOutSine!(time);
 
   sourceColorHSL[0] = (sourceColorHSL[0]! + time * 360) % 360;
