@@ -23,10 +23,16 @@ import { THUMBNAILS_MAPPING, THUMBNAIL_TYPES } from "@/utils/thumbnail-mapping";
 
 import { md5 } from "js-md5";
 
+import convert from "color-convert";
+
 interface LayerFromAirportsArgs {
   airports: Airport[];
   onClick?: (info: PickingInfo) => void;
 }
+
+/***************************
+ *******TEXT LAYER*******
+ ***************************/
 
 interface TextLayerFromAirportsArgs extends LayerFromAirportsArgs {
   fontSize?: number;
@@ -90,6 +96,9 @@ export const textLayerFromAirports = ({
   return textLayer;
 };
 
+/***************************
+ *******MESH LAYER*******
+ ***************************/
 interface MeshLayerFromAirportsArgs extends LayerFromAirportsArgs {
   texture?: string;
   timeInMs?: number;
@@ -177,6 +186,9 @@ export const meshLayerFromAirports = ({
   return meshLayer;
 };
 
+/***************************
+ *******ICON LAYER*******
+ ***************************/
 enum ThumbnailStyle {
   Classic = "classic",
   Linux = "linux",
@@ -260,4 +272,74 @@ export const iconLayerFromAirports = ({
     onClick: onClick,
   });
   return iconLayer;
+};
+
+/***************************
+ *******ARC LAYER*******
+ ***************************/
+
+import { ArcLayer } from "@deck.gl/layers/typed";
+
+interface ArcLayerFromAirportsArgs {
+  fromAirport: Airport | undefined;
+  toAirport: Airport | undefined;
+  timeInMs?: number;
+}
+
+export const arcLayerFromAirports = ({
+  fromAirport,
+  toAirport,
+  timeInMs = 0,
+}: ArcLayerFromAirportsArgs) => {
+  if (!fromAirport || !toAirport) {
+    return undefined;
+  }
+
+  const sourceColorHSL: number[] = [0, 70, 55];
+  const targetColorHSL: number[] = [180, 70, 55];
+
+  const LOOP_LENGTH = 3600;
+
+  const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
+
+  sourceColorHSL[0] = (sourceColorHSL[0]! + time * 360) % 360;
+  targetColorHSL[0] = (targetColorHSL[0]! + time * 360) % 360;
+
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+  const sourceColorRGB = convert.hsl.rgb(sourceColorHSL) as [
+    number,
+    number,
+    number,
+  ];
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+  const targetColorRGB = convert.hsl.rgb(targetColorHSL) as [
+    number,
+    number,
+    number,
+  ];
+
+  const arcLayer = new ArcLayer({
+    id: "airport-arcs-layer",
+    data: [{ from: fromAirport, to: toAirport }],
+    // pickable: true,
+    getSourcePosition: (d: { from: Airport; to: Airport }) => {
+      return [d.from.longitude, d.from.latitude];
+    },
+    getTargetPosition: (d: { from: Airport; to: Airport }) => {
+      return [d.to.longitude, d.to.latitude];
+    },
+    getSourceColor: sourceColorRGB,
+    getTargetColor: targetColorRGB,
+    getWidth: 4,
+    getWidthScale: 1,
+    getHeight: 0.5,
+    getHeightScale: 0,
+    getTilt: 5,
+    getDashArray: [1, 1],
+    getDashRatio: 0.5,
+    getDashOffset: 0,
+    getOpacity: 1,
+    // onClick: onClick,
+  });
+  return arcLayer;
 };
