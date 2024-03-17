@@ -144,7 +144,7 @@ void main(void) {
 
   vColor = instanceColors;
   DECKGL_FILTER_COLOR(vColor, geometry);
-  gl_Position.z -=  0.0001;
+  gl_Position.z -=  0.02;
   vColorMode = instanceColorModes;
 }
 `;
