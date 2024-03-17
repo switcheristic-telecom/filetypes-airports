@@ -140,7 +140,11 @@ const AirportDrawer = ({
                   </SelectTrigger>
                   <SelectContent className="border-2 border-retro-cyan bg-neutral-200 shadow-sm">
                     {allAirports
-                      .filter((a) => a.onGoogleFlights === true)
+                      .filter(
+                        (a) =>
+                          a.onGoogleFlights === true &&
+                          a.iata_code !== selectedAirport.iata_code,
+                      )
                       .map((airport) => {
                         return (
                           <SelectItem
