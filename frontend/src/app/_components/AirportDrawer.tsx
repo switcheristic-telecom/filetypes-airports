@@ -23,7 +23,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 
-import type { Airport } from "@/utils/airport";
+import type { Airport, AirportVerbose } from "@/utils/airport";
 import { useBreakpoint } from "@/hooks/useBreakpoint";
 import { AirportCombobox } from "./AirportCombobox";
 
@@ -33,7 +33,7 @@ interface AirportDrawerProps {
   open: boolean;
   setOpen: (open: boolean) => void;
   allAirports: Airport[];
-  lastClickedAirport: Airport | undefined;
+  selectedAirport: AirportVerbose | undefined;
   featuredAirport: Airport | undefined;
   convertedTo: Airport | undefined;
   setConvertedTo: (convertedTo: Airport | undefined) => void;
@@ -43,7 +43,7 @@ const AirportDrawer = ({
   allAirports,
   open,
   setOpen,
-  lastClickedAirport,
+  selectedAirport,
   featuredAirport,
   convertedTo,
   setConvertedTo,
@@ -51,9 +51,9 @@ const AirportDrawer = ({
   const { isMd } = useBreakpoint("md");
 
   const isFeatured =
-    lastClickedAirport &&
+    selectedAirport &&
     featuredAirport &&
-    lastClickedAirport.iata_code === featuredAirport.iata_code;
+    selectedAirport.iata_code === featuredAirport.iata_code;
 
   return (
     <Drawer
@@ -68,12 +68,12 @@ const AirportDrawer = ({
       dismissible={true}
       direction={isMd ? "right" : "bottom"}
     >
-      {lastClickedAirport && (
+      {selectedAirport && (
         <DrawerContent className=" mx-auto max-w-2xl font-bitmap md:ml-auto md:mr-0">
           <DrawerHeader>
             <DrawerTitle className="relative text-center text-3xl md:text-5xl">
               {isFeatured && <FeaturedTag />}
-              {lastClickedAirport.iata_code}
+              {selectedAirport.iata_code}
             </DrawerTitle>
             <DrawerDescription
               className="bor text-md max-h-[10rem]
@@ -83,11 +83,12 @@ const AirportDrawer = ({
               <div className="grid grid-cols-8 gap-2 text-left">
                 <div className="col-span-3">Airport</div>
                 <div className="col-span-5 ">
-                  <div className="font-semibold">
-                    {lastClickedAirport?.name} (
-                    {lastClickedAirport?.iso_country})
+                  <div className="font-semibold">{selectedAirport.name}</div>
+                  <div className=" text-pretty text-right font-light text-neutral-600">
+                    {selectedAirport.municipality},{" "}
+                    {selectedAirport.iso_country}
                   </div>
-                  <div>{lastClickedAirport.type}</div>
+                  {/* <div>{selectedAirport.type}</div> */}
                 </div>
 
                 {/* Divider - Airport / Filetype */}
@@ -96,16 +97,18 @@ const AirportDrawer = ({
                 </div>
                 <div className="col-span-3">Filetype</div>
                 <div className="col-span-5">
-                  {lastClickedAirport?.filetypes.map((filetype, i) => {
+                  {selectedAirport?.filetypes.map((filetype, i) => {
                     return (
                       <div key={i}>
-                        <div className="font-semibold">
+                        <p className="text-pretty font-semibold">
                           {filetype.description}
-                        </div>
+                        </p>
                         {filetype.used_by && (
-                          <div>Used by {filetype.used_by}</div>
+                          <p className="text-pretty text-right text-neutral-600">
+                            Used by {filetype.used_by}
+                          </p>
                         )}
-                        {i < lastClickedAirport.filetypes.length - 1 ? (
+                        {i < selectedAirport.filetypes.length - 1 ? (
                           <hr className="-mx-2 my-1 border-t-2 border-retro-gray" />
                         ) : (
                           ""
@@ -164,7 +167,7 @@ const AirportDrawer = ({
                   //  open a new tab with the google flight search
                   window.open(
                     composeGoogleFlightUrl(
-                      lastClickedAirport.iata_code,
+                      selectedAirport.iata_code,
                       convertedTo?.iata_code ?? "",
                     ),
                     "_blank",
@@ -191,7 +194,7 @@ export default AirportDrawer;
 function composeGoogleFlightUrl(from: string, to: string) {
   // https://www.google.com/travel/flights?q=Flights%20to%20SFO%20from%20FRA%20on%202023-09-13%20through%202023-09-17%20with%20one%20adult%20business%20class&curr=USD
   const params = new URLSearchParams({
-    q: `Flights to ${to} from ${from}`,
+    q: `Flights to ${to} from ${from} oneway`,
     // curr: "USD",
   });
   return `https://www.google.com/travel/flights?${params.toString()}`;

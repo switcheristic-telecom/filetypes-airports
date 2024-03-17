@@ -27,7 +27,7 @@ import { useRouter } from "next/router";
 
 import { useBreakpoint } from "@/hooks/useBreakpoint";
 
-import type { Airport } from "@/utils/airport";
+import type { Airport, AirportVerbose } from "@/utils/airport";
 
 import { INITIAL_VIEW_STATE, MapViewState } from "@/lib/map-config";
 import { FlyToInterpolator } from "deck.gl/typed";
@@ -181,7 +181,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         setOpen={setIsDrawerOpen}
         allAirports={allAirports}
         featuredAirport={airportOfTheDay}
-        lastClickedAirport={lastClickedAirport}
+        selectedAirport={lastClickedAirport as AirportVerbose}
         convertedTo={convertedTo}
         setConvertedTo={setConvertedTo}
       ></AirportDrawer>
