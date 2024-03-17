@@ -95,7 +95,8 @@ const AirportMap = ({
     id: "WORLD_MAP",
     bounds: [-180, -90, 180, 90],
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Blue_Marble_Next_Generation_%2B_topography_%2B_bathymetry.jpg/800px-Blue_Marble_Next_Generation_%2B_topography_%2B_bathymetry.jpg?20191118154255",
+    // "https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg",
   });
 
   const layers = [bitmap, textLayer, iconLayer, conversionArcLayer].filter(
