@@ -122,6 +122,13 @@ const AirportDrawer = ({
           </DrawerHeader>
           <DrawerFooter className="-mt-6 ">
             {/* Airport / Filetype Conversion */}
+            {selectedAirport.onGoogleFlights !== true && (
+              <div className="flex flex-row gap-2 text-sm md:text-xl">
+                <div className="my-auto mr-2 whitespace-nowrap opacity-60">
+                  Conversion not available, pick another one...
+                </div>
+              </div>
+            )}
             {selectedAirport.onGoogleFlights === true && (
               <div className="flex flex-row gap-2 text-sm md:text-xl">
                 <div className="my-auto mr-2 whitespace-nowrap">Convert to</div>
