@@ -45,12 +45,22 @@ interface MapManagerProps {
 }
 
 const MapManager = ({ allAirports }: MapManagerProps) => {
+  /** Load the airport of the day */
   const { data: airportOfTheDay } = api.airport.getAirportOfTheDay.useQuery();
 
+  /** Breakpoint and mobile detection */
   const { isMd } = useBreakpoint("md");
   const isMobile = !isMd;
-  const [initialViewState, setInitialViewState] = useState(INITIAL_VIEW_STATE);
 
+  /** Initial view state */
+  const [initialViewState, setInitialViewState] = useState(INITIAL_VIEW_STATE);
+  const [latestViewState, setLatestViewState] = useState(initialViewState);
+
+  // useEffect(() => {
+  //   console.log("latestViewState", latestViewState);
+  // }, [latestViewState]);
+
+  /** Set different initial view state based on the breakpoint */
   useEffect(() => {
     setInitialViewState((prev) => ({
       ...prev,
@@ -60,16 +70,41 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     }));
   }, [isMobile]);
 
-  const [lastClickedAirport, setLastClickedAirport] = useState<
+  /** Fly to the airport of the day when it's loaded */
+  useEffect(() => {
+    if (airportOfTheDay) {
+      setInitialViewState({
+        ...INITIAL_VIEW_STATE,
+        minZoom: isMobile
+          ? INITIAL_VIEW_STATE.mobileMinZoom
+          : INITIAL_VIEW_STATE.minZoom,
+        latitude: airportOfTheDay.latitude,
+        longitude: airportOfTheDay.longitude,
+      });
+
+      setLastSelectedAirport(airportOfTheDay);
+      setIsDrawerOpen(true);
+    }
+  }, [airportOfTheDay, isMobile]);
+
+  /***************************************************************************
+   *  State for the airport selection drawer
+   ***************************************************************************/
+  /** Last selected airport */
+  const [lastSelectedAirport, setLastSelectedAirport] = useState<
     Airport | undefined
   >(undefined);
 
-  const [convertedTo, setConvertedTo] = useState<Airport | undefined>(
-    undefined,
-  );
+  /** Destination airport for conversion */
+  const [destinationAirport, setDestinationAirport] = useState<
+    Airport | undefined
+  >(undefined);
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
+  /***************************************************************************
+   * Fly to the center of the two airports, to show the conversion arc
+   ***************************************************************************/
   const flyToAirportCenter = useCallback(
     ({
       fromAirport,
@@ -105,85 +140,112 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     },
     [setInitialViewState],
   );
+
+  /** Fly to the airport center when the destination airport is set */
   useEffect(() => {
-    if (convertedTo && lastClickedAirport && !isMobile) {
+    if (destinationAirport && lastSelectedAirport && !isMobile) {
       flyToAirportCenter({
-        fromAirport: lastClickedAirport,
-        toAirport: convertedTo,
+        fromAirport: lastSelectedAirport,
+        toAirport: destinationAirport,
       });
     }
-  }, [convertedTo, flyToAirportCenter, isMobile, lastClickedAirport]);
+  }, [destinationAirport, flyToAirportCenter, isMobile, lastSelectedAirport]);
 
+  /***************************************************************************
+   * Fly to the selected airport
+   ***************************************************************************/
   const flyToAirport = useCallback(
     (airport: Airport) => {
-      setInitialViewState((prev) => ({
-        ...prev,
-        latitude: airport.latitude,
-        longitude: airport.longitude,
-        zoom: 7,
-        transitionDuration: 1000,
-        transitionInterpolator: new FlyToInterpolator(),
-        numberOfMutations: prev.numberOfMutations + 1,
-      }));
+      const distanceBetweenCenterAndSelected = Math.sqrt(
+        (airport.latitude - latestViewState.latitude) ** 2 +
+          (airport.longitude - latestViewState.longitude) ** 2,
+      );
+      const MOBILE_FAR_THRESHOLD = 2;
+      const DESKTOP_FAR_THRESHOLD = 12;
+      const farThreshold = isMobile
+        ? MOBILE_FAR_THRESHOLD
+        : DESKTOP_FAR_THRESHOLD;
+      const isFar = distanceBetweenCenterAndSelected > farThreshold;
+
+      const isTooZoomedOut = latestViewState.zoom < 4.5;
+
+      // Only fly to the airport if it's far or the map is too zoomed out
+      if (isFar || isTooZoomedOut) {
+        // Only zoom in if the map is too zoomed out now
+        const DEFAULT_ZOOM = 6;
+        const newZoom = isTooZoomedOut ? DEFAULT_ZOOM : latestViewState.zoom;
+        const latitudeOffset = isMobile ? -0.5 : -0.55;
+
+        setInitialViewState((prev) => ({
+          ...prev,
+          latitude: airport.latitude + latitudeOffset,
+          longitude: airport.longitude,
+          zoom: newZoom,
+          transitionDuration: 1000,
+          transitionInterpolator: new FlyToInterpolator(),
+          numberOfMutations: prev.numberOfMutations + 1,
+        }));
+      }
     },
-    [setInitialViewState],
+    [
+      latestViewState.latitude,
+      latestViewState.longitude,
+      latestViewState.zoom,
+      isMobile,
+    ],
   );
 
+  /***************************************************************************
+   * When an airport is clicked, fly to it and open the drawer
+   ***************************************************************************/
   const onClickOnAirport = useCallback(
     (airport: Airport) => {
       flyToAirport(airport);
       setIsDrawerOpen(true);
-      setLastClickedAirport(airport);
+      setLastSelectedAirport(airport);
     },
-    [flyToAirport, setIsDrawerOpen, setLastClickedAirport],
+    [flyToAirport, setIsDrawerOpen, setLastSelectedAirport],
   );
-
-  useEffect(() => {
-    if (airportOfTheDay) {
-      setInitialViewState({
-        ...INITIAL_VIEW_STATE,
-        minZoom: isMobile
-          ? INITIAL_VIEW_STATE.mobileMinZoom
-          : INITIAL_VIEW_STATE.minZoom,
-        latitude: airportOfTheDay.latitude,
-        longitude: airportOfTheDay.longitude,
-      });
-
-      setLastClickedAirport(airportOfTheDay);
-      setIsDrawerOpen(true);
-    }
-  }, [airportOfTheDay, isMobile]);
-
-  // useEffect(() => {
-  //   console.log("initialViewState", initialViewState);
-  // }, [initialViewState]);
 
   return (
     <>
       {airportOfTheDay && (
         <AirportMarquee
-          featuredAirport={airportOfTheDay}
+          featuredAirport={
+            // (isDrawerOpen ? lastSelectedAirport : airportOfTheDay) ??
+            airportOfTheDay
+          }
+          // customTitle={
+          //   lastSelectedAirport?.iata_code !== airportOfTheDay.iata_code
+          //     ? "Selected Airport"
+          //     : undefined
+          // }
           onClickOnAirport={onClickOnAirport}
         />
       )}
+
+      {/* The main DeckGL map */}
       <AirportMap
         allAirports={allAirports}
         initialViewState={initialViewState}
+        latestViewState={latestViewState}
+        setLatestViewState={setLatestViewState}
         onClickOnAirport={onClickOnAirport}
         conversionAirports={{
-          from: lastClickedAirport,
-          to: convertedTo,
+          from: lastSelectedAirport,
+          to: destinationAirport,
         }}
       />
 
+      {/* Drawer card to show the selected airport details */}
       <AirportDrawer
         open={isDrawerOpen}
         setOpen={setIsDrawerOpen}
         allAirports={allAirports}
         featuredAirport={airportOfTheDay}
-        selectedAirport={lastClickedAirport as AirportVerbose}
-        convertedTo={convertedTo as AirportVerbose}
-        setConvertedTo={setConvertedTo}
+        selectedAirport={lastSelectedAirport as AirportVerbose}
+        convertedTo={destinationAirport as AirportVerbose}
+        setConvertedTo={setDestinationAirport}
       ></AirportDrawer>
     </>
   );

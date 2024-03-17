@@ -5,11 +5,13 @@ import type { MapViewState } from "@/lib/map-config";
 interface AirportMarqueeProps {
   featuredAirport: Airport;
   onClickOnAirport: (airport: Airport) => void;
+  customTitle?: string;
 }
 
 const AirportMarquee = ({
   featuredAirport,
   onClickOnAirport,
+  customTitle,
 }: AirportMarqueeProps) => {
   return (
     <div
@@ -19,21 +21,45 @@ const AirportMarquee = ({
       <>
         <div className="relative flex flex-row overflow-x-hidden">
           <div className="animate-marquee whitespace-nowrap bg-black text-white">
-            <ContentSpans featuredAirport={featuredAirport} />
-            <ContentSpans featuredAirport={featuredAirport} />
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
 
             <span className="hidden 3xl:inline">
-              <ContentSpans featuredAirport={featuredAirport} />
-              <ContentSpans featuredAirport={featuredAirport} />
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
             </span>
           </div>
 
           <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white">
-            <ContentSpans featuredAirport={featuredAirport} />
-            <ContentSpans featuredAirport={featuredAirport} />
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
             <span className="hidden 3xl:inline">
-              <ContentSpans featuredAirport={featuredAirport} />
-              <ContentSpans featuredAirport={featuredAirport} />
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
             </span>
           </div>
         </div>
@@ -42,7 +68,12 @@ const AirportMarquee = ({
   );
 };
 
-function ContentSpans({ featuredAirport }: { featuredAirport: Airport }) {
+interface ContentSpansProps {
+  featuredAirport: Airport;
+  customTitle?: string;
+}
+
+function ContentSpans({ featuredAirport, customTitle }: ContentSpansProps) {
   const fileTypes = featuredAirport.filetypes;
   const fileTypeSpans = fileTypes.map((fileType, i) => (
     <span
@@ -56,7 +87,7 @@ function ContentSpans({ featuredAirport }: { featuredAirport: Airport }) {
   return (
     <>
       <span className="bg-black px-4 text-2xl font-light text-white">
-        Airport / Filetype of the Day
+        {customTitle ?? `Airport / Filetype of the Day`}
       </span>
       <span className=" border-r-4 border-r-black bg-white px-4 text-2xl text-black ">
         {featuredAirport?.iata_code}

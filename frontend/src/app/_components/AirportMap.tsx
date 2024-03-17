@@ -31,6 +31,8 @@ const ANIMATION_INTERVAL = 1000 / 24;
 interface AirportMapProps {
   allAirports: Airport[];
   initialViewState: MapViewState;
+  latestViewState: MapViewState;
+  setLatestViewState: (latestViewState: MapViewState) => void;
   onClickOnAirport: (airport: Airport) => void;
   conversionAirports?: {
     from: Airport | undefined;
@@ -41,13 +43,13 @@ interface AirportMapProps {
 const AirportMap = ({
   allAirports,
   initialViewState,
+  latestViewState,
+  setLatestViewState,
   onClickOnAirport,
   conversionAirports,
 }: AirportMapProps) => {
   const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
   const [animationTime, setAnimationTime] = useState(0);
-
-  const [latestViewState, setLatestViewState] = useState(initialViewState);
 
   useEffect(() => {
     // console.log("latestViewState", latestViewState);
