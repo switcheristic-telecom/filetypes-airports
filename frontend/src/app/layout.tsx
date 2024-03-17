@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     {
       rel: "icon",
       type: "image/apng",
-      url: "/assets/thumbnails-animated-ulq/_fallback_classic.png",
+      url: "/assets/thumbnails-animated/thumbnails-animated-lq/_fallback_classic.png",
     },
   ],
   twitter: {

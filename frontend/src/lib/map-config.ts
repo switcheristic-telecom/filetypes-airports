@@ -5,6 +5,7 @@ import easingsFunctions from "@/utils/easing";
 import type { MapViewState as _MapViewState } from "deck.gl/typed";
 
 export interface MapViewState extends _MapViewState {
+  mobileMinZoom?: number;
   numberOfMutations: number;
 }
 
@@ -43,6 +44,7 @@ export const INITIAL_VIEW_STATE: MapViewState = {
   latitude: 37.7853,
   zoom: 6,
   // zoom: 13,
+  mobileMinZoom: 1,
   minZoom: 2,
   maxZoom: 7,
   // maxZoom: 20,

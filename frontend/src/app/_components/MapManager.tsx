@@ -29,7 +29,7 @@ import { useBreakpoint } from "@/hooks/useBreakpoint";
 
 import type { Airport } from "@/utils/airport";
 
-import { INITIAL_VIEW_STATE } from "@/lib/map-config";
+import { INITIAL_VIEW_STATE, MapViewState } from "@/lib/map-config";
 import { FlyToInterpolator } from "deck.gl/typed";
 
 // TRPC
@@ -40,8 +40,6 @@ import AirportMarquee from "@/app/_components/AirportMarquee";
 import AirportMap from "@/app/_components/AirportMap";
 import AirportDrawer from "./AirportDrawer";
 
-import { arcLayerFromAirports } from "@/lib/map-layers";
-
 interface MapManagerProps {
   allAirports: Airport[];
 }
@@ -49,7 +47,18 @@ interface MapManagerProps {
 const MapManager = ({ allAirports }: MapManagerProps) => {
   const { data: airportOfTheDay } = api.airport.getAirportOfTheDay.useQuery();
 
+  const { isMd } = useBreakpoint("md");
+  const isMobile = !isMd;
   const [initialViewState, setInitialViewState] = useState(INITIAL_VIEW_STATE);
+
+  useEffect(() => {
+    setInitialViewState((prev) => ({
+      ...prev,
+      minZoom: isMobile
+        ? INITIAL_VIEW_STATE.mobileMinZoom
+        : INITIAL_VIEW_STATE.minZoom,
+    }));
+  }, [isMobile]);
 
   const [lastClickedAirport, setLastClickedAirport] = useState<
     Airport | undefined
@@ -59,22 +68,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     undefined,
   );
 
-  const converstionArcLayer = arcLayerFromAirports({
-    fromAirport: lastClickedAirport,
-    toAirport: convertedTo,
-    timeInMs: 0,
-  });
-
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  useEffect(() => {
-    if (convertedTo && lastClickedAirport) {
-      flyToAirportCenter({
-        fromAirport: lastClickedAirport,
-        toAirport: convertedTo,
-      });
-    }
-  }, [convertedTo]);
 
   const flyToAirportCenter = useCallback(
     ({
@@ -111,6 +105,14 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     },
     [setInitialViewState],
   );
+  useEffect(() => {
+    if (convertedTo && lastClickedAirport && !isMobile) {
+      flyToAirportCenter({
+        fromAirport: lastClickedAirport,
+        toAirport: convertedTo,
+      });
+    }
+  }, [convertedTo, flyToAirportCenter, isMobile, lastClickedAirport]);
 
   const flyToAirport = useCallback(
     (airport: Airport) => {
@@ -118,7 +120,6 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         ...prev,
         latitude: airport.latitude,
         longitude: airport.longitude,
-        // zoom: 14,
         zoom: 7,
         transitionDuration: 1000,
         transitionInterpolator: new FlyToInterpolator(),
@@ -141,6 +142,9 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     if (airportOfTheDay) {
       setInitialViewState({
         ...INITIAL_VIEW_STATE,
+        minZoom: isMobile
+          ? INITIAL_VIEW_STATE.mobileMinZoom
+          : INITIAL_VIEW_STATE.minZoom,
         latitude: airportOfTheDay.latitude,
         longitude: airportOfTheDay.longitude,
       });
@@ -148,7 +152,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       setLastClickedAirport(airportOfTheDay);
       setIsDrawerOpen(true);
     }
-  }, [airportOfTheDay]);
+  }, [airportOfTheDay, isMobile]);
 
   // useEffect(() => {
   //   console.log("initialViewState", initialViewState);
