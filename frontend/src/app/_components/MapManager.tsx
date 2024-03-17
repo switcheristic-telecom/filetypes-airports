@@ -40,6 +40,8 @@ import AirportMarquee from "@/app/_components/AirportMarquee";
 import AirportMap from "@/app/_components/AirportMap";
 import AirportDrawer from "./AirportDrawer";
 
+import { arcLayerFromAirports } from "@/lib/map-layers";
+
 interface MapManagerProps {
   allAirports: Airport[];
 }
@@ -53,7 +55,62 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     Airport | undefined
   >(undefined);
 
+  const [convertedTo, setConvertedTo] = useState<Airport | undefined>(
+    undefined,
+  );
+
+  const converstionArcLayer = arcLayerFromAirports({
+    fromAirport: lastClickedAirport,
+    toAirport: convertedTo,
+    timeInMs: 0,
+  });
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    if (convertedTo && lastClickedAirport) {
+      flyToAirportCenter({
+        fromAirport: lastClickedAirport,
+        toAirport: convertedTo,
+      });
+    }
+  }, [convertedTo]);
+
+  const flyToAirportCenter = useCallback(
+    ({
+      fromAirport,
+      toAirport,
+    }: {
+      fromAirport: Airport;
+      toAirport: Airport;
+    }) => {
+      const distance = Math.sqrt(
+        (toAirport.latitude - fromAirport.latitude) ** 2 +
+          (toAirport.longitude - fromAirport.longitude) ** 2,
+      );
+
+      const zoomLevel = Math.log2(360 / distance) - 1;
+
+      const midPoint = {
+        latitude:
+          fromAirport.latitude +
+          (toAirport.latitude - fromAirport.latitude) / 2,
+        longitude:
+          fromAirport.longitude +
+          (toAirport.longitude - fromAirport.longitude) / 2,
+      };
+      setInitialViewState((prev) => ({
+        ...prev,
+        latitude: midPoint.latitude,
+        longitude: midPoint.longitude,
+        zoom: zoomLevel,
+        transitionDuration: 1000,
+        transitionInterpolator: new FlyToInterpolator(),
+        numberOfMutations: prev.numberOfMutations + 1,
+      }));
+    },
+    [setInitialViewState],
+  );
 
   const flyToAirport = useCallback(
     (airport: Airport) => {
@@ -67,10 +124,17 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         transitionInterpolator: new FlyToInterpolator(),
         numberOfMutations: prev.numberOfMutations + 1,
       }));
+    },
+    [setInitialViewState],
+  );
+
+  const onClickOnAirport = useCallback(
+    (airport: Airport) => {
+      flyToAirport(airport);
       setIsDrawerOpen(true);
       setLastClickedAirport(airport);
     },
-    [setInitialViewState, setIsDrawerOpen, setLastClickedAirport],
+    [flyToAirport, setIsDrawerOpen, setLastClickedAirport],
   );
 
   useEffect(() => {
@@ -86,30 +150,36 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     }
   }, [airportOfTheDay]);
 
-  useEffect(() => {
-    console.log("initialViewState", initialViewState);
-  }, [initialViewState]);
+  // useEffect(() => {
+  //   console.log("initialViewState", initialViewState);
+  // }, [initialViewState]);
 
   return (
     <>
       {airportOfTheDay && (
         <AirportMarquee
           featuredAirport={airportOfTheDay}
-          flyToAirport={flyToAirport}
+          onClickOnAirport={onClickOnAirport}
         />
       )}
       <AirportMap
         allAirports={allAirports}
         initialViewState={initialViewState}
-        flyToAirport={flyToAirport}
+        onClickOnAirport={onClickOnAirport}
+        conversionAirports={{
+          from: lastClickedAirport,
+          to: convertedTo,
+        }}
       />
 
       <AirportDrawer
         open={isDrawerOpen}
         setOpen={setIsDrawerOpen}
         allAirports={allAirports}
-        lastClickedAirport={lastClickedAirport}
         featuredAirport={airportOfTheDay}
+        lastClickedAirport={lastClickedAirport}
+        convertedTo={convertedTo}
+        setConvertedTo={setConvertedTo}
       ></AirportDrawer>
     </>
   );

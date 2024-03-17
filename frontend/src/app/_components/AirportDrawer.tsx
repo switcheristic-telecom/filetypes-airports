@@ -35,6 +35,8 @@ interface AirportDrawerProps {
   allAirports: Airport[];
   lastClickedAirport: Airport | undefined;
   featuredAirport: Airport | undefined;
+  convertedTo: Airport | undefined;
+  setConvertedTo: (convertedTo: Airport | undefined) => void;
 }
 
 const AirportDrawer = ({
@@ -43,10 +45,10 @@ const AirportDrawer = ({
   setOpen,
   lastClickedAirport,
   featuredAirport,
+  convertedTo,
+  setConvertedTo,
 }: AirportDrawerProps) => {
   const { isMd } = useBreakpoint("md");
-
-  const [convertedTo, setConvertedTo] = useState<string | undefined>(undefined);
 
   const isFeatured =
     lastClickedAirport &&
@@ -119,9 +121,18 @@ const AirportDrawer = ({
             {/* <div className="text-xl">Free File Converter</div> */}
             <div className="flex flex-row gap-2 text-sm md:text-xl">
               <div className="my-auto whitespace-nowrap">Convert to</div>
-              <Select onValueChange={setConvertedTo}>
+              <Select
+                onValueChange={(iataCode) => {
+                  const airport = allAirports.find(
+                    (a) => a.iata_code === iataCode,
+                  );
+                  setConvertedTo(airport);
+                }}
+              >
                 <SelectTrigger className="w-full rounded-none border-2 border-retro-cyan bg-white text-sm md:text-xl">
-                  <SelectValue placeholder={convertedTo ?? "Select..."} />
+                  <SelectValue
+                    placeholder={convertedTo?.iata_code ?? "Select..."}
+                  />
                 </SelectTrigger>
                 <SelectContent className="border-2 border-retro-cyan bg-neutral-200 shadow-sm">
                   {allAirports.map((airport) => {
@@ -154,7 +165,7 @@ const AirportDrawer = ({
                   window.open(
                     composeGoogleFlightUrl(
                       lastClickedAirport.iata_code,
-                      convertedTo ?? "",
+                      convertedTo?.iata_code ?? "",
                     ),
                     "_blank",
                   );

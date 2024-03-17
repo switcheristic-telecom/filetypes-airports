@@ -13,7 +13,12 @@ import type { PickingInfo } from "@deck.gl/core/typed";
 import DeckGL from "@deck.gl/react/typed";
 
 // Config
-import { textLayerFromAirports, iconLayerFromAirports } from "@/lib/map-layers";
+import {
+  textLayerFromAirports,
+  iconLayerFromAirports,
+  arcLayerFromAirports,
+} from "@/lib/map-layers";
+import { type ArcLayer } from "deck.gl/typed";
 
 // Airport TRPC
 import type { Airport, AirportConcise } from "@/utils/airport";
@@ -26,23 +31,23 @@ const ANIMATION_INTERVAL = 1000 / 24;
 interface AirportMapProps {
   allAirports: Airport[];
   initialViewState: MapViewState;
-  flyToAirport: (airport: Airport) => void;
+  onClickOnAirport: (airport: Airport) => void;
+  conversionAirports?: {
+    from: Airport | undefined;
+    to: Airport | undefined;
+  };
 }
 
 const AirportMap = ({
   allAirports,
   initialViewState,
-  flyToAirport,
+  onClickOnAirport,
+  conversionAirports,
 }: AirportMapProps) => {
   const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
   const [animationTime, setAnimationTime] = useState(0);
 
   const [latestViewState, setLatestViewState] = useState(initialViewState);
-
-  const [lastClickedAirport, setLastClickedAirport] = useState<Airport | null>(
-    null,
-  );
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
     // console.log("latestViewState", latestViewState);
@@ -57,9 +62,7 @@ const AirportMap = ({
 
   const layerOnCLick = ({ object }: PickingInfo) => {
     if (object) {
-      flyToAirport(object as Airport);
-      setIsDrawerOpen(true);
-      setLastClickedAirport(object as Airport);
+      onClickOnAirport(object as Airport);
     }
   };
 
@@ -74,7 +77,15 @@ const AirportMap = ({
     onClick: layerOnCLick,
   });
 
-  const layers = [textLayer, iconLayer];
+  const conversionArcLayer = arcLayerFromAirports({
+    fromAirport: conversionAirports?.from,
+    toAirport: conversionAirports?.to,
+    timeInMs: animationTime,
+  });
+
+  const layers = [textLayer, iconLayer, conversionArcLayer].filter(
+    (layer) => layer,
+  );
 
   return (
     <div>

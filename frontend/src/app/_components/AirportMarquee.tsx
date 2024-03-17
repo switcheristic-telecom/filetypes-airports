@@ -4,17 +4,17 @@ import type { MapViewState } from "@/lib/map-config";
 
 interface AirportMarqueeProps {
   featuredAirport: Airport;
-  flyToAirport: (airport: Airport) => void;
+  onClickOnAirport: (airport: Airport) => void;
 }
 
 const AirportMarquee = ({
   featuredAirport,
-  flyToAirport,
+  onClickOnAirport,
 }: AirportMarqueeProps) => {
   return (
     <div
-      className="font-bitmap absolute top-0 z-10 w-screen cursor-pointer"
-      onClick={() => flyToAirport(featuredAirport)}
+      className="absolute top-0 z-10 w-screen cursor-pointer font-bitmap"
+      onClick={() => onClickOnAirport(featuredAirport)}
     >
       <>
         <div className="relative flex flex-row overflow-x-hidden">
@@ -22,7 +22,7 @@ const AirportMarquee = ({
             <ContentSpans featuredAirport={featuredAirport} />
             <ContentSpans featuredAirport={featuredAirport} />
 
-            <span className="3xl:inline hidden">
+            <span className="hidden 3xl:inline">
               <ContentSpans featuredAirport={featuredAirport} />
               <ContentSpans featuredAirport={featuredAirport} />
             </span>
@@ -31,7 +31,7 @@ const AirportMarquee = ({
           <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white">
             <ContentSpans featuredAirport={featuredAirport} />
             <ContentSpans featuredAirport={featuredAirport} />
-            <span className="3xl:inline hidden">
+            <span className="hidden 3xl:inline">
               <ContentSpans featuredAirport={featuredAirport} />
               <ContentSpans featuredAirport={featuredAirport} />
             </span>
