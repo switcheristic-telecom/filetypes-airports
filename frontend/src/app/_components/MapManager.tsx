@@ -182,7 +182,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         allAirports={allAirports}
         featuredAirport={airportOfTheDay}
         selectedAirport={lastClickedAirport as AirportVerbose}
-        convertedTo={convertedTo}
+        convertedTo={convertedTo as AirportVerbose}
         setConvertedTo={setConvertedTo}
       ></AirportDrawer>
     </>

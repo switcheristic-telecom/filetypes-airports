@@ -35,7 +35,7 @@ interface AirportDrawerProps {
   allAirports: Airport[];
   selectedAirport: AirportVerbose | undefined;
   featuredAirport: Airport | undefined;
-  convertedTo: Airport | undefined;
+  convertedTo: AirportVerbose | undefined;
   setConvertedTo: (convertedTo: Airport | undefined) => void;
 }
 
@@ -138,17 +138,19 @@ const AirportDrawer = ({
                   />
                 </SelectTrigger>
                 <SelectContent className="border-2 border-retro-cyan bg-neutral-200 shadow-sm">
-                  {allAirports.map((airport) => {
-                    return (
-                      <SelectItem
-                        key={airport.iata_code}
-                        value={airport.iata_code}
-                        className="font-bitmap text-sm md:text-xl"
-                      >
-                        {airport.iata_code}
-                      </SelectItem>
-                    );
-                  })}
+                  {allAirports
+                    .filter((a) => a.onGoogleFlights === true)
+                    .map((airport) => {
+                      return (
+                        <SelectItem
+                          key={airport.iata_code}
+                          value={airport.iata_code}
+                          className="font-bitmap text-sm md:text-xl"
+                        >
+                          {airport.iata_code}
+                        </SelectItem>
+                      );
+                    })}
                 </SelectContent>
               </Select>
 
@@ -166,10 +168,7 @@ const AirportDrawer = ({
                 onClick={() => {
                   //  open a new tab with the google flight search
                   window.open(
-                    composeGoogleFlightUrl(
-                      selectedAirport.iata_code,
-                      convertedTo?.iata_code ?? "",
-                    ),
+                    composeGoogleFlightUrl(selectedAirport, convertedTo),
                     "_blank",
                   );
                 }}
@@ -191,10 +190,16 @@ const AirportDrawer = ({
 
 export default AirportDrawer;
 
-function composeGoogleFlightUrl(from: string, to: string) {
+function composeGoogleFlightUrl(
+  from: AirportVerbose | undefined,
+  to: AirportVerbose | undefined,
+) {
+  if (!from || !to) {
+    return "";
+  }
   // https://www.google.com/travel/flights?q=Flights%20to%20SFO%20from%20FRA%20on%202023-09-13%20through%202023-09-17%20with%20one%20adult%20business%20class&curr=USD
   const params = new URLSearchParams({
-    q: `Flights to ${to} from ${from} oneway`,
+    q: `Flights to ${to.iata_code} from ${from.iata_code} oneway`,
     // curr: "USD",
   });
   return `https://www.google.com/travel/flights?${params.toString()}`;
