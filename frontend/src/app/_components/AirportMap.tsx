@@ -18,12 +18,14 @@ import {
   iconLayerFromAirports,
   arcLayerFromAirports,
 } from "@/lib/map-layers";
-import { type ArcLayer } from "deck.gl/typed";
 
 // Airport TRPC
 import type { Airport, AirportConcise } from "@/utils/airport";
 import { api } from "@/trpc/react";
 import type { MapViewState } from "@/lib/map-config";
+
+import { _GlobeView as GlobeView } from "@deck.gl/core/typed";
+import { BitmapLayer } from "@deck.gl/layers/typed";
 
 // 24 fps
 const ANIMATION_INTERVAL = 1000 / 24;
@@ -89,10 +91,18 @@ const AirportMap = ({
     toAirport: conversionAirports?.to,
     timeInMs: animationTime,
   });
+  const bitmap = new BitmapLayer({
+    id: "WORLD_MAP",
+    bounds: [-180, -90, 180, 90],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg",
+  });
 
-  const layers = [textLayer, iconLayer, conversionArcLayer].filter(
+  const layers = [bitmap, textLayer, iconLayer, conversionArcLayer].filter(
     (layer) => layer,
   );
+
+  const view = new GlobeView({ id: "globe" });
 
   return (
     <div>
@@ -103,6 +113,7 @@ const AirportMap = ({
             initialViewState={initialViewState}
             controller={true}
             layers={layers}
+            views={[view]}
             // getTooltip={getTooltip}
             onViewStateChange={({ viewState }) => {
               setLatestViewState(viewState as MapViewState);
@@ -127,6 +138,7 @@ const AirportMap = ({
             <Map
               mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
               mapStyle={mapboxStyles.latest}
+              projection={"globe"}
             ></Map>
           </DeckGL>
         </div>
