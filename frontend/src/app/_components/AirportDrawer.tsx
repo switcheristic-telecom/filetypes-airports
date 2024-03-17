@@ -78,7 +78,7 @@ const AirportDrawer = ({
             <DrawerDescription
               className="bor text-md max-h-[10rem]
                  min-h-0 overflow-y-scroll overscroll-none  border-2 border-retro-cyan bg-white
-                 px-2 py-2 leading-tight text-black shadow-inner scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-retro-blue md:max-h-[35vh] md:min-h-[14rem] md:text-xl"
+                 px-2 py-2 leading-tight text-black shadow-inner scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-retro-blue md:max-h-[28vh] md:min-h-[12rem] md:text-xl"
             >
               <div className="grid grid-cols-8 gap-2 text-left">
                 <div className="col-span-3">Airport</div>
