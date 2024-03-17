@@ -58,7 +58,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "ART",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "ASF",
@@ -90,7 +91,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "BAR",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "BAS",
@@ -326,7 +328,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "FOR",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "FRM",
@@ -454,7 +457,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "LBR",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "LDB",
@@ -526,7 +530,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "MOV",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "MPA",
@@ -614,7 +619,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "ODB",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "ODS",
@@ -1158,7 +1164,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "XLS",
-    on_gf: true,
+    // on_gf: true,
+    on_gf: false,
   },
   {
     iata: "XML",
