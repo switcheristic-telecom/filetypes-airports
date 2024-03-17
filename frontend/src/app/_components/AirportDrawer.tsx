@@ -121,61 +121,63 @@ const AirportDrawer = ({
             </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter className="-mt-6 ">
-            {/* <div className="text-xl">Free File Converter</div> */}
-            <div className="flex flex-row gap-2 text-sm md:text-xl">
-              <div className="my-auto whitespace-nowrap">Convert to</div>
-              <Select
-                onValueChange={(iataCode) => {
-                  const airport = allAirports.find(
-                    (a) => a.iata_code === iataCode,
-                  );
-                  setConvertedTo(airport);
-                }}
-              >
-                <SelectTrigger className="w-full rounded-none border-2 border-retro-cyan bg-white text-sm md:text-xl">
-                  <SelectValue
-                    placeholder={convertedTo?.iata_code ?? "Select..."}
-                  />
-                </SelectTrigger>
-                <SelectContent className="border-2 border-retro-cyan bg-neutral-200 shadow-sm">
-                  {allAirports
-                    .filter((a) => a.onGoogleFlights === true)
-                    .map((airport) => {
-                      return (
-                        <SelectItem
-                          key={airport.iata_code}
-                          value={airport.iata_code}
-                          className="font-bitmap text-sm md:text-xl"
-                        >
-                          {airport.iata_code}
-                        </SelectItem>
-                      );
-                    })}
-                </SelectContent>
-              </Select>
+            {/* Airport / Filetype Conversion */}
+            {selectedAirport.onGoogleFlights === true && (
+              <div className="flex flex-row gap-2 text-sm md:text-xl">
+                <div className="my-auto whitespace-nowrap">Convert to</div>
+                <Select
+                  onValueChange={(iataCode) => {
+                    const airport = allAirports.find(
+                      (a) => a.iata_code === iataCode,
+                    );
+                    setConvertedTo(airport);
+                  }}
+                >
+                  <SelectTrigger className="w-full rounded-none border-2 border-retro-cyan bg-white text-sm md:text-xl">
+                    <SelectValue
+                      placeholder={convertedTo?.iata_code ?? "Select..."}
+                    />
+                  </SelectTrigger>
+                  <SelectContent className="border-2 border-retro-cyan bg-neutral-200 shadow-sm">
+                    {allAirports
+                      .filter((a) => a.onGoogleFlights === true)
+                      .map((airport) => {
+                        return (
+                          <SelectItem
+                            key={airport.iata_code}
+                            value={airport.iata_code}
+                            className="font-bitmap text-sm md:text-xl"
+                          >
+                            {airport.iata_code}
+                          </SelectItem>
+                        );
+                      })}
+                  </SelectContent>
+                </Select>
 
-              {/* Combobox popover has double scrolling issues on mobile */}
-              {/* <AirportCombobox
+                {/* Combobox popover has double scrolling issues on mobile */}
+                {/* <AirportCombobox
                 className="w-full text-xl"
                 airports={allAirports}
                 value={convertedTo}
                 setValue={setConvertedTo}
               ></AirportCombobox> */}
 
-              <Button
-                className="text-sm md:text-xl"
-                disabled={convertedTo === undefined}
-                onClick={() => {
-                  //  open a new tab with the google flight search
-                  window.open(
-                    composeGoogleFlightUrl(selectedAirport, convertedTo),
-                    "_blank",
-                  );
-                }}
-              >
-                Convert
-              </Button>
-            </div>
+                <Button
+                  className="text-sm md:text-xl"
+                  disabled={convertedTo === undefined}
+                  onClick={() => {
+                    //  open a new tab with the google flight search
+                    window.open(
+                      composeGoogleFlightUrl(selectedAirport, convertedTo),
+                      "_blank",
+                    );
+                  }}
+                >
+                  Convert
+                </Button>
+              </div>
+            )}
             {/* <DrawerClose>
               <Button variant="outline">
                 Close
