@@ -25,6 +25,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         bitmap: ["var(--font-fixedsys)"],
+        led: ["var(--font-led)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
