@@ -83,7 +83,7 @@ const AirportDrawer = ({
       direction={isMobile ? "bottom" : "right"}
     >
       {selectedAirport && (
-        <DrawerContent className=" mx-auto max-w-2xl font-bitmap md:ml-auto md:mr-0">
+        <DrawerContent className=" mx-auto max-w-xl font-bitmap md:ml-auto md:mr-0">
           <DrawerHeader>
             <DrawerTitle className="relative flex flex-row justify-center gap-0 text-center text-4xl md:text-5xl">
               {isFeatured && <FeaturedTag />}
