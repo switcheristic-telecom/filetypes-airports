@@ -16,4 +16,20 @@ export const uncommonFiletypes = [
     extension: "GDT",
     uncommon: true,
   },
+  {
+    extension: "SPF",
+    uncommon: true,
+  },
+  {
+    extension: "TGT",
+    uncommon: true,
+  },
+  {
+    extension: "WOS",
+    uncommon: true,
+  },
+  {
+    extension: "PMA",
+    uncommon: true,
+  },
 ];
