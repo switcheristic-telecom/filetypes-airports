@@ -86,7 +86,7 @@ function ContentSpans({ featuredAirport, customTitle }: ContentSpansProps) {
   return (
     <>
       <span className="bg-black px-4 text-2xl font-light text-white">
-        {customTitle ?? `Airport / Filetype of the Day`}
+        {customTitle ?? `Filetype / Airport of the Day`}
       </span>
       <span className=" border-r-4 border-r-black bg-white px-4 text-2xl text-black ">
         {featuredAirport?.iata_code}
