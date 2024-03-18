@@ -42,7 +42,7 @@ export const material = {
 export const INITIAL_VIEW_STATE: MapViewState = {
   longitude: -122.41669,
   latitude: 37.7853,
-  zoom: 6,
+  zoom: 4,
   // zoom: 13,
   mobileMinZoom: 1,
   minZoom: 2,

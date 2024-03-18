@@ -75,12 +75,14 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
 
   /** Fly to the airport of the day when it's loaded */
   useEffect(() => {
+    const INITIAL_ZOOM = isMobile ? 3.5 : 4.5;
     if (airportOfTheDay) {
       setInitialViewState({
         ...INITIAL_VIEW_STATE,
         minZoom: isMobile
           ? INITIAL_VIEW_STATE.mobileMinZoom
           : INITIAL_VIEW_STATE.minZoom,
+        zoom: INITIAL_ZOOM,
         latitude: airportOfTheDay.latitude + LATITUDE_OFFSET,
         longitude: airportOfTheDay.longitude,
       });
@@ -88,7 +90,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       setLastSelectedAirport(airportOfTheDay);
       setIsDrawerOpen(true);
     }
-  }, [airportOfTheDay, isMobile]);
+  }, [LATITUDE_OFFSET, airportOfTheDay, isMobile]);
 
   /***************************************************************************
    *  State for the airport selection drawer
@@ -165,7 +167,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
           (airport.longitude - latestViewState.longitude) ** 2,
       );
       const MOBILE_FAR_THRESHOLD = 2;
-      const DESKTOP_FAR_THRESHOLD = 12;
+      const DESKTOP_FAR_THRESHOLD = 8;
       const farThreshold = isMobile
         ? MOBILE_FAR_THRESHOLD
         : DESKTOP_FAR_THRESHOLD;
@@ -241,7 +243,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       )}
 
       {/* The main DeckGL map */}
-      {true && (
+      {airportOfTheDay && (
         <>
           <Button
             className="margin-8 absolute left-0 top-8 z-[5] m-4"

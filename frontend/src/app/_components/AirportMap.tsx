@@ -127,6 +127,9 @@ const AirportMap = ({
             }}
           >
             <Map
+              projection={{
+                name: "mercator",
+              }}
               mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
               mapStyle={mapboxStyles.latest}
             ></Map>
