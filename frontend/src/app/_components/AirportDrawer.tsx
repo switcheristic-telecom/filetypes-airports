@@ -197,14 +197,14 @@ const AirportDrawer = ({
                 setValue={setConvertedTo}
               ></AirportCombobox> */}
                 <AlertDialog>
-                  <AlertDialogTrigger>
-                    <Button
-                      className="text-sm md:text-xl"
-                      disabled={convertedTo === undefined}
-                    >
+                  <Button
+                    className="text-sm md:text-xl"
+                    disabled={convertedTo === undefined}
+                  >
+                    <AlertDialogTrigger disabled={convertedTo === undefined}>
                       Convert
-                    </Button>
-                  </AlertDialogTrigger>
+                    </AlertDialogTrigger>
+                  </Button>
                   <AlertDialogContent className="rounded-none border-8  border-retro-cyan">
                     <AlertDialogHeader>
                       <AlertDialogTitle className="text-3xl">

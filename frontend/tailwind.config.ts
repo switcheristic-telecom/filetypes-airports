@@ -93,12 +93,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "alert-screen-overlay": {
+          "0%": { backgroundColor: "#008080" }, // "retro-cyan"
+          "25%": { backgroundColor: "#CD0604" }, // "retro-red"
+          "50%": { backgroundColor: "#F5F500" }, // "retro-yellow"
+          "75%": { backgroundColor: "#1F3CAE" }, // "retro-blue"
+          "100%": { backgroundColor: "#C3C7CB" }, // "retro-gray"
+        },
       },
       animation: {
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "alert-screen-overlay": "alert-screen-overlay 5s linear infinite",
       },
     },
   },
