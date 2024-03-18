@@ -39,6 +39,7 @@ import { api } from "@/trpc/react";
 import AirportMarquee from "@/app/_components/AirportMarquee";
 import AirportMap from "@/app/_components/AirportMap";
 import AirportDrawer from "./AirportDrawer";
+import { AirportSidebar } from "@/app/_components/AirportSidebar";
 
 interface MapManagerProps {
   allAirports: Airport[];
@@ -100,6 +101,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     Airport | undefined
   >(undefined);
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   /***************************************************************************
@@ -155,7 +157,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
    * Fly to the selected airport
    ***************************************************************************/
   const flyToAirport = useCallback(
-    (airport: Airport) => {
+    (airport: Airport, conditional = true) => {
       const distanceBetweenCenterAndSelected = Math.sqrt(
         (airport.latitude - latestViewState.latitude) ** 2 +
           (airport.longitude - latestViewState.longitude) ** 2,
@@ -170,7 +172,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       const isTooZoomedOut = latestViewState.zoom < 4.5;
 
       // Only fly to the airport if it's far or the map is too zoomed out
-      if (isFar || isTooZoomedOut) {
+      if (isFar || isTooZoomedOut || !conditional) {
         // Only zoom in if the map is too zoomed out now
         const DEFAULT_ZOOM = 6;
         const newZoom = isTooZoomedOut ? DEFAULT_ZOOM : latestViewState.zoom;
@@ -207,6 +209,18 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     [flyToAirport, setIsDrawerOpen, setLastSelectedAirport],
   );
 
+  const onClickOnAirportInSidebar = useCallback(
+    (airport: Airport) => {
+      flyToAirport(airport, false);
+      setTimeout(() => {
+        setIsDrawerOpen(true);
+      }, 800);
+
+      setLastSelectedAirport(airport);
+    },
+    [flyToAirport, setLastSelectedAirport, setIsDrawerOpen],
+  );
+
   return (
     <>
       {airportOfTheDay && (
@@ -225,6 +239,30 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       )}
 
       {/* The main DeckGL map */}
+      {true && (
+        <>
+          <Button
+            className="margin-8 absolute left-0 top-8 z-[5] m-4"
+            onClick={() => setIsSidebarOpen(true)}
+          >
+            {">"}
+          </Button>
+          <AirportSidebar
+            className="absolute left-0 top-0 z-10 h-screen pt-8"
+            airports={allAirports}
+            selectedAirport={lastSelectedAirport}
+            onClickOnAirport={(a) => {
+              onClickOnAirportInSidebar(a);
+              if (isMobile) {
+                setIsSidebarOpen(false);
+              }
+            }}
+            open={isSidebarOpen}
+            onOpenChange={setIsSidebarOpen}
+            onClose={() => setIsSidebarOpen(false)}
+          ></AirportSidebar>
+        </>
+      )}
       <AirportMap
         allAirports={allAirports}
         initialViewState={initialViewState}

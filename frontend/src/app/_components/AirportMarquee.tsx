@@ -1,7 +1,6 @@
 import React, { useCallback } from "react";
 import type { Airport } from "@/utils/airport";
 import type { MapViewState } from "@/lib/map-config";
-
 interface AirportMarqueeProps {
   featuredAirport: Airport;
   onClickOnAirport: (airport: Airport) => void;
@@ -15,7 +14,7 @@ const AirportMarquee = ({
 }: AirportMarqueeProps) => {
   return (
     <div
-      className="absolute top-0 z-10 w-screen cursor-pointer font-bitmap"
+      className="absolute top-0 z-20 w-screen cursor-pointer font-bitmap"
       onClick={() => onClickOnAirport(featuredAirport)}
     >
       <>

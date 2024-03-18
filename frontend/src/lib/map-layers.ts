@@ -19,7 +19,8 @@ import { MapViewState } from "./map-config";
 // Animation helper
 import { mix, unmix, remap } from "@/utils/math";
 import easingsFunctions from "@/utils/easing";
-import { THUMBNAILS_MAPPING, THUMBNAIL_TYPES } from "@/data/thumbnail-mapping";
+import { THUMBNAILS_MAPPING } from "@/data/thumbnail-mapping";
+import { getThumbnailIconName, SPRITE_SHEET_URL } from "@/utils/thumbnail";
 
 import { md5 } from "js-md5";
 
@@ -188,13 +189,6 @@ export const meshLayerFromAirports = ({
 /***************************
  *******ICON LAYER*******
  ***************************/
-enum ThumbnailStyle {
-  Classic = "classic",
-  Linux = "linux",
-  Modern = "modern",
-}
-
-const thumbnailStyles = Object.values(ThumbnailStyle);
 
 interface IconLayerFromAirportsArgs extends LayerFromAirportsArgs {
   timeInMs?: number;
@@ -213,33 +207,13 @@ export const iconLayerFromAirports = ({
 
   const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
 
-  function getIcon(d: Airport) {
-    const iconPrefix = d.iata_code.toLowerCase();
-
-    let iconName: string | null = null;
-
-    for (const style of thumbnailStyles) {
-      const icon = iconPrefix + "-" + style;
-      if (icon in THUMBNAILS_MAPPING) {
-        iconName = icon;
-        break;
-      }
-    }
-
-    if (!iconName) {
-      iconName = "fallback" + "-" + thumbnailStyles[0];
-    }
-
-    return iconName;
-  }
-
   const iconLayer = new SpinningIconLayer({
     id: "airport-icons-layer",
     data: airports,
     pickable: true,
-    iconAtlas: "assets/thumbnails-spritesheet/spritesheet.png",
+    iconAtlas: SPRITE_SHEET_URL,
     iconMapping: THUMBNAILS_MAPPING,
-    getIcon: getIcon,
+    getIcon: getThumbnailIconName,
     getPosition: (d: Airport) => [d.longitude, d.latitude],
     getPixelOffset: [0, -30],
     getSize: 48,
@@ -259,7 +233,7 @@ export const iconLayerFromAirports = ({
       sizeMinPixels: 24,
     },
     getCollisionPriority: (d: Airport) => {
-      const icon = getIcon(d);
+      const icon = getThumbnailIconName(d);
       if (icon.includes("fallback")) {
         return -1000;
       }

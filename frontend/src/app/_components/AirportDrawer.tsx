@@ -21,6 +21,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import ThumbnailSprite from "./ThumbnailSprite";
 import { Button } from "@/components/ui/button";
 
 import type { Airport, AirportVerbose } from "@/utils/airport";
@@ -49,6 +50,7 @@ const AirportDrawer = ({
   setConvertedTo,
 }: AirportDrawerProps) => {
   const { isMd } = useBreakpoint("md");
+  const isMobile = !isMd;
 
   const isFeatured =
     selectedAirport &&
@@ -65,15 +67,20 @@ const AirportDrawer = ({
       onOpenChange={setOpen}
       modal={false}
       preventScrollRestoration={true}
-      dismissible={true}
-      direction={isMd ? "right" : "bottom"}
+      dismissible={false}
+      direction={isMobile ? "bottom" : "right"}
     >
       {selectedAirport && (
         <DrawerContent className=" mx-auto max-w-2xl font-bitmap md:ml-auto md:mr-0">
           <DrawerHeader>
-            <DrawerTitle className="relative text-center text-3xl md:text-5xl">
+            <DrawerTitle className="relative flex flex-row justify-center gap-0 text-center text-4xl md:text-5xl">
               {isFeatured && <FeaturedTag />}
-              {selectedAirport.iata_code}
+              <ThumbnailSprite
+                className="my-auto"
+                airport={selectedAirport}
+                pixelSize={isMobile ? 32 : 36}
+              />
+              <div className="my-auto">{selectedAirport.iata_code}</div>
             </DrawerTitle>
             <DrawerDescription
               className="bor text-md max-h-[10rem]
