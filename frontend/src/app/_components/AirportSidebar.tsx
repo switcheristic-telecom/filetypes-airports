@@ -30,17 +30,17 @@ export function AirportSidebar({
   return (
     <div
       className={cn(
-        " w-screen md:w-96",
+        "w-screen md:w-96",
         "border-b-4 border-r-4",
         "font-bitmap",
         "border-b-gray-500 border-l-gray-100 border-r-retro-cyan border-t-gray-300",
         className,
         open ? "translate-x-0" : "-translate-x-full",
-        "transition-all duration-300 ease-in-out",
+        "transition-transform duration-300 ease-in-out",
       )}
     >
       {true && (
-        <div className={cn("flex h-full flex-col gap-2  bg-retro-gray pt-4")}>
+        <div className={cn("flex h-full flex-col gap-2  bg-retro-gray py-4")}>
           <div className="flex flex-row justify-between px-7">
             <h2 className=" text-2xl font-semibold tracking-tight ">
               Filetypes / Airports
