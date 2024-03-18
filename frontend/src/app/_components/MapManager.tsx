@@ -209,6 +209,10 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     (airport: Airport) => {
       flyToAirport(airport);
       setIsDrawerOpen(true);
+      // make sure the drawer will definitely open
+      setTimeout(() => {
+        setIsDrawerOpen(true);
+      }, 800);
       setLastSelectedAirport(airport);
     },
     [flyToAirport, setIsDrawerOpen, setLastSelectedAirport],
