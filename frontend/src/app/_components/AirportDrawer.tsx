@@ -14,6 +14,18 @@ import {
 } from "@/components/ui/drawer";
 
 import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -184,20 +196,69 @@ const AirportDrawer = ({
                 value={convertedTo}
                 setValue={setConvertedTo}
               ></AirportCombobox> */}
-
-                <Button
-                  className="text-sm md:text-xl"
-                  disabled={convertedTo === undefined}
-                  onClick={() => {
-                    //  open a new tab with the google flight search
-                    window.open(
-                      composeGoogleFlightUrl(selectedAirport, convertedTo),
-                      "_blank",
-                    );
-                  }}
-                >
-                  Convert
-                </Button>
+                <AlertDialog>
+                  <AlertDialogTrigger>
+                    <Button
+                      className="text-sm md:text-xl"
+                      disabled={convertedTo === undefined}
+                    >
+                      Convert
+                    </Button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent className="rounded-none border-8  border-retro-yellow">
+                    <AlertDialogHeader>
+                      <AlertDialogTitle className="text-3xl">
+                        Are you absolutely sure?
+                      </AlertDialogTitle>
+                      <AlertDialogTitle className="flex flex-row justify-center  text-3xl sm:justify-normal">
+                        <ThumbnailSprite
+                          airport={selectedAirport}
+                          className="my-auto"
+                          pixelSize={32}
+                        />
+                        <div className="my-auto">{"-->-->-->"}</div>
+                        <ThumbnailSprite
+                          airport={convertedTo!}
+                          pixelSize={32}
+                        />
+                      </AlertDialogTitle>
+                      <AlertDialogDescription className="text-xl">
+                        You are about to convert from{" "}
+                        <span className="text-black">
+                          {`${selectedAirport.iata_code} (${selectedAirport.filetypes[0]!.description}${selectedAirport?.filetypes[0]!.used_by ? ` used by ${selectedAirport?.filetypes[0].used_by}` : ""})`}
+                        </span>{" "}
+                        to{" "}
+                        <span className="text-black">
+                          {` ${convertedTo?.iata_code} (${convertedTo?.filetypes[0]!.description}${convertedTo?.filetypes[0]!.used_by ? ` used by ${convertedTo?.filetypes[0].used_by}` : ""})`}
+                        </span>
+                      </AlertDialogDescription>
+                      <AlertDialogDescription className="text-xl">
+                        This action cannot be undone. This will permanently
+                        convert the target to the destination!
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel className="text-xl">
+                        Cancel
+                      </AlertDialogCancel>
+                      <AlertDialogAction
+                        className="text-xl"
+                        onClick={() => {
+                          //  open a new tab with the google flight search
+                          window.open(
+                            composeGoogleFlightUrl(
+                              selectedAirport,
+                              convertedTo,
+                            ),
+                            "_blank",
+                          );
+                        }}
+                      >
+                        Convert
+                      </AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
               </div>
             )}
             {/* <DrawerClose>
