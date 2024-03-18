@@ -1,6 +1,7 @@
 export interface IataGoogleFlights {
   iata: string;
   on_gf: boolean;
+  notQueryable?: boolean;
 }
 
 export const iataGoogleFlights = [
@@ -58,8 +59,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "ART",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "ASF",
@@ -91,8 +92,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "BAR",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "BAS",
@@ -328,8 +329,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "FOR",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "FRM",
@@ -457,8 +458,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "LBR",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "LDB",
@@ -530,8 +531,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "MOV",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "MPA",
@@ -619,8 +620,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "ODB",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "ODS",
@@ -1164,8 +1165,8 @@ export const iataGoogleFlights = [
   },
   {
     iata: "XLS",
-    // on_gf: true,
-    on_gf: false,
+    on_gf: true,
+    notQueryable: true,
   },
   {
     iata: "XML",

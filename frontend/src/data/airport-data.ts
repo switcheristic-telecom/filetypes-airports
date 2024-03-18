@@ -6379,9 +6379,16 @@ const allAirportsOriginal: AirportVerbose[] = [
 
 export const allAirports: AirportVerbose[] = allAirportsOriginal.map(
   (airport) => {
-    const onGoogleFlights = iataGoogleFlights.find(
+    const onGoogleFlightsMetadata = iataGoogleFlights.find(
       ({ iata }) => iata === airport.iata_code,
-    )?.on_gf;
+    );
+
+    let onGoogleFlights = onGoogleFlightsMetadata?.on_gf;
+
+    if (onGoogleFlightsMetadata?.notQueryable === true) {
+      onGoogleFlights = undefined;
+    }
+
     const filetypeUncommon = uncommonFiletypes.find(
       ({ extension }) => extension === airport.iata_code,
     )?.uncommon;
