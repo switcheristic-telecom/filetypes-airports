@@ -1,7 +1,8 @@
 import React, { useCallback } from "react";
 import type { Airport } from "@/utils/airport";
 import type { MapViewState } from "@/lib/map-config";
-interface AirportMarqueeProps {
+import { cn } from "@/lib/utils";
+interface AirportMarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
   featuredAirport: Airport;
   onClickOnAirport: (airport: Airport) => void;
   customTitle?: string;
@@ -11,10 +12,14 @@ const AirportMarquee = ({
   featuredAirport,
   onClickOnAirport,
   customTitle,
+  className,
 }: AirportMarqueeProps) => {
   return (
     <div
-      className="absolute top-0 z-20 w-screen cursor-pointer font-bitmap"
+      className={cn(
+        "absolute top-0 z-20 w-screen cursor-pointer font-bitmap",
+        className,
+      )}
       onClick={() => onClickOnAirport(featuredAirport)}
     >
       <>
