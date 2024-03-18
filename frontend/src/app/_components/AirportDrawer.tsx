@@ -205,7 +205,7 @@ const AirportDrawer = ({
                       Convert
                     </Button>
                   </AlertDialogTrigger>
-                  <AlertDialogContent className="rounded-none border-8  border-retro-yellow">
+                  <AlertDialogContent className="rounded-none border-8  border-retro-cyan">
                     <AlertDialogHeader>
                       <AlertDialogTitle className="text-3xl">
                         Are you absolutely sure?
