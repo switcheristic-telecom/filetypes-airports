@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 import { TRPCReactProvider } from "@/trpc/react";
 const inter = Inter({
@@ -77,6 +78,7 @@ export default function RootLayout({
 }) {
   return (
     <TRPCReactProvider>
+      <Analytics />
       <html lang="en">
         <head>
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
