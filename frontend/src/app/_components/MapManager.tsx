@@ -178,7 +178,8 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       // Only fly to the airport if it's far or the map is too zoomed out
       if (isFar || isTooZoomedOut || !conditional) {
         // Only zoom in if the map is too zoomed out now
-        const DEFAULT_ZOOM = 6;
+        const DEFAULT_ZOOM = isMobile ? 4 : 6;
+
         const newZoom = isTooZoomedOut ? DEFAULT_ZOOM : latestViewState.zoom;
 
         setInitialViewState((prev) => ({
