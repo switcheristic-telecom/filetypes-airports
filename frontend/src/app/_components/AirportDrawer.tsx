@@ -67,7 +67,7 @@ const AirportDrawer = ({
       onOpenChange={setOpen}
       modal={false}
       preventScrollRestoration={true}
-      dismissible={false}
+      dismissible={true}
       direction={isMobile ? "bottom" : "right"}
     >
       {selectedAirport && (
@@ -92,7 +92,11 @@ const AirportDrawer = ({
                 <div className="col-span-5 ">
                   <div className="font-semibold">{selectedAirport.name}</div>
                   <div className=" text-pretty text-right font-light text-neutral-600">
-                    {selectedAirport.municipality},{" "}
+                    {selectedAirport.municipality !== null &&
+                      selectedAirport.municipality !== "" &&
+                      selectedAirport.municipality !== "null" &&
+                      selectedAirport.municipality !== undefined &&
+                      `${selectedAirport.municipality}, `}
                     {selectedAirport.iso_country}
                   </div>
                   {/* <div>{selectedAirport.type}</div> */}
