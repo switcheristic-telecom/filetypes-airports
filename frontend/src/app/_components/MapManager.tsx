@@ -57,6 +57,8 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
   const [initialViewState, setInitialViewState] = useState(INITIAL_VIEW_STATE);
   const [latestViewState, setLatestViewState] = useState(initialViewState);
 
+  const LATITUDE_OFFSET = isMobile ? -0.5 : -0.55;
+
   // useEffect(() => {
   //   console.log("latestViewState", latestViewState);
   // }, [latestViewState]);
@@ -79,7 +81,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         minZoom: isMobile
           ? INITIAL_VIEW_STATE.mobileMinZoom
           : INITIAL_VIEW_STATE.minZoom,
-        latitude: airportOfTheDay.latitude,
+        latitude: airportOfTheDay.latitude + LATITUDE_OFFSET,
         longitude: airportOfTheDay.longitude,
       });
 
@@ -176,11 +178,10 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         // Only zoom in if the map is too zoomed out now
         const DEFAULT_ZOOM = 6;
         const newZoom = isTooZoomedOut ? DEFAULT_ZOOM : latestViewState.zoom;
-        const latitudeOffset = isMobile ? -0.5 : -0.55;
 
         setInitialViewState((prev) => ({
           ...prev,
-          latitude: airport.latitude + latitudeOffset,
+          latitude: airport.latitude + LATITUDE_OFFSET,
           longitude: airport.longitude,
           zoom: newZoom,
           transitionDuration: 1000,
@@ -190,10 +191,11 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       }
     },
     [
+      LATITUDE_OFFSET,
+      isMobile,
       latestViewState.latitude,
       latestViewState.longitude,
       latestViewState.zoom,
-      isMobile,
     ],
   );
 
