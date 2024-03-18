@@ -32,4 +32,20 @@ export const uncommonFiletypes = [
     extension: "PMA",
     uncommon: true,
   },
+  {
+    extension: "ADT",
+    uncommon: true,
+  },
+  {
+    extension: "AIO",
+    uncommon: true,
+  },
+  {
+    extension: "AMF",
+    uncommon: true,
+  },
+  {
+    extension: "AML",
+    uncommon: true,
+  },
 ];
