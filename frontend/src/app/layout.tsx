@@ -82,7 +82,7 @@ export default function RootLayout({
       <html lang="en">
         <head>
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
-          <meta name="theme-color" content="#000000" />
+          <meta name="theme-color" content="#008080" />
         </head>
         <body className={`font-bitmap ${inter.variable} ${fixedsys.variable}`}>
           {children}
