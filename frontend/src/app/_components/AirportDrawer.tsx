@@ -225,11 +225,11 @@ const AirportDrawer = ({
                       <AlertDialogDescription className="text-xl">
                         You are about to convert from{" "}
                         <span className="text-black">
-                          {`${selectedAirport.iata_code} (${selectedAirport.filetypes[0]!.description}${selectedAirport?.filetypes[0]!.used_by ? ` used by ${selectedAirport?.filetypes[0].used_by}` : ""})`}
+                          {`${selectedAirport.iata_code} [${selectedAirport.filetypes[0]!.description}${selectedAirport?.filetypes[0]!.used_by ? ` used by ${selectedAirport?.filetypes[0].used_by}` : ""}]`}
                         </span>{" "}
                         to{" "}
                         <span className="text-black">
-                          {` ${convertedTo?.iata_code} (${convertedTo?.filetypes[0]!.description}${convertedTo?.filetypes[0]!.used_by ? ` used by ${convertedTo?.filetypes[0].used_by}` : ""})`}
+                          {` ${convertedTo?.iata_code} [${convertedTo?.filetypes[0]!.description}${convertedTo?.filetypes[0]!.used_by ? ` used by ${convertedTo?.filetypes[0].used_by}` : ""}]`}
                         </span>
                       </AlertDialogDescription>
                       <AlertDialogDescription className="text-xl">
