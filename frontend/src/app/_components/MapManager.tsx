@@ -243,12 +243,15 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
         <>
           <Button
             className="margin-8 absolute left-0 top-8 z-[5] m-4"
-            onClick={() => setIsSidebarOpen(true)}
+            onClick={() => {
+              setIsSidebarOpen(true);
+              setIsDrawerOpen(false);
+            }}
           >
             {">"}
           </Button>
           <AirportSidebar
-            className="absolute left-0 top-0 z-10 h-screen pt-8"
+            className="absolute left-0 top-0 z-10 h-dvh pt-8"
             airports={allAirports}
             selectedAirport={lastSelectedAirport}
             onClickOnAirport={(a) => {
