@@ -84,44 +84,44 @@
 
 .led-text-glow-red {
   text-shadow:
-    0 0 10px #444,
-    0 0 20px #444,
-    0 0 30px #aa0000,
-    0 0 40px #aa0000,
-    0 0 50px #aa0000,
-    0 0 60px #aa0000,
-    0 0 70px #aa0000;
+    /* 0 0 20px #444, */
+    0 0 30px #ffa8a8,
+    0 0 40px #ffa8a8,
+    0 0 50px #ffa8a8,
+    0 0 60px #ffa8a8;
+  /* 0 0 70px #ffa8a8,
+    0 0 80px #ffa8a8; */
 }
 
 .led-text-glow-blue {
   text-shadow:
-    0 0 10px #444,
-    0 0 20px #444,
-    0 0 30px #0000aa,
-    0 0 40px #0000aa,
-    0 0 50px #0000aa,
-    0 0 60px #0000aa,
-    0 0 70px #0000aa;
+    /* 0 0 20px #444, */
+    0 0 30px #adadfb,
+    0 0 40px #adadfb,
+    0 0 50px #adadfb,
+    0 0 60px #adadfb;
+  /* 0 0 70px #adadfb,
+    0 0 80px #adadfb; */
 }
 
 .led-text-glow-cyan {
   text-shadow:
-    0 0 10px #444,
-    0 0 20px #444,
-    0 0 30px #4d59b2,
-    0 0 40px #4d59b2,
-    0 0 50px #4d59b2,
-    0 0 60px #4d59b2,
-    0 0 70px #4d59b2;
+    /* 0 0 20px #444, */
+    0 0 30px #7bccef,
+    0 0 40px #7bccef,
+    0 0 50px #7bccef,
+    0 0 60px #7bccef;
+  /* 0 0 70px #7bccef,
+  0 0 80px #7bccef; */
 }
 
 .led-text-glow-white {
   text-shadow:
-    0 0 10px #444,
-    0 0 20px #444,
-    0 0 30px #666,
-    0 0 40px #666,
-    0 0 50px #666,
-    0 0 60px #666,
-    0 0 70px #666;
+    /* 0 0 20px #444, */
+    0 0 30px #e1e1e1,
+    0 0 40px #e1e1e1,
+    0 0 50px #e1e1e1,
+    0 0 60px #e1e1e1;
+  /* 0 0 70px #e1e1e1,
+    0 0 80px #e1e1e1; */
 }

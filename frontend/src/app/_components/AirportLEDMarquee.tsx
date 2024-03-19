@@ -83,7 +83,7 @@ function ContentSpans({ featuredAirport, customTitle }: ContentSpansProps) {
   const fileTypeSpans = fileTypes.map((fileType, i) => (
     <span
       key={"filetype-" + i}
-      className="led-text-glow-blue bg-neutral-80 bg-neutral-800 font-extralight  text-blue-400"
+      className="led-text-glow-blue bg-neutral-80 font-extralight  text-blue-400"
     >
       {fileType.description?.toLowerCase()}
     </span>
@@ -92,9 +92,11 @@ function ContentSpans({ featuredAirport, customTitle }: ContentSpansProps) {
   return (
     <>
       <span className="bg-black text-2xl">
-        <span className="led-text-glow-white bg-black  text-white">
+        <span className=" bg-black  text-white">
           <span className="mx-4">{"<"}</span>
-          <span>{customTitle ?? `[ Filetype / Airport of the Day ]`}</span>
+          <span className="led-text-glow-white">
+            {customTitle ?? `[ Filetype / Airport of the Day ]`}
+          </span>
           <span className="mx-4">{`<->`}</span>
         </span>
 
@@ -103,7 +105,7 @@ function ContentSpans({ featuredAirport, customTitle }: ContentSpansProps) {
         </span>
         <span className="mx-4">{">"}</span>
 
-        <span className="led-text-glow-cyan  bg-neutral-800 text-cyan-400">
+        <span className="led-text-glow-cyan   text-cyan-400">
           {featuredAirport?.name}
         </span>
         <span className="led-text-glow-white px-4 text-white">/</span>
