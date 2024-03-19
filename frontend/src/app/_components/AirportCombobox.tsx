@@ -18,7 +18,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Airport } from "@/utils/airport";
+import { type Airport } from "@/utils/airport";
 
 type Option = {
   value: string;

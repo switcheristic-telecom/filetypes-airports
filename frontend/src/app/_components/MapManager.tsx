@@ -40,6 +40,8 @@ import AirportMarquee from "@/app/_components/AirportMarquee";
 import AirportMap from "@/app/_components/AirportMap";
 import AirportDrawer from "./AirportDrawer";
 import { AirportSidebar } from "@/app/_components/AirportSidebar";
+import WebsiteMarquee from "./WebsiteMarquee";
+import AirportLEDMarquee from "./AirportLEDMarquee";
 
 interface MapManagerProps {
   allAirports: Airport[];
@@ -232,8 +234,9 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
 
   return (
     <>
+      {/* <WebsiteMarquee className="top-8" /> */}
       {airportOfTheDay && (
-        <AirportMarquee
+        <AirportLEDMarquee
           featuredAirport={
             // (isDrawerOpen ? lastSelectedAirport : airportOfTheDay) ??
             airportOfTheDay

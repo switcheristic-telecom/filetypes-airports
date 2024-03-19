@@ -1,0 +1,116 @@
+import React, { useCallback } from "react";
+import type { Airport } from "@/utils/airport";
+import type { MapViewState } from "@/lib/map-config";
+import { cn } from "@/lib/utils";
+interface AirportLEDMarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
+  featuredAirport: Airport;
+  onClickOnAirport: (airport: Airport) => void;
+  customTitle?: string;
+}
+
+const AirportLEDMarquee = ({
+  featuredAirport,
+  onClickOnAirport,
+  customTitle,
+  className,
+}: AirportLEDMarqueeProps) => {
+  return (
+    <div
+      className={cn(
+        "absolute top-0 z-20 w-screen cursor-pointer font-led",
+        "shadow-xl shadow-neutral-800",
+        className,
+      )}
+      onClick={() => onClickOnAirport(featuredAirport)}
+    >
+      <>
+        <div className="relative flex flex-row overflow-x-hidden">
+          <div className="animate-marquee whitespace-nowrap bg-black text-white">
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
+
+            <span className="hidden 3xl:inline">
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
+            </span>
+          </div>
+
+          <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white">
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
+            <ContentSpans
+              featuredAirport={featuredAirport}
+              customTitle={customTitle}
+            />
+            <span className="hidden 3xl:inline">
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
+              <ContentSpans
+                featuredAirport={featuredAirport}
+                customTitle={customTitle}
+              />
+            </span>
+          </div>
+        </div>
+      </>
+    </div>
+  );
+};
+
+interface ContentSpansProps {
+  featuredAirport: Airport;
+  customTitle?: string;
+}
+
+function ContentSpans({ featuredAirport, customTitle }: ContentSpansProps) {
+  const fileTypes = featuredAirport.filetypes;
+  const fileTypeSpans = fileTypes.map((fileType, i) => (
+    <span
+      key={"filetype-" + i}
+      className="led-text-glow-blue bg-neutral-80 bg-neutral-800 font-extralight  text-blue-400"
+    >
+      {fileType.description?.toLowerCase()}
+    </span>
+  ));
+
+  return (
+    <>
+      <span className="bg-black text-2xl">
+        <span className="led-text-glow-white bg-black  text-white">
+          <span className="mx-4">{"<"}</span>
+          <span>{customTitle ?? `[ Filetype / Airport of the Day ]`}</span>
+          <span className="mx-4">{`<->`}</span>
+        </span>
+
+        <span className="led-text-glow-red  bg-black  text-red-400">
+          {featuredAirport?.iata_code}
+        </span>
+        <span className="mx-4">{">"}</span>
+
+        <span className="led-text-glow-cyan  bg-neutral-800 text-cyan-400">
+          {featuredAirport?.name}
+        </span>
+        <span className="led-text-glow-white px-4 text-white">/</span>
+        {fileTypeSpans}
+      </span>
+    </>
+  );
+}
+
+export default AirportLEDMarquee;

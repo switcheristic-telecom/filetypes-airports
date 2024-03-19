@@ -11,28 +11,16 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-// const cotham = localFont({
-//   src: "./fonts/Cotham-Sans-Regular.woff2",
-//   display: "swap",
-//   variable: "--font-cotham-sans",
-// });
-
-// const junicode = localFont({
-//   src: "./fonts/JunicodeTwoBetaVF-Roman.woff2",
-//   display: "swap",
-//   variable: "--font-junicode",
-//   declarations: [
-//     {
-//       prop: "font-stretch",
-//       value: "75% 125%",
-//     },
-//   ],
-// });
-
 const fixedsys = localFont({
   src: "./fonts/FSEX302.ttf",
   display: "swap",
   variable: "--font-fixedsys",
+});
+
+const ledDotMatrix = localFont({
+  src: "./fonts/Square-Dot-Matrix.ttf",
+  display: "swap",
+  variable: "--font-led",
 });
 
 export const metadata: Metadata = {
@@ -84,7 +72,9 @@ export default function RootLayout({
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
           <meta name="theme-color" content="#008080" />
         </head>
-        <body className={`font-bitmap ${inter.variable} ${fixedsys.variable}`}>
+        <body
+          className={`font-bitmap ${inter.variable} ${fixedsys.variable} ${ledDotMatrix.variable}`}
+        >
           {children}
         </body>
       </html>
