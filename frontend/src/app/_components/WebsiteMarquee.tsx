@@ -2,16 +2,11 @@ import React, { useCallback } from "react";
 import type { Airport } from "@/utils/airport";
 import type { MapViewState } from "@/lib/map-config";
 import { cn } from "@/lib/utils";
-import MarqueeText from "react-marquee-text";
 interface WebsiteMarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
   customTitle?: string;
 }
 
-const WebsiteMarquee = ({
-  onClickOnAirport,
-  customTitle,
-  className,
-}: WebsiteMarqueeProps) => {
+const WebsiteMarquee = ({ customTitle, className }: WebsiteMarqueeProps) => {
   return (
     <div
       className={cn(
