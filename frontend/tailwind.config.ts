@@ -101,6 +101,62 @@ const config = {
           "75%": { backgroundColor: "#1F3CAE" }, // "retro-blue"
           "100%": { backgroundColor: "#C3C7CB" }, // "retro-gray"
         },
+        "led-text-glow-red": {
+          "0%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #aa0000, 0 0 40px #aa0000, 0 0 50px #aa0000, 0 0 60px #aa0000, 0 0 70px #aa0000",
+          },
+          "50%": {
+            textShadow:
+              "0 0 20px #444, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000",
+          },
+          "100%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #aa0000, 0 0 40px #aa0000, 0 0 50px #aa0000, 0 0 60px #aa0000, 0 0 70px #aa0000",
+          },
+        },
+        "led-text-glow-blue": {
+          "0%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #0000aa, 0 0 40px #0000aa, 0 0 50px #0000aa, 0 0 60px #0000aa, 0 0 70px #0000aa",
+          },
+          "50%": {
+            textShadow:
+              "0 0 20px #444, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff",
+          },
+          "100%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #0000aa, 0 0 40px #0000aa, 0 0 50px #0000aa, 0 0 60px #0000aa, 0 0 70px #0000aa",
+          },
+        },
+        "led-text-glow-cyan": {
+          "0%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #4d59b2, 0 0 40px #4d59b2, 0 0 50px #4d59b2, 0 0 60px #4d59b2, 0 0 70px #4d59b2",
+          },
+          "50%": {
+            textShadow:
+              "0 0 20px #444, 0 0 30px #7db2c9, 0 0 40px #7db2c9, 0 0 50px #7db2c9, 0 0 60px #7db2c9, 0 0 70px #7db2c9, 0 0 80px #7db2c9",
+          },
+          "100%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #4d59b2, 0 0 40px #4d59b2, 0 0 50px #4d59b2, 0 0 60px #4d59b2, 0 0 70px #4d59b2",
+          },
+        },
+        "led-text-glow-white": {
+          "0%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #666, 0 0 40px #666, 0 0 50px #666, 0 0 60px #666, 0 0 70px #666",
+          },
+          "50%": {
+            textShadow:
+              "0 0 20px #444, 0 0 30px #999, 0 0 40px #999, 0 0 50px #999, 0 0 60px #999, 0 0 70px #999, 0 0 80px #999",
+          },
+          "100%": {
+            textShadow:
+              "0 0 10px #444, 0 0 20px #444, 0 0 30px #666, 0 0 40px #666, 0 0 50px #666, 0 0 60px #666, 0 0 70px #666",
+          },
+        },
       },
       animation: {
         marquee: "marquee 25s linear infinite",
@@ -108,6 +164,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "alert-screen-overlay": "alert-screen-overlay 5s linear infinite",
+        "led-text-glow-red": "led-text-glow-red 2s linear infinite",
+        "led-text-glow-blue": "led-text-glow-blue 2s linear infinite",
+        "led-text-glow-cyan": "led-text-glow-cyan 2s linear infinite",
+        "led-text-glow-white": "led-text-glow-white 2s linear infinite",
       },
     },
   },

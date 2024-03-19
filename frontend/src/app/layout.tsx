@@ -18,7 +18,7 @@ const fixedsys = localFont({
 });
 
 const ledDotMatrix = localFont({
-  src: "./fonts/LED Dot-Matrix.ttf",
+  src: "./fonts/Square-Dot-Matrix.ttf",
   display: "swap",
   variable: "--font-led",
 });
