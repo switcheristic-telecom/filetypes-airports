@@ -192,11 +192,15 @@ export const meshLayerFromAirports = ({
 
 interface IconLayerFromAirportsArgs extends LayerFromAirportsArgs {
   timeInMs?: number;
+  spinning?: boolean;
+  noOverlap?: boolean;
 }
 
 export const iconLayerFromAirports = ({
   airports,
   timeInMs = 0,
+  spinning = true,
+  noOverlap = false,
   onClick,
 }: IconLayerFromAirportsArgs) => {
   if (!airports) {
@@ -205,7 +209,7 @@ export const iconLayerFromAirports = ({
 
   const LOOP_LENGTH = 3600;
 
-  const time = (timeInMs % LOOP_LENGTH) / LOOP_LENGTH;
+  const time = spinning ? (timeInMs % LOOP_LENGTH) / LOOP_LENGTH : 0;
 
   const iconLayer = new SpinningIconLayer({
     id: "airport-icons-layer",
@@ -220,13 +224,15 @@ export const iconLayerFromAirports = ({
     sizeScale: 1,
     getAngle: 0,
     getYAngleOffset: (d: Airport) => {
+      if (!spinning) return 0;
+
       const offset = md5.array(d.iata_code).reduce((a, b) => a + b, 0);
       return offset % 360;
     },
     getYAngle: (time * 360) % 360,
     billboard: true,
     // CollideExtension options
-    collisionEnabled: false,
+    collisionEnabled: noOverlap,
     collisionTestProps: {
       sizeScale: 48,
       sizeMaxPixels: 24,
