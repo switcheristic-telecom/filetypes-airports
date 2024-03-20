@@ -9,7 +9,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxStyles } from "@/utils/mapbox";
 
 // DeckGL
-import type { PickingInfo } from "@deck.gl/core/typed";
+import { type PickingInfo, MapView } from "@deck.gl/core/typed";
 import DeckGL from "@deck.gl/react/typed";
 
 // Config
@@ -96,6 +96,11 @@ const AirportMap = ({
     (layer) => layer,
   );
 
+  const view = new MapView({
+    id: "map-view",
+    repeat: true, // this makes the layers repeat in lower zoom levels
+  });
+
   return (
     <div>
       {initialAirport && (
@@ -103,6 +108,7 @@ const AirportMap = ({
           <DeckGL
             effects={[]}
             initialViewState={initialViewState}
+            views={view}
             controller={true}
             layers={layers}
             // getTooltip={getTooltip}
