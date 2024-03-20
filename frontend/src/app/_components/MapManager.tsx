@@ -236,7 +236,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
     <>
       {/* <WebsiteMarquee className="top-8" /> */}
       {airportOfTheDay && (
-        <AirportLEDMarquee
+        <AirportMarquee
           featuredAirport={
             // (isDrawerOpen ? lastSelectedAirport : airportOfTheDay) ??
             airportOfTheDay
