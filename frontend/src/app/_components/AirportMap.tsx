@@ -4,10 +4,10 @@ import { env } from "@/env";
 import React, { useState, useEffect } from "react";
 
 // Mapbox
-import Map from "react-map-gl";
+import Map, { StaticMap } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { mapboxStyles } from "@/utils/mapbox";
-
+import { cartoStyles, mapboxStyles } from "@/utils/mapbox";
+import { BASEMAP } from "@deck.gl/carto/typed";
 // DeckGL
 import { type PickingInfo, MapView } from "@deck.gl/core/typed";
 import DeckGL from "@deck.gl/react/typed";
@@ -132,13 +132,7 @@ const AirportMap = ({
                   : "default";
             }}
           >
-            <Map
-              projection={{
-                name: "mercator",
-              }}
-              mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-              mapStyle={mapboxStyles.latest}
-            ></Map>
+            <StaticMap mapStyle={cartoStyles["airports-filetypes"]}></StaticMap>
           </DeckGL>
         </div>
       )}
