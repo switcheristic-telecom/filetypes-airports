@@ -45,9 +45,10 @@ import AirportLEDMarquee from "./AirportLEDMarquee";
 
 interface MapManagerProps {
   allAirports: Airport[];
+  showUI?: boolean;
 }
 
-const MapManager = ({ allAirports }: MapManagerProps) => {
+const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
   /** Load the airport of the day */
   const { data: airportOfTheDay } = api.airport.getAirportOfTheDay.useQuery();
 
@@ -235,7 +236,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
   return (
     <>
       {/* <WebsiteMarquee className="top-8" /> */}
-      {airportOfTheDay && (
+      {airportOfTheDay && showUI && (
         <AirportMarquee
           featuredAirport={
             // (isDrawerOpen ? lastSelectedAirport : airportOfTheDay) ??
@@ -251,7 +252,7 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       )}
 
       {/* The main DeckGL map */}
-      {airportOfTheDay && (
+      {airportOfTheDay && showUI && (
         <>
           <Button
             className="margin-8 absolute left-0 top-8 z-[5] m-4"
@@ -291,15 +292,17 @@ const MapManager = ({ allAirports }: MapManagerProps) => {
       />
 
       {/* Drawer card to show the selected airport details */}
-      <AirportDrawer
-        open={isDrawerOpen}
-        setOpen={setIsDrawerOpen}
-        allAirports={allAirports}
-        featuredAirport={airportOfTheDay}
-        selectedAirport={lastSelectedAirport as AirportVerbose}
-        convertedTo={destinationAirport as AirportVerbose}
-        setConvertedTo={setDestinationAirport}
-      ></AirportDrawer>
+      {showUI && (
+        <AirportDrawer
+          open={isDrawerOpen}
+          setOpen={setIsDrawerOpen}
+          allAirports={allAirports}
+          featuredAirport={airportOfTheDay}
+          selectedAirport={lastSelectedAirport as AirportVerbose}
+          convertedTo={destinationAirport as AirportVerbose}
+          setConvertedTo={setDestinationAirport}
+        ></AirportDrawer>
+      )}
     </>
   );
 };
