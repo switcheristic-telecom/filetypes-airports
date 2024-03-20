@@ -16,1329 +16,1532 @@
     "aac-classic": {
         "x": 116,
         "y": 0,
-        "width": 48,
-        "height": 48,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "ann-classic": {
+        "x": 158,
+        "y": 0,
+        "width": 32,
+        "height": 32,
         "mask": false
     },
     "asf-classic": {
-        "x": 174,
+        "x": 200,
         "y": 0,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "asx-classic": {
-        "x": 232,
+        "x": 258,
         "y": 0,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "avi-classic": {
-        "x": 290,
+        "x": 316,
         "y": 0,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "bat-classic": {
-        "x": 348,
+        "x": 374,
         "y": 0,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "bmp-classic": {
-        "x": 406,
+        "x": 432,
         "y": 0,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "cab-classic": {
+        "x": 490,
+        "y": 0,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "cbl-classic": {
+        "x": 532,
+        "y": 0,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "cdp-classic": {
+        "x": 574,
+        "y": 0,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "cdr-classic": {
-        "x": 464,
+        "x": 616,
         "y": 0,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "cer-classic": {
-        "x": 506,
-        "y": 0,
+        "x": 0,
+        "y": 58,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "chm-classic": {
-        "x": 548,
-        "y": 0,
+        "x": 42,
+        "y": 58,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "cho-classic": {
+        "x": 100,
+        "y": 58,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "cmd-classic": {
-        "x": 606,
-        "y": 0,
+        "x": 142,
+        "y": 58,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "com-classic": {
-        "x": 664,
-        "y": 0,
+        "x": 200,
+        "y": 58,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "cpl-classic": {
-        "x": 0,
+        "x": 258,
         "y": 58,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "cpp-classic": {
-        "x": 58,
+        "x": 316,
         "y": 58,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "crt-classic": {
-        "x": 100,
+        "x": 358,
+        "y": 58,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "css-classic": {
+        "x": 400,
         "y": 58,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "csv-classic": {
-        "x": 142,
+        "x": 442,
+        "y": 58,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "cur-classic": {
+        "x": 500,
+        "y": 58,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "daa-classic": {
+        "x": 542,
         "y": 58,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "deb-classic": {
-        "x": 200,
+        "x": 600,
         "y": 58,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "doc-classic": {
-        "x": 258,
-        "y": 58,
+        "x": 0,
+        "y": 116,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "eml-classic": {
+        "x": 58,
+        "y": 116,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "gif-classic": {
-        "x": 316,
-        "y": 58,
+        "x": 100,
+        "y": 116,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "hta-classic": {
-        "x": 358,
-        "y": 58,
+        "x": 142,
+        "y": 116,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "htm-classic": {
-        "x": 416,
-        "y": 58,
+        "x": 200,
+        "y": 116,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "ini-classic": {
-        "x": 474,
-        "y": 58,
+        "x": 258,
+        "y": 116,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "iso-classic": {
-        "x": 532,
-        "y": 58,
+        "x": 316,
+        "y": 116,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "jar-classic": {
-        "x": 574,
-        "y": 58,
+        "x": 358,
+        "y": 116,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "jpe-classic": {
-        "x": 632,
-        "y": 58,
+        "x": 416,
+        "y": 116,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "lha-classic": {
+        "x": 458,
+        "y": 116,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "mht-classic": {
-        "x": 0,
+        "x": 500,
         "y": 116,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "mid-classic": {
-        "x": 42,
+        "x": 542,
         "y": 116,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "mov-classic": {
-        "x": 100,
+        "x": 600,
         "y": 116,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "mpg-classic": {
-        "x": 142,
-        "y": 116,
+        "x": 0,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "msc-classic": {
+        "x": 58,
+        "y": 174,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "msi-classic": {
-        "x": 200,
-        "y": 116,
+        "x": 100,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "msu-classic": {
-        "x": 258,
-        "y": 116,
+        "x": 158,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "nsv-classic": {
+        "x": 216,
+        "y": 174,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "odb-classic": {
-        "x": 316,
-        "y": 116,
+        "x": 258,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "ods-classic": {
-        "x": 374,
-        "y": 116,
+        "x": 316,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "otp-classic": {
-        "x": 432,
-        "y": 116,
+        "x": 374,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "ots-classic": {
-        "x": 490,
-        "y": 116,
+        "x": 432,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "ott-classic": {
-        "x": 548,
-        "y": 116,
+        "x": 490,
+        "y": 174,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "pal-classic": {
-        "x": 606,
-        "y": 116,
+        "x": 548,
+        "y": 174,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "pas-classic": {
+        "x": 590,
+        "y": 174,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "pde-classic": {
+        "x": 632,
+        "y": 174,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "pdf-classic": {
-        "x": 648,
-        "y": 116,
+        "x": 0,
+        "y": 232,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "pfb-classic": {
-        "x": 0,
-        "y": 174,
+        "x": 42,
+        "y": 232,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "pgn-classic": {
-        "x": 42,
-        "y": 174,
+        "x": 84,
+        "y": 232,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "pls-classic": {
+        "x": 126,
+        "y": 232,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "png-classic": {
-        "x": 84,
-        "y": 174,
+        "x": 168,
+        "y": 232,
         "width": 32,
         "height": 32,
         "mask": false
     },
+    "ppt-classic": {
+        "x": 210,
+        "y": 232,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
     "psd-classic": {
-        "x": 126,
-        "y": 174,
+        "x": 268,
+        "y": 232,
         "width": 32,
         "height": 32,
         "mask": false
     },
     "ram-classic": {
-        "x": 168,
-        "y": 174,
+        "x": 310,
+        "y": 232,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "rar-classic": {
-        "x": 226,
-        "y": 174,
+        "x": 368,
+        "y": 232,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "rpm-classic": {
-        "x": 284,
-        "y": 174,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "scr-classic": {
-        "x": 342,
-        "y": 174,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "smk-classic": {
-        "x": 384,
-        "y": 174,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "stc-classic": {
-        "x": 442,
-        "y": 174,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "std-classic": {
-        "x": 500,
-        "y": 174,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "sti-classic": {
-        "x": 558,
-        "y": 174,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "stw-classic": {
-        "x": 616,
-        "y": 174,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "svg-classic": {
-        "x": 0,
-        "y": 232,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "swf-classic": {
-        "x": 42,
-        "y": 232,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "sxg-classic": {
-        "x": 84,
+        "x": 426,
         "y": 232,
         "width": 48,
         "height": 48,
         "mask": false
     },
-    "sxi-classic": {
-        "x": 142,
-        "y": 232,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "sxm-classic": {
-        "x": 200,
-        "y": 232,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "sxw-classic": {
-        "x": 258,
-        "y": 232,
-        "width": 48,
-        "height": 48,
-        "mask": false
-    },
-    "tga-classic": {
-        "x": 316,
-        "y": 232,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "tif-classic": {
-        "x": 358,
-        "y": 232,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "ttc-classic": {
-        "x": 400,
-        "y": 232,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "vbs-classic": {
-        "x": 442,
-        "y": 232,
-        "width": 32,
-        "height": 32,
-        "mask": false
-    },
-    "wad-classic": {
+    "sav-classic": {
         "x": 484,
         "y": 232,
         "width": 32,
         "height": 32,
         "mask": false
     },
-    "wav-classic": {
+    "scr-classic": {
         "x": 526,
         "y": 232,
-        "width": 48,
-        "height": 48,
+        "width": 32,
+        "height": 32,
         "mask": false
     },
-    "wma-classic": {
-        "x": 584,
+    "sfx-classic": {
+        "x": 568,
         "y": 232,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "smk-classic": {
+        "x": 0,
+        "y": 290,
         "width": 48,
         "height": 48,
         "mask": false
     },
-    "xml-classic": {
-        "x": 0,
+    "sps-classic": {
+        "x": 58,
         "y": 290,
         "width": 32,
         "height": 32,
         "mask": false
     },
-    "aac-linux": {
-        "x": 42,
+    "stc-classic": {
+        "x": 100,
         "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "std-classic": {
+        "x": 158,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "sti-classic": {
+        "x": 216,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "stw-classic": {
+        "x": 274,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "svg-classic": {
+        "x": 332,
+        "y": 290,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "swf-classic": {
+        "x": 374,
+        "y": 290,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "sxg-classic": {
+        "x": 416,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "sxi-classic": {
+        "x": 474,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "sxm-classic": {
+        "x": 532,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "sxw-classic": {
+        "x": 590,
+        "y": 290,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "tar-classic": {
+        "x": 648,
+        "y": 290,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "taz-classic": {
+        "x": 0,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "tbz-classic": {
+        "x": 42,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "tga-classic": {
+        "x": 84,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "tgz-classic": {
+        "x": 126,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "tif-classic": {
+        "x": 168,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "ttc-classic": {
+        "x": 210,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "vbs-classic": {
+        "x": 252,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "vda-classic": {
+        "x": 294,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "vst-classic": {
+        "x": 336,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "wad-classic": {
+        "x": 378,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "wav-classic": {
+        "x": 420,
+        "y": 348,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "wma-classic": {
+        "x": 478,
+        "y": 348,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "xar-classic": {
+        "x": 536,
+        "y": 348,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "xls-classic": {
+        "x": 0,
+        "y": 406,
+        "width": 48,
+        "height": 48,
+        "mask": false
+    },
+    "xml-classic": {
+        "x": 58,
+        "y": 406,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
+    "aac-linux": {
+        "x": 100,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "apk-linux": {
-        "x": 100,
-        "y": 290,
+        "x": 158,
+        "y": 406,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "arc-linux": {
-        "x": 157,
-        "y": 290,
+        "x": 215,
+        "y": 406,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "asf-linux": {
-        "x": 214,
-        "y": 290,
+        "x": 272,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "avi-linux": {
-        "x": 272,
-        "y": 290,
+        "x": 330,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "bat-linux": {
-        "x": 330,
-        "y": 290,
+        "x": 388,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "bdf-linux": {
-        "x": 388,
-        "y": 290,
+        "x": 446,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "bmp-linux": {
-        "x": 446,
-        "y": 290,
+        "x": 504,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "cab-linux": {
-        "x": 504,
-        "y": 290,
+        "x": 562,
+        "y": 406,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "cer-linux": {
-        "x": 561,
-        "y": 290,
+        "x": 619,
+        "y": 406,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "chm-linux": {
-        "x": 619,
-        "y": 290,
+        "x": 677,
+        "y": 406,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "cmd-linux": {
-        "x": 677,
-        "y": 290,
+        "x": 0,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "com-linux": {
-        "x": 0,
-        "y": 352,
+        "x": 58,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "cpl-linux": {
-        "x": 58,
-        "y": 352,
+        "x": 116,
+        "y": 468,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "cpp-linux": {
-        "x": 116,
-        "y": 352,
+        "x": 174,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "crt-linux": {
-        "x": 174,
-        "y": 352,
+        "x": 232,
+        "y": 468,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "css-linux": {
-        "x": 232,
-        "y": 352,
+        "x": 290,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "deb-linux": {
-        "x": 290,
-        "y": 352,
+        "x": 348,
+        "y": 468,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "dng-linux": {
-        "x": 348,
-        "y": 352,
+        "x": 406,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "doc-linux": {
-        "x": 406,
-        "y": 352,
+        "x": 464,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "elf-linux": {
-        "x": 464,
-        "y": 352,
+        "x": 522,
+        "y": 468,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "eml-linux": {
-        "x": 522,
-        "y": 352,
+        "x": 580,
+        "y": 468,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "fallback-linux": {
-        "x": 580,
-        "y": 352,
+        "x": 638,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "flv-linux": {
-        "x": 638,
-        "y": 352,
+        "x": 696,
+        "y": 468,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "gif-linux": {
-        "x": 696,
-        "y": 352,
+        "x": 0,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "htm-linux": {
-        "x": 0,
-        "y": 414,
+        "x": 58,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "img-linux": {
-        "x": 58,
-        "y": 414,
+        "x": 116,
+        "y": 530,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "ini-linux": {
-        "x": 115,
-        "y": 414,
+        "x": 173,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "iso-linux": {
-        "x": 173,
-        "y": 414,
+        "x": 231,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "jar-linux": {
-        "x": 231,
-        "y": 414,
+        "x": 289,
+        "y": 530,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "jav-linux": {
-        "x": 289,
-        "y": 414,
+        "x": 347,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "jpe-linux": {
-        "x": 347,
-        "y": 414,
+        "x": 405,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "key-linux": {
-        "x": 405,
-        "y": 414,
+        "x": 463,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "kra-linux": {
-        "x": 463,
-        "y": 414,
+        "x": 521,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "lha-linux": {
-        "x": 521,
-        "y": 414,
+        "x": 579,
+        "y": 530,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "lnk-linux": {
-        "x": 578,
-        "y": 414,
+        "x": 636,
+        "y": 530,
         "width": 24,
         "height": 24,
         "mask": false
     },
     "mht-linux": {
-        "x": 612,
-        "y": 414,
+        "x": 670,
+        "y": 530,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "mid-linux": {
-        "x": 670,
-        "y": 414,
+        "x": 0,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "mod-linux": {
-        "x": 0,
-        "y": 476,
+        "x": 58,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "mov-linux": {
-        "x": 58,
-        "y": 476,
+        "x": 116,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "mpg-linux": {
-        "x": 116,
-        "y": 476,
+        "x": 174,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "msc-linux": {
-        "x": 174,
-        "y": 476,
+        "x": 232,
+        "y": 592,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "msi-linux": {
-        "x": 232,
-        "y": 476,
+        "x": 290,
+        "y": 592,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "nfo-linux": {
-        "x": 289,
-        "y": 476,
+        "x": 347,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "nsv-linux": {
-        "x": 347,
-        "y": 476,
+        "x": 405,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "odb-linux": {
-        "x": 405,
-        "y": 476,
+        "x": 463,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ods-linux": {
-        "x": 463,
-        "y": 476,
+        "x": 521,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "oga-linux": {
-        "x": 521,
-        "y": 476,
+        "x": 579,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ogg-linux": {
-        "x": 579,
-        "y": 476,
+        "x": 637,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ogx-linux": {
-        "x": 637,
-        "y": 476,
+        "x": 695,
+        "y": 592,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "otp-linux": {
-        "x": 695,
-        "y": 476,
+        "x": 0,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ots-linux": {
-        "x": 0,
-        "y": 538,
+        "x": 58,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ott-linux": {
-        "x": 58,
-        "y": 538,
+        "x": 116,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "pak-linux": {
-        "x": 116,
-        "y": 538,
+        "x": 174,
+        "y": 654,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "pal-linux": {
-        "x": 173,
-        "y": 538,
+        "x": 231,
+        "y": 654,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "pam-linux": {
-        "x": 231,
-        "y": 538,
+        "x": 289,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "pas-linux": {
-        "x": 289,
-        "y": 538,
+        "x": 347,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "pax-linux": {
-        "x": 347,
-        "y": 538,
+        "x": 405,
+        "y": 654,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "pdf-linux": {
-        "x": 404,
-        "y": 538,
+        "x": 462,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "pfb-linux": {
-        "x": 462,
-        "y": 538,
+        "x": 520,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "php-linux": {
-        "x": 520,
-        "y": 538,
+        "x": 578,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "pka-linux": {
-        "x": 578,
-        "y": 538,
+        "x": 636,
+        "y": 654,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "pls-linux": {
-        "x": 635,
-        "y": 538,
+        "x": 693,
+        "y": 654,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "png-linux": {
-        "x": 693,
-        "y": 538,
+        "x": 0,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "psd-linux": {
-        "x": 0,
-        "y": 600,
+        "x": 58,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "pub-linux": {
-        "x": 58,
-        "y": 600,
+        "x": 116,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ram-linux": {
-        "x": 116,
-        "y": 600,
+        "x": 174,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "rar-linux": {
-        "x": 174,
-        "y": 600,
+        "x": 232,
+        "y": 716,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "rdp-linux": {
-        "x": 232,
-        "y": 600,
+        "x": 290,
+        "y": 716,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "rpm-linux": {
-        "x": 290,
-        "y": 600,
+        "x": 348,
+        "y": 716,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "rst-linux": {
-        "x": 348,
-        "y": 600,
+        "x": 406,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "run-linux": {
-        "x": 406,
-        "y": 600,
+        "x": 464,
+        "y": 716,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "scm-linux": {
-        "x": 464,
-        "y": 600,
+        "x": 522,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "scr-linux": {
-        "x": 522,
-        "y": 600,
+        "x": 580,
+        "y": 716,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "seq-linux": {
-        "x": 580,
-        "y": 600,
+        "x": 638,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sfx-linux": {
-        "x": 638,
-        "y": 600,
+        "x": 696,
+        "y": 716,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sig-linux": {
-        "x": 696,
-        "y": 600,
+        "x": 0,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sql-linux": {
-        "x": 0,
-        "y": 662,
+        "x": 58,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "stc-linux": {
-        "x": 58,
-        "y": 662,
+        "x": 116,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "std-linux": {
-        "x": 116,
-        "y": 662,
+        "x": 174,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sti-linux": {
-        "x": 174,
-        "y": 662,
+        "x": 232,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "stl-linux": {
-        "x": 232,
-        "y": 662,
+        "x": 290,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "stw-linux": {
-        "x": 290,
-        "y": 662,
+        "x": 348,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "svg-linux": {
-        "x": 348,
-        "y": 662,
+        "x": 406,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "swf-linux": {
-        "x": 406,
-        "y": 662,
+        "x": 464,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sxg-linux": {
-        "x": 464,
-        "y": 662,
+        "x": 522,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sxi-linux": {
-        "x": 522,
-        "y": 662,
+        "x": 580,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "sxw-linux": {
-        "x": 580,
-        "y": 662,
+        "x": 638,
+        "y": 778,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "tar-linux": {
-        "x": 638,
-        "y": 662,
+        "x": 696,
+        "y": 778,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "taz-linux": {
-        "x": 695,
-        "y": 662,
+        "x": 0,
+        "y": 840,
         "width": 47,
         "height": 48,
         "mask": false
     },
     "tbz-linux": {
-        "x": 0,
-        "y": 724,
+        "x": 57,
+        "y": 840,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "tga-linux": {
-        "x": 58,
-        "y": 724,
+        "x": 115,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "tgz-linux": {
-        "x": 116,
-        "y": 724,
+        "x": 173,
+        "y": 840,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "tsv-linux": {
-        "x": 174,
-        "y": 724,
+        "x": 231,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "ttf-linux": {
-        "x": 232,
-        "y": 724,
+        "x": 289,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "uos-linux": {
-        "x": 290,
-        "y": 724,
+        "x": 347,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "vbs-linux": {
-        "x": 348,
-        "y": 724,
+        "x": 405,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "vda-linux": {
-        "x": 406,
-        "y": 724,
+        "x": 463,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "vdi-linux": {
-        "x": 464,
-        "y": 724,
+        "x": 521,
+        "y": 840,
         "width": 48,
         "height": 47,
         "mask": false
     },
     "vst-linux": {
-        "x": 522,
-        "y": 724,
+        "x": 579,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "wav-linux": {
-        "x": 580,
-        "y": 724,
+        "x": 637,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "wma-linux": {
-        "x": 638,
-        "y": 724,
+        "x": 695,
+        "y": 840,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "xar-linux": {
-        "x": 696,
-        "y": 724,
+        "x": 0,
+        "y": 902,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "xls-linux": {
-        "x": 0,
-        "y": 786,
+        "x": 58,
+        "y": 902,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "xml-linux": {
-        "x": 58,
-        "y": 786,
+        "x": 116,
+        "y": 902,
         "width": 48,
         "height": 52,
         "mask": false
     },
     "fallback-modern": {
-        "x": 116,
-        "y": 786,
+        "x": 174,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "asf-modern": {
-        "x": 174,
-        "y": 786,
+        "x": 232,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "asx-modern": {
-        "x": 232,
-        "y": 786,
+        "x": 290,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "avi-modern": {
-        "x": 290,
-        "y": 786,
+        "x": 348,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "cpc-modern": {
+        "x": 406,
+        "y": 902,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "csv-modern": {
-        "x": 348,
-        "y": 786,
+        "x": 448,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "dng-modern": {
-        "x": 406,
-        "y": 786,
+        "x": 506,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "doc-modern": {
-        "x": 464,
-        "y": 786,
+        "x": 564,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "flv-modern": {
-        "x": 522,
-        "y": 786,
+        "x": 622,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "htm-modern": {
-        "x": 580,
-        "y": 786,
+        "x": 680,
+        "y": 902,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "img-modern": {
-        "x": 638,
-        "y": 786,
+        "x": 0,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "iso-modern": {
-        "x": 696,
-        "y": 786,
+        "x": 58,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "mid-modern": {
-        "x": 0,
-        "y": 848,
+        "x": 116,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "mpg-modern": {
-        "x": 58,
-        "y": 848,
+        "x": 174,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "pde-modern": {
-        "x": 116,
-        "y": 848,
+        "x": 232,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "pdf-modern": {
-        "x": 174,
-        "y": 848,
+        "x": 290,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "png-modern": {
-        "x": 232,
-        "y": 848,
+        "x": 348,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "psd-modern": {
-        "x": 290,
-        "y": 848,
+        "x": 406,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "rar-modern": {
-        "x": 348,
-        "y": 848,
+        "x": 464,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
+    "sbx-modern": {
+        "x": 522,
+        "y": 964,
+        "width": 32,
+        "height": 32,
+        "mask": false
+    },
     "swf-modern": {
-        "x": 406,
-        "y": 848,
+        "x": 564,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "wav-modern": {
-        "x": 464,
-        "y": 848,
+        "x": 622,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
     },
     "wma-modern": {
-        "x": 522,
-        "y": 848,
+        "x": 680,
+        "y": 964,
         "width": 48,
         "height": 48,
         "mask": false
