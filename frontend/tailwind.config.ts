@@ -159,8 +159,8 @@ const config = {
         },
       },
       animation: {
-        marquee: "marquee 25s linear infinite",
-        marquee2: "marquee2 25s linear infinite",
+        marquee: "marquee 60s linear infinite",
+        marquee2: "marquee2 60s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "alert-screen-overlay": "alert-screen-overlay 5s linear infinite",
