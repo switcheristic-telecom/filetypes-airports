@@ -42,6 +42,7 @@ import AirportDrawer from "./AirportDrawer";
 import { AirportSidebar } from "@/app/_components/AirportSidebar";
 import WebsiteMarquee from "./WebsiteMarquee";
 import AirportLEDMarquee from "./AirportLEDMarquee";
+import Image from "next/image";
 
 interface MapManagerProps {
   allAirports: Airport[];
@@ -290,6 +291,22 @@ const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
           to: destinationAirport,
         }}
       />
+
+      {/* Switcheristic Telecom logo */}
+      <a
+        href="https://swtch.tel"
+        target="_blank"
+        rel="noreferrer"
+        className="cursor-pointer"
+      >
+        <Image
+          src="/logo/switcheristic-telecom-large.svg"
+          alt="Switcheristic Telecommunications"
+          width={160}
+          height={200}
+          className="fixed bottom-0 left-0 z-50 m-4 invert transition-all hover:invert-0"
+        ></Image>
+      </a>
 
       {/* Drawer card to show the selected airport details */}
       {showUI && (
