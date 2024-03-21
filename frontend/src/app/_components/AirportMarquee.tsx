@@ -17,14 +17,14 @@ const AirportMarquee = ({
   return (
     <div
       className={cn(
-        "absolute top-0 z-20 w-screen cursor-pointer font-bitmap",
+        "group absolute top-0 z-20 w-screen cursor-pointer font-bitmap transition-all duration-300 hover:invert",
         className,
       )}
       onClick={() => onClickOnAirport(featuredAirport)}
     >
       <>
         <div className="relative flex flex-row overflow-x-hidden">
-          <div className="animate-marquee whitespace-nowrap bg-black text-white">
+          <div className="animate-marquee whitespace-nowrap bg-black text-white group-hover:paused">
             <ContentSpans
               featuredAirport={featuredAirport}
               customTitle={customTitle}
@@ -46,7 +46,7 @@ const AirportMarquee = ({
             </span>
           </div>
 
-          <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white">
+          <div className="absolute top-0 z-10 animate-marquee2 whitespace-nowrap bg-black text-white group-hover:paused">
             <ContentSpans
               featuredAirport={featuredAirport}
               customTitle={customTitle}
