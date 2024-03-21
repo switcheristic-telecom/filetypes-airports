@@ -297,14 +297,21 @@ const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
         href="https://swtch.tel"
         target="_blank"
         rel="noreferrer"
-        className="cursor-pointer"
+        className="fixed bottom-0 left-0 z-[5] flex cursor-pointer"
       >
+        <Image
+          src="/logo/switcheristic-telecom-main.svg"
+          alt="Switcheristic Telecommunications"
+          width={80}
+          height={156}
+          className="m-4 mr-auto block h-12 shadow-sm invert transition-all hover:invert-0 md:hidden"
+        ></Image>
         <Image
           src="/logo/switcheristic-telecom-large.svg"
           alt="Switcheristic Telecommunications"
-          width={160}
-          height={200}
-          className="fixed bottom-0 left-0 z-50 m-4 invert transition-all hover:invert-0"
+          width={290}
+          height={78}
+          className="m-4 mr-auto hidden h-16 shadow-sm invert transition-all hover:invert-0 md:block"
         ></Image>
       </a>
 
