@@ -26,7 +26,7 @@ const ledDotMatrix = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://filetypes-airports.switcheristic.tel/"),
   title: "Filetypes / Airports",
-  description: "A collection of filetypes and airports with shared names",
+  description: "A collection of filetypes and airports with identical names.",
   icons: [
     {
       rel: "icon",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://filetypes-airports.switcheristic.tel/",
     title: "Filetypes / Airports",
-    description: "A collection of filetypes and airports with shared names",
+    description: "A collection of filetypes and airports with identical names.",
     images: [
       {
         url: `opengraph-image.jpeg`,
