@@ -7,6 +7,7 @@ import { useState } from "react";
 import type { Airport } from "@/utils/airport";
 import { getThumbnailSpriteCSS } from "@/utils/thumbnail";
 import ThumbnailSprite from "./ThumbnailSprite";
+import { WidthIcon } from "@radix-ui/react-icons";
 
 interface AirportSidebarProps extends React.HTMLAttributes<HTMLDivElement> {
   airports: Airport[];
@@ -59,7 +60,7 @@ export function AirportSidebar({
                       ? "secondary"
                       : "default"
                   }
-                  className="flex flex-row gap-0 px-0 text-xl"
+                  className="relative flex flex-row gap-0 px-0 text-xl"
                   onClick={() => onClickOnAirport(airport)}
                 >
                   <ThumbnailSprite

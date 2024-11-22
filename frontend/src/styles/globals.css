@@ -81,13 +81,6 @@
   }
 }
 
-.mapboxgl-ctrl-bottom-left {
-  display: none;
-}
-.mapboxgl-ctrl-bottom-right {
-  display: none;
-}
-
 .led-text-glow-red {
   text-shadow:
     /* 0 0 20px #444, */

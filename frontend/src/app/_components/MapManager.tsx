@@ -297,7 +297,7 @@ const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
         href="https://swtch.tel"
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-0 left-0 z-[5] flex cursor-pointer"
+        className="fixed bottom-6 left-0 z-[5] flex cursor-pointer"
       >
         <Image
           src="/logo/switcheristic-telecom-main.svg"
