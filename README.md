@@ -12,12 +12,16 @@ Many 3-letter file extensions (`.AVI`, `.DOC`, `.GIF`, ...) happen to share thei
 - An "airport of the day" is picked deterministically each day
 - Filetype thumbnails are real icons extracted from original applications, rendered as spinning 3D sprites on the map
 
+### File conversion
+
+Need to convert `.DOC` to `.PDF`? Select your source filetype on the map, pick a destination, and hit **Convert** — we'll book you a flight between the two airports on Google Flights, complete with an animated arc across the globe. The only file conversion service that requires a passport.
+
 ## Project structure
 
-```
+```text
 data/          Data pipeline — Jupyter notebooks for cleaning, matching, and
                merging airport + filetype datasets into a single JSON
-frontend/      Next.js web app with Mapbox GL + deck.gl map visualization
+frontend/      Vite + React app with MapLibre GL + deck.gl map visualization
 script/        Tooling for generating rotated thumbnail sprites from icons
 ```
 
@@ -25,12 +29,9 @@ script/        Tooling for generating rotated thumbnail sprites from icons
 
 ```sh
 cd frontend
-cp .env.example .env   # add your Mapbox access token
 bun install
 bun dev
 ```
-
-Requires a [Mapbox](https://www.mapbox.com/) access token set as `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` in `.env`.
 
 ## Credits
 
