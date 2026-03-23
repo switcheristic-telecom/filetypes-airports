@@ -1,19 +1,19 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
-import { useBreakpoint } from "@/hooks/useBreakpoint";
+import { useBreakpoint } from '@/hooks/useBreakpoint';
 
-import type { Airport, AirportVerbose } from "@/utils/airport";
+import type { Airport, AirportVerbose } from '@/utils/airport';
 
-import { INITIAL_VIEW_STATE, MapViewState } from "@/lib/map-config";
-import { FlyToInterpolator } from "deck.gl/typed";
+import { INITIAL_VIEW_STATE, MapViewState } from '@/lib/map-config';
+import { FlyToInterpolator } from 'deck.gl/typed';
 
 // Child Components
-import AirportMarquee from "@/app/_components/AirportMarquee";
-import AirportMap from "@/app/_components/AirportMap";
-import AirportDrawer from "./AirportDrawer";
-import { AirportSidebar } from "@/app/_components/AirportSidebar";
+import AirportMarquee from '@/app/_components/AirportMarquee';
+import AirportMap from '@/app/_components/AirportMap';
+import AirportDrawer from './AirportDrawer';
+import { AirportSidebar } from '@/app/_components/AirportSidebar';
 
 interface MapManagerProps {
   allAirports: Airport[];
@@ -21,10 +21,13 @@ interface MapManagerProps {
   showUI?: boolean;
 }
 
-const MapManager = ({ allAirports, airportOfTheDay, showUI = true }: MapManagerProps) => {
-
+const MapManager = ({
+  allAirports,
+  airportOfTheDay,
+  showUI = true,
+}: MapManagerProps) => {
   /** Breakpoint and mobile detection */
-  const { isMd } = useBreakpoint("md");
+  const { isMd } = useBreakpoint('md');
   const isMobile = !isMd;
 
   /** Initial view state */
@@ -183,7 +186,10 @@ const MapManager = ({ allAirports, airportOfTheDay, showUI = true }: MapManagerP
     (airport: Airport) => {
       flyToAirport(airport);
 
-      if (isDrawerOpen && lastSelectedAirport?.iata_code !== airport.iata_code) {
+      if (
+        isDrawerOpen &&
+        lastSelectedAirport?.iata_code !== airport.iata_code
+      ) {
         // Quick retract-and-expand to signify content change
         setIsDrawerOpen(false);
         setTimeout(() => {
@@ -202,7 +208,10 @@ const MapManager = ({ allAirports, airportOfTheDay, showUI = true }: MapManagerP
     (airport: Airport) => {
       flyToAirport(airport, false);
 
-      if (isDrawerOpen && lastSelectedAirport?.iata_code !== airport.iata_code) {
+      if (
+        isDrawerOpen &&
+        lastSelectedAirport?.iata_code !== airport.iata_code
+      ) {
         setIsDrawerOpen(false);
         setTimeout(() => {
           setLastSelectedAirport(airport);
@@ -240,16 +249,16 @@ const MapManager = ({ allAirports, airportOfTheDay, showUI = true }: MapManagerP
       {airportOfTheDay && showUI && (
         <>
           <Button
-            className="margin-8 absolute left-0 top-8 z-[5] m-4"
+            className='margin-8 absolute left-0 top-8 z-[5] m-4'
             onClick={() => {
               setIsSidebarOpen(true);
               setIsDrawerOpen(false);
             }}
           >
-            {">"}
+            {'>'}
           </Button>
           <AirportSidebar
-            className="absolute left-0 top-0 z-10 h-dvh pt-8"
+            className='absolute left-0 top-0 z-10 h-dvh pt-8'
             airports={allAirports}
             selectedAirport={lastSelectedAirport}
             onClickOnAirport={(a) => {
@@ -279,24 +288,24 @@ const MapManager = ({ allAirports, airportOfTheDay, showUI = true }: MapManagerP
 
       {/* Switcheristic Telecom logo */}
       <a
-        href="https://swtch.tel"
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-6 left-0 z-[5] flex cursor-pointer"
+        href='https://swtch.tel'
+        target='_blank'
+        rel='noreferrer'
+        className='fixed bottom-0 left-0 z-5 flex cursor-pointer'
       >
         <img
-          src="/logo/switcheristic-telecom-main.svg"
-          alt="Switcheristic Telecommunications"
+          src='/logo/switcheristic-telecom-main.svg'
+          alt='Switcheristic Telecommunications'
           width={80}
           height={156}
-          className="m-4 mr-auto block h-12 invert transition-all hover:invert-0 md:hidden"
+          className='m-4 mr-auto block h-12 invert transition-all hover:invert-0 md:hidden'
         />
         <img
-          src="/logo/switcheristic-telecom-large.svg"
-          alt="Switcheristic Telecommunications"
+          src='/logo/switcheristic-telecom-large.svg'
+          alt='Switcheristic Telecommunications'
           width={290}
           height={78}
-          className="m-4 mr-auto hidden h-16 invert transition-all hover:invert-0 md:block"
+          className='m-4 mr-auto hidden h-16 invert transition-all hover:invert-0 md:block'
         />
       </a>
 
