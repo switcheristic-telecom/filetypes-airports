@@ -113,6 +113,7 @@ const MapManager = ({
         zoom: zoomLevel,
         transitionDuration: 1000,
         transitionInterpolator: new FlyToInterpolator(),
+        transitionEasing: (t: number) => 1 - Math.pow(1 - t, 3),
         numberOfMutations: prev.numberOfMutations + 1,
       }));
     },
@@ -161,6 +162,7 @@ const MapManager = ({
           zoom: newZoom,
           transitionDuration: 1000,
           transitionInterpolator: new FlyToInterpolator(),
+          transitionEasing: (t: number) => 1 - Math.pow(1 - t, 3),
           numberOfMutations: prev.numberOfMutations + 1,
         }));
       }
