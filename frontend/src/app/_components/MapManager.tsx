@@ -30,20 +30,14 @@ const MapManager = ({
   const { isMd } = useBreakpoint('md');
   const isMobile = !isMd;
 
-  /** Initial view state */
-  const [initialViewState, setInitialViewState] = useState(INITIAL_VIEW_STATE);
-  const [latestViewState, setLatestViewState] = useState(initialViewState);
+  /** Controlled view state — single source of truth for the map camera */
+  const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE);
 
   const LATITUDE_OFFSET = isMobile ? -0.5 : -0.55;
 
-  // Propagate fly-to transitions into the controlled viewState
-  useEffect(() => {
-    setLatestViewState(initialViewState);
-  }, [initialViewState]);
-
   /** Set different initial view state based on the breakpoint */
   useEffect(() => {
-    setInitialViewState((prev) => ({
+    setViewState((prev) => ({
       ...prev,
       minZoom: isMobile
         ? INITIAL_VIEW_STATE.mobileMinZoom
@@ -55,7 +49,7 @@ const MapManager = ({
   useEffect(() => {
     const INITIAL_ZOOM = isMobile ? 3.5 : 4.5;
     if (airportOfTheDay) {
-      setInitialViewState({
+      setViewState({
         ...INITIAL_VIEW_STATE,
         minZoom: isMobile
           ? INITIAL_VIEW_STATE.mobileMinZoom
@@ -112,7 +106,7 @@ const MapManager = ({
           fromAirport.longitude +
           (toAirport.longitude - fromAirport.longitude) / 2,
       };
-      setInitialViewState((prev) => ({
+      setViewState((prev) => ({
         ...prev,
         latitude: midPoint.latitude,
         longitude: midPoint.longitude,
@@ -122,7 +116,7 @@ const MapManager = ({
         numberOfMutations: prev.numberOfMutations + 1,
       }));
     },
-    [setInitialViewState],
+    [setViewState],
   );
 
   /** Fly to the airport center when the destination airport is set */
@@ -141,8 +135,8 @@ const MapManager = ({
   const flyToAirport = useCallback(
     (airport: Airport, conditional = true) => {
       const distanceBetweenCenterAndSelected = Math.sqrt(
-        (airport.latitude - latestViewState.latitude) ** 2 +
-          (airport.longitude - latestViewState.longitude) ** 2,
+        (airport.latitude - viewState.latitude) ** 2 +
+          (airport.longitude - viewState.longitude) ** 2,
       );
       const MOBILE_FAR_THRESHOLD = 2;
       const DESKTOP_FAR_THRESHOLD = 8;
@@ -151,16 +145,16 @@ const MapManager = ({
         : DESKTOP_FAR_THRESHOLD;
       const isFar = distanceBetweenCenterAndSelected > farThreshold;
 
-      const isTooZoomedOut = latestViewState.zoom < 4.5;
+      const isTooZoomedOut = viewState.zoom < 4.5;
 
       // Only fly to the airport if it's far or the map is too zoomed out
       if (isFar || isTooZoomedOut || !conditional) {
         // Only zoom in if the map is too zoomed out now
         const DEFAULT_ZOOM = isMobile ? 4 : 6;
 
-        const newZoom = isTooZoomedOut ? DEFAULT_ZOOM : latestViewState.zoom;
+        const newZoom = isTooZoomedOut ? DEFAULT_ZOOM : viewState.zoom;
 
-        setInitialViewState((prev) => ({
+        setViewState((prev) => ({
           ...prev,
           latitude: airport.latitude + LATITUDE_OFFSET,
           longitude: airport.longitude,
@@ -174,9 +168,9 @@ const MapManager = ({
     [
       LATITUDE_OFFSET,
       isMobile,
-      latestViewState.latitude,
-      latestViewState.longitude,
-      latestViewState.zoom,
+      viewState.latitude,
+      viewState.longitude,
+      viewState.zoom,
     ],
   );
 
@@ -276,9 +270,8 @@ const MapManager = ({
       )}
       <AirportMap
         allAirports={allAirports}
-        initialViewState={initialViewState}
-        latestViewState={latestViewState}
-        setLatestViewState={setLatestViewState}
+        viewState={viewState}
+        setViewState={setViewState}
         onClickOnAirport={onClickOnAirport}
         onDragStart={() => setIsDrawerOpen(false)}
         conversionAirports={{

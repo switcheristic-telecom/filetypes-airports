@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // MapLibre
 import Map from "react-map-gl/maplibre";
@@ -25,9 +25,8 @@ const ANIMATION_INTERVAL = 1000 / 24;
 
 interface AirportMapProps {
   allAirports: Airport[];
-  initialViewState: MapViewState;
-  latestViewState: MapViewState;
-  setLatestViewState: (latestViewState: MapViewState) => void;
+  viewState: MapViewState;
+  setViewState: (viewState: MapViewState) => void;
   onClickOnAirport: (airport: Airport) => void;
   onDragStart?: () => void;
   conversionAirports?: {
@@ -38,18 +37,13 @@ interface AirportMapProps {
 
 const AirportMap = ({
   allAirports,
-  initialViewState,
-  latestViewState,
-  setLatestViewState,
+  viewState,
+  setViewState,
   onClickOnAirport,
   onDragStart,
   conversionAirports,
 }: AirportMapProps) => {
   const [animationTime, setAnimationTime] = useState(0);
-
-  useEffect(() => {
-    // console.log("latestViewState", latestViewState);
-  }, [latestViewState]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -101,7 +95,7 @@ const AirportMap = ({
       <div className="overflow-hidden">
         <DeckGL
             effects={[]}
-            viewState={latestViewState}
+            viewState={viewState}
             views={view}
             controller={true}
             layers={layers}
@@ -110,7 +104,7 @@ const AirportMap = ({
               if (isDragging) onDragStart?.();
             }}
             onViewStateChange={({ viewState }) => {
-              setLatestViewState(viewState as MapViewState);
+              setViewState(viewState as MapViewState);
             }}
             getCursor={({ isDragging, isHovering }) => {
               // http://www.rw-designer.com/cursor-set/win-95-98#google_vignette
