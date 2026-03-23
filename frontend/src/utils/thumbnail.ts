@@ -28,7 +28,7 @@ export function getThumbnailIconName(d: Airport) {
   return iconName;
 }
 
-export const SPRITE_SHEET_URL = "assets/thumbnails-spritesheet/spritesheet.png";
+export const SPRITE_SHEET_URL = "assets/thumbnails-spritesheet/spritesheet.webp";
 
 export function getThumbnailSpriteSheetMapping(d: Airport) {
   const iconName = getThumbnailIconName(d);
