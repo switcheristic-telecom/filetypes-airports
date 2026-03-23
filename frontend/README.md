@@ -1,28 +1,47 @@
-# Create T3 App
+# Frontend
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Next.js 14 app that renders the interactive map.
 
-## What's next? How do I make an app with this?
+## Stack
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- **Next.js 14** with App Router
+- **Mapbox GL** + **deck.gl** for the map and custom icon layers
+- **tRPC** for the API layer (serves airport data from a static dataset)
+- **Tailwind CSS** with a retro/bitmap aesthetic (Fixedsys, LED dot-matrix fonts)
+- **Radix UI** + **shadcn/ui** components (drawer, sidebar, combobox, etc.)
+- **Bun** as package manager
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Getting started
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+```sh
+cp .env.example .env   # add your Mapbox access token
+bun install
+bun dev
+```
 
-## Learn More
+## Environment variables
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` | Mapbox GL access token (required) |
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Source layout
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+```
+src/
+  app/                  Pages and route-level components
+    _components/        Map, sidebar, drawer, marquee, LED display
+    api/trpc/           tRPC API route handler
+    fonts/              Fixedsys, Square Dot-Matrix
+  components/ui/        shadcn/ui primitives
+  data/                 Static airport + filetype dataset, thumbnail mappings
+  hooks/                useBreakpoint
+  lib/                  Map config, deck.gl layers, utilities
+  server/api/           tRPC router (airport queries)
+  utils/                Airport types, math, easing, mapbox helpers
+  styles/               Global CSS
+public/
+  assets/               Filetype thumbnails (static, animated, spritesheets)
+  cursors/              Custom cursors
+  logo/                 Switcheristic Telecoms branding
+```
