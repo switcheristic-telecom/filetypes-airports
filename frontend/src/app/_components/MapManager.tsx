@@ -36,9 +36,10 @@ const MapManager = ({
 
   const LATITUDE_OFFSET = isMobile ? -0.5 : -0.55;
 
-  // useEffect(() => {
-  //   console.log("latestViewState", latestViewState);
-  // }, [latestViewState]);
+  // Propagate fly-to transitions into the controlled viewState
+  useEffect(() => {
+    setLatestViewState(initialViewState);
+  }, [initialViewState]);
 
   /** Set different initial view state based on the breakpoint */
   useEffect(() => {

@@ -26,7 +26,7 @@
     "color-convert": "^2.0.1",
     "deck.gl": "^8.9.34",
     "js-md5": "^0.8.3",
-    "maplibre-gl": "^5.21.0",
+    "maplibre-gl": "4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-map-gl": "^7.1.7",

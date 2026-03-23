@@ -93,7 +93,6 @@ const AirportMap = ({
   );
 
   const view = new MapView({
-    id: "map-view",
     repeat: true, // this makes the layers repeat in lower zoom levels
   });
 
@@ -102,7 +101,7 @@ const AirportMap = ({
       <div className="overflow-hidden">
         <DeckGL
             effects={[]}
-            initialViewState={initialViewState}
+            viewState={latestViewState}
             views={view}
             controller={true}
             layers={layers}
