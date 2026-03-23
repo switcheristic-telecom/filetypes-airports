@@ -14,7 +14,7 @@ cwd = os.path.dirname(__file__)
 THUMBNAILS_DIR = os.path.join(cwd, "../public/assets/thumbnails")
 SPRITESHEET_DIR = os.path.join(cwd, "../public/assets/thumbnails-spritesheet")
 
-COLS = 13  # number of columns in the grid
+PADDING = 1  # px gap between icons
 DEDUP_THRESHOLD = 10  # max per-channel pixel difference to consider "same"
 
 thumbnails = []
@@ -87,57 +87,58 @@ for i, arr_i in enumerate(arrays):
 deduped = len(thumbnails) - len(unique_indices)
 print(f"Unique icons: {len(unique_indices)} (deduplicated {deduped})")
 
-# 3. Make a grid from unique thumbnails only
+# 3. Tight shelf-packing: sort by height descending, pack left-to-right
 unique_thumbs = [thumbnails[i] for i in unique_indices]
-thumbnails_grid = []
-for i in range(0, len(unique_thumbs), COLS):
-    thumbnails_grid.append(unique_thumbs[i : i + COLS])
 
-print("Generated thumbnails grid")
+# Sort tallest first for better shelf utilization
+unique_thumbs_sorted = sorted(unique_thumbs, key=lambda t: t["_img"].height, reverse=True)
 
-# get width and height of each row
-widths = []
-heights = []
-for row in thumbnails_grid:
-    row_width = 0
-    row_height = 0
-    for thumbnail in row:
-        img = thumbnail["_img"]
-        row_width += img.width
-        if img.height > row_height:
-            row_height = img.height
-    widths.append(row_width)
-    heights.append(row_height)
+# Determine sheet width: aim for roughly square output
+import math
+total_area = sum(t["_img"].width * t["_img"].height for t in unique_thumbs_sorted)
+sheet_width = max(int(math.sqrt(total_area) * 1.2), max(t["_img"].width for t in unique_thumbs_sorted) + PADDING)
 
-spritesheet_width = max(widths)
-spritesheet_height = sum(heights)
+# Shelf packing
+shelves = []  # list of (y, height, items)
+for thumbnail in unique_thumbs_sorted:
+    img = thumbnail["_img"]
+    placed = False
+    for shelf in shelves:
+        shelf_y, shelf_h, shelf_x_end, items = shelf
+        if img.height <= shelf_h and shelf_x_end + img.width + PADDING <= sheet_width:
+            # Fits on this shelf
+            x = shelf_x_end + PADDING
+            shelf[2] = x + img.width  # update shelf_x_end
+            items.append((thumbnail, x, shelf_y))
+            placed = True
+            break
+    if not placed:
+        # New shelf
+        shelf_y = sum(s[1] + PADDING for s in shelves)
+        shelves.append([shelf_y, img.height, img.width, [(thumbnail, 0, shelf_y)]])
 
-print(
-    "Spritesheet width: ", spritesheet_width, "Spritesheet height: ", spritesheet_height
-)
+spritesheet_width = sheet_width
+spritesheet_height = sum(s[1] + PADDING for s in shelves) - PADDING if shelves else 0
 
-# 4. Generate the spritesheet from unique icons
+print(f"Spritesheet: {spritesheet_width}x{spritesheet_height}")
+
+# 4. Generate the spritesheet from packed positions
 spritesheet = Image.new("RGBA", (spritesheet_width, spritesheet_height), (0, 0, 0, 0))
 
-# Map unique original index -> sprite coordinates
 unique_coords = {}
 
-x_offset = 0
-y_offset = 0
-for row, row_height in zip(thumbnails_grid, heights):
-    x_offset = 0
-    for thumbnail in row:
+for shelf in shelves:
+    _, _, _, items = shelf
+    for thumbnail, x, y in items:
         img = thumbnail["_img"]
-        spritesheet.paste(img, (x_offset, y_offset))
+        spritesheet.paste(img, (x, y))
         orig_idx = thumbnails.index(thumbnail)
         unique_coords[orig_idx] = {
-            "x": x_offset,
-            "y": y_offset,
+            "x": x,
+            "y": y,
             "width": img.width,
             "height": img.height,
         }
-        x_offset += img.width
-    y_offset += row_height
 
 # 5. Build output data for ALL thumbnails (duplicates point to same coords)
 output_frames = []
