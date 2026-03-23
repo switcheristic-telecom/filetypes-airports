@@ -1,29 +1,6 @@
-"use client";
-
-import { env } from "@/env";
 import React, { useEffect, useState, useCallback } from "react";
 
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/router";
 
 import { useBreakpoint } from "@/hooks/useBreakpoint";
 
@@ -32,26 +9,19 @@ import type { Airport, AirportVerbose } from "@/utils/airport";
 import { INITIAL_VIEW_STATE, MapViewState } from "@/lib/map-config";
 import { FlyToInterpolator } from "deck.gl/typed";
 
-// TRPC
-import { api } from "@/trpc/react";
-
 // Child Components
 import AirportMarquee from "@/app/_components/AirportMarquee";
 import AirportMap from "@/app/_components/AirportMap";
 import AirportDrawer from "./AirportDrawer";
 import { AirportSidebar } from "@/app/_components/AirportSidebar";
-import WebsiteMarquee from "./WebsiteMarquee";
-import AirportLEDMarquee from "./AirportLEDMarquee";
-import Image from "next/image";
 
 interface MapManagerProps {
   allAirports: Airport[];
+  airportOfTheDay: Airport;
   showUI?: boolean;
 }
 
-const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
-  /** Load the airport of the day */
-  const { data: airportOfTheDay } = api.airport.getAirportOfTheDay.useQuery();
+const MapManager = ({ allAirports, airportOfTheDay, showUI = true }: MapManagerProps) => {
 
   /** Breakpoint and mobile detection */
   const { isMd } = useBreakpoint("md");
@@ -212,26 +182,40 @@ const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
   const onClickOnAirport = useCallback(
     (airport: Airport) => {
       flyToAirport(airport);
-      setIsDrawerOpen(true);
-      // make sure the drawer will definitely open
-      setTimeout(() => {
+
+      if (isDrawerOpen && lastSelectedAirport?.iata_code !== airport.iata_code) {
+        // Quick retract-and-expand to signify content change
+        setIsDrawerOpen(false);
+        setTimeout(() => {
+          setLastSelectedAirport(airport);
+          setIsDrawerOpen(true);
+        }, 150);
+      } else {
+        setLastSelectedAirport(airport);
         setIsDrawerOpen(true);
-      }, 800);
-      setLastSelectedAirport(airport);
+      }
     },
-    [flyToAirport, setIsDrawerOpen, setLastSelectedAirport],
+    [flyToAirport, isDrawerOpen, lastSelectedAirport],
   );
 
   const onClickOnAirportInSidebar = useCallback(
     (airport: Airport) => {
       flyToAirport(airport, false);
-      setTimeout(() => {
-        setIsDrawerOpen(true);
-      }, 800);
 
-      setLastSelectedAirport(airport);
+      if (isDrawerOpen && lastSelectedAirport?.iata_code !== airport.iata_code) {
+        setIsDrawerOpen(false);
+        setTimeout(() => {
+          setLastSelectedAirport(airport);
+          setIsDrawerOpen(true);
+        }, 150);
+      } else {
+        setLastSelectedAirport(airport);
+        setTimeout(() => {
+          setIsDrawerOpen(true);
+        }, 800);
+      }
     },
-    [flyToAirport, setLastSelectedAirport, setIsDrawerOpen],
+    [flyToAirport, isDrawerOpen, lastSelectedAirport],
   );
 
   return (
@@ -286,6 +270,7 @@ const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
         latestViewState={latestViewState}
         setLatestViewState={setLatestViewState}
         onClickOnAirport={onClickOnAirport}
+        onDragStart={() => setIsDrawerOpen(false)}
         conversionAirports={{
           from: lastSelectedAirport,
           to: destinationAirport,
@@ -299,20 +284,20 @@ const MapManager = ({ allAirports, showUI = true }: MapManagerProps) => {
         rel="noreferrer"
         className="fixed bottom-6 left-0 z-[5] flex cursor-pointer"
       >
-        <Image
+        <img
           src="/logo/switcheristic-telecom-main.svg"
           alt="Switcheristic Telecommunications"
           width={80}
           height={156}
-          className="m-4 mr-auto block h-12 shadow-sm invert transition-all hover:invert-0 md:hidden"
-        ></Image>
-        <Image
+          className="m-4 mr-auto block h-12 invert transition-all hover:invert-0 md:hidden"
+        />
+        <img
           src="/logo/switcheristic-telecom-large.svg"
           alt="Switcheristic Telecommunications"
           width={290}
           height={78}
-          className="m-4 mr-auto hidden h-16 shadow-sm invert transition-all hover:invert-0 md:block"
-        ></Image>
+          className="m-4 mr-auto hidden h-16 invert transition-all hover:invert-0 md:block"
+        />
       </a>
 
       {/* Drawer card to show the selected airport details */}

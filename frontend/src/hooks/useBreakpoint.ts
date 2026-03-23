@@ -1,12 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 import { useMediaQuery } from "react-responsive";
-import config from "../../tailwind.config"; // Your tailwind config
-import resolveConfig from "tailwindcss/resolveConfig";
 
-const fullConfig = resolveConfig(config);
-const breakpoints = fullConfig.theme.screens;
+const breakpoints = {
+  sm: "640px",
+  md: "768px",
+  lg: "1024px",
+  xl: "1280px",
+  "2xl": "1400px",
+  "3xl": "1920px",
+} as const;
 
 type BreakpointKey = keyof typeof breakpoints;
 

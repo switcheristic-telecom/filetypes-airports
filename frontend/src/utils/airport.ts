@@ -1,4 +1,4 @@
-import * as seedrandom from "seedrandom";
+import seedrandom from "seedrandom";
 
 export type Airport = AirportVerbose | AirportConcise;
 
@@ -46,7 +46,7 @@ export const getAirportOfTheDay = (
   // today's date as a number
   const today = new Date().toISOString().slice(0, 10).split("-").join("");
 
-  const myrng = seedrandom.default(today);
+  const myrng = seedrandom(today);
   const airport = airports[Math.floor(myrng() * airports.length)]!;
 
   return airport;

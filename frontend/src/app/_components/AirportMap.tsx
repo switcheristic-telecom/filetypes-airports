@@ -1,12 +1,9 @@
-"use client";
-
-import { env } from "@/env";
 import React, { useState, useEffect } from "react";
+import "maplibre-gl/dist/maplibre-gl.css";
 
-// Mapbox
-import Map from "react-map-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
-import { mapboxStyles } from "@/utils/mapbox";
+// MapLibre
+import Map from "react-map-gl/maplibre";
+import { mapStyle } from "@/lib/map-style";
 
 // DeckGL
 import { type PickingInfo, MapView } from "@deck.gl/core/typed";
@@ -20,9 +17,8 @@ import {
 } from "@/lib/map-layers";
 import { type ArcLayer } from "deck.gl/typed";
 
-// Airport TRPC
+// Airport
 import type { Airport, AirportConcise } from "@/utils/airport";
-import { api } from "@/trpc/react";
 import type { MapViewState } from "@/lib/map-config";
 
 // 24 fps
@@ -34,6 +30,7 @@ interface AirportMapProps {
   latestViewState: MapViewState;
   setLatestViewState: (latestViewState: MapViewState) => void;
   onClickOnAirport: (airport: Airport) => void;
+  onDragStart?: () => void;
   conversionAirports?: {
     from: Airport | undefined;
     to: Airport | undefined;
@@ -46,9 +43,9 @@ const AirportMap = ({
   latestViewState,
   setLatestViewState,
   onClickOnAirport,
+  onDragStart,
   conversionAirports,
 }: AirportMapProps) => {
-  const { data: initialAirport } = api.airport.getAirportOfTheDay.useQuery();
   const [animationTime, setAnimationTime] = useState(0);
 
   useEffect(() => {
@@ -103,15 +100,17 @@ const AirportMap = ({
 
   return (
     <div>
-      {initialAirport && (
-        <div className="overflow-hidden">
-          <DeckGL
+      <div className="overflow-hidden">
+        <DeckGL
             effects={[]}
             initialViewState={initialViewState}
             views={view}
             controller={true}
             layers={layers}
             // getTooltip={getTooltip}
+            onInteractionStateChange={({ isDragging }) => {
+              if (isDragging) onDragStart?.();
+            }}
             onViewStateChange={({ viewState }) => {
               setLatestViewState(viewState as MapViewState);
             }}
@@ -133,15 +132,10 @@ const AirportMap = ({
             }}
           >
             <Map
-              projection={{
-                name: "mercator",
-              }}
-              mapboxAccessToken={env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-              mapStyle={mapboxStyles.latest}
+              mapStyle={mapStyle as never}
             ></Map>
           </DeckGL>
-        </div>
-      )}
+      </div>
     </div>
   );
 };

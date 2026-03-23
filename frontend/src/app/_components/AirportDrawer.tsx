@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useState, useCallback } from "react";
 
 import {
@@ -40,7 +38,6 @@ import type { Airport, AirportVerbose } from "@/utils/airport";
 import { useBreakpoint } from "@/hooks/useBreakpoint";
 import { AirportCombobox } from "./AirportCombobox";
 
-import Image from "next/image";
 
 interface AirportDrawerProps {
   open: boolean;
@@ -293,7 +290,7 @@ function composeGoogleFlightUrl(
 function FeaturedTag() {
   return (
     <div className="group absolute right-0 top-0 mx-2 inline-block h-full">
-      <Image
+      <img
         width={32}
         height={32}
         src={"/assets/gifs/explode.gif"}

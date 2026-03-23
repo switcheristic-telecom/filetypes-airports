@@ -1,47 +1,19 @@
 # Frontend
 
-Next.js 14 app that renders the interactive map.
+Vite + React SPA that renders an interactive globe of airports and their matching file extensions.
 
 ## Stack
 
-- **Next.js 14** with App Router
-- **Mapbox GL** + **deck.gl** for the map and custom icon layers
-- **tRPC** for the API layer (serves airport data from a static dataset)
-- **Tailwind CSS** with a retro/bitmap aesthetic (Fixedsys, LED dot-matrix fonts)
-- **Radix UI** + **shadcn/ui** components (drawer, sidebar, combobox, etc.)
-- **Bun** as package manager
+- **Vite** — build tool and dev server
+- **React** — UI framework
+- **Tailwind CSS v4** — styling (CSS-first config, no JS config file)
+- **deck.gl + MapLibre GL** — map rendering and airport markers
+- **shadcn/ui + Radix** — UI primitives (drawer, sidebar, combobox)
+- **vaul** — bottom drawer component
 
-## Getting started
+## Setup
 
 ```sh
-cp .env.example .env   # add your Mapbox access token
 bun install
-bun dev
-```
-
-## Environment variables
-
-| Variable | Description |
-|---|---|
-| `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` | Mapbox GL access token (required) |
-
-## Source layout
-
-```
-src/
-  app/                  Pages and route-level components
-    _components/        Map, sidebar, drawer, marquee, LED display
-    api/trpc/           tRPC API route handler
-    fonts/              Fixedsys, Square Dot-Matrix
-  components/ui/        shadcn/ui primitives
-  data/                 Static airport + filetype dataset, thumbnail mappings
-  hooks/                useBreakpoint
-  lib/                  Map config, deck.gl layers, utilities
-  server/api/           tRPC router (airport queries)
-  utils/                Airport types, math, easing, mapbox helpers
-  styles/               Global CSS
-public/
-  assets/               Filetype thumbnails (static, animated, spritesheets)
-  cursors/              Custom cursors
-  logo/                 Switcheristic Telecoms branding
+bun run dev
 ```
